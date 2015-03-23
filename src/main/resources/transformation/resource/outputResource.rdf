@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:rdau="http://rdaregistry.info/Elements/u/" xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:owl="http://www.w3.org/2004/02/skos/core#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:void="http://rdfs.org/ns/void#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+
+		<bibo:Document rdf:about="http://data.swissbib.ch/01/316022063/about">
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-03-23T15:52:40.751Z</dct:issued>
+			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/01/316022063" />
+			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-05-27T15:12:24+01:00</dct:modified>
+			<dc:contributor>RERO</dc:contributor>
+			<dc:contributor>SGBN</dc:contributor>
+			<dc:contributor>NEBIS</dc:contributor>
+			<dc:contributor>IDSBB</dc:contributor>
+		</bibo:Document>
+		<dct:BibliographicResource rdf:about="http://data.swissbib.ch/01/316022063">
+			<rdfs:isDefinedBy rdf:resource="http://data.swissbib.ch/01/316022063/about" />
+			<rdau:placeOfPublication rdf:resource="http://sws.geonames.org/2921044/" />
+			<rdau:noteOnResource>Originaltitel: La realidad histórica de España</rdau:noteOnResource>
+			<dct:hasPart>Vol. 1: La voie des ombres</dct:hasPart>
+			<dct:hasPart>Vol. 2: Le choix des ombres</dct:hasPart>
+			<dct:hasPart>Vol. 3: Au-delà des ombres</dct:hasPart>
+			<dct:subject rdf:resource="http://d-nb.info/gnd/4125698-0" />
+			<dct:subject rdf:resource="http://d-nb.info/gnd/4049396-9" />
+			<dct:subject rdf:resource="http://d-nb.info/gnd/4053168-5" />
+			<dct:subject rdf:resource="http://d-nb.info/gnd/4055964-6" />
+			<dc:contributor>Heintz, Suzanne</dc:contributor>
+			<dc:contributor>Hipler, Günter</dc:contributor>
+			<dct:contributor>Voltaire</dct:contributor>
+			<dct:contributor>Nicolas</dct:contributor>
+			<rdau:contentType rdf:resource="http://rdvocab.info/termList/RDAContentType/1020" />
+			<rdau:mediaType rdf:resource="http://rdvocab.info/termList/RDAMediaType/1007" />
+			<dct:language rdf:resource="http://lexvo.org/id/iso639-3/deu" />
+			<dct:issued>1957</dct:issued>
+			<rdau:placeOfPublication rdf:resource="http://data.swissbib.ch/04/cantonCH-ju" />
+			<dc:contributor>Castro, Américo</dc:contributor>
+			<dct:title>Spanien Vision und Wirklichkeit / Americo Castro ; [aus dem Spanischen übertragen von Suzanne Heintz]</dct:title>
+			<rdau:publicationStatement>Köln [etc.] : Kiepenheuer und Witsch, 1957</rdau:publicationStatement>
+			<dc:format>720 S : 127 Taf ; 4&apos;</dc:format>
+			<dct:bibliographicCitation>Quotidien jurassien ; 1996/03/23Biel/Bienne ; 1996/03/25</dct:bibliographicCitation>
+		</dct:BibliographicResource>
+	
+
+		<bibo:Document rdf:about="http://data.swissbib.ch/01/31602208X/about">
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-03-23T15:52:40.788Z</dct:issued>
+			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/01/31602208X" />
+			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-16T23:44:29+01:00</dct:modified>
+			<dc:contributor>ABN</dc:contributor>
+			<dc:contributor>IDSBB</dc:contributor>
+			<dc:contributor>NEBIS</dc:contributor>
+			<dc:contributor>OCoLC</dc:contributor>
+		</bibo:Document>
+		<dct:BibliographicResource rdf:about="http://data.swissbib.ch/01/31602208X">
+			<rdfs:isDefinedBy rdf:resource="http://data.swissbib.ch/01/31602208X/about" />
+			<rdau:placeOfPublication rdf:resource="http://sws.geonames.org/2921044/" />
+			<bibo:isbn13>9783825239886</bibo:isbn13>
+			<bibo:isbn10>3825239888</bibo:isbn10>
+			<dct:alternative>Spain literature history</dct:alternative>
+			<dct:alternative>Historia de la literatura española</dct:alternative>
+			<dct:bibliographicCitation>UTB. Romanistik, Literaturwissenschaft</dct:bibliographicCitation>
+			<dct:bibliographicCitation>UTB ; 3988</dct:bibliographicCitation>
+			<dct:hasPart>Tome 1. A-D / Par Charles Laboulaye et MM. Debette, Barral</dct:hasPart>
+			<dct:hasPart>Tome 2. E-M / Par Charles Laboulaye et MM. Debette, Barral</dct:hasPart>
+			<dct:hasPart>Tome 3. N-Z / Par Charles Laboulaye et MM. Debette, Barral</dct:hasPart>
+			<dct:hasPart>Tome 4. Complément, avec le concours de savants, d&apos;ingénieurs et de fabricants / Par Charles Laboulaye et MM. Debette, Barral</dct:hasPart>
+			<dct:subject rdf:resource="http://d-nb.info/gnd/4077640-2" />
+			<dct:subject rdf:resource="http://d-nb.info/gnd/4035964-5" />
+			<dct:subject rdf:resource="http://d-nb.info/gnd/4035964-5" />
+			<dc:contributor>Rivero Iglesias, Carmen</dc:contributor>
+			<rdau:contentType rdf:resource="http://rdvocab.info/termList/RDAContentType/1020" />
+			<rdau:mediaType rdf:resource="http://rdvocab.info/termList/RDAMediaType/1007" />
+			<dct:language rdf:resource="http://lexvo.org/id/iso639-3/deu" />
+			<dct:issued>2014</dct:issued>
+			<rdau:placeOfPublication rdf:resource="http://data.swissbib.ch/04/cantonCH-bl" />
+			<dct:title>Spanische Literaturgeschichte : eine kommentierte Anthologie / hrsg. von Carmen Rivero Iglesias</dct:title>
+			<rdau:publicationStatement>Paderborn : Fink, 2014</rdau:publicationStatement>
+			<dc:format>380 S</dc:format>
+		</dct:BibliographicResource>
+	
+
+		<bibo:Document rdf:about="http://data.swissbib.ch/01/316022098/about">
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-03-23T15:52:40.806Z</dct:issued>
+			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/01/316022098" />
+			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-05-24T07:05:47+01:00</dct:modified>
+			<dc:contributor>NEBIS</dc:contributor>
+			<dc:contributor>IDSLU</dc:contributor>
+		</bibo:Document>
+		<dct:BibliographicResource rdf:about="http://data.swissbib.ch/01/316022098">
+			<rdfs:isDefinedBy rdf:resource="http://data.swissbib.ch/01/316022098/about" />
+			<rdau:placeOfPublication rdf:resource="http://sws.geonames.org/2658434/" />
+			<bibo:isbn13>9783906178004</bibo:isbn13>
+			<bibo:isbn10>3906178005</bibo:isbn10>
+			<dct:subject rdf:resource="http://d-nb.info/gnd/4172385-5" />
+			<dct:subject rdf:resource="http://d-nb.info/gnd/4146857-0" />
+			<dct:subject rdf:resource="http://d-nb.info/gnd/4040795-0" />
+			<dct:subject rdf:resource="http://d-nb.info/gnd/4433627-5" />
+			<dct:subject rdf:resource="http://d-nb.info/gnd/4433627-5" />
+			<dc:contributor>Trüby, Stephan</dc:contributor>
+			<rdau:contentType rdf:resource="http://rdvocab.info/termList/RDAContentType/1020" />
+			<rdau:mediaType rdf:resource="http://rdvocab.info/termList/RDAMediaType/1007" />
+			<dct:language rdf:resource="http://lexvo.org/id/iso639-3/deu" />
+			<dct:issued>2013</dct:issued>
+			<dct:title>Spatial Design : Gespräche über Architekturen, Ausstellungen, Bühnenbilder und Urbane Interventionen : ein Reader des MAS Spatial Design / Stephan Trüby (Hrsg.)</dct:title>
+			<rdau:publicationStatement>Zürich : Zürcher Hochschule der Künste, Institut für Designforschung, 2013</rdau:publicationStatement>
+			<dc:format>196 S : farbige Ill ; 21 cm</dc:format>
+			<dc:contributor>Zürcher Hochschule der Künste. Institut Design2context</dc:contributor>
+		</dct:BibliographicResource>
+	
+
+		<bibo:Document rdf:about="http://data.swissbib.ch/01/316022101/about">
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-03-23T15:52:40.818Z</dct:issued>
+			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/01/316022101" />
+			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-08T08:00:34+01:00</dct:modified>
+			<dc:contributor>BGR</dc:contributor>
+			<dc:contributor>SNL</dc:contributor>
+			<dc:contributor>Sz</dc:contributor>
+		</bibo:Document>
+		<dct:BibliographicResource rdf:about="http://data.swissbib.ch/01/316022101">
+			<rdfs:isDefinedBy rdf:resource="http://data.swissbib.ch/01/316022101/about" />
+			<rdau:placeOfPublication rdf:resource="http://sws.geonames.org/2658434/" />
+			<bibo:isbn13>9783856374297</bibo:isbn13>
+			<bibo:isbn10>3856374299</bibo:isbn10>
+			<rdau:dissertationOrThesisInformation>Travail de bachelor réalisé en vue de l&apos;obtention du master HES à la Haute école de gestion de Genève (HEG-GE), orientation management et ingénierie des services</rdau:dissertationOrThesisInformation>
+			<rdf:type rdf:resource="http://purl.org/ontology/bibo/Thesis" />
+			<dct:bibliographicCitation>In: La tribune de Genève, mars 2014</dct:bibliographicCitation>
+			<dct:bibliographicCitation>In: Le journal du Jura, janvier 2014</dct:bibliographicCitation>
+			<dct:subject rdf:resource="http://d-nb.info/gnd/4116568-8" />
+			<dct:subject rdf:resource="http://d-nb.info/gnd/4827733-2" />
+			<dct:subject rdf:resource="http://d-nb.info/gnd/4216490-4" />
+			<dc:contributor>Rataj, Heinz</dc:contributor>
+			<rdau:contentType rdf:resource="http://rdvocab.info/termList/RDAContentType/1020" />
+			<rdau:mediaType rdf:resource="http://rdvocab.info/termList/RDAMediaType/1007" />
+			<dct:language rdf:resource="http://lexvo.org/id/iso639-3/deu" />
+			<dct:issued>2013</dct:issued>
+			<dc:contributor>Rataj, Dorothée</dc:contributor>
+			<dct:title>Der spirituelle Weg : die Re-Sakralisierung des Lebens / Dorothée und Heinz Rataj</dct:title>
+			<rdau:publicationStatement>Chur : Edition HerzWerk, 2013</rdau:publicationStatement>
+			<dc:format>213 S : Ill ; 21 cm</dc:format>
+		</dct:BibliographicResource>
+	
+
+		<bibo:Document rdf:about="http://data.swissbib.ch/01/vtls003010104/about">
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-03-23T15:52:40.831Z</dct:issued>
+			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/01/vtls003010104" />
+			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-04-21T07:02:00+01:00</dct:modified>
+			<dc:contributor>RERO</dc:contributor>
+		</bibo:Document>
+		<dct:BibliographicResource rdf:about="http://data.swissbib.ch/01/vtls003010104">
+			<rdfs:isDefinedBy rdf:resource="http://data.swissbib.ch/01/vtls003010104/about" />
+			<rdau:placeOfPublication rdf:resource="http://sws.geonames.org/2658434/" />
+			<dct:bibliographicCitation>In: Le quotidien jurassien. - Delémont. - 23 mars 1996</dct:bibliographicCitation>
+			<dc:contributor>Bataillard, Josiane, </dc:contributor>
+			<dct:isPartOf rdf:resource="http://data.swissbib.ch/01/268337713" />
+			<dct:language rdf:resource="http://lexvo.org/id/iso639-3/fra" />
+			<dct:issued>1996</dct:issued>
+			<dc:contributor>Bouvier, Nicolas,</dc:contributor>
+			<dct:title>Nicolas Bouvier: &quot;les autres sont une terre, on sème, le lecteur fait fructifier&quot; / propos recueillis par Josiane Bataillard</dct:title>
+			<dct:bibliographicCitation>Le Quotidien jurassien ; 2014, N° 29 (5.2.), p. 12. - Ill.</dct:bibliographicCitation>
+		</dct:BibliographicResource>
+	
+
+		<bibo:Document rdf:about="http://data.swissbib.ch/01/268337713/about">
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-03-23T15:52:40.835Z</dct:issued>
+			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/01/268337713" />
+			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-07T04:58:42+01:00</dct:modified>
+			<dc:contributor>SNL</dc:contributor>
+			<dc:contributor>SGBN</dc:contributor>
+			<dc:contributor>IDSBB</dc:contributor>
+			<dc:contributor>RERO</dc:contributor>
+			<dc:contributor>NEBIS</dc:contributor>
+			<dc:contributor>Sz</dc:contributor>
+			<dc:contributor>Sz</dc:contributor>
+		</bibo:Document>
+		<dct:BibliographicResource rdf:about="http://data.swissbib.ch/01/268337713">
+			<rdfs:isDefinedBy rdf:resource="http://data.swissbib.ch/01/268337713/about" />
+			<rdau:placeOfPublication rdf:resource="http://sws.geonames.org/2658434/" />
+			<dct:alternative>Démocrate</dct:alternative>
+			<dct:alternative>Pays</dct:alternative>
+			<rdau:noteOnResource>Dernière éd. consultée: 2006, no 224 (30 sept. 2006)</rdau:noteOnResource>
+			<dct:bibliographicCitation>Fusion de: Le démocrate, et de: Le pays</dct:bibliographicCitation>
+			<dct:subject rdf:resource="http://d-nb.info/gnd/4266795-1" />
+			<rdau:contentType rdf:resource="http://rdvocab.info/termList/RDAContentType/1020" rdf:resource="http://rdvocab.info/termList/RDAContentType/1020" />
+			<rdau:mediaType rdf:resource="http://rdvocab.info/termList/RDAMediaType/1007" rdf:resource="http://rdvocab.info/termList/RDAMediaType/1007" />
+			<dct:language rdf:resource="http://lexvo.org/id/iso639-3/fra" />
+			<dct:issued>1993-9999</dct:issued>
+			<dct:title>Le Quotidien jurassien</dct:title>
+			<rdau:publicationStatement>Delémont : Le Quotidien jurassien, 1993-</rdau:publicationStatement>
+			<dc:format>vol : Ill ; 50 cm</dc:format>
+			<dc:contributor>Quotidien jurassien (Delémont)</dc:contributor>
+		</dct:BibliographicResource>
+	
+
+</rdf:RDF>

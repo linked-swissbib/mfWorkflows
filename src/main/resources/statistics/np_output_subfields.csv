@@ -1,0 +1,56 @@
+001	6
+041 (un champ par notice)	1
+041* $a (somme)	2
+041* $h (somme)	1
+100* $D	3
+100* $a (tous les sous-champs $a)	3
+100* $d	1
+100, 1. un champ par notice	3
+100, 2. tous les sous-champs	7
+1001* $a (tous les sous-champs $a si 1er indicateur=1)	3
+245* $a (tous les sous-champs $a)	6
+245* $b	3
+245* $c	5
+245, 1. un champ par notice	6
+245, 2. tous les sous-champs	14
+260* $a (tous les sous-champs $a)	5
+260* $b	5
+260* $c	5
+260, 1. un champ par notice	5
+260, 2. tous les sous-champs	15
+300* $a (tous les sous-champs $a)	5
+300* $b	4
+300* $c	4
+300, 1. un champ par notice	5
+300, 2. tous les sous-champs	13
+490* $a (tous les sous-champs $a)	2
+490* $v	1
+490, 1. un champ par notice	1
+490, 2. tous les sous-champs	3
+500* $a (tous les sous-champs $a)	2
+500, 1. un champ par notice	2
+500, 2. tous les sous-champs	2
+650, 1. un champ	4
+650, 2. tous les sous-champs	36
+700* $D	5
+700* $a (tous les sous-champs $a)	8
+700, 1. un champ par notice	5
+700, 2. tous les sous-champs	13
+7000* $a (tous les sous-champs $a si 1er indicateur=0)	2
+7001* $a (tous les sous-champs $a si 1er indicateur=1)	6
+710* $a (tous les sous-champs $a)	2
+710* $b	1
+710, 1. un champ par notice	2
+710, 2. tous les sous-champs	3
+7102* $a (tous les sous-champs $a si 1er indicateur=2)	2
+773* $9	1
+773* $d	1
+773* $g	3
+773* $t	3
+773* $w	1
+773, 1. un champ par notice	2
+773, 2. tous les sous-champs	12
+856* $u	3
+856* $z	3
+856, 1. un champ par notice	2
+856, 2. tous les sous-champs	7

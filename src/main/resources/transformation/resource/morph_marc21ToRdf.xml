@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<metamorph xmlns="http://www.culturegraph.org/metamorph" version="1">
+
+	<vars>
+		<var name="swissbib_domain" value="http://data.swissbib.ch/01/"/>
+	</vars>
+	
+	<rules>
+
+<!-- Definitions for recursions to be used later in substructures (must be set here!) -->
+	
+	<data source="001" name="@swissbib_id">
+		<compose prefix="http://data.swissbib.ch/01/"/>
+	</data>
+	
+<!--BUILD THE RECORD "ABOUT"-->
+		
+	<entity name="bibo:Document" flushWith="record" >
+	<!--To define the subject (root element) of each record. 
+	"entity" makes it possible to create a hierarchical tag structure.
+	"flushWith" enables to group various subfields into one output, even if the field appears more than one time. -->
+					
+		<data source="@swissbib_id" name="~rdf:about" >
+			<compose postfix="/about" />
+		</data>
+		
+		<!--PUBLICATION DATE OF THE RDF RECORD-->
+		<entity name="dct:issued">
+			<data name="~rdf:datatype" source="_id">
+			<!--The symbol '~' before rdf:about is very important: it permits to integrate rdf:about as an attribute in the tag rdf:Description-->
+				<constant value="http://www.w3.org/2001/XMLSchema#dateTime"/>
+			</data>
+			<data name="" source="_id">
+				<timestamp format="yyyy-MM-dd'T'HH:mm:ss.SSSXXX" />
+			</data>
+		</entity>
+		
+		<!--LAST MODIFICATION DATE OF THE MARC RECORD-->
+		<entity name="dct:modified">
+			<data name="~rdf:datatype" source="_id">
+				<constant value="http://www.w3.org/2001/XMLSchema#dateTime"/>
+			</data>
+			<data name="" source="005">
+				<regexp match="^(\d\d\d\d)(\d\d)(\d\d)(\d\d)(\d\d)(\d\d)\.(\d)" format="${1}-${2}-${3}T${4}:${5}:${6}+01:00"/>
+			</data>
+		</entity>
+		
+		<!--NETWORK(S) THAT CREATED THE RECORD-->
+		<data source="035  .a" name="dc:contributor">
+			<regexp match="\((.*)\)" format="${1}" />
+			<!--To be replaced with Swissbib URI-->
+		</data>
+		
+		<!--LINK WITH THE BASIS RECORD-->
+		<entity name="foaf:primaryTopic" >
+			<data source="@swissbib_id" name="~rdf:resource" />
+		</entity>	
+		
+		
+	</entity>
+		
+		
+<!--BUILD THE BASIS RECORD -->
+
+		<entity name="dct:BibliographicResource" flushWith="record" >
+		<!--To define the subject (root element) of each record.
+		"entity" makes it possible to create a hierarchical tag structure.-->
+			<data source="@swissbib_id" name="~rdf:about" />
+		
+<!--RDA CONTENT TYPE -->
+		<entity name="rdau:contentType" flushWith="record" >
+			<data name="~rdf:resource" source="898  .a">
+				<substring  start="0"  end="6"/>
+				<!--To select only positions 0-5 of the field 898$a-->
+				<lookup in="type_content"/>
+				<!--To look up the links given in the file announced in the tag <map>-->
+			</data>
+		</entity>
+		
+		<entity name="rdau:contentType" flushWith="record" >
+			<if>
+			<!--To select only the record types MU03xxxx (=Sound/Ton/Son), that are sounds (vs. spoken words. Includes natural sounds, artificially produced sounds, etc. )
+			The function "if" uses the default boolean operator "OR" when various arguments/conditions are present!-->
+			<!--Could also use the functions "whitelist" and "blacklist"-->
+				<all>
+					<data source="898  .a">
+						<substring  start="0"  end="4"/>
+						<equals string="MU03" />
+					</data>
+					<any>
+						<data source="008">
+							<substring  start="35"  end="38"/>
+							<equals string="und" />
+						</data>
+						<data source="008">
+							<substring  start="35"  end="38"/>
+							<equals string="zxx" />
+						</data>
+					</any>
+				</all>
+			</if>
+			<data name="~rdf:resource" source="_id">
+				<!--"_id" is used as "source"-value when the value doesn't come from directly the record itself-->
+				<constant value="http://rdvocab.info/termList/RDAContentType/1012"/>
+			</data>
+		</entity>
+		
+		<entity name="rdau:contentType" flushWith="record" >
+			<if>
+			<!--To select only the record types MU03xxxx (=Sound/Ton/Son), that are spoken words (Includes recorded readings, recitations, speeches, interviews, oral histories, etc., computer-generated speech, etc.)-->
+				<all>
+					<data source="898  .a">
+						<substring  start="0"  end="4"/>
+						<equals string="MU03" />
+					</data>
+					<data source="008">
+						<substring  start="35"  end="38"/>
+						<not-equals string="und" />
+					</data>
+					<data source="008">
+						<substring  start="35"  end="38"/>
+						<not-equals string="zxx" />
+					</data>
+				</all>
+			</if>
+			<data name="~rdf:resource" source="_id">
+				<constant value="http://rdvocab.info/termList/RDAContentType/1013"/>
+			</data>
+		</entity>
+		
+<!--RDA MEDIA TYPE -->		
+		<entity name="rdau:mediaType" flushWith="record" >
+			<data name="~rdf:resource" source="898  .a">
+				<blacklist>
+					<entry name="CF010100"/><entry name="CF010200"/><entry name="CF010300"/><entry name="CF010400"/><entry name="CF010500"/><entry name="CF010600"/><entry name="CF010000"/><entry name="MU030000"/><entry name="MU030100"/><entry name="MU030200"/><entry name="MU030300"/><entry name="MU030400"/><entry name="MU030500"/><entry name="MU030600"/><entry name="MU040000"/><entry name="MU040100"/><entry name="MU040200"/><entry name="MU040300"/><entry name="MU040400"/><entry name="MU040500"/><entry name="MU040600"/><entry name="VM010000"/><entry name="VM010100"/><entry name="VM010200"/><entry name="VM010300"/><entry name="VM010400"/><entry name="VM020100"/><entry name="VM020200"/><entry name="VM030100"/><entry name="VM030200"/><entry name="VM030400"/><entry name="VM030000"/><entry name="VM040000"/><entry name="MX010000"/>
+				</blacklist>
+				<substring  start="6"  end="8"/>
+				<!--To select only positions 6-7 of the field 898$a-->
+				<lookup in="type_media"/>
+			</data>
+		</entity>
+		
+		<entity name="rdau:mediaType" flushWith="record" >
+			<data name="~rdf:resource" source="898  .a">
+				<whitelist>
+					<entry name="CF010100"/><entry name="CF010200"/><entry name="CF010300"/><entry name="CF010400"/><entry name="CF010500"/><entry name="CF010600"/><entry name="CF010000"/><entry name="MU030000"/><entry name="MU030100"/><entry name="MU030200"/><entry name="MU030300"/><entry name="MU030400"/><entry name="MU030500"/><entry name="MU030600"/><entry name="MU040000"/><entry name="MU040100"/><entry name="MU040200"/><entry name="MU040300"/><entry name="MU040400"/><entry name="MU040500"/><entry name="MU040600"/><entry name="VM010000"/><entry name="VM010100"/><entry name="VM010200"/><entry name="VM010300"/><entry name="VM010400"/><entry name="VM020100"/><entry name="VM020200"/><entry name="VM030100"/><entry name="VM030200"/><entry name="VM030400"/><entry name="VM030000"/><entry name="VM040000"/><entry name="MX010000"/>
+				</whitelist>
+				<lookup in="type_media"/>
+			</data>
+		</entity>
+		
+<!--008: LANGUAGE-->
+		<!--To complete with more precise rules, for example for multilingual documents-->		
+		<entity name="dct:language" flushWith="record" >
+			<data source="008" name="~rdf:resource" >
+				<substring start="35" end="38" />
+				<lookup in="languages" />
+			</data>
+		</entity>
+				
+<!--008: PUBLICATION DATES-->	
+		<!--To complete with analysing rules, for example for dates like 9999 (series)-->
+		<choose>
+			<data name="dct:issued" source="008">
+				<substring  start="7"  end="15"/>
+				<regexp match="(\d\d\d\d)(\d\d\d\d)" format="${1}-${2}" />
+			</data>
+			<data name="dct:issued" source="008">
+				<substring  start="7"  end="11"/>
+			</data>
+		</choose>
+		
+<!--008: PUBLICATION COUNTRY-->
+		<entity name="rdau:placeOfPublication" >
+			<data source="008" name="~rdf:resource" >
+				<substring  start="15"  end="18"/>
+				<trim /><!--To remove white spaces before and after the string-->
+				<lookup in="countries" />
+			</data>
+		</entity>
+		
+<!--020: ISBN13-->		
+		<data source="020  .a" name="bibo:isbn13">
+			<isbn to="clean"/>
+			<!--To remove possible hyphens or other complements like "(pbk)" that follow the ISBN-->
+			<isbn to="isbn13"/>
+			<!--To convert an ISBN10 into an ISBN13-->
+		</data>
+
+		<data source="020  .a" name="bibo:isbn10">
+			<isbn to="clean"/>
+			<!--To remove possible hyphens or other complements like "(pbk)" that follow the ISBN-->
+			<isbn to="isbn10"/>
+			<!--To convert an ISBN13 into an ISBN10-->
+		</data>
+		
+<!--020: ISSN-->		
+		<data source="022  .a" name="bibo:issn" />
+		
+<!--044: PUBLICATION CANTON (RERO DATA)-->
+		<!--before:
+		<entity name="rdau:placeOfPublication" flushWith="record" >
+			<data source="044  .c" name="~rdf:resource" >
+				<substring start="3" end="5" />
+				<lookup in="cantons" />
+			</data>
+		</entity>-->
+		
+		<!--This solution implies that we describe the entities in another file-->
+		<entity name="rdau:placeOfPublication" flushWith="record">
+			<data source="044  .c" name="~rdf:resource" >
+				<substring start="3" end="5" />
+				<compose prefix="http://data.swissbib.ch/04/cantonCH-" />
+			</data>
+		</entity>
+		
+<!--100: MAIN AUTHOR-->		
+		<concat name="dc:contributor" delimiter=", ">
+			<data source="100*.a" />
+			<data source="100*.D" />
+		</concat>
+		<!-- Other possible solution:
+		<entity name="dct:contributor2" flushWith="record" >
+			<data name="foaf:firstName" source="1001 .D" />
+			<data name="foaf:familyName" source="1001 .a" />
+		</entity>
+		<data source="1000 .a" name="dct:contributor2" />
+		-->
+		
+<!--245: TITLE-->		
+		<!--We could add other subfields, like $p or $n (repetitive) -->
+		<concat name="dct:title" delimiter="" >
+			<data source="245*.a" /><!--* and ? enable to troncate-->
+			<data source="245*.b">
+				<compose prefix=" : " />
+			</data>
+			<data source="245*.c">
+				<compose prefix=" / " />
+			</data>
+		</concat>
+
+<!--246: OTHER TITLES-->		
+		<data name="dct:alternative" source="246*.a" />
+		
+<!--250: EDITION-->		
+		<data name="bibo:edition" source="250  .a" />
+		
+<!--260: IMPRINT-->		
+		<concat name="rdau:publicationStatement" delimiter="" >
+		<!--Attribute "delimiter" obligatory-->
+			<data source="260  .a" />
+			<data source="260  .b" >
+				<compose prefix=" : "/>
+				<!--To add a prefix or a suffix (="postfix")-->
+			</data>
+			<data source="260  .c" >
+				<compose prefix=", "/>
+			</data>
+		</concat>
+
+<!--300: PHYSICAL DESCRIPTION-->		
+		<concat name="dc:format" delimiter="" >
+		<!--Attribute "delimiter" obligatory-->
+			<data source="300  .a" />
+			<data source="300  .b" >
+				<compose prefix=" : "/>
+				<!--To add a prefix or a suffix (="postfix")-->
+			</data>
+			<data source="300  .c" >
+				<compose prefix=" ; "/>
+			</data>
+		</concat>
+
+<!--490: SERIES STATEMENT-->
+		<combine name="dct:bibliographicCitation" value="${serie}${numero}" reset="true" flushWith="490? ">
+		<!--"combine" enables to group various subfields into one output, even if the field appears more than one time (thanks to "reset" and "flushWith"?). In "concat", the attribute "value" isn't authorized. -->
+			<data source="490? .a" name="serie" />
+			<data source="490? .v" name="numero">
+				<compose prefix=" ; " />
+			</data>
+		</combine>
+		
+<!--500: GENERAL NOTES-->		
+		<data name="rdau:noteOnResource" source="500*.a" />
+
+<!--502: NOTES ABOUT THESIS-->		
+		<data name="rdau:dissertationOrThesisInformation" source="502*.a" />
+		
+		<entity name="rdf:type">
+			<data name="~rdf:resource" source="502*.a">
+				<constant value="http://purl.org/ontology/bibo/Thesis"/>
+			</data>
+		</entity>
+				
+<!--505: NOTES ABOUT CONTENT-->		
+		<combine name="dct:hasPart" value="${no}${title}${responsibility}" flushWith="50500">
+			<data source="50500.g" name="no" />
+			<data source="50500.t" name="title">
+				<compose prefix=". " />
+			</data>
+			<data source="50500.r" name="responsibility">
+				<compose prefix=" / " />
+			</data>
+		</combine>
+		<data name="dct:hasPart" source="5050 .a" />
+		
+<!--6XX: SUBJECTS (GND only)-->
+		<entity name="dct:subject">
+			<combine name="~rdf:resource" value="${gnd_id}" reset="false" flushWith="65? 7">
+			<!--"combine" is essential when a field is repetitive
+			"flushWith" to restart  the process with every concerned fields (?)
+			"reset" default:true -->
+				<if>
+					<data source="65? 7.2" >
+						<equals string="gnd" />
+					</data>
+				</if>
+				<data source="65? 7.0" name="gnd_id">				
+					<regexp match="\)(.*)" format="http://d-nb.info/gnd/${1}"/>
+				</data>
+			</combine>
+		</entity>
+		
+<!--700: OTHER AUTHORS-->		
+		<combine name="dc:contributor" value="${name}, ${surname}" flushWith="7001 ">
+			<data source="7001 .a" name="name" />
+			<data source="7001 .D" name="surname" />
+		</combine>
+		<data name="dct:contributor" source="7000 .a" />
+			
+<!--710: ORGANISATIONS-->		
+		<concat name="dc:contributor" delimiter=". ">
+			<!--The values are concatenated in the order they appear in the input and not in the order of the data sources in this file.-->
+			<data source="710*.a"/>
+			<data source="710*.b"/>
+			<data source="710*.c"/>
+			<data source="710*.d"/>
+			<data source="710*.n"/>
+		</concat>
+
+<!--711: CONGRESSES-->		
+		<concat name="dc:contributor" delimiter=". ">
+			<data source="711*.a"/>
+			<data source="711*.c"/>
+			<data source="711*.d"/>
+			<data source="711*.e"/>
+			<data source="711*.n"/>
+		</concat>
+		
+<!--580: NOTE ABOUT COMPLEX LINKS (optional because a string > to delete?)-->
+		<combine name="dct:bibliographicCitation" value="${field_580}" reset="false" flushWith="580*.a">
+			<data name="field_580" source="580*.a" />
+		</combine>
+		
+<!--773: NOTE ABOUT COMPLEX LINKS-->
+		<!--Field 580 not used in the German part of Switzerland. Rule to complete (target: avoid repetition with field 580 of the french records.-->
+		<concat name="dct:bibliographicCitation" delimiter="" >	
+			<data source="773*.t" />
+			<data source="773*.a" >
+				<compose prefix=" / "/>
+			</data>
+			<data source="773*.g" >
+				<compose prefix=" ; "/>
+			</data>
+		</concat>
+		
+<!--773: LINK TO HOST ITEM (only for swiss german data that includes a subfield 773 $9)-->
+		<entity name="dct:isPartOf">
+			<data name="~rdf:resource" source="773*.9">
+				<compose prefix="http://data.swissbib.ch/01/"/>
+			</data>
+		</entity>
+		
+<!--META-->
+		<entity name="rdfs:isDefinedBy" >
+		<!--Do not add "flushWith="record"": if there is more than one field 035, the attributes "rdf:resource" will be repeated within the tag "rdfs:isDefinedBy"-->
+			<data source="@swissbib_id" name="~rdf:resource" >
+				<compose postfix="/about" />
+			</data>
+		</entity>		
+		
+		</entity>
+		
+	</rules>
+	
+	<maps>
+		<filemap name="cantons" files="./src/main/resources/transformation/resource/maps/cantons.txt" separator="\t"/>
+		<filemap name="languages" files="./src/main/resources/transformation/resource/maps/languages.txt" separator="\t"/>
+		<filemap name="countries" files="./src/main/resources/transformation/resource/maps/countries.txt" separator="\t"/>
+		<filemap name="type_content" files="./src/main/resources/transformation/resource/maps/type_content.txt" separator="\t"/>
+		<filemap name="type_media" files="./src/main/resources/transformation/resource/maps/type_media.txt" separator="\t"/>
+	</maps>
+	
+	<!--TO DO:
+			
+	- to transform:
+		500 and 505 done, but to control with more records. > verify and test if it works on records with repetable subfield $t in 505 for example
+		
+		752: publication place for old books
+		
+		856/956 : accès électronique
+		595: schweizer Koordinaten
+		913: IDS Kongress
+		
+		has note on numbering of serials
+		has note on frequency
+	
+	- possible problems, to think:
+
+		stream-to-triples???
+		
+		links between records: 730, 740, 760, 762, 767, 77X, 78X, 800, 810, 811, 830
+	
+	-->
+
+</metamorph>

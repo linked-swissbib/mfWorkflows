@@ -1,0 +1,1631 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<collection xmlns="http://www.loc.gov/MARC21/slim" >
+	<record type="Bibliographic">
+		<leader>     cam a22     7  4500</leader>
+		<controlfield tag="001">316022063</controlfield>
+		<controlfield tag="003">CHVBK</controlfield>
+		<controlfield tag="005">20140527151224.0</controlfield>
+		<controlfield tag="008">140524s1957    gw            00    ger d</controlfield>
+		<datafield tag="035" ind1=" " ind2=" ">
+			<subfield code="a">(RERO)R004689410</subfield>
+		</datafield>
+		<datafield tag="035" ind1=" " ind2=" ">
+			<subfield code="a">(SGBN)000187319</subfield>
+		</datafield>
+		<datafield tag="035" ind1=" " ind2=" ">
+			<subfield code="a">(NEBIS)000262918</subfield>
+		</datafield>
+		<datafield tag="035" ind1=" " ind2=" ">
+			<subfield code="a">(IDSBB)000217483</subfield>
+		</datafield>
+		<datafield tag="040" ind1=" " ind2=" ">
+			<subfield code="a">CH-MyRERO</subfield>
+			<subfield code="d">CHVBK</subfield>
+		</datafield>
+		<datafield tag="041" ind1="1" ind2=" ">
+			<subfield code="a">ger</subfield>
+			<subfield code="a">fre</subfield>
+			<subfield code="h">spa</subfield>
+		</datafield>
+		<datafield tag="044" ind1=" " ind2=" ">
+			<subfield code="a">sz</subfield>
+			<subfield code="c">ch-ju</subfield>
+		</datafield>
+		<datafield tag="072" ind1=" " ind2="7">
+			<subfield code="a">s1sp</subfield>
+			<subfield code="2">rero</subfield>
+		</datafield>
+		<datafield tag="100" ind1="1" ind2=" ">
+			<subfield code="a">Castro</subfield>
+			<subfield code="D">Américo</subfield>
+		</datafield>
+		<datafield tag="245" ind1="1" ind2="0">
+			<subfield code="a">Spanien Vision und Wirklichkeit</subfield>
+			<subfield code="c">Americo Castro ; [aus dem Spanischen übertragen von Suzanne Heintz]</subfield>
+		</datafield>
+		<datafield tag="260" ind1=" " ind2=" ">
+			<subfield code="a">Köln [etc.]</subfield>
+			<subfield code="b">Kiepenheuer und Witsch</subfield>
+			<subfield code="c">1957</subfield>
+		</datafield>
+		<datafield tag="300" ind1=" " ind2=" ">
+			<subfield code="a">720 S</subfield>
+			<subfield code="b">127 Taf</subfield>
+			<subfield code="c">4&#39;</subfield>
+		</datafield>
+		<datafield tag="500" ind1=" " ind2=" ">
+			<subfield code="a">Originaltitel: La realidad histórica de España</subfield>
+		</datafield>
+		<datafield tag="505" ind1="0" ind2=" ">
+			<subfield code="a">Vol. 1: La voie des ombres</subfield>
+		</datafield>
+		<datafield tag="505" ind1="0" ind2=" ">
+			<subfield code="a">Vol. 2: Le choix des ombres</subfield>
+		</datafield>
+		<datafield tag="505" ind1="0" ind2=" ">
+			<subfield code="a">Vol. 3: Au-delà des ombres</subfield>
+		</datafield>
+		<datafield tag="509" ind1=" " ind2="3">
+			<subfield code="a">La realidad histórica de España</subfield>
+		</datafield>
+		<datafield tag="648" ind1=" " ind2="7">
+			<subfield code="a">Geschichte</subfield>
+			<subfield code="2">gnd</subfield>
+		</datafield>
+		<datafield tag="650" ind1=" " ind2="7">
+			<subfield code="a">Kultur</subfield>
+			<subfield code="0">(DE-588)4125698-0</subfield>
+			<subfield code="2">gnd</subfield>
+		</datafield>
+		<datafield tag="650" ind1=" " ind2="7">
+			<subfield code="a">Religion</subfield>
+			<subfield code="0">(DE-588)4049396-9</subfield>
+			<subfield code="2">gnd</subfield>
+		</datafield>
+		<datafield tag="650" ind1=" " ind2="7">
+			<subfield code="a">Schokolade</subfield>
+			<subfield code="0">(DE-588)4053168-5</subfield>
+			<subfield code="2">gnd</subfield>
+		</datafield>
+		<datafield tag="651" ind1=" " ind2="7">
+			<subfield code="a">Spanien</subfield>
+			<subfield code="0">(DE-588)4055964-6</subfield>
+			<subfield code="2">gnd</subfield>
+		</datafield>
+		<datafield tag="690" ind1=" " ind2="7">
+			<subfield code="B">g</subfield>
+			<subfield code="a">Spanien</subfield>
+			<subfield code="x">Geschichte</subfield>
+			<subfield code="2">sgbn S</subfield>
+		</datafield>
+		<datafield tag="691" ind1=" " ind2="7">
+			<subfield code="B">u</subfield>
+			<subfield code="a">GESCHICHTE</subfield>
+			<subfield code="z">ger</subfield>
+			<subfield code="u">93</subfield>
+			<subfield code="2">nebis E1</subfield>
+		</datafield>
+		<datafield tag="691" ind1=" " ind2="7">
+			<subfield code="B">u</subfield>
+			<subfield code="a">SPANIEN (SÜDWESTEUROPA). KÖNIGREICH SPANIEN</subfield>
+			<subfield code="z">ger</subfield>
+			<subfield code="u">(460)</subfield>
+			<subfield code="2">nebis E1</subfield>
+		</datafield>
+		<datafield tag="691" ind1=" " ind2="7">
+			<subfield code="B">u</subfield>
+			<subfield code="a">KULTURGESCHICHTE</subfield>
+			<subfield code="z">ger</subfield>
+			<subfield code="u">930.85</subfield>
+			<subfield code="2">nebis E1</subfield>
+		</datafield>
+		<datafield tag="691" ind1=" " ind2="7">
+			<subfield code="B">u</subfield>
+			<subfield code="a">HISTORY</subfield>
+			<subfield code="z">eng</subfield>
+			<subfield code="u">93</subfield>
+			<subfield code="2">nebis E1</subfield>
+		</datafield>
+		<datafield tag="691" ind1=" " ind2="7">
+			<subfield code="B">u</subfield>
+			<subfield code="a">HISTOIRE</subfield>
+			<subfield code="z">fre</subfield>
+			<subfield code="u">93</subfield>
+			<subfield code="2">nebis E1</subfield>
+		</datafield>
+		<datafield tag="691" ind1=" " ind2="7">
+			<subfield code="B">u</subfield>
+			<subfield code="a">ESPAGNE (EUROPE DU SUD-OUEST). ROYAUME D&#39;ESPAGNE</subfield>
+			<subfield code="z">fre</subfield>
+			<subfield code="u">(460)</subfield>
+			<subfield code="2">nebis E1</subfield>
+		</datafield>
+		<datafield tag="691" ind1=" " ind2="7">
+			<subfield code="B">u</subfield>
+			<subfield code="a">SPAIN (SOUTH WEST EUROPE). KINGDOM OF SPAIN</subfield>
+			<subfield code="z">eng</subfield>
+			<subfield code="u">(460)</subfield>
+			<subfield code="2">nebis E1</subfield>
+		</datafield>
+		<datafield tag="691" ind1=" " ind2="7">
+			<subfield code="B">u</subfield>
+			<subfield code="a">HISTOIRE CULTURELLE</subfield>
+			<subfield code="z">fre</subfield>
+			<subfield code="u">930.85</subfield>
+			<subfield code="2">nebis E1</subfield>
+		</datafield>
+		<datafield tag="691" ind1=" " ind2="7">
+			<subfield code="B">u</subfield>
+			<subfield code="a">CULTURAL HISTORY</subfield>
+			<subfield code="z">eng</subfield>
+			<subfield code="u">930.85</subfield>
+			<subfield code="2">nebis E1</subfield>
+		</datafield>
+		<datafield tag="700" ind1="1" ind2=" ">
+			<subfield code="a">Heintz</subfield>
+			<subfield code="D">Suzanne</subfield>
+		</datafield>
+		<datafield tag="700" ind1="1" ind2=" ">
+			<subfield code="a">Hipler</subfield>
+			<subfield code="D">Günter</subfield>
+		</datafield>
+		<datafield tag="700" ind1="0" ind2=" ">
+			<subfield code="a">Voltaire</subfield>
+		</datafield>
+		<datafield tag="700" ind1="0" ind2=" ">
+			<subfield code="a">Nicolas</subfield>
+		</datafield>
+		<datafield tag="773" ind1="1" ind2=" ">
+			<subfield code="t">Quotidien jurassien</subfield>
+			<subfield code="g">1996/03/23</subfield>
+		</datafield>
+		<datafield tag="773" ind1="1" ind2=" ">
+			<subfield code="t">Biel/Bienne</subfield>
+			<subfield code="g">1996/03/25</subfield>
+		</datafield>
+		<datafield tag="912" ind1=" " ind2="7">
+			<subfield code="a">go</subfield>
+			<subfield code="2">SGBN</subfield>
+		</datafield>
+		<datafield tag="912" ind1=" " ind2="7">
+			<subfield code="a">gs</subfield>
+			<subfield code="2">SGBN</subfield>
+		</datafield>
+		<datafield tag="912" ind1=" " ind2="7">
+			<subfield code="a">ga</subfield>
+		</datafield>
+		<datafield tag="912" ind1=" " ind2="7">
+			<subfield code="a">ng</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">RERO</subfield>
+			<subfield code="P">100</subfield>
+			<subfield code="E">1-</subfield>
+			<subfield code="a">Castro</subfield>
+			<subfield code="D">Américo</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">RERO</subfield>
+			<subfield code="P">700</subfield>
+			<subfield code="E">1-</subfield>
+			<subfield code="a">Heintz</subfield>
+			<subfield code="D">Suzanne</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">SGBN</subfield>
+			<subfield code="P">100</subfield>
+			<subfield code="E">1-</subfield>
+			<subfield code="a">Castro</subfield>
+			<subfield code="D">Americo</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">NEBIS</subfield>
+			<subfield code="P">700</subfield>
+			<subfield code="E">1-</subfield>
+			<subfield code="a">Castro</subfield>
+			<subfield code="D">Américo</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">IDSBB</subfield>
+			<subfield code="P">100</subfield>
+			<subfield code="E">1-</subfield>
+			<subfield code="a">Castro</subfield>
+			<subfield code="D">Américo</subfield>
+		</datafield>
+		<datafield tag="986" ind1=" " ind2=" ">
+			<subfield code="a">SWISSBIB</subfield>
+			<subfield code="b">271128399</subfield>
+		</datafield>
+		<datafield tag="898" ind1=" " ind2=" ">
+			<subfield code="a">BK020000</subfield>
+			<subfield code="b">BK020000</subfield>
+		</datafield>
+		<datafield tag="949" ind1=" " ind2=" ">
+			<subfield code="B">NEBIS</subfield>
+			<subfield code="C">EAD50</subfield>
+			<subfield code="D">EBI01</subfield>
+			<subfield code="E">000262918</subfield>
+			<subfield code="F">E01</subfield>
+			<subfield code="b">E01</subfield>
+			<subfield code="c">01</subfield>
+			<subfield code="j">946332</subfield>
+			<subfield code="p">00100002698171</subfield>
+			<subfield code="q">000262918</subfield>
+			<subfield code="r">000010</subfield>
+			<subfield code="0">ETH-BIB (Zürich)</subfield>
+			<subfield code="1">Magazin</subfield>
+			<subfield code="2">4</subfield>
+			<subfield code="3">BOOK</subfield>
+			<subfield code="4">01</subfield>
+			<subfield code="5">A 28 Tg/140 Tg</subfield>
+		</datafield>
+		<datafield tag="949" ind1=" " ind2=" ">
+			<subfield code="B">RERO</subfield>
+			<subfield code="E">R004689410</subfield>
+			<subfield code="F">RE01001</subfield>
+			<subfield code="b">RE01001</subfield>
+			<subfield code="c">RE010010001</subfield>
+			<subfield code="j">X 488</subfield>
+			<subfield code="p">001150424</subfield>
+		</datafield>
+		<datafield tag="949" ind1=" " ind2=" ">
+			<subfield code="B">IDSBB</subfield>
+			<subfield code="C">DSV51</subfield>
+			<subfield code="D">DSV01</subfield>
+			<subfield code="E">000217483</subfield>
+			<subfield code="F">A100</subfield>
+			<subfield code="b">A100</subfield>
+			<subfield code="c">MAG</subfield>
+			<subfield code="j">ef 124</subfield>
+			<subfield code="p">0UBU0640840</subfield>
+			<subfield code="q">000217483</subfield>
+			<subfield code="r">000010</subfield>
+			<subfield code="0">Basel UB</subfield>
+			<subfield code="1">Magazin</subfield>
+			<subfield code="3">BOOK</subfield>
+			<subfield code="4">01</subfield>
+			<subfield code="5">Heimausleihe</subfield>
+		</datafield>
+		<datafield tag="949" ind1=" " ind2=" ">
+			<subfield code="B">IDSBB</subfield>
+			<subfield code="C">DSV51</subfield>
+			<subfield code="D">DSV01</subfield>
+			<subfield code="E">000217483</subfield>
+			<subfield code="F">A202</subfield>
+			<subfield code="b">A202</subfield>
+			<subfield code="c">202FM</subfield>
+			<subfield code="j">HS AE 695</subfield>
+			<subfield code="p">DSVN280527</subfield>
+			<subfield code="q">000217483</subfield>
+			<subfield code="r">000020</subfield>
+			<subfield code="x">REKAT0203CHW2 / Akz: ba/ihs-/u</subfield>
+			<subfield code="0">Basel Departement Geschichte</subfield>
+			<subfield code="1">Freihandmagazin</subfield>
+			<subfield code="3">BOOK</subfield>
+			<subfield code="4">21</subfield>
+			<subfield code="5">Benutzung an Ort</subfield>
+		</datafield>
+		<datafield tag="949" ind1=" " ind2=" ">
+			<subfield code="B">IDSBB</subfield>
+			<subfield code="C">DSV51</subfield>
+			<subfield code="D">DSV01</subfield>
+			<subfield code="E">000217483</subfield>
+			<subfield code="F">A241</subfield>
+			<subfield code="b">A241</subfield>
+			<subfield code="c">FH</subfield>
+			<subfield code="j">IBR SpA 205</subfield>
+			<subfield code="p">DSVN637374</subfield>
+			<subfield code="q">000217483</subfield>
+			<subfield code="r">000030</subfield>
+			<subfield code="x">REKATA1100303</subfield>
+			<subfield code="0">Basel Sem. f. Iberoromanistik</subfield>
+			<subfield code="1">Freihandbereich</subfield>
+			<subfield code="3">BOOK</subfield>
+			<subfield code="4">11</subfield>
+			<subfield code="5">Heimausleihe</subfield>
+		</datafield>
+		<datafield tag="949" ind1=" " ind2=" ">
+			<subfield code="B">IDSBB</subfield>
+			<subfield code="C">DSV51</subfield>
+			<subfield code="D">DSV01</subfield>
+			<subfield code="E">000217483</subfield>
+			<subfield code="F">B400</subfield>
+			<subfield code="b">B400</subfield>
+			<subfield code="c">400F4</subfield>
+			<subfield code="j">ZB RAB 9992</subfield>
+			<subfield code="p">BM1843072</subfield>
+			<subfield code="q">000217483</subfield>
+			<subfield code="r">000040</subfield>
+			<subfield code="0">Bern UB ZB</subfield>
+			<subfield code="1">vonRoll Speicher F4</subfield>
+			<subfield code="2">i</subfield>
+			<subfield code="3">BOOK</subfield>
+			<subfield code="4">01</subfield>
+			<subfield code="5">Heimausleihe</subfield>
+		</datafield>
+		<datafield tag="956" ind1="4" ind2=" ">
+			<subfield code="B">IDSBB</subfield>
+			<subfield code="C">DSV51</subfield>
+			<subfield code="D">DSV01</subfield>
+			<subfield code="a">B400</subfield>
+			<subfield code="u">http://www.ub.unibas.ch/tox/IDSBB/000217483/PDF</subfield>
+			<subfield code="q">pdf</subfield>
+			<subfield code="x">VIEW</subfield>
+			<subfield code="y">Inhaltsverzeichnis</subfield>
+		</datafield>
+		<datafield tag="949" ind1=" " ind2=" ">
+			<subfield code="B">SGBN</subfield>
+			<subfield code="C">SGB50</subfield>
+			<subfield code="D">SGB01</subfield>
+			<subfield code="E">000187319</subfield>
+			<subfield code="F">SGKBV</subfield>
+			<subfield code="b">SGKBV</subfield>
+			<subfield code="c">KM</subfield>
+			<subfield code="j">VGA Q 13</subfield>
+			<subfield code="p">VGA Q 13</subfield>
+			<subfield code="q">000187319</subfield>
+			<subfield code="r">000010</subfield>
+			<subfield code="0">KB St.Gallen Vadiana</subfield>
+			<subfield code="1">Magazin</subfield>
+			<subfield code="2">i</subfield>
+			<subfield code="3">BOOK</subfield>
+			<subfield code="4">01</subfield>
+			<subfield code="5">ausleihbar</subfield>
+		</datafield>
+	</record>
+	<record type="Bibliographic">
+		<leader>     cam a22     4  4500</leader>
+		<controlfield tag="001">31602208X</controlfield>
+		<controlfield tag="003">CHVBK</controlfield>
+		<controlfield tag="005">20140616234429.0</controlfield>
+		<controlfield tag="008">140524s2014    gw            00    ger d</controlfield>
+		<datafield tag="016" ind1="7" ind2=" ">
+			<subfield code="a">747185441</subfield>
+			<subfield code="2">DE-101</subfield>
+		</datafield>
+		<datafield tag="020" ind1=" " ind2=" ">
+			<subfield code="a">978-3-8252-3988-6</subfield>
+		</datafield>
+		<datafield tag="035" ind1=" " ind2=" ">
+			<subfield code="a">(ABN)000741970</subfield>
+		</datafield>
+		<datafield tag="035" ind1=" " ind2=" ">
+			<subfield code="a">(IDSBB)006189645</subfield>
+		</datafield>
+		<datafield tag="035" ind1=" " ind2=" ">
+			<subfield code="a">(NEBIS)010131061</subfield>
+		</datafield>
+		<datafield tag="035" ind1=" " ind2=" ">
+			<subfield code="a">(OCoLC)852631783</subfield>
+		</datafield>
+		<datafield tag="040" ind1=" " ind2=" ">
+			<subfield code="a">DEBSZ</subfield>
+			<subfield code="d">CH-AaAKB</subfield>
+		</datafield>
+		<datafield tag="044" ind1=" " ind2=" ">
+			<subfield code="a">sz</subfield>
+			<subfield code="c">ch-bl</subfield>
+		</datafield>
+		<datafield tag="245" ind1="0" ind2="0">
+			<subfield code="a">Spanische Literaturgeschichte</subfield>
+			<subfield code="b">eine kommentierte Anthologie</subfield>
+			<subfield code="c">hrsg. von Carmen Rivero Iglesias</subfield>
+		</datafield>
+		<datafield tag="246" ind1="1" ind2="3">
+			<subfield code="a">Spain literature history</subfield>
+		</datafield>
+		<datafield tag="246" ind1="1" ind2="3">
+			<subfield code="a">Historia de la literatura española</subfield>
+		</datafield>
+		<datafield tag="260" ind1=" " ind2=" ">
+			<subfield code="a">Paderborn</subfield>
+			<subfield code="b">Fink</subfield>
+			<subfield code="c">2014</subfield>
+		</datafield>
+		<datafield tag="300" ind1=" " ind2=" ">
+			<subfield code="a">380 S</subfield>
+		</datafield>
+		<datafield tag="490" ind1="0" ind2=" ">
+			<subfield code="a">UTB. Romanistik, Literaturwissenschaft</subfield>
+		</datafield>
+		<datafield tag="490" ind1="0" ind2=" ">
+			<subfield code="a">UTB</subfield>
+			<subfield code="v">3988</subfield>
+		</datafield>
+		<datafield tag="505" ind1="0" ind2="0">
+			<subfield code="g">Tome 1</subfield>
+			<subfield code="t">A-D</subfield>
+			<subfield code="r">Par Charles Laboulaye et MM. Debette, Barral</subfield>
+		</datafield>
+		<datafield tag="505" ind1="0" ind2="0">
+			<subfield code="g">Tome 2</subfield>
+			<subfield code="t">E-M</subfield>
+			<subfield code="r">Par Charles Laboulaye et MM. Debette, Barral</subfield>
+		</datafield>	
+		<datafield tag="505" ind1="0" ind2="0">
+			<subfield code="g">Tome 3</subfield>
+			<subfield code="t">N-Z</subfield>
+			<subfield code="r">Par Charles Laboulaye et MM. Debette, Barral</subfield>
+		</datafield>
+		<datafield tag="505" ind1="0" ind2="0">
+			<subfield code="g">Tome 4</subfield>
+			<subfield code="t">Complément, avec le concours de savants, d'ingénieurs et de fabricants</subfield>
+		</datafield>
+		<datafield tag="648" ind1=" " ind2="7">
+			<subfield code="a">Geschichte</subfield>
+			<subfield code="2">gnd</subfield>
+		</datafield>
+		<datafield tag="650" ind1=" " ind2="7">
+			<subfield code="a">Spanisch</subfield>
+			<subfield code="0">(DE-588)4077640-2</subfield>
+			<subfield code="2">gnd</subfield>
+		</datafield>
+		<datafield tag="650" ind1=" " ind2="7">
+			<subfield code="a">Literatur</subfield>
+			<subfield code="0">(DE-588)4035964-5</subfield>
+			<subfield code="2">gnd</subfield>
+		</datafield>
+		<datafield tag="655" ind1=" " ind2="7">
+			<subfield code="a">Lehrbuch</subfield>
+			<subfield code="2">gnd</subfield>
+		</datafield>
+		<datafield tag="700" ind1="1" ind2=" ">
+			<subfield code="a">Rivero Iglesias</subfield>
+			<subfield code="D">Carmen</subfield>
+		</datafield>
+		<datafield tag="856" ind1=" " ind2=" ">
+			<subfield code="u">http://d-nb.info/1034840835/04</subfield>
+			<subfield code="z">Inhaltsverzeichnis</subfield>
+		</datafield>
+		<datafield tag="856" ind1=" " ind2=" ">
+			<subfield code="z">Inhaltsangabe</subfield>
+			<subfield code="u">http://deposit.d-nb.de/cgi-bin/dokserv?id=4338251&#38;prov=M&#38;dok%5Fvar=1&#38;dok%5Fext=htm</subfield>
+		</datafield>
+		<datafield tag="909" ind1=" " ind2="7">
+			<subfield code="a">NELAKB1404</subfield>
+			<subfield code="2">abn YA</subfield>
+		</datafield>
+		<datafield tag="909" ind1=" " ind2="7">
+			<subfield code="a">UROSE-201405</subfield>
+			<subfield code="2">nebis EN</subfield>
+		</datafield>
+		<datafield tag="912" ind1=" " ind2="7">
+			<subfield code="a">860</subfield>
+		</datafield>
+		<datafield tag="912" ind1=" " ind2="7">
+			<subfield code="a">es</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">ABN</subfield>
+			<subfield code="P">490</subfield>
+			<subfield code="E">--</subfield>
+			<subfield code="a">UTB. Romanistik, Literaturwissenschaft</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">ABN</subfield>
+			<subfield code="P">490</subfield>
+			<subfield code="E">--</subfield>
+			<subfield code="a">UTB</subfield>
+			<subfield code="v">3988</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">ABN</subfield>
+			<subfield code="P">700</subfield>
+			<subfield code="E">1-</subfield>
+			<subfield code="a">Rivero Iglesias</subfield>
+			<subfield code="D">Carmen</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">ABN</subfield>
+			<subfield code="P">856</subfield>
+			<subfield code="E">--</subfield>
+			<subfield code="u">http://d-nb.info/1034840835/04</subfield>
+			<subfield code="z">Inhaltsverzeichnis</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">ABN</subfield>
+			<subfield code="P">856</subfield>
+			<subfield code="E">--</subfield>
+			<subfield code="z">Inhaltsangabe</subfield>
+			<subfield code="u">http://deposit.d-nb.de/cgi-bin/dokserv?id=4338251&#38;prov=M&#38;dok%5Fvar=1&#38;dok%5Fext=htm</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">IDSBB</subfield>
+			<subfield code="P">490</subfield>
+			<subfield code="E">--</subfield>
+			<subfield code="a">UTB. Romanistik, Literaturwissenschaft</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">IDSBB</subfield>
+			<subfield code="P">490</subfield>
+			<subfield code="E">--</subfield>
+			<subfield code="a">UTB</subfield>
+			<subfield code="v">3988</subfield>
+			<subfield code="i">3988</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">IDSBB</subfield>
+			<subfield code="P">700</subfield>
+			<subfield code="E">1-</subfield>
+			<subfield code="a">Rivero Iglesias</subfield>
+			<subfield code="D">Carmen</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">IDSBB</subfield>
+			<subfield code="P">856</subfield>
+			<subfield code="E">--</subfield>
+			<subfield code="z">Inhaltsangabe</subfield>
+			<subfield code="u">http://deposit.d-nb.de/cgi-bin/dokserv?id=4338251&#38;prov=M&#38;dok%5Fvar=1&#38;dok%5Fext=htm</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">NEBIS</subfield>
+			<subfield code="P">490</subfield>
+			<subfield code="E">--</subfield>
+			<subfield code="a">UTB. Romanistik, Literaturwissenschaft</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">NEBIS</subfield>
+			<subfield code="P">490</subfield>
+			<subfield code="E">--</subfield>
+			<subfield code="a">UTB</subfield>
+			<subfield code="v">3988</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">NEBIS</subfield>
+			<subfield code="P">700</subfield>
+			<subfield code="E">1-</subfield>
+			<subfield code="a">Rivero Iglesias</subfield>
+			<subfield code="D">Carmen</subfield>
+		</datafield>
+		<datafield tag="986" ind1=" " ind2=" ">
+			<subfield code="a">SWISSBIB</subfield>
+			<subfield code="b">31602208X</subfield>
+		</datafield>
+		<datafield tag="898" ind1=" " ind2=" ">
+			<subfield code="a">BK020000</subfield>
+			<subfield code="b">BK020000</subfield>
+		</datafield>
+		<datafield tag="949" ind1=" " ind2=" ">
+			<subfield code="B">NEBIS</subfield>
+			<subfield code="C">UZH50</subfield>
+			<subfield code="D">EBI01</subfield>
+			<subfield code="E">010131061</subfield>
+			<subfield code="F">UROSE</subfield>
+			<subfield code="b">UROSE</subfield>
+			<subfield code="j">RoSe Rq 108</subfield>
+			<subfield code="p">UM1459061</subfield>
+			<subfield code="q">010131061</subfield>
+			<subfield code="r">000010</subfield>
+			<subfield code="0">UZH-ROSE (Zürich)</subfield>
+			<subfield code="2">0</subfield>
+			<subfield code="3">BOOK</subfield>
+			<subfield code="4">11</subfield>
+			<subfield code="5">Ausleihe 4 Wochen</subfield>
+		</datafield>
+		<datafield tag="949" ind1=" " ind2=" ">
+			<subfield code="B">IDSBB</subfield>
+			<subfield code="C">DSV51</subfield>
+			<subfield code="D">DSV01</subfield>
+			<subfield code="E">006189645</subfield>
+			<subfield code="F">B400</subfield>
+			<subfield code="b">B400</subfield>
+			<subfield code="c">400J5</subfield>
+			<subfield code="j">ZB RFA 37984</subfield>
+			<subfield code="p">BM2303309</subfield>
+			<subfield code="q">006189645</subfield>
+			<subfield code="r">000020</subfield>
+			<subfield code="x">NELB4001405</subfield>
+			<subfield code="0">Bern UB ZB</subfield>
+			<subfield code="1">vonRoll Speicher J5</subfield>
+			<subfield code="2">i</subfield>
+			<subfield code="3">BOOK</subfield>
+			<subfield code="4">01</subfield>
+			<subfield code="5">Heimausleihe</subfield>
+		</datafield>
+		<datafield tag="956" ind1="4" ind2=" ">
+			<subfield code="B">IDSBB</subfield>
+			<subfield code="C">DSV51</subfield>
+			<subfield code="D">DSV01</subfield>
+			<subfield code="a">B400</subfield>
+			<subfield code="u">http://d-nb.info/1034840835/04</subfield>
+			<subfield code="q">pdf</subfield>
+			<subfield code="x">VIEW</subfield>
+			<subfield code="y">Inhaltsverzeichnis</subfield>
+		</datafield>
+		<datafield tag="949" ind1=" " ind2=" ">
+			<subfield code="B">IDSBB</subfield>
+			<subfield code="C">DSV51</subfield>
+			<subfield code="D">DSV01</subfield>
+			<subfield code="E">006189645</subfield>
+			<subfield code="F">B410</subfield>
+			<subfield code="b">B410</subfield>
+			<subfield code="c">FH</subfield>
+			<subfield code="j">BTO</subfield>
+			<subfield code="p">BM2631551</subfield>
+			<subfield code="q">006189645</subfield>
+			<subfield code="r">000010</subfield>
+			<subfield code="x">NELB4101404</subfield>
+			<subfield code="0">Bern UB BTO</subfield>
+			<subfield code="1">Freihandbereich</subfield>
+			<subfield code="3">BOOK</subfield>
+			<subfield code="4">11</subfield>
+			<subfield code="5">Heimausleihe</subfield>
+			<subfield code="6">IP</subfield>
+		</datafield>
+		<datafield tag="949" ind1=" " ind2=" ">
+			<subfield code="B">ABN</subfield>
+			<subfield code="C">ABN51</subfield>
+			<subfield code="D">ABN01</subfield>
+			<subfield code="E">000741970</subfield>
+			<subfield code="F">AKB</subfield>
+			<subfield code="b">AKB</subfield>
+			<subfield code="c">AKBFH</subfield>
+			<subfield code="j">AKB 100929</subfield>
+			<subfield code="p">AAK002436069</subfield>
+			<subfield code="q">000741970</subfield>
+			<subfield code="r">000010</subfield>
+			<subfield code="0">Aargauer Kantonsbibliothek</subfield>
+			<subfield code="1">Freihand</subfield>
+			<subfield code="2">6</subfield>
+			<subfield code="3">BOOK</subfield>
+			<subfield code="4">01</subfield>
+			<subfield code="5">4 Wochen</subfield>
+		</datafield>
+	</record>
+	<record type="Bibliographic">
+		<leader>     nam a22     4  4500</leader>
+		<controlfield tag="001">316022098</controlfield>
+		<controlfield tag="003">CHVBK</controlfield>
+		<controlfield tag="005">20140524070547.0</controlfield>
+		<controlfield tag="008">140524s2013    sz            00    ger  </controlfield>
+		<datafield tag="020" ind1=" " ind2=" ">
+			<subfield code="a">978-3-906178-00-4</subfield>
+		</datafield>
+		<datafield tag="035" ind1=" " ind2=" ">
+			<subfield code="a">(NEBIS)009901958</subfield>
+		</datafield>
+		<datafield tag="035" ind1=" " ind2=" ">
+			<subfield code="a">(IDSLU)001144624</subfield>
+		</datafield>
+		<datafield tag="040" ind1=" " ind2=" ">
+			<subfield code="a">SzZuIDS NEBIS ZHDK-MIZ</subfield>
+		</datafield>
+		<datafield tag="245" ind1="0" ind2="0">
+			<subfield code="a">Spatial Design</subfield>
+			<subfield code="b">Gespräche über Architekturen, Ausstellungen, Bühnenbilder und Urbane Interventionen : ein Reader des MAS Spatial Design</subfield>
+			<subfield code="c">Stephan Trüby (Hrsg.)</subfield>
+		</datafield>
+		<datafield tag="260" ind1=" " ind2=" ">
+			<subfield code="a">Zürich</subfield>
+			<subfield code="b">Zürcher Hochschule der Künste, Institut für Designforschung</subfield>
+			<subfield code="c">2013</subfield>
+		</datafield>
+		<datafield tag="300" ind1=" " ind2=" ">
+			<subfield code="a">196 S</subfield>
+			<subfield code="b">farbige Ill</subfield>
+			<subfield code="c">21 cm</subfield>
+		</datafield>
+		<datafield tag="650" ind1=" " ind2="7">
+			<subfield code="a">Öffentlicher Raum</subfield>
+			<subfield code="0">(DE-588)4172385-5</subfield>
+			<subfield code="2">gnd</subfield>
+		</datafield>
+		<datafield tag="650" ind1=" " ind2="7">
+			<subfield code="a">Bühne</subfield>
+			<subfield code="0">(DE-588)4146857-0</subfield>
+			<subfield code="2">gnd</subfield>
+		</datafield>
+		<datafield tag="650" ind1=" " ind2="7">
+			<subfield code="a">Museum</subfield>
+			<subfield code="0">(DE-588)4040795-0</subfield>
+			<subfield code="2">gnd</subfield>
+		</datafield>
+		<datafield tag="650" ind1=" " ind2="7">
+			<subfield code="a">Szenographie</subfield>
+			<subfield code="0">(DE-588)4433627-5</subfield>
+			<subfield code="2">gnd</subfield>
+		</datafield>
+		<datafield tag="655" ind1=" " ind2="7">
+			<subfield code="a">Gespräch</subfield>
+			<subfield code="2">gnd</subfield>
+		</datafield>
+		<datafield tag="700" ind1="1" ind2=" ">
+			<subfield code="a">Trüby</subfield>
+			<subfield code="D">Stephan</subfield>
+		</datafield>
+		<datafield tag="710" ind1="2" ind2=" ">
+			<subfield code="a">Zürcher Hochschule der Künste</subfield>
+			<subfield code="b">Institut Design2context</subfield>
+		</datafield>
+		<datafield tag="909" ind1=" " ind2="7">
+			<subfield code="a">ZH</subfield>
+			<subfield code="2">idszbz Z1</subfield>
+		</datafield>
+		<datafield tag="909" ind1=" " ind2="7">
+			<subfield code="a">zbzmon201307l</subfield>
+			<subfield code="c">knec</subfield>
+			<subfield code="d">zbzswk201309g</subfield>
+			<subfield code="e">schl</subfield>
+			<subfield code="2">idszbz Z2</subfield>
+		</datafield>
+		<datafield tag="909" ind1=" " ind2="7">
+			<subfield code="a">NLLUHTA201405</subfield>
+			<subfield code="2">idslu L3</subfield>
+		</datafield>
+		<datafield tag="912" ind1=" " ind2="7">
+			<subfield code="a">ZB720</subfield>
+			<subfield code="2">Z01</subfield>
+		</datafield>
+		<datafield tag="912" ind1=" " ind2="7">
+			<subfield code="a">E6503</subfield>
+			<subfield code="2">E65-20130708</subfield>
+		</datafield>
+		<datafield tag="912" ind1=" " ind2="7">
+			<subfield code="a">E6506</subfield>
+			<subfield code="2">E65-20130708</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">NEBIS</subfield>
+			<subfield code="P">700</subfield>
+			<subfield code="E">1-</subfield>
+			<subfield code="a">Trüby</subfield>
+			<subfield code="D">Stephan</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">NEBIS</subfield>
+			<subfield code="P">710</subfield>
+			<subfield code="E">2-</subfield>
+			<subfield code="a">Zürcher Hochschule der Künste</subfield>
+			<subfield code="b">Institut Design2context</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">IDSLU</subfield>
+			<subfield code="P">700</subfield>
+			<subfield code="E">1-</subfield>
+			<subfield code="a">Trüby</subfield>
+			<subfield code="D">Stephan</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">IDSLU</subfield>
+			<subfield code="P">710</subfield>
+			<subfield code="E">2-</subfield>
+			<subfield code="a">Zürcher Hochschule der Künste</subfield>
+			<subfield code="b">Institut Design2context</subfield>
+		</datafield>
+		<datafield tag="986" ind1=" " ind2=" ">
+			<subfield code="a">SWISSBIB</subfield>
+			<subfield code="b">303465476</subfield>
+		</datafield>
+		<datafield tag="898" ind1=" " ind2=" ">
+			<subfield code="a">BK020000</subfield>
+			<subfield code="b">BK020000</subfield>
+		</datafield>
+		<datafield tag="949" ind1=" " ind2=" ">
+			<subfield code="B">NEBIS</subfield>
+			<subfield code="C">EAD50</subfield>
+			<subfield code="D">EBI01</subfield>
+			<subfield code="E">009901958</subfield>
+			<subfield code="F">E65</subfield>
+			<subfield code="b">E65</subfield>
+			<subfield code="c">E6515</subfield>
+			<subfield code="j">506- 473</subfield>
+			<subfield code="p">EM000007720263</subfield>
+			<subfield code="q">009901958</subfield>
+			<subfield code="r">000020</subfield>
+			<subfield code="0">ZHDK-MIZ (Zürich)</subfield>
+			<subfield code="1">Magazin</subfield>
+			<subfield code="2">4</subfield>
+			<subfield code="3">BOOK</subfield>
+			<subfield code="4">01</subfield>
+			<subfield code="5">Ausleihe 4 Wochen</subfield>
+		</datafield>
+		<datafield tag="949" ind1=" " ind2=" ">
+			<subfield code="B">NEBIS</subfield>
+			<subfield code="C">EAD50</subfield>
+			<subfield code="D">EBI01</subfield>
+			<subfield code="E">009901958</subfield>
+			<subfield code="F">E65</subfield>
+			<subfield code="b">E65</subfield>
+			<subfield code="c">E6532</subfield>
+			<subfield code="j">395- 52</subfield>
+			<subfield code="p">EM000007720262</subfield>
+			<subfield code="q">009901958</subfield>
+			<subfield code="r">000010</subfield>
+			<subfield code="0">ZHDK-MIZ (Zürich)</subfield>
+			<subfield code="1">Keller 3.2</subfield>
+			<subfield code="2">4</subfield>
+			<subfield code="3">BOOK</subfield>
+			<subfield code="4">01</subfield>
+			<subfield code="5">Ausleihe 4 Wochen</subfield>
+		</datafield>
+		<datafield tag="949" ind1=" " ind2=" ">
+			<subfield code="B">NEBIS</subfield>
+			<subfield code="C">ZAD50</subfield>
+			<subfield code="D">EBI01</subfield>
+			<subfield code="E">009901958</subfield>
+			<subfield code="F">Z01</subfield>
+			<subfield code="b">Z01</subfield>
+			<subfield code="c">02</subfield>
+			<subfield code="j">HQ 9897</subfield>
+			<subfield code="p">ZM02788961</subfield>
+			<subfield code="q">009901958</subfield>
+			<subfield code="r">000010</subfield>
+			<subfield code="0">ZB (Zürich)</subfield>
+			<subfield code="1">Freihand 02</subfield>
+			<subfield code="2">4</subfield>
+			<subfield code="3">BOOK</subfield>
+			<subfield code="4">11</subfield>
+			<subfield code="5">Ausleihe 4 Wochen</subfield>
+		</datafield>
+		<datafield tag="956" ind1="4" ind2=" ">
+			<subfield code="B">NEBIS</subfield>
+			<subfield code="C">ZAD50</subfield>
+			<subfield code="D">EBI01</subfield>
+			<subfield code="a">Z01</subfield>
+			<subfield code="u">http://opac.nebis.ch/objects/pdf03/z01_978-3-906178-00-4_01.pdf</subfield>
+			<subfield code="y">Titelblatt und Inhaltsverzeichnis</subfield>
+			<subfield code="x">VIEW</subfield>
+			<subfield code="q">pdf</subfield>
+		</datafield>
+		<datafield tag="949" ind1=" " ind2=" ">
+			<subfield code="B">IDSLU</subfield>
+			<subfield code="C">ILU50</subfield>
+			<subfield code="D">ILU01</subfield>
+			<subfield code="E">001144624</subfield>
+			<subfield code="F">LUHTA</subfield>
+			<subfield code="b">LUHTA</subfield>
+			<subfield code="c">TABIB</subfield>
+			<subfield code="j">AR FA 193</subfield>
+			<subfield code="p">ILUM31047749</subfield>
+			<subfield code="q">001186389</subfield>
+			<subfield code="r">000010</subfield>
+			<subfield code="0">HSLU Technik &#38; Architektur</subfield>
+			<subfield code="1">Bibliothek</subfield>
+			<subfield code="2">i</subfield>
+			<subfield code="3">BOOK</subfield>
+			<subfield code="4">01</subfield>
+			<subfield code="5">Heimausleihe (4 Wochen)</subfield>
+		</datafield>
+	</record>
+	<record type="Bibliographic">
+		<leader>     cam a22     4  4500</leader>
+		<controlfield tag="001">316022101</controlfield>
+		<controlfield tag="003">CHVBK</controlfield>
+		<controlfield tag="005">20140608080034.0</controlfield>
+		<controlfield tag="008">140524s2013    sz            00    ger d</controlfield>
+		<datafield tag="020" ind1=" " ind2=" ">
+			<subfield code="a">978-3-85637-429-7</subfield>
+		</datafield>
+		<datafield tag="035" ind1=" " ind2=" ">
+			<subfield code="a">(BGR)000541268</subfield>
+		</datafield>
+		<datafield tag="035" ind1=" " ind2=" ">
+			<subfield code="a">(SNL)vtls001738136</subfield>
+		</datafield>
+		<datafield tag="035" ind1=" " ind2=" ">
+			<subfield code="a">(Sz)001738136</subfield>
+		</datafield>
+		<datafield tag="040" ind1=" " ind2=" ">
+			<subfield code="a">Sz</subfield>
+			<subfield code="d">Sz-ChBGR KBG</subfield>
+		</datafield>
+		<datafield tag="082" ind1="7" ind2="4">
+			<subfield code="a">200</subfield>
+			<subfield code="2">23sdnb</subfield>
+		</datafield>
+		<datafield tag="100" ind1="1" ind2=" ">
+			<subfield code="a">Rataj</subfield>
+			<subfield code="D">Dorothée</subfield>
+		</datafield>
+		<datafield tag="245" ind1="1" ind2="4">
+			<subfield code="a">Der spirituelle Weg</subfield>
+			<subfield code="b">die Re-Sakralisierung des Lebens</subfield>
+			<subfield code="c">Dorothée und Heinz Rataj</subfield>
+		</datafield>
+		<datafield tag="260" ind1=" " ind2=" ">
+			<subfield code="a">Chur</subfield>
+			<subfield code="b">Edition HerzWerk</subfield>
+			<subfield code="c">2013</subfield>
+		</datafield>
+		<datafield tag="300" ind1=" " ind2=" ">
+			<subfield code="a">213 S</subfield>
+			<subfield code="b">Ill</subfield>
+			<subfield code="c">21 cm</subfield>
+		</datafield>
+		<datafield tag="502" ind1=" " ind2=" ">
+			<subfield code="a">Travail de bachelor réalisé en vue de l'obtention du master HES à la Haute école de gestion de Genève (HEG-GE), orientation management et ingénierie des services</subfield>
+		</datafield>
+		<datafield tag="580" ind1=" " ind2=" ">
+			<subfield code="a">In: La tribune de Genève, mars 2014</subfield>
+		</datafield>
+		<datafield tag="580" ind1=" " ind2=" ">
+			<subfield code="a">In: Le journal du Jura, janvier 2014</subfield>
+		</datafield>
+		<datafield tag="650" ind1=" " ind2="7">
+			<subfield code="a">Spiritualität</subfield>
+			<subfield code="0">(DE-588)4116568-8</subfield>
+			<subfield code="2">gnd</subfield>
+		</datafield>
+		<datafield tag="650" ind1=" " ind2="7">
+			<subfield code="a">Stufenweg</subfield>
+			<subfield code="0">(DE-588)4827733-2</subfield>
+			<subfield code="2">gnd</subfield>
+		</datafield>
+		<datafield tag="650" ind1=" " ind2="7">
+			<subfield code="a">Kosmisches Bewusstsein</subfield>
+			<subfield code="0">(DE-588)4216490-4</subfield>
+			<subfield code="2">gnd</subfield>
+		</datafield>
+		<datafield tag="691" ind1=" " ind2="7">
+			<subfield code="B">u</subfield>
+			<subfield code="u">77.92</subfield>
+			<subfield code="2">bgr PZ</subfield>
+		</datafield>
+		<datafield tag="691" ind1=" " ind2="7">
+			<subfield code="B">u</subfield>
+			<subfield code="u">02.50</subfield>
+			<subfield code="2">bgr PZ</subfield>
+		</datafield>
+		<datafield tag="691" ind1=" " ind2="7">
+			<subfield code="a">sb</subfield>
+			<subfield code="b">2013/05</subfield>
+			<subfield code="c">200</subfield>
+			<subfield code="k">gr</subfield>
+			<subfield code="2">snl sb_2001</subfield>
+		</datafield>
+		<datafield tag="700" ind1="1" ind2=" ">
+			<subfield code="a">Rataj</subfield>
+			<subfield code="D">Heinz</subfield>
+		</datafield>
+		<datafield tag="856" ind1=" " ind2=" ">
+			<subfield code="u">http://opac.admin.ch/gw/toc/pdf/toc001738136.pdf</subfield>
+			<subfield code="z">Inhaltsverzeichnis</subfield>
+			<subfield code="3">Inhaltsverzeichnis</subfield>
+		</datafield>
+		<datafield tag="909" ind1=" " ind2="7">
+			<subfield code="a">raet</subfield>
+			<subfield code="c">greo</subfield>
+			<subfield code="2">bgr P</subfield>
+		</datafield>
+		<datafield tag="909" ind1=" " ind2="7">
+			<subfield code="a">baut</subfield>
+			<subfield code="2">bgr P</subfield>
+		</datafield>
+		<datafield tag="912" ind1=" " ind2="7">
+			<subfield code="a">rt</subfield>
+			<subfield code="2">Sz-ChBGR</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">BGR</subfield>
+			<subfield code="P">100</subfield>
+			<subfield code="E">1-</subfield>
+			<subfield code="a">Rataj</subfield>
+			<subfield code="D">Dorothée</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">BGR</subfield>
+			<subfield code="P">700</subfield>
+			<subfield code="E">1-</subfield>
+			<subfield code="a">Rataj</subfield>
+			<subfield code="D">Heinz</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">BGR</subfield>
+			<subfield code="P">856</subfield>
+			<subfield code="E">--</subfield>
+			<subfield code="u">http://opac.admin.ch/gw/toc/pdf/toc001738136.pdf</subfield>
+			<subfield code="z">Inhaltsverzeichnis</subfield>
+			<subfield code="3">Inhaltsverzeichnis</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">SNL</subfield>
+			<subfield code="P">100</subfield>
+			<subfield code="E">1-</subfield>
+			<subfield code="a">Rataj</subfield>
+			<subfield code="D">Dorothée</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">SNL</subfield>
+			<subfield code="P">700</subfield>
+			<subfield code="E">1-</subfield>
+			<subfield code="a">Rataj</subfield>
+			<subfield code="D">Heinz</subfield>
+		</datafield>
+		<datafield tag="898" ind1=" " ind2=" ">
+			<subfield code="a">BK020000</subfield>
+			<subfield code="b">BK020000</subfield>
+		</datafield>
+		<datafield tag="949" ind1=" " ind2=" ">
+			<subfield code="B">SNL</subfield>
+			<subfield code="E">vtls001738136</subfield>
+			<subfield code="F">NB001</subfield>
+			<subfield code="b">NB001</subfield>
+			<subfield code="j">N 335239</subfield>
+			<subfield code="c">NB10010</subfield>
+			<subfield code="p">1901850988</subfield>
+			<subfield code="4">100</subfield>
+		</datafield>
+		<datafield tag="949" ind1=" " ind2=" ">
+			<subfield code="B">BGR</subfield>
+			<subfield code="C">BGR51</subfield>
+			<subfield code="D">BGR01</subfield>
+			<subfield code="E">000541268</subfield>
+			<subfield code="F">KBG</subfield>
+			<subfield code="b">KBG</subfield>
+			<subfield code="c">KBGMA</subfield>
+			<subfield code="j">KBG B 1718</subfield>
+			<subfield code="p">QM287358</subfield>
+			<subfield code="q">000541268</subfield>
+			<subfield code="r">000020</subfield>
+			<subfield code="0">CHUR-Kantonsbibliothek</subfield>
+			<subfield code="1">Magazin</subfield>
+			<subfield code="3">BOOK</subfield>
+			<subfield code="4">01</subfield>
+			<subfield code="5">MA ausleihbar</subfield>
+		</datafield>
+		<datafield tag="949" ind1=" " ind2=" ">
+			<subfield code="B">BGR</subfield>
+			<subfield code="C">BGR51</subfield>
+			<subfield code="D">BGR01</subfield>
+			<subfield code="E">000541268</subfield>
+			<subfield code="F">KBG</subfield>
+			<subfield code="b">KBG</subfield>
+			<subfield code="c">KBGMA</subfield>
+			<subfield code="j">KBG U 2761</subfield>
+			<subfield code="p">QMN257063</subfield>
+			<subfield code="q">000541268</subfield>
+			<subfield code="r">000010</subfield>
+			<subfield code="0">CHUR-Kantonsbibliothek</subfield>
+			<subfield code="1">Magazin</subfield>
+			<subfield code="3">BOOK</subfield>
+			<subfield code="4">41</subfield>
+			<subfield code="5">keine Ausleihe</subfield>
+		</datafield>
+		<datafield tag="956" ind1="4" ind2=" ">
+			<subfield code="B">BGR</subfield>
+			<subfield code="C">BGR51</subfield>
+			<subfield code="D">BGR01</subfield>
+			<subfield code="a">KBG</subfield>
+			<subfield code="u">http://aleph.gr.ch:80/F?func=service&#38;doc_library=BGR01&#38;doc_number=000541268&#38;line_number=0001&#38;func_code=DB_RECORDS&#38;service_type=MEDIA</subfield>
+			<subfield code="d">$alephe_root/../ADAM-Objekte/view/4</subfield>
+			<subfield code="f">541268_000213015.pdf</subfield>
+			<subfield code="q">pdf</subfield>
+			<subfield code="x">VIEW</subfield>
+			<subfield code="y">Titelseite und Inhaltsverzeichnis</subfield>
+		</datafield>
+	</record>
+	<record>
+		<leader>00920naa a2200277 a 4500</leader>
+		<controlfield tag="001">vtls003010104</controlfield>
+		<controlfield tag="003">RERO</controlfield>
+		<controlfield tag="005">20120421070200.0</controlfield>
+		<controlfield tag="008">010309s1996    sz |||||| ||||00|  |fre d</controlfield>
+		<datafield tag="035" ind1=" " ind2=" ">
+			<subfield code="a">(RERO)R003010104</subfield>
+		</datafield>
+		<datafield tag="039" ind1=" " ind2="9">
+			<subfield code="a">201204210702</subfield>
+			<subfield code="b">VLOAD</subfield>
+			<subfield code="c">200812220544</subfield>
+			<subfield code="d">VLOAD</subfield>
+			<subfield code="c">200709191926</subfield>
+			<subfield code="d">VLOAD</subfield>
+			<subfield code="c">200203110859</subfield>
+			<subfield code="d">6027</subfield>
+			<subfield code="y">200103091105</subfield>
+			<subfield code="z">6032</subfield>
+		</datafield>
+		<datafield tag="040" ind1=" " ind2=" ">
+			<subfield code="a">RERO gevbpu</subfield>
+		</datafield>
+		<datafield tag="045" ind1="0" ind2=" ">
+			<subfield code="b">d19960323</subfield>
+		</datafield>
+		<datafield tag="049" ind1=" " ind2=" ">
+			<subfield code="a">ju</subfield>
+		</datafield>
+		<datafield tag="072" ind1=" " ind2="7">
+			<subfield code="a">s1fr</subfield>
+			<subfield code="2">rero</subfield>
+		</datafield>
+		<datafield tag="100" ind1="1" ind2=" ">
+			<subfield code="a">Bouvier</subfield>
+			<subfield code="D">Nicolas</subfield>
+			<subfield code="d">1929-1998</subfield>
+		</datafield>
+		<datafield tag="245" ind1="1" ind2="0">
+			<subfield code="a">Nicolas Bouvier: "les autres sont une terre, on sème, le lecteur fait fructifier"</subfield>
+			<subfield code="c">propos recueillis par Josiane Bataillard</subfield>
+		</datafield>
+		<datafield tag="580" ind1=" " ind2=" ">
+			<subfield code="a">In: Le quotidien jurassien. - Delémont. - 23 mars 1996</subfield>
+		</datafield>
+		<datafield tag="600" ind1="1" ind2="7">
+			<subfield code="a">Bouvier, Nicolas</subfield>
+			<subfield code="v">[entretien]</subfield>
+			<subfield code="2">chrero</subfield>
+		</datafield>
+		<datafield tag="700" ind1="1" ind2=" ">
+			<subfield code="a">Bataillard, Josiane</subfield>
+		</datafield>
+		<datafield tag="773" ind1="1" ind2=" ">
+			<subfield code="t">Le Quotidien jurassien</subfield>
+			<subfield code="d">Delémont</subfield>
+			<subfield code="g">2014, N° 29 (5.2.), p. 12. - Ill.</subfield>
+			<subfield code="j">2014/29/12</subfield>
+			<subfield code="1">2014</subfield>
+			<subfield code="2">2014</subfield>
+			<subfield code="w">(IDSBB)001419114</subfield>
+			<subfield code="9">268337713</subfield>
+		</datafield>
+		<datafield tag="902" ind1=" " ind2=" ">
+			<subfield code="a">gedoc</subfield>
+		</datafield>
+		<datafield tag="902" ind1=" " ind2=" ">
+			<subfield code="a">geaut</subfield>
+		</datafield>
+		<datafield tag="957" ind1=" " ind2=" ">
+			<subfield code="a">gevbge</subfield>
+		</datafield>
+		<datafield tag="982" ind1=" " ind2=" ">
+			<subfield code="2">nb</subfield>
+			<subfield code="a">4.3</subfield>
+		</datafield>
+	</record>
+	<record>
+  <leader>     cas a22     1  4500</leader>
+  <controlfield tag="001">268337713</controlfield>
+  <controlfield tag="003">CHVBK</controlfield>
+  <controlfield tag="005">20150207045842.0</controlfield>
+  <controlfield tag="007">ta</controlfield>
+  <controlfield tag="008">130817c19939999sz dr n       0   b0fre d</controlfield>
+  <datafield tag="019" ind1=" " ind2=" ">
+   <subfield code="a">Bibliographiert in: Helveticat</subfield>
+   <subfield code="5">25.08.1997/bauub-/lbr</subfield>
+  </datafield>
+  <datafield tag="022" ind1="0" ind2=" ">
+   <subfield code="a">1423-1778</subfield>
+   <subfield code="2">40</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+   <subfield code="a">(SNL)vtls000111484</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+   <subfield code="a">(SGBN)001075325</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+   <subfield code="a">(IDSBB)001419114</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+   <subfield code="a">(RERO)1691138</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+   <subfield code="a">(NEBIS)001738738</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+   <subfield code="a">(Sz)000111484</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+   <subfield code="a">(Sz)vtls000111484</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+   <subfield code="a">Sz</subfield>
+   <subfield code="c">SAZ</subfield>
+   <subfield code="d">Sz</subfield>
+  </datafield>
+  <datafield tag="072" ind1=" " ind2="7">
+   <subfield code="a">s1ge</subfield>
+   <subfield code="2">rero</subfield>
+  </datafield>
+  <datafield tag="080" ind1=" " ind2=" ">
+   <subfield code="a">008(494)</subfield>
+  </datafield>
+  <datafield tag="210" ind1="0" ind2=" ">
+   <subfield code="a">Quotid. jura.</subfield>
+  </datafield>
+  <datafield tag="222" ind1=" " ind2="3">
+   <subfield code="a">Le Quotidien jurassien</subfield>
+  </datafield>
+  <datafield tag="245" ind1="0" ind2="3">
+   <subfield code="a">Le Quotidien jurassien</subfield>
+  </datafield>
+  <datafield tag="246" ind1="1" ind2=" ">
+   <subfield code="a">Démocrate</subfield>
+  </datafield>
+  <datafield tag="246" ind1="1" ind2=" ">
+   <subfield code="a">Pays</subfield>
+  </datafield>
+  <datafield tag="260" ind1=" " ind2=" ">
+   <subfield code="a">Delémont</subfield>
+   <subfield code="b">Le Quotidien jurassien</subfield>
+   <subfield code="c">1993-</subfield>
+  </datafield>
+  <datafield tag="300" ind1=" " ind2=" ">
+   <subfield code="a">vol</subfield>
+   <subfield code="b">Ill</subfield>
+   <subfield code="c">50 cm</subfield>
+  </datafield>
+  <datafield tag="310" ind1=" " ind2=" ">
+   <subfield code="a">Quotidien</subfield>
+  </datafield>
+  <datafield tag="362" ind1="0" ind2=" ">
+   <subfield code="a">1993, no 1 (1er juin 1993) -</subfield>
+  </datafield>
+  <datafield tag="500" ind1=" " ind2=" ">
+   <subfield code="a">Dernière éd. consultée: 2006, no 224 (30 sept. 2006)</subfield>
+  </datafield>
+  <datafield tag="520" ind1=" " ind2=" ">
+   <subfield code="a">Tageszeitung ; Schweiz : Jura</subfield>
+  </datafield>
+  <datafield tag="524" ind1=" " ind2=" ">
+   <subfield code="a">QUOJUR</subfield>
+  </datafield>
+  <datafield tag="525" ind1=" " ind2=" ">
+   <subfield code="a">Certaines éd. sont également accompagnées de suppl. non-numérotés</subfield>
+  </datafield>
+  <datafield tag="580" ind1=" " ind2=" ">
+   <subfield code="a">Fusion de: Le démocrate, et de: Le pays</subfield>
+  </datafield>
+  <datafield tag="651" ind1=" " ind2="7">
+   <subfield code="a">Delémont</subfield>
+   <subfield code="0">(DE-588)4266795-1</subfield>
+   <subfield code="2">gnd</subfield>
+  </datafield>
+  <datafield tag="710" ind1="2" ind2=" ">
+   <subfield code="a">Quotidien jurassien (Delémont)</subfield>
+  </datafield>
+  <datafield tag="770" ind1="0" ind2="8">
+   <subfield code="i">Suppl. 2005-2006</subfield>
+   <subfield code="t">RomandiEco</subfield>
+   <subfield code="w">(SNL)vtls001456595</subfield>
+   <subfield code="9">295832878</subfield>
+  </datafield>
+  <datafield tag="770" ind1="0" ind2="8">
+   <subfield code="i">Suppl. 2007-2011</subfield>
+   <subfield code="t">Auto</subfield>
+   <subfield code="w">(SNL)vtls001509270</subfield>
+   <subfield code="9">069184038</subfield>
+  </datafield>
+  <datafield tag="770" ind1="0" ind2="8">
+   <subfield code="i">Suppl. 2009-</subfield>
+   <subfield code="t">Quotidien magazine</subfield>
+   <subfield code="x">1662-3185</subfield>
+   <subfield code="w">(SNL)vtls001558480</subfield>
+   <subfield code="9">069647518</subfield>
+  </datafield>
+  <datafield tag="770" ind1="0" ind2="8">
+   <subfield code="i">Suppl. 2012-</subfield>
+   <subfield code="t">Jura l'original</subfield>
+   <subfield code="x">1664-4425</subfield>
+   <subfield code="w">(SNL)vtls001675666</subfield>
+   <subfield code="9">261199110</subfield>
+  </datafield>
+  <datafield tag="780" ind1="1" ind2="4">
+   <subfield code="t">Démocrate</subfield>
+   <subfield code="x">1012-0033</subfield>
+   <subfield code="w">(SNL)vtls001146742</subfield>
+   <subfield code="9">279925468</subfield>
+  </datafield>
+  <datafield tag="780" ind1="1" ind2="4">
+   <subfield code="t">Pays</subfield>
+   <subfield code="x">1012-0068</subfield>
+   <subfield code="w">(SNL)vtls001146744</subfield>
+   <subfield code="9">065802543</subfield>
+  </datafield>
+  <datafield tag="852" ind1="4" ind2=" ">
+   <subfield code="B">NEBIS</subfield>
+   <subfield code="F">E02</subfield>
+   <subfield code="a">Dernier numéro</subfield>
+  </datafield>
+  <datafield tag="852" ind1="4" ind2=" ">
+   <subfield code="B">NEBIS</subfield>
+   <subfield code="F">E19</subfield>
+   <subfield code="a">neuste 2 Nummern im Lesesaal: Fach B 25</subfield>
+  </datafield>
+  <datafield tag="852" ind1="4" ind2=" ">
+   <subfield code="B">RERO</subfield>
+   <subfield code="F">RE31037</subfield>
+   <subfield code="j">HEGN P 30</subfield>
+   <subfield code="a">On ne garde que l'année en cours (incomplet)</subfield>
+  </datafield>
+  <datafield tag="852" ind1="4" ind2=" ">
+   <subfield code="B">RERO</subfield>
+   <subfield code="F">RE81001</subfield>
+   <subfield code="j">- -</subfield>
+   <subfield code="a">[Les 7 derniers jours] ; [Prêt exclu, consultation sur place] ; PAC 4</subfield>
+  </datafield>
+  <datafield tag="852" ind1="4" ind2=" ">
+   <subfield code="B">RERO</subfield>
+   <subfield code="F">RE61040</subfield>
+   <subfield code="j">- -</subfield>
+   <subfield code="a">Conservé 1 mois</subfield>
+  </datafield>
+  <datafield tag="852" ind1="4" ind2=" ">
+   <subfield code="B">RERO</subfield>
+   <subfield code="F">RE31004</subfield>
+   <subfield code="j">CFV Journaux</subfield>
+   <subfield code="a">Conservé 1 mois</subfield>
+  </datafield>
+  <datafield tag="852" ind1="4" ind2=" ">
+   <subfield code="B">RERO</subfield>
+   <subfield code="F">RE11001</subfield>
+   <subfield code="j">- -</subfield>
+   <subfield code="a">[Conservé un mois.]</subfield>
+  </datafield>
+  <datafield tag="852" ind1="4" ind2=" ">
+   <subfield code="B">RERO</subfield>
+   <subfield code="F">RE31002</subfield>
+   <subfield code="j">BPUN Derniers numéros</subfield>
+   <subfield code="a">Conservation 3 mois ; La semaine en cours au Cabinet des périod. ; EXCLU DU PRET</subfield>
+  </datafield>
+  <datafield tag="852" ind1="4" ind2=" ">
+   <subfield code="B">RERO</subfield>
+   <subfield code="F">RE01001</subfield>
+   <subfield code="j">- -</subfield>
+   <subfield code="a">Uniquement la semaine en cours - Nur die laufende Woche ; Consultation sur place - Benutzung an Ort</subfield>
+  </datafield>
+  <datafield tag="852" ind1="4" ind2=" ">
+   <subfield code="B">RERO</subfield>
+   <subfield code="F">RE31044</subfield>
+   <subfield code="j">LCP QUO</subfield>
+   <subfield code="a">Conservé pendant 2 mois</subfield>
+  </datafield>
+  <datafield tag="852" ind1="4" ind2=" ">
+   <subfield code="B">RERO</subfield>
+   <subfield code="F">RE31041</subfield>
+   <subfield code="j">P QUJU</subfield>
+   <subfield code="a">1993-</subfield>
+  </datafield>
+  <datafield tag="852" ind1="4" ind2=" ">
+   <subfield code="B">RERO</subfield>
+   <subfield code="F">RE31008</subfield>
+   <subfield code="j">HEPBE LE QUOTIDIEN JURASSIEN</subfield>
+   <subfield code="a">Le quotidien du jour est à disposition à la médiathèque (abo PF4)</subfield>
+  </datafield>
+  <datafield tag="852" ind1="4" ind2=" ">
+   <subfield code="B">RERO</subfield>
+   <subfield code="F">RE31090</subfield>
+   <subfield code="j">HEPJU LE QUOTIDIEN JURASSIEN</subfield>
+   <subfield code="a">Le quotidien du jour est à disposition à la médiathèque (abo PF4) et à la cafétéria (abo PF1)</subfield>
+  </datafield>
+  <datafield tag="852" ind1="4" ind2=" ">
+   <subfield code="B">IDSBB</subfield>
+   <subfield code="F">A350</subfield>
+   <subfield code="j">-</subfield>
+   <subfield code="a">Ausgeschieden</subfield>
+  </datafield>
+  <datafield tag="852" ind1="4" ind2=" ">
+   <subfield code="B">IDSBB</subfield>
+   <subfield code="F">B500</subfield>
+   <subfield code="j">-</subfield>
+   <subfield code="a">Aktuelle Ausg</subfield>
+  </datafield>
+  <datafield tag="852" ind1="4" ind2=" ">
+   <subfield code="B">SGBN</subfield>
+   <subfield code="F">SGZFB</subfield>
+   <subfield code="a">1993, No 1 (1 juin 1993)</subfield>
+  </datafield>
+  <datafield tag="897" ind1=" " ind2=" ">
+   <subfield code="a">h</subfield>
+   <subfield code="b">7</subfield>
+  </datafield>
+  <datafield tag="898" ind1=" " ind2=" ">
+   <subfield code="a">CR030600</subfield>
+   <subfield code="b">XR030000</subfield>
+  </datafield>
+  <datafield tag="898" ind1=" " ind2=" ">
+   <subfield code="a">CR030500</subfield>
+   <subfield code="b">XR030500</subfield>
+  </datafield>
+  <datafield tag="908" ind1=" " ind2=" ">
+   <subfield code="D">1</subfield>
+   <subfield code="b">Zeitung = Journal</subfield>
+  </datafield>
+  <datafield tag="909" ind1=" " ind2="7">
+   <subfield code="d">ztgbs</subfield>
+   <subfield code="x">sz</subfield>
+   <subfield code="2">idsbb A</subfield>
+  </datafield>
+  <datafield tag="949" ind1=" " ind2=" ">
+   <subfield code="B">SNL</subfield>
+   <subfield code="F">NB001</subfield>
+   <subfield code="j">Zf 1410/2009, janv</subfield>
+   <subfield code="z">2009 no 1-2009 no 25</subfield>
+  </datafield>
+  <datafield tag="949" ind1=" " ind2=" ">
+   <subfield code="B">SNL</subfield>
+   <subfield code="F">NB001</subfield>
+   <subfield code="j">Zf 1410/2009, févr</subfield>
+   <subfield code="z">2009 no 26-2009 no 49</subfield>
+  </datafield>
+  <datafield tag="949" ind1=" " ind2=" ">
+   <subfield code="B">SNL</subfield>
+   <subfield code="F">NB001</subfield>
+   <subfield code="j">Zf 1410/2009, avr</subfield>
+   <subfield code="z">2009 no 76-2009 no 99</subfield>
+  </datafield>
+  <datafield tag="950" ind1=" " ind2=" ">
+   <subfield code="B">SNL</subfield>
+   <subfield code="P">710</subfield>
+   <subfield code="E">2-</subfield>
+   <subfield code="a">Quotidien jurassien (Delémont)</subfield>
+  </datafield>
+  <datafield tag="950" ind1=" " ind2=" ">
+   <subfield code="B">SNL</subfield>
+   <subfield code="P">770</subfield>
+   <subfield code="E">08</subfield>
+   <subfield code="i">Suppl. 2005-2006</subfield>
+   <subfield code="t">RomandiEco</subfield>
+   <subfield code="w">(SNL)vtls001456595</subfield>
+   <subfield code="9">295832878</subfield>
+  </datafield>
+  <datafield tag="950" ind1=" " ind2=" ">
+   <subfield code="B">SNL</subfield>
+   <subfield code="P">770</subfield>
+   <subfield code="E">08</subfield>
+   <subfield code="i">Suppl. 2007-2011</subfield>
+   <subfield code="t">Auto</subfield>
+   <subfield code="w">(SNL)vtls001509270</subfield>
+   <subfield code="9">069184038</subfield>
+  </datafield>
+  <datafield tag="950" ind1=" " ind2=" ">
+   <subfield code="B">SNL</subfield>
+   <subfield code="P">770</subfield>
+   <subfield code="E">08</subfield>
+   <subfield code="i">Suppl. 2009-</subfield>
+   <subfield code="t">Quotidien magazine</subfield>
+   <subfield code="x">1662-3185</subfield>
+   <subfield code="w">(SNL)vtls001558480</subfield>
+   <subfield code="9">069647518</subfield>
+  </datafield>
+  <datafield tag="950" ind1=" " ind2=" ">
+   <subfield code="B">SNL</subfield>
+   <subfield code="P">770</subfield>
+   <subfield code="E">08</subfield>
+   <subfield code="i">Suppl. 2012-</subfield>
+   <subfield code="t">Jura l'original</subfield>
+   <subfield code="x">1664-4425</subfield>
+   <subfield code="w">(SNL)vtls001675666</subfield>
+   <subfield code="9">261199110</subfield>
+  </datafield>
+  <datafield tag="950" ind1=" " ind2=" ">
+   <subfield code="B">SNL</subfield>
+   <subfield code="P">780</subfield>
+   <subfield code="E">14</subfield>
+   <subfield code="t">Démocrate</subfield>
+   <subfield code="x">1012-0033</subfield>
+   <subfield code="w">(SNL)vtls001146742</subfield>
+   <subfield code="9">279925468</subfield>
+  </datafield>
+  <datafield tag="950" ind1=" " ind2=" ">
+   <subfield code="B">SNL</subfield>
+   <subfield code="P">780</subfield>
+   <subfield code="E">14</subfield>
+   <subfield code="t">Pays</subfield>
+   <subfield code="x">1012-0068</subfield>
+   <subfield code="w">(SNL)vtls001146744</subfield>
+   <subfield code="9">065802543</subfield>
+  </datafield>
+  <datafield tag="950" ind1=" " ind2=" ">
+   <subfield code="B">SGBN</subfield>
+   <subfield code="P">770</subfield>
+   <subfield code="E">--</subfield>
+   <subfield code="t">RomandiEco</subfield>
+  </datafield>
+  <datafield tag="950" ind1=" " ind2=" ">
+   <subfield code="B">SGBN</subfield>
+   <subfield code="P">770</subfield>
+   <subfield code="E">--</subfield>
+   <subfield code="t">Auto</subfield>
+  </datafield>
+  <datafield tag="950" ind1=" " ind2=" ">
+   <subfield code="B">SGBN</subfield>
+   <subfield code="P">770</subfield>
+   <subfield code="E">--</subfield>
+   <subfield code="t">Quotidien magazine</subfield>
+  </datafield>
+  <datafield tag="950" ind1=" " ind2=" ">
+   <subfield code="B">SGBN</subfield>
+   <subfield code="P">780</subfield>
+   <subfield code="E">-5</subfield>
+   <subfield code="t">Le Démocrate</subfield>
+   <subfield code="w">(SGBN)001067270</subfield>
+   <subfield code="9">054263077</subfield>
+  </datafield>
+  <datafield tag="950" ind1=" " ind2=" ">
+   <subfield code="B">SGBN</subfield>
+   <subfield code="P">780</subfield>
+   <subfield code="E">-5</subfield>
+   <subfield code="t">Le Pays</subfield>
+   <subfield code="w">(SGBN)001075149</subfield>
+   <subfield code="9">053966031</subfield>
+  </datafield>
+  <datafield tag="950" ind1=" " ind2=" ">
+   <subfield code="B">SGBN</subfield>
+   <subfield code="P">856</subfield>
+   <subfield code="E">4-</subfield>
+   <subfield code="u">http://aleph.sg.ch:80/F?func=service&amp;doc_library=SGB01&amp;doc_number=001075325&amp;line_number=0001&amp;func_code=DB_RECORDS&amp;service_type=MEDIA</subfield>
+   <subfield code="z">Cover</subfield>
+  </datafield>
+  <datafield tag="950" ind1=" " ind2=" ">
+   <subfield code="B">IDSBB</subfield>
+   <subfield code="P">770</subfield>
+   <subfield code="E">--</subfield>
+   <subfield code="t">Jura l'original</subfield>
+  </datafield>
+  <datafield tag="950" ind1=" " ind2=" ">
+   <subfield code="B">IDSBB</subfield>
+   <subfield code="P">780</subfield>
+   <subfield code="E">-5</subfield>
+   <subfield code="t">Le Pays</subfield>
+   <subfield code="w">(IDSBB)004858159</subfield>
+   <subfield code="9">113774044</subfield>
+  </datafield>
+  <datafield tag="950" ind1=" " ind2=" ">
+   <subfield code="B">IDSBB</subfield>
+   <subfield code="P">780</subfield>
+   <subfield code="E">-5</subfield>
+   <subfield code="t">Le démocrate</subfield>
+   <subfield code="w">(IDSBB)006149465</subfield>
+   <subfield code="9">279925468</subfield>
+  </datafield>
+  <datafield tag="950" ind1=" " ind2=" ">
+   <subfield code="B">IDSBB</subfield>
+   <subfield code="P">856</subfield>
+   <subfield code="E">--</subfield>
+   <subfield code="u">http://lqj.ch</subfield>
+   <subfield code="z">Volltext. Tagesaktuelle Ausgabe</subfield>
+   <subfield code="x">02.10.2012/A110/gje</subfield>
+  </datafield>
+  <datafield tag="950" ind1=" " ind2=" ">
+   <subfield code="B">RERO</subfield>
+   <subfield code="P">770</subfield>
+   <subfield code="E">1-</subfield>
+   <subfield code="t">RomandiEco</subfield>
+  </datafield>
+  <datafield tag="950" ind1=" " ind2=" ">
+   <subfield code="B">RERO</subfield>
+   <subfield code="P">770</subfield>
+   <subfield code="E">1-</subfield>
+   <subfield code="t">Salon de la formation professionnele Jura - Jura bernois</subfield>
+  </datafield>
+  <datafield tag="950" ind1=" " ind2=" ">
+   <subfield code="B">RERO</subfield>
+   <subfield code="P">770</subfield>
+   <subfield code="E">1-</subfield>
+   <subfield code="t">St-Ursanne - Les Rangiers</subfield>
+  </datafield>
+  <datafield tag="950" ind1=" " ind2=" ">
+   <subfield code="B">RERO</subfield>
+   <subfield code="P">780</subfield>
+   <subfield code="E">10</subfield>
+   <subfield code="t">Pays. Porrentruy</subfield>
+  </datafield>
+  <datafield tag="950" ind1=" " ind2=" ">
+   <subfield code="B">RERO</subfield>
+   <subfield code="P">780</subfield>
+   <subfield code="E">10</subfield>
+   <subfield code="t">Démocrate. Delémont</subfield>
+  </datafield>
+  <datafield tag="950" ind1=" " ind2=" ">
+   <subfield code="B">RERO</subfield>
+   <subfield code="P">856</subfield>
+   <subfield code="E">4-</subfield>
+   <subfield code="u">http://www.lqj.ch</subfield>
+   <subfield code="z">Page d'accueil</subfield>
+  </datafield>
+  <datafield tag="956" ind1="4" ind2=" ">
+   <subfield code="B">SGBN</subfield>
+   <subfield code="C">SGB50</subfield>
+   <subfield code="D">SGB01</subfield>
+   <subfield code="a">SGKBV</subfield>
+   <subfield code="u">http://aleph.sg.ch:80/F?func=service&amp;doc_library=SGB01&amp;doc_number=001075325&amp;line_number=0001&amp;func_code=DB_RECORDS&amp;service_type=MEDIA</subfield>
+   <subfield code="d">$alephe_dev/objects/sgb50/view/112</subfield>
+   <subfield code="f">SN1075325_000415839_000415840.JPG</subfield>
+   <subfield code="q">JPG</subfield>
+   <subfield code="x">VIEW</subfield>
+   <subfield code="y">Cover</subfield>
+  </datafield>
+ </record>
+</collection>
+

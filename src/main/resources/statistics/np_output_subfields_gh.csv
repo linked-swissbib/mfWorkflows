@@ -1,0 +1,101 @@
+001	469108
+041 (un champ par notice)	15871
+041* $a (somme)	35031
+041* $h (somme)	855
+100* $6	31
+100* $D	89723
+100* $a (tous les sous-champs $a)	90552
+100* $b	46
+100* $c	17772
+100* $d	18230
+100* $q	798
+100, 1. un champ par notice	90552
+100, 2. tous les sous-champs	217152
+1000* $a (tous les sous-champs $a si 1er indicateur=0)	829
+1001* $a (tous les sous-champs $a si 1er indicateur=1)	89723
+245* $6	68
+245* $a (tous les sous-champs $a)	469106
+245* $b	212261
+245* $c	411084
+245* $h	50498
+245* $n	721
+245* $p	1304
+245, 1. un champ par notice	469106
+245, 2. tous les sous-champs	1145042
+260* $a (tous les sous-champs $a)	455809
+260* $b	327568
+260* $c	440295
+260* $e	29
+260, 1. un champ par notice	447514
+260, 2. tous les sous-champs	1223766
+300* $a (tous les sous-champs $a)	451469
+300* $b	218591
+300* $c	140985
+300* $e	10469
+300, 1. un champ par notice	451429
+300, 2. tous les sous-champs	821514
+490* $9	138388
+490* $a (tous les sous-champs $a)	181188
+490* $v	142218
+490, 1. un champ par notice	167977
+490, 2. tous les sous-champs	742329
+500* $a (tous les sous-champs $a)	116082
+500, 1. un champ par notice	96077
+500, 2. tous les sous-champs	116083
+650, 1. un champ	31532
+650, 2. tous les sous-champs	144156
+700* $4	3233
+700* $5	763
+700* $6	27
+700* $D	377813
+700* $a (tous les sous-champs $a)	380067
+700* $b	104
+700* $c	55329
+700* $d	53819
+700* $e	19
+700* $g	2
+700* $h	367
+700* $k	55
+700* $m	130
+700* $n	177
+700* $o	48
+700* $p	54
+700* $q	3998
+700* $r	10
+700* $s	10
+700* $t	1216
+700, 1. un champ par notice	298811
+700, 2. tous les sous-champs	877241
+7000* $a (tous les sous-champs $a si 1er indicateur=0)	2250
+7001* $a (tous les sous-champs $a si 1er indicateur=1)	377816
+7003* $a (tous les sous-champs $a si 1er indicateur=3)	1
+710* $4	1091
+710* $6	24
+710* $a (tous les sous-champs $a)	71649
+710* $b	24026
+710* $c	2514
+710* $d	2639
+710, 1. un champ par notice	59969
+710, 2. tous les sous-champs	101943
+7100* $a (tous les sous-champs $a si 1er indicateur=0)	899
+7101* $a (tous les sous-champs $a si 1er indicateur=1)	22907
+7102* $a (tous les sous-champs $a si 1er indicateur=2)	47843
+752* $a (tous les sous-champs $a)	1889
+752* $d	1755
+752, 1. un champ par notice	1678
+752, 2. tous les sous-champs	3644
+773* $9	29342
+773* $d	2830
+773* $g	29184
+773* $i	190
+773* $t	31647
+773* $w	31619
+773, 1. un champ par notice	31225
+773, 2. tous les sous-champs	179877
+856* $2	1
+856* $f	1
+856* $u	5853
+856* $x	4319
+856* $z	5653
+856, 1. un champ par notice	5528
+856, 2. tous les sous-champs	21035

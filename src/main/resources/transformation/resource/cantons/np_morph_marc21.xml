@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<metamorph xmlns="http://www.culturegraph.org/metamorph" version="1">
+
+	<rules>
+		
+		<entity name="dct:Location" >
+			<data source="canton.abr" name="~rdf:about">
+				<compose prefix="http://data.swissbib.ch/01/" />
+			</data>
+					
+		</entity>
+		
+		<data name="abreviation" source="canton.abr" />
+		
+	</rules>
+	
+</metamorph>

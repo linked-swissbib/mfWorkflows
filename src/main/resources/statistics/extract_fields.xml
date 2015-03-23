@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<metamorph xmlns="http://www.culturegraph.org/metamorph"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		version="1" entityMarker=".">
+	
+	<rules>
+		<data source="001" name="001" />
+		<choose><data source="001" name="001_choose" /></choose>
+		<choose><data source="003" name="003" /></choose>
+		<choose><data source="005" name="005" /></choose>
+		<choose><data source="006" name="006" /></choose>
+		<choose><data source="007" name="007" /></choose>
+		<choose><data source="008*.*" name="008" /></choose>
+		<choose><data source="010*.*" name="010" /></choose>
+		<choose><data source="016*.*" name="016" /></choose>
+		<choose><data source="019*.*" name="019" /></choose>
+		<choose><data source="020*.*" name="020" /></choose>
+		<choose><data source="022*.*" name="022" /></choose>
+		<choose><data source="024*.*" name="024" /></choose>
+		<choose><data source="028*.*" name="028" /></choose>
+		<choose><data source="035*.*" name="035" /></choose>
+		<choose><data source="037*.*" name="037" /></choose>
+		<choose><data source="039*.*" name="039" /></choose>
+		<choose><data source="040*.*" name="040" /></choose>
+		<choose><data source="041*.*" name="041" /></choose>
+		<choose><data source="044*.*" name="044" /></choose>
+		<choose><data source="045*.*" name="045" /></choose>
+		<choose><data source="049*.*" name="049" /></choose>
+		<choose><data source="050*.*" name="050" /></choose>
+		<choose><data source="060*.*" name="060" /></choose>
+		<choose><data source="072*.*" name="072" /></choose>
+		<choose><data source="082*.*" name="082" /></choose>
+		<choose><data source="084*.*" name="084" /></choose>
+		<choose><data source="090*.*" name="090" /></choose>
+		<choose><data source="091*.*" name="091" /></choose>
+		<choose><data source="092*.*" name="092" /></choose>
+		<choose><data source="100*.*" name="100" /></choose>
+		<choose><data source="110*.*" name="110" /></choose>
+		<choose><data source="111*.*" name="111" /></choose>
+		<choose><data source="130*.*" name="130" /></choose>
+		<choose><data source="210*.*" name="210" /></choose>
+		<choose><data source="222*.*" name="222" /></choose>
+		<choose><data source="240*.*" name="240" /></choose>
+		<choose><data source="245*.*" name="245" /></choose>
+		<choose><data source="246*.*" name="246" /></choose>
+		<choose><data source="250*.*" name="250" /></choose>
+		<choose><data source="254*.*" name="254" /></choose>
+		<choose><data source="255*.*" name="255" /></choose>
+		<choose><data source="256*.*" name="256" /></choose>
+		<choose><data source="260*.*" name="260" /></choose>
+		<choose><data source="300*.*" name="300" /></choose>
+		<choose><data source="310*.*" name="310" /></choose>
+		<choose><data source="321*.*" name="321" /></choose>
+		<choose><data source="336*.*" name="336" /></choose>
+		<choose><data source="337*.*" name="337" /></choose>
+		<choose><data source="338*.*" name="338" /></choose>
+		<choose><data source="362*.*" name="362" /></choose>
+		<choose><data source="490*.*" name="490" /></choose>
+		<choose><data source="500*.*" name="500" /></choose>
+		<choose><data source="502*.*" name="502" /></choose>
+		<choose><data source="504*.*" name="504" /></choose>
+		<choose><data source="505*.*" name="505" /></choose>
+		<choose><data source="508*.*" name="508" /></choose>
+		<choose><data source="509*.*" name="509" /></choose>
+		<choose><data source="510*.*" name="510" /></choose>
+		<choose><data source="511*.*" name="511" /></choose>
+		<choose><data source="520*.*" name="520" /></choose>
+		<choose><data source="521*.*" name="521" /></choose>
+		<choose><data source="533*.*" name="533" /></choose>
+		<choose><data source="534*.*" name="534" /></choose>
+		<choose><data source="538*.*" name="538" /></choose>
+		<choose><data source="580*.*" name="580" /></choose>
+		<choose><data source="583*.*" name="583" /></choose>
+		<choose><data source="590*.*" name="590" /></choose>
+		<choose><data source="591*.*" name="591" /></choose>
+		<choose><data source="595*.*" name="595" /></choose>
+		<choose><data source="600*.*" name="600" /></choose>
+		<choose><data source="610*.*" name="610" /></choose>
+		<choose><data source="611*.*" name="611" /></choose>
+		<choose><data source="630*.*" name="630" /></choose>
+		<choose><data source="648*.*" name="648" /></choose>
+		<choose><data source="650*.*" name="650" /></choose>
+		<choose><data source="651*.*" name="651" /></choose>
+		<choose><data source="653*.*" name="653" /></choose>
+		<choose><data source="654*.*" name="654" /></choose>
+		<choose><data source="655*.*" name="655" /></choose>
+		<choose><data source="656*.*" name="656" /></choose>
+		<choose><data source="657*.*" name="657" /></choose>
+		<choose><data source="658*.*" name="658" /></choose>
+		<choose><data source="662*.*" name="662" /></choose>
+		<choose><data source="689*.*" name="689" /></choose>
+		<choose><data source="690*.*" name="690" /></choose>
+		<choose><data source="691*.*" name="691" /></choose>
+		<choose><data source="692*.*" name="692" /></choose>
+		<choose><data source="695*.*" name="695" /></choose>
+		<choose><data source="700*.*" name="700" /></choose>
+		<choose><data source="710*.*" name="710" /></choose>
+		<choose><data source="711*.*" name="711" /></choose>
+		<choose><data source="720*.*" name="720" /></choose>
+		<choose><data source="730*.*" name="730" /></choose>
+		<choose><data source="740*.*" name="740" /></choose>
+		<choose><data source="751*.*" name="751" /></choose>
+		<choose><data source="752*.*" name="752" /></choose>
+		<choose><data source="753*.*" name="753" /></choose>
+		<choose><data source="754*.*" name="754" /></choose>
+		<choose><data source="760*.*" name="760" /></choose>
+		<choose><data source="765*.*" name="765" /></choose>
+		<choose><data source="767*.*" name="767" /></choose>
+		<choose><data source="770*.*" name="770" /></choose>
+		<choose><data source="772*.*" name="772" /></choose>
+		<choose><data source="773*.*" name="773" /></choose>
+		<choose><data source="774*.*" name="774" /></choose>
+		<choose><data source="775*.*" name="775" /></choose>
+		<choose><data source="776*.*" name="776" /></choose>
+		<choose><data source="777*.*" name="777" /></choose>
+		<choose><data source="780*.*" name="780" /></choose>
+		<choose><data source="785*.*" name="785" /></choose>
+		<choose><data source="787*.*" name="787" /></choose>
+		<choose><data source="800*.*" name="800" /></choose>
+		<choose><data source="810*.*" name="810" /></choose>
+		<choose><data source="811*.*" name="811" /></choose>
+		<choose><data source="830*.*" name="830" /></choose>
+		<choose><data source="852*.*" name="852" /></choose>
+		<choose><data source="856*.*" name="856" /></choose>
+		<choose><data source="880*.*" name="880" /></choose>
+		<choose><data source="897*.*" name="897" /></choose>
+		<choose><data source="898*.*" name="898" /></choose>
+		<choose><data source="908*.*" name="908" /></choose>
+		<choose><data source="909*.*" name="909" /></choose>
+		<choose><data source="912*.*" name="912" /></choose>
+		<choose><data source="913*.*" name="913" /></choose>
+		<choose><data source="949*.*" name="949" /></choose>
+		<choose><data source="950*.*" name="950" /></choose>
+		<choose><data source="956*.*" name="956" /></choose>
+		<choose><data source="986*.*" name="986" /></choose>
+		
+		
+		
+	</rules>
+	
+</metamorph>

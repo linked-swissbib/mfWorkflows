@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<metamorph xmlns="http://www.culturegraph.org/metamorph"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		version="1" entityMarker=".">
+	
+	<rules>
+		<data source="001" name="001" />
+
+<!-- 041 -->
+		<choose><data source="041*.*" name="041 (un champ par notice)" /></choose>
+		<data source="041*.a" name="041* $a (somme)" />
+		<data source="041*.h" name="041* $h (somme)" />
+
+<!-- 100 -->
+		<choose><data source="100*.*" name="100, 1. un champ par notice" /></choose>		
+		<data source="100*.*" name="100, 2. tous les sous-champs" />
+		<data source="100*.a" name="100* $a (tous les sous-champs $a)" />
+		<data source="1000*.a" name="1000* $a (tous les sous-champs $a si 1er indicateur=0)" />
+		<data source="1001*.a" name="1001* $a (tous les sous-champs $a si 1er indicateur=1)" />
+		<data source="1003*.a" name="1003* $a (tous les sous-champs $a si 1er indicateur=3)" />
+		<data source="100*.b" name="100* $b" />
+		<data source="100*.c" name="100* $c" />
+		<data source="100*.d" name="100* $d" />
+		<data source="100*.e" name="100* $e" />
+		<data source="100*.f" name="100* $f" />
+		<data source="100*.g" name="100* $g" />
+		<data source="100*.j" name="100* $j" />
+		<data source="100*.k" name="100* $k" />
+		<data source="100*.l" name="100* $l" />
+		<data source="100*.n" name="100* $n" />
+		<data source="100*.p" name="100* $p" />
+		<data source="100*.q" name="100* $q" />
+		<data source="100*.t" name="100* $t" />
+		<data source="100*.u" name="100* $u" />
+		<data source="100*.0" name="100* $0" />
+		<data source="100*.4" name="100* $4" />
+		<data source="100*.6" name="100* $6" />
+		<data source="100*.8" name="100* $8" />
+		<data source="100*.D" name="100* $D" />
+
+<!-- 245 -->
+		<choose><data source="245*.*" name="245, 1. un champ par notice" /></choose>		
+		<data source="245*.*" name="245, 2. tous les sous-champs" />
+		<data source="245*.a" name="245* $a (tous les sous-champs $a)" />
+		<data source="245*.b" name="245* $b" />
+		<data source="245*.c" name="245* $c" />
+		<data source="245*.f" name="245* $f" />
+		<data source="245*.g" name="245* $g" />
+		<data source="245*.h" name="245* $h" />
+		<data source="245*.k" name="245* $k" />
+		<data source="245*.n" name="245* $n" />
+		<data source="245*.p" name="245* $p" />
+		<data source="245*.s" name="245* $s" />
+		<data source="245*.6" name="245* $6" />
+		<data source="245*.8" name="245* $8" />
+		
+<!-- 260 -->
+		<choose><data source="260*.*" name="260, 1. un champ par notice" /></choose>		
+		<data source="260*.*" name="260, 2. tous les sous-champs" />
+		<data source="260*.a" name="260* $a (tous les sous-champs $a)" />
+		<data source="260*.b" name="260* $b" />
+		<data source="260*.c" name="260* $c" />
+		<data source="260*.e" name="260* $e" />
+		<data source="260*.f" name="260* $f" />
+		<data source="260*.g" name="260* $g" />
+
+<!-- 300 -->
+		<choose><data source="300*.*" name="300, 1. un champ par notice" /></choose>		
+		<data source="300*.*" name="300, 2. tous les sous-champs" />
+		<data source="300*.a" name="300* $a (tous les sous-champs $a)" />
+		<data source="300*.b" name="300* $b" />
+		<data source="300*.c" name="300* $c" />
+		<data source="300*.e" name="300* $e" />
+		<data source="300*.f" name="300* $f" />
+		<data source="300*.g" name="300* $g" />
+		
+<!-- 490 -->
+		<choose><data source="490*.*" name="490, 1. un champ par notice" /></choose>		
+		<data source="490*.*" name="490, 2. tous les sous-champs" />
+		<data source="490*.a" name="490* $a (tous les sous-champs $a)" />
+		<data source="490*.v" name="490* $v" />
+		<data source="490*.x" name="490* $x" />
+		<data source="490*.9" name="490* $9" />
+
+<!-- 500 -->
+		<choose><data source="500*.*" name="500, 1. un champ par notice" /></choose>		
+		<data source="500*.*" name="500, 2. tous les sous-champs" />
+		<data source="500*.a" name="500* $a (tous les sous-champs $a)" />
+
+<!-- 650 (subjects)
+		Analyse à affiner:
+		Quel pourcentage de GND?
+		Quel pourcentage de RAMEAU?
+		Quel pourcentage de LOC? -->
+		<choose><data source="650*.*" name="650, 1. un champ" /></choose>		
+		<data source="650*.*" name="650, 2. tous les sous-champs" />
+
+<!-- 700 -->
+		<choose><data source="700*.*" name="700, 1. un champ par notice" /></choose>		
+		<data source="700*.*" name="700, 2. tous les sous-champs" />
+		<data source="700*.a" name="700* $a (tous les sous-champs $a)" />
+		<data source="7000*.a" name="7000* $a (tous les sous-champs $a si 1er indicateur=0)" />
+		<data source="7001*.a" name="7001* $a (tous les sous-champs $a si 1er indicateur=1)" />
+		<data source="7003*.a" name="7003* $a (tous les sous-champs $a si 1er indicateur=3)" />
+		<data source="700?2.a" name="700?2 $a (tous les sous-champs $a si 2e indicateur=2)" />
+		<data source="700*.b" name="700* $b" />
+		<data source="700*.c" name="700* $c" />
+		<data source="700*.d" name="700* $d" />
+		<data source="700*.e" name="700* $e" />
+		<data source="700*.f" name="700* $f" />
+		<data source="700*.g" name="700* $g" />
+		<data source="700*.h" name="700* $h" />
+		<data source="700*.i" name="700* $i" />
+		<data source="700*.j" name="700* $j" />
+		<data source="700*.k" name="700* $k" />
+		<data source="700*.l" name="700* $l" />
+		<data source="700*.m" name="700* $m" />
+		<data source="700*.n" name="700* $n" />
+		<data source="700*.o" name="700* $o" />
+		<data source="700*.p" name="700* $p" />
+		<data source="700*.q" name="700* $q" />
+		<data source="700*.r" name="700* $r" />
+		<data source="700*.s" name="700* $s" />
+		<data source="700*.t" name="700* $t" />
+		<data source="700*.u" name="700* $u" />
+		<data source="700*.x" name="700* $x" />
+		<data source="700*.0" name="700* $0" />
+		<data source="700*.3" name="700* $3" />
+		<data source="700*.4" name="700* $4" />
+		<data source="700*.5" name="700* $5" />
+		<data source="700*.6" name="700* $6" />
+		<data source="700*.8" name="700* $8" />
+		<data source="700*.D" name="700* $D" />		
+
+<!-- 710 -->
+		<choose><data source="710*.*" name="710, 1. un champ par notice" /></choose>		
+		<data source="710*.*" name="710, 2. tous les sous-champs" />
+		<data source="710*.a" name="710* $a (tous les sous-champs $a)" />
+		<data source="7100*.a" name="7100* $a (tous les sous-champs $a si 1er indicateur=0)" />
+		<data source="7101*.a" name="7101* $a (tous les sous-champs $a si 1er indicateur=1)" />
+		<data source="7102*.a" name="7102* $a (tous les sous-champs $a si 1er indicateur=2)" />
+		<data source="710?2.a" name="710?2 $a (tous les sous-champs $a si 2e indicateur=2)" />
+		<data source="710*.b" name="710* $b" />
+		<data source="710*.c" name="710* $c" />
+		<data source="710*.d" name="710* $d" />
+		<data source="710*.e" name="710* $e" />
+		<data source="710*.f" name="710* $f" />
+		<data source="710*.g" name="710* $g" />
+		<data source="710*.h" name="710* $h" />
+		<data source="710*.i" name="710* $i" />
+		<data source="710*.k" name="710* $k" />
+		<data source="710*.l" name="710* $l" />
+		<data source="710*.m" name="710* $m" />
+		<data source="710*.n" name="710* $n" />
+		<data source="710*.o" name="710* $o" />
+		<data source="710*.p" name="710* $p" />
+		<data source="710*.r" name="710* $r" />
+		<data source="710*.s" name="710* $s" />
+		<data source="710*.t" name="710* $t" />
+		<data source="710*.u" name="710* $u" />
+		<data source="710*.x" name="710* $x" />
+		<data source="710*.0" name="710* $0" />
+		<data source="710*.3" name="710* $3" />
+		<data source="710*.4" name="710* $4" />
+		<data source="710*.5" name="710* $5" />
+		<data source="710*.6" name="710* $6" />
+		<data source="710*.8" name="710* $8" />		
+		
+<!-- 752 -->
+		<choose><data source="752*.*" name="752, 1. un champ par notice" /></choose>		
+		<data source="752*.*" name="752, 2. tous les sous-champs" />
+		<data source="752*.a" name="752* $a (tous les sous-champs $a)" />
+		<data source="752*.b" name="752* $b" />
+		<data source="752*.c" name="752* $c" />
+		<data source="752*.d" name="752* $d" />
+		<data source="752*.f" name="752* $f" />
+		<data source="752*.g" name="752* $g" />
+		<data source="752*.h" name="752* $h" />
+		<data source="752*.0" name="752* $0" />
+		<data source="752*.2" name="752* $2" />
+		
+<!-- 773 -->
+		<choose><data source="773*.*" name="773, 1. un champ par notice" /></choose>		
+		<data source="773*.*" name="773, 2. tous les sous-champs" />
+		<data source="773*.a" name="773* $a (tous les sous-champs $a)" />
+		<data source="773*.b" name="773* $b" />
+		<data source="773*.d" name="773* $d" />
+		<data source="773*.g" name="773* $g" />
+		<data source="773*.h" name="773* $h" />
+		<data source="773*.i" name="773* $i" />
+		<data source="773*.k" name="773* $k" />
+		<data source="773*.m" name="773* $m" />
+		<data source="773*.n" name="773* $n" />
+		<data source="773*.o" name="773* $o" />
+		<data source="773*.p" name="773* $p" />
+		<data source="773*.q" name="773* $q" />
+		<data source="773*.r" name="773* $r" />
+		<data source="773*.s" name="773* $s" />
+		<data source="773*.t" name="773* $t" />
+		<data source="773*.u" name="773* $u" />
+		<data source="773*.w" name="773* $w" />
+		<data source="773*.x" name="773* $x" />
+		<data source="773*.y" name="773* $y" />
+		<data source="773*.z" name="773* $z" />
+		<data source="773*.6" name="773* $6" />
+		<data source="773*.9" name="773* $9" />
+		
+<!-- 830 -->
+		<choose><data source="830*.*" name="830, 1. un champ par notice" /></choose>		
+		<data source="830*.*" name="830, 2. tous les sous-champs" />
+		<data source="830*.a" name="830* $a (tous les sous-champs $a)" />
+		<data source="830*.d" name="830* $d" />
+		<data source="830*.f" name="830* $f" />
+		<data source="830*.g" name="830* $g" />
+		<data source="830*.h" name="830* $h" />
+		<data source="830*.k" name="830* $k" />
+		<data source="830*.l" name="830* $l" />
+		<data source="830*.m" name="830* $m" />
+		<data source="830*.n" name="830* $n" />
+		<data source="830*.o" name="830* $o" />
+		<data source="830*.p" name="830* $p" />
+		<data source="830*.r" name="830* $r" />
+		<data source="830*.s" name="830* $s" />
+		<data source="830*.t" name="830* $t" />
+		<data source="830*.v" name="830* $v" />
+		<data source="830*.w" name="830* $w" />
+		<data source="830*.x" name="830* $x" />
+		<data source="830*.0" name="830* $0" />
+		<data source="830*.6" name="830* $6" />
+		<data source="830*.9" name="830* $9" />
+		
+<!-- 856 -->
+		<choose><data source="856*.*" name="856, 1. un champ par notice" /></choose>		
+		<data source="856*.*" name="856, 2. tous les sous-champs" />
+		<data source="856 *.a" name="856_* $a (tous les sous-champs $a si 1er indicateur=_)" />
+		<data source="8560*.a" name="8560* $a (tous les sous-champs $a si 1er indicateur=0)" />
+		<data source="8561*.a" name="8561* $a (tous les sous-champs $a si 1er indicateur=1)" />
+		<data source="8562*.a" name="8562* $a (tous les sous-champs $a si 1er indicateur=2)" />
+		<data source="8563*.a" name="8563* $a (tous les sous-champs $a si 1er indicateur=3)" />
+		<data source="8564*.a" name="8564* $a (tous les sous-champs $a si 1er indicateur=4)" />
+		<data source="8567*.a" name="8567* $a (tous les sous-champs $a si 1er indicateur=7)" />
+		<data source="856? .a" name="856?_$a (tous les sous-champs $a si 2e indicateur=_)" />
+		<data source="856?0.a" name="856?0 $a (tous les sous-champs $a si 2e indicateur=0)" />
+		<data source="856?1.a" name="856?1 $a (tous les sous-champs $a si 2e indicateur=1)" />
+		<data source="856?2.a" name="856?2 $a (tous les sous-champs $a si 2e indicateur=2)" />
+		<data source="856?8.a" name="856?8 $a (tous les sous-champs $a si 2e indicateur=8)" />
+		<data source="856*.a" name="856* $a (tous les sous-champs $a)" />
+		<data source="856*.b" name="856* $b" />
+		<data source="856*.B" name="856* $B" />
+		<data source="856*.c" name="856* $c" />
+		<data source="856*.d" name="856* $d" />
+		<data source="856*.f" name="856* $f" />
+		<data source="856*.h" name="856* $h" />
+		<data source="856*.i" name="856* $i" />
+		<data source="856*.j" name="856* $j" />
+		<data source="856*.k" name="856* $k" />
+		<data source="856*.l" name="856* $l" />
+		<data source="856*.m" name="856* $m" />
+		<data source="856*.n" name="856* $n" />
+		<data source="856*.o" name="856* $o" />
+		<data source="856*.p" name="856* $p" />
+		<data source="856*.q" name="856* $q" />
+		<data source="856*.r" name="856* $r" />
+		<data source="856*.s" name="856* $s" />
+		<data source="856*.t" name="856* $t" />
+		<data source="856*.u" name="856* $u" />
+		<data source="856*.v" name="856* $v" />
+		<data source="856*.w" name="856* $w" />
+		<data source="856*.x" name="856* $x" />
+		<data source="856*.y" name="856* $y" />
+		<data source="856*.z" name="856* $z" />
+		<data source="856*.2" name="856* $2" />	
+		
+		<!-- champs les plus importants à analyser en détails:
+		041 ok
+		100 ok
+		245 ok
+		260 ok
+		300 ok
+		490 ok
+		500 ok 
+		650 (ok)
+		700 ok
+		710 ok
+		752 ok
+		773 ok
+		830 ok
+		856> ok
+		956> ?
+		 -->
+		
+		
+	</rules>
+	
+</metamorph>
