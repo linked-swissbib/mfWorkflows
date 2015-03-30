@@ -468,11 +468,11 @@
 	</rules>
 
 	<maps>
-		<filemap name="cantons" files="./examples/nicolas/maps/cantons.txt" separator="\t"/>
-		<filemap name="languages" files="./examples/nicolas/maps/languages.txt" separator="\t"/>
-		<filemap name="countries" files="./examples/nicolas/maps/countries.txt" separator="\t"/>
-		<filemap name="type_content" files="./examples/nicolas/maps/type_content.txt" separator="\t"/>
-		<filemap name="type_media" files="./examples/nicolas/maps/type_media.txt" separator="\t"/>
+		<filemap name="cantons" files="./src/main/resources/transformation/resource/maps/cantons.txt" separator="\t"/>
+		<filemap name="languages" files="./src/main/resources/transformation/resource/maps/languages.txt" separator="\t"/>
+		<filemap name="countries" files="./src/main/resources/transformation/resource/maps/countries.txt" separator="\t"/>
+		<filemap name="type_content" files="./src/main/resources/transformation/resource/maps/type_content.txt" separator="\t"/>
+		<filemap name="type_media" files="./src/main/resources/transformation/resource/maps/type_media.txt" separator="\t"/>
 	</maps>
 
 	<!--TO DO:

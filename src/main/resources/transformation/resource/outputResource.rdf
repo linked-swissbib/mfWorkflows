@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:rdau="http://rdaregistry.info/Elements/u/" xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:owl="http://www.w3.org/2004/02/skos/core#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:void="http://rdfs.org/ns/void#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
 
-		<bibo:Document rdf:about="http://data.swissbib.ch/01/316022063/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-03-23T15:52:40.751Z</dct:issued>
-			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/01/316022063" />
+		<bibo:Document rdf:about="http://data.swissbib.ch/resource/316022063/about">
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-03-30T06:59:57.117Z</dct:issued>
+			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/316022063" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-05-27T15:12:24+01:00</dct:modified>
 			<dc:contributor>RERO</dc:contributor>
 			<dc:contributor>SGBN</dc:contributor>
 			<dc:contributor>NEBIS</dc:contributor>
 			<dc:contributor>IDSBB</dc:contributor>
 		</bibo:Document>
-		<dct:BibliographicResource rdf:about="http://data.swissbib.ch/01/316022063">
-			<rdfs:isDefinedBy rdf:resource="http://data.swissbib.ch/01/316022063/about" />
+		<dct:BibliographicResource rdf:about="http://data.swissbib.ch/resource/316022063">
+			<rdfs:isDefinedBy rdf:resource="http://data.swissbib.ch/resource/316022063/about" />
 			<rdau:placeOfPublication rdf:resource="http://sws.geonames.org/2921044/" />
 			<rdau:noteOnResource>Originaltitel: La realidad histórica de España</rdau:noteOnResource>
 			<dct:hasPart>Vol. 1: La voie des ombres</dct:hasPart>
@@ -27,9 +27,11 @@
 			<dct:contributor>Nicolas</dct:contributor>
 			<rdau:contentType rdf:resource="http://rdvocab.info/termList/RDAContentType/1020" />
 			<rdau:mediaType rdf:resource="http://rdvocab.info/termList/RDAMediaType/1007" />
+			<rdau:modeOfIssuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1004" />
 			<dct:language rdf:resource="http://lexvo.org/id/iso639-3/deu" />
 			<dct:issued>1957</dct:issued>
-			<rdau:placeOfPublication rdf:resource="http://data.swissbib.ch/04/cantonCH-ju" />
+			<dbp:originalLanguage rdf:resource="http://lexvo.org/id/iso639-3/spa" rdf:resource="http://lexvo.org/id/iso639-3/ara" />
+			<rdau:placeOfPublication rdf:resource="http://data.swissbib.ch/place/swiss-canton-ju" />
 			<dc:contributor>Castro, Américo</dc:contributor>
 			<dct:title>Spanien Vision und Wirklichkeit / Americo Castro ; [aus dem Spanischen übertragen von Suzanne Heintz]</dct:title>
 			<rdau:publicationStatement>Köln [etc.] : Kiepenheuer und Witsch, 1957</rdau:publicationStatement>
@@ -38,17 +40,17 @@
 		</dct:BibliographicResource>
 	
 
-		<bibo:Document rdf:about="http://data.swissbib.ch/01/31602208X/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-03-23T15:52:40.788Z</dct:issued>
-			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/01/31602208X" />
+		<bibo:Document rdf:about="http://data.swissbib.ch/resource/31602208X/about">
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-03-30T06:59:57.135Z</dct:issued>
+			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/31602208X" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-16T23:44:29+01:00</dct:modified>
 			<dc:contributor>ABN</dc:contributor>
 			<dc:contributor>IDSBB</dc:contributor>
 			<dc:contributor>NEBIS</dc:contributor>
 			<dc:contributor>OCoLC</dc:contributor>
 		</bibo:Document>
-		<dct:BibliographicResource rdf:about="http://data.swissbib.ch/01/31602208X">
-			<rdfs:isDefinedBy rdf:resource="http://data.swissbib.ch/01/31602208X/about" />
+		<dct:BibliographicResource rdf:about="http://data.swissbib.ch/resource/31602208X">
+			<rdfs:isDefinedBy rdf:resource="http://data.swissbib.ch/resource/31602208X/about" />
 			<rdau:placeOfPublication rdf:resource="http://sws.geonames.org/2921044/" />
 			<bibo:isbn13>9783825239886</bibo:isbn13>
 			<bibo:isbn10>3825239888</bibo:isbn10>
@@ -68,22 +70,22 @@
 			<rdau:mediaType rdf:resource="http://rdvocab.info/termList/RDAMediaType/1007" />
 			<dct:language rdf:resource="http://lexvo.org/id/iso639-3/deu" />
 			<dct:issued>2014</dct:issued>
-			<rdau:placeOfPublication rdf:resource="http://data.swissbib.ch/04/cantonCH-bl" />
+			<rdau:placeOfPublication rdf:resource="http://data.swissbib.ch/place/swiss-canton-bl" />
 			<dct:title>Spanische Literaturgeschichte : eine kommentierte Anthologie / hrsg. von Carmen Rivero Iglesias</dct:title>
 			<rdau:publicationStatement>Paderborn : Fink, 2014</rdau:publicationStatement>
 			<dc:format>380 S</dc:format>
 		</dct:BibliographicResource>
 	
 
-		<bibo:Document rdf:about="http://data.swissbib.ch/01/316022098/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-03-23T15:52:40.806Z</dct:issued>
-			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/01/316022098" />
+		<bibo:Document rdf:about="http://data.swissbib.ch/resource/316022098/about">
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-03-30T06:59:57.145Z</dct:issued>
+			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/316022098" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-05-24T07:05:47+01:00</dct:modified>
 			<dc:contributor>NEBIS</dc:contributor>
 			<dc:contributor>IDSLU</dc:contributor>
 		</bibo:Document>
-		<dct:BibliographicResource rdf:about="http://data.swissbib.ch/01/316022098">
-			<rdfs:isDefinedBy rdf:resource="http://data.swissbib.ch/01/316022098/about" />
+		<dct:BibliographicResource rdf:about="http://data.swissbib.ch/resource/316022098">
+			<rdfs:isDefinedBy rdf:resource="http://data.swissbib.ch/resource/316022098/about" />
 			<rdau:placeOfPublication rdf:resource="http://sws.geonames.org/2658434/" />
 			<bibo:isbn13>9783906178004</bibo:isbn13>
 			<bibo:isbn10>3906178005</bibo:isbn10>
@@ -95,6 +97,7 @@
 			<dc:contributor>Trüby, Stephan</dc:contributor>
 			<rdau:contentType rdf:resource="http://rdvocab.info/termList/RDAContentType/1020" />
 			<rdau:mediaType rdf:resource="http://rdvocab.info/termList/RDAMediaType/1007" />
+			<rdau:modeOfIssuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1003" />
 			<dct:language rdf:resource="http://lexvo.org/id/iso639-3/deu" />
 			<dct:issued>2013</dct:issued>
 			<dct:title>Spatial Design : Gespräche über Architekturen, Ausstellungen, Bühnenbilder und Urbane Interventionen : ein Reader des MAS Spatial Design / Stephan Trüby (Hrsg.)</dct:title>
@@ -104,16 +107,16 @@
 		</dct:BibliographicResource>
 	
 
-		<bibo:Document rdf:about="http://data.swissbib.ch/01/316022101/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-03-23T15:52:40.818Z</dct:issued>
-			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/01/316022101" />
+		<bibo:Document rdf:about="http://data.swissbib.ch/resource/316022101/about">
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-03-30T06:59:57.153Z</dct:issued>
+			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/316022101" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-08T08:00:34+01:00</dct:modified>
 			<dc:contributor>BGR</dc:contributor>
 			<dc:contributor>SNL</dc:contributor>
 			<dc:contributor>Sz</dc:contributor>
 		</bibo:Document>
-		<dct:BibliographicResource rdf:about="http://data.swissbib.ch/01/316022101">
-			<rdfs:isDefinedBy rdf:resource="http://data.swissbib.ch/01/316022101/about" />
+		<dct:BibliographicResource rdf:about="http://data.swissbib.ch/resource/316022101">
+			<rdfs:isDefinedBy rdf:resource="http://data.swissbib.ch/resource/316022101/about" />
 			<rdau:placeOfPublication rdf:resource="http://sws.geonames.org/2658434/" />
 			<bibo:isbn13>9783856374297</bibo:isbn13>
 			<bibo:isbn10>3856374299</bibo:isbn10>
@@ -136,18 +139,18 @@
 		</dct:BibliographicResource>
 	
 
-		<bibo:Document rdf:about="http://data.swissbib.ch/01/vtls003010104/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-03-23T15:52:40.831Z</dct:issued>
-			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/01/vtls003010104" />
+		<bibo:Document rdf:about="http://data.swissbib.ch/resource/vtls003010104/about">
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-03-30T06:59:57.160Z</dct:issued>
+			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/vtls003010104" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-04-21T07:02:00+01:00</dct:modified>
 			<dc:contributor>RERO</dc:contributor>
 		</bibo:Document>
-		<dct:BibliographicResource rdf:about="http://data.swissbib.ch/01/vtls003010104">
-			<rdfs:isDefinedBy rdf:resource="http://data.swissbib.ch/01/vtls003010104/about" />
+		<dct:BibliographicResource rdf:about="http://data.swissbib.ch/resource/vtls003010104">
+			<rdfs:isDefinedBy rdf:resource="http://data.swissbib.ch/resource/vtls003010104/about" />
 			<rdau:placeOfPublication rdf:resource="http://sws.geonames.org/2658434/" />
 			<dct:bibliographicCitation>In: Le quotidien jurassien. - Delémont. - 23 mars 1996</dct:bibliographicCitation>
 			<dc:contributor>Bataillard, Josiane, </dc:contributor>
-			<dct:isPartOf rdf:resource="http://data.swissbib.ch/01/268337713" />
+			<dct:isPartOf rdf:resource="http://data.swissbib.ch/resource/268337713" />
 			<dct:language rdf:resource="http://lexvo.org/id/iso639-3/fra" />
 			<dct:issued>1996</dct:issued>
 			<dc:contributor>Bouvier, Nicolas,</dc:contributor>
@@ -156,9 +159,9 @@
 		</dct:BibliographicResource>
 	
 
-		<bibo:Document rdf:about="http://data.swissbib.ch/01/268337713/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-03-23T15:52:40.835Z</dct:issued>
-			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/01/268337713" />
+		<bibo:Document rdf:about="http://data.swissbib.ch/resource/268337713/about">
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-03-30T06:59:57.163Z</dct:issued>
+			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/268337713" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-07T04:58:42+01:00</dct:modified>
 			<dc:contributor>SNL</dc:contributor>
 			<dc:contributor>SGBN</dc:contributor>
@@ -168,8 +171,8 @@
 			<dc:contributor>Sz</dc:contributor>
 			<dc:contributor>Sz</dc:contributor>
 		</bibo:Document>
-		<dct:BibliographicResource rdf:about="http://data.swissbib.ch/01/268337713">
-			<rdfs:isDefinedBy rdf:resource="http://data.swissbib.ch/01/268337713/about" />
+		<dct:BibliographicResource rdf:about="http://data.swissbib.ch/resource/268337713">
+			<rdfs:isDefinedBy rdf:resource="http://data.swissbib.ch/resource/268337713/about" />
 			<rdau:placeOfPublication rdf:resource="http://sws.geonames.org/2658434/" />
 			<dct:alternative>Démocrate</dct:alternative>
 			<dct:alternative>Pays</dct:alternative>
@@ -178,6 +181,7 @@
 			<dct:subject rdf:resource="http://d-nb.info/gnd/4266795-1" />
 			<rdau:contentType rdf:resource="http://rdvocab.info/termList/RDAContentType/1020" rdf:resource="http://rdvocab.info/termList/RDAContentType/1020" />
 			<rdau:mediaType rdf:resource="http://rdvocab.info/termList/RDAMediaType/1007" rdf:resource="http://rdvocab.info/termList/RDAMediaType/1007" />
+			<rdau:modeOfIssuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1003" />
 			<dct:language rdf:resource="http://lexvo.org/id/iso639-3/fra" />
 			<dct:issued>1993-9999</dct:issued>
 			<dct:title>Le Quotidien jurassien</dct:title>
