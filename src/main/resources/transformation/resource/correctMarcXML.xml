@@ -26,6 +26,7 @@
 			<subfield code="a">ger</subfield>
 			<subfield code="a">fre</subfield>
 			<subfield code="h">spa</subfield>
+			<subfield code="h">ara</subfield>
 		</datafield>
 		<datafield tag="044" ind1=" " ind2=" ">
 			<subfield code="a">sz</subfield>
@@ -237,7 +238,7 @@
 			<subfield code="b">271128399</subfield>
 		</datafield>
 		<datafield tag="898" ind1=" " ind2=" ">
-			<subfield code="a">BK020000</subfield>
+			<subfield code="a">CR020000</subfield>
 			<subfield code="b">BK020000</subfield>
 		</datafield>
 		<datafield tag="949" ind1=" " ind2=" ">
@@ -441,7 +442,7 @@
 			<subfield code="g">Tome 2</subfield>
 			<subfield code="t">E-M</subfield>
 			<subfield code="r">Par Charles Laboulaye et MM. Debette, Barral</subfield>
-		</datafield>	
+		</datafield>
 		<datafield tag="505" ind1="0" ind2="0">
 			<subfield code="g">Tome 3</subfield>
 			<subfield code="t">N-Z</subfield>
@@ -797,7 +798,7 @@
 			<subfield code="b">303465476</subfield>
 		</datafield>
 		<datafield tag="898" ind1=" " ind2=" ">
-			<subfield code="a">BK020000</subfield>
+			<subfield code="a">CR030000</subfield>
 			<subfield code="b">BK020000</subfield>
 		</datafield>
 		<datafield tag="949" ind1=" " ind2=" ">
@@ -1172,459 +1173,459 @@
 		</datafield>
 	</record>
 	<record>
-  <leader>     cas a22     1  4500</leader>
-  <controlfield tag="001">268337713</controlfield>
-  <controlfield tag="003">CHVBK</controlfield>
-  <controlfield tag="005">20150207045842.0</controlfield>
-  <controlfield tag="007">ta</controlfield>
-  <controlfield tag="008">130817c19939999sz dr n       0   b0fre d</controlfield>
-  <datafield tag="019" ind1=" " ind2=" ">
-   <subfield code="a">Bibliographiert in: Helveticat</subfield>
-   <subfield code="5">25.08.1997/bauub-/lbr</subfield>
-  </datafield>
-  <datafield tag="022" ind1="0" ind2=" ">
-   <subfield code="a">1423-1778</subfield>
-   <subfield code="2">40</subfield>
-  </datafield>
-  <datafield tag="035" ind1=" " ind2=" ">
-   <subfield code="a">(SNL)vtls000111484</subfield>
-  </datafield>
-  <datafield tag="035" ind1=" " ind2=" ">
-   <subfield code="a">(SGBN)001075325</subfield>
-  </datafield>
-  <datafield tag="035" ind1=" " ind2=" ">
-   <subfield code="a">(IDSBB)001419114</subfield>
-  </datafield>
-  <datafield tag="035" ind1=" " ind2=" ">
-   <subfield code="a">(RERO)1691138</subfield>
-  </datafield>
-  <datafield tag="035" ind1=" " ind2=" ">
-   <subfield code="a">(NEBIS)001738738</subfield>
-  </datafield>
-  <datafield tag="035" ind1=" " ind2=" ">
-   <subfield code="a">(Sz)000111484</subfield>
-  </datafield>
-  <datafield tag="035" ind1=" " ind2=" ">
-   <subfield code="a">(Sz)vtls000111484</subfield>
-  </datafield>
-  <datafield tag="040" ind1=" " ind2=" ">
-   <subfield code="a">Sz</subfield>
-   <subfield code="c">SAZ</subfield>
-   <subfield code="d">Sz</subfield>
-  </datafield>
-  <datafield tag="072" ind1=" " ind2="7">
-   <subfield code="a">s1ge</subfield>
-   <subfield code="2">rero</subfield>
-  </datafield>
-  <datafield tag="080" ind1=" " ind2=" ">
-   <subfield code="a">008(494)</subfield>
-  </datafield>
-  <datafield tag="210" ind1="0" ind2=" ">
-   <subfield code="a">Quotid. jura.</subfield>
-  </datafield>
-  <datafield tag="222" ind1=" " ind2="3">
-   <subfield code="a">Le Quotidien jurassien</subfield>
-  </datafield>
-  <datafield tag="245" ind1="0" ind2="3">
-   <subfield code="a">Le Quotidien jurassien</subfield>
-  </datafield>
-  <datafield tag="246" ind1="1" ind2=" ">
-   <subfield code="a">Démocrate</subfield>
-  </datafield>
-  <datafield tag="246" ind1="1" ind2=" ">
-   <subfield code="a">Pays</subfield>
-  </datafield>
-  <datafield tag="260" ind1=" " ind2=" ">
-   <subfield code="a">Delémont</subfield>
-   <subfield code="b">Le Quotidien jurassien</subfield>
-   <subfield code="c">1993-</subfield>
-  </datafield>
-  <datafield tag="300" ind1=" " ind2=" ">
-   <subfield code="a">vol</subfield>
-   <subfield code="b">Ill</subfield>
-   <subfield code="c">50 cm</subfield>
-  </datafield>
-  <datafield tag="310" ind1=" " ind2=" ">
-   <subfield code="a">Quotidien</subfield>
-  </datafield>
-  <datafield tag="362" ind1="0" ind2=" ">
-   <subfield code="a">1993, no 1 (1er juin 1993) -</subfield>
-  </datafield>
-  <datafield tag="500" ind1=" " ind2=" ">
-   <subfield code="a">Dernière éd. consultée: 2006, no 224 (30 sept. 2006)</subfield>
-  </datafield>
-  <datafield tag="520" ind1=" " ind2=" ">
-   <subfield code="a">Tageszeitung ; Schweiz : Jura</subfield>
-  </datafield>
-  <datafield tag="524" ind1=" " ind2=" ">
-   <subfield code="a">QUOJUR</subfield>
-  </datafield>
-  <datafield tag="525" ind1=" " ind2=" ">
-   <subfield code="a">Certaines éd. sont également accompagnées de suppl. non-numérotés</subfield>
-  </datafield>
-  <datafield tag="580" ind1=" " ind2=" ">
-   <subfield code="a">Fusion de: Le démocrate, et de: Le pays</subfield>
-  </datafield>
-  <datafield tag="651" ind1=" " ind2="7">
-   <subfield code="a">Delémont</subfield>
-   <subfield code="0">(DE-588)4266795-1</subfield>
-   <subfield code="2">gnd</subfield>
-  </datafield>
-  <datafield tag="710" ind1="2" ind2=" ">
-   <subfield code="a">Quotidien jurassien (Delémont)</subfield>
-  </datafield>
-  <datafield tag="770" ind1="0" ind2="8">
-   <subfield code="i">Suppl. 2005-2006</subfield>
-   <subfield code="t">RomandiEco</subfield>
-   <subfield code="w">(SNL)vtls001456595</subfield>
-   <subfield code="9">295832878</subfield>
-  </datafield>
-  <datafield tag="770" ind1="0" ind2="8">
-   <subfield code="i">Suppl. 2007-2011</subfield>
-   <subfield code="t">Auto</subfield>
-   <subfield code="w">(SNL)vtls001509270</subfield>
-   <subfield code="9">069184038</subfield>
-  </datafield>
-  <datafield tag="770" ind1="0" ind2="8">
-   <subfield code="i">Suppl. 2009-</subfield>
-   <subfield code="t">Quotidien magazine</subfield>
-   <subfield code="x">1662-3185</subfield>
-   <subfield code="w">(SNL)vtls001558480</subfield>
-   <subfield code="9">069647518</subfield>
-  </datafield>
-  <datafield tag="770" ind1="0" ind2="8">
-   <subfield code="i">Suppl. 2012-</subfield>
-   <subfield code="t">Jura l'original</subfield>
-   <subfield code="x">1664-4425</subfield>
-   <subfield code="w">(SNL)vtls001675666</subfield>
-   <subfield code="9">261199110</subfield>
-  </datafield>
-  <datafield tag="780" ind1="1" ind2="4">
-   <subfield code="t">Démocrate</subfield>
-   <subfield code="x">1012-0033</subfield>
-   <subfield code="w">(SNL)vtls001146742</subfield>
-   <subfield code="9">279925468</subfield>
-  </datafield>
-  <datafield tag="780" ind1="1" ind2="4">
-   <subfield code="t">Pays</subfield>
-   <subfield code="x">1012-0068</subfield>
-   <subfield code="w">(SNL)vtls001146744</subfield>
-   <subfield code="9">065802543</subfield>
-  </datafield>
-  <datafield tag="852" ind1="4" ind2=" ">
-   <subfield code="B">NEBIS</subfield>
-   <subfield code="F">E02</subfield>
-   <subfield code="a">Dernier numéro</subfield>
-  </datafield>
-  <datafield tag="852" ind1="4" ind2=" ">
-   <subfield code="B">NEBIS</subfield>
-   <subfield code="F">E19</subfield>
-   <subfield code="a">neuste 2 Nummern im Lesesaal: Fach B 25</subfield>
-  </datafield>
-  <datafield tag="852" ind1="4" ind2=" ">
-   <subfield code="B">RERO</subfield>
-   <subfield code="F">RE31037</subfield>
-   <subfield code="j">HEGN P 30</subfield>
-   <subfield code="a">On ne garde que l'année en cours (incomplet)</subfield>
-  </datafield>
-  <datafield tag="852" ind1="4" ind2=" ">
-   <subfield code="B">RERO</subfield>
-   <subfield code="F">RE81001</subfield>
-   <subfield code="j">- -</subfield>
-   <subfield code="a">[Les 7 derniers jours] ; [Prêt exclu, consultation sur place] ; PAC 4</subfield>
-  </datafield>
-  <datafield tag="852" ind1="4" ind2=" ">
-   <subfield code="B">RERO</subfield>
-   <subfield code="F">RE61040</subfield>
-   <subfield code="j">- -</subfield>
-   <subfield code="a">Conservé 1 mois</subfield>
-  </datafield>
-  <datafield tag="852" ind1="4" ind2=" ">
-   <subfield code="B">RERO</subfield>
-   <subfield code="F">RE31004</subfield>
-   <subfield code="j">CFV Journaux</subfield>
-   <subfield code="a">Conservé 1 mois</subfield>
-  </datafield>
-  <datafield tag="852" ind1="4" ind2=" ">
-   <subfield code="B">RERO</subfield>
-   <subfield code="F">RE11001</subfield>
-   <subfield code="j">- -</subfield>
-   <subfield code="a">[Conservé un mois.]</subfield>
-  </datafield>
-  <datafield tag="852" ind1="4" ind2=" ">
-   <subfield code="B">RERO</subfield>
-   <subfield code="F">RE31002</subfield>
-   <subfield code="j">BPUN Derniers numéros</subfield>
-   <subfield code="a">Conservation 3 mois ; La semaine en cours au Cabinet des périod. ; EXCLU DU PRET</subfield>
-  </datafield>
-  <datafield tag="852" ind1="4" ind2=" ">
-   <subfield code="B">RERO</subfield>
-   <subfield code="F">RE01001</subfield>
-   <subfield code="j">- -</subfield>
-   <subfield code="a">Uniquement la semaine en cours - Nur die laufende Woche ; Consultation sur place - Benutzung an Ort</subfield>
-  </datafield>
-  <datafield tag="852" ind1="4" ind2=" ">
-   <subfield code="B">RERO</subfield>
-   <subfield code="F">RE31044</subfield>
-   <subfield code="j">LCP QUO</subfield>
-   <subfield code="a">Conservé pendant 2 mois</subfield>
-  </datafield>
-  <datafield tag="852" ind1="4" ind2=" ">
-   <subfield code="B">RERO</subfield>
-   <subfield code="F">RE31041</subfield>
-   <subfield code="j">P QUJU</subfield>
-   <subfield code="a">1993-</subfield>
-  </datafield>
-  <datafield tag="852" ind1="4" ind2=" ">
-   <subfield code="B">RERO</subfield>
-   <subfield code="F">RE31008</subfield>
-   <subfield code="j">HEPBE LE QUOTIDIEN JURASSIEN</subfield>
-   <subfield code="a">Le quotidien du jour est à disposition à la médiathèque (abo PF4)</subfield>
-  </datafield>
-  <datafield tag="852" ind1="4" ind2=" ">
-   <subfield code="B">RERO</subfield>
-   <subfield code="F">RE31090</subfield>
-   <subfield code="j">HEPJU LE QUOTIDIEN JURASSIEN</subfield>
-   <subfield code="a">Le quotidien du jour est à disposition à la médiathèque (abo PF4) et à la cafétéria (abo PF1)</subfield>
-  </datafield>
-  <datafield tag="852" ind1="4" ind2=" ">
-   <subfield code="B">IDSBB</subfield>
-   <subfield code="F">A350</subfield>
-   <subfield code="j">-</subfield>
-   <subfield code="a">Ausgeschieden</subfield>
-  </datafield>
-  <datafield tag="852" ind1="4" ind2=" ">
-   <subfield code="B">IDSBB</subfield>
-   <subfield code="F">B500</subfield>
-   <subfield code="j">-</subfield>
-   <subfield code="a">Aktuelle Ausg</subfield>
-  </datafield>
-  <datafield tag="852" ind1="4" ind2=" ">
-   <subfield code="B">SGBN</subfield>
-   <subfield code="F">SGZFB</subfield>
-   <subfield code="a">1993, No 1 (1 juin 1993)</subfield>
-  </datafield>
-  <datafield tag="897" ind1=" " ind2=" ">
-   <subfield code="a">h</subfield>
-   <subfield code="b">7</subfield>
-  </datafield>
-  <datafield tag="898" ind1=" " ind2=" ">
-   <subfield code="a">CR030600</subfield>
-   <subfield code="b">XR030000</subfield>
-  </datafield>
-  <datafield tag="898" ind1=" " ind2=" ">
-   <subfield code="a">CR030500</subfield>
-   <subfield code="b">XR030500</subfield>
-  </datafield>
-  <datafield tag="908" ind1=" " ind2=" ">
-   <subfield code="D">1</subfield>
-   <subfield code="b">Zeitung = Journal</subfield>
-  </datafield>
-  <datafield tag="909" ind1=" " ind2="7">
-   <subfield code="d">ztgbs</subfield>
-   <subfield code="x">sz</subfield>
-   <subfield code="2">idsbb A</subfield>
-  </datafield>
-  <datafield tag="949" ind1=" " ind2=" ">
-   <subfield code="B">SNL</subfield>
-   <subfield code="F">NB001</subfield>
-   <subfield code="j">Zf 1410/2009, janv</subfield>
-   <subfield code="z">2009 no 1-2009 no 25</subfield>
-  </datafield>
-  <datafield tag="949" ind1=" " ind2=" ">
-   <subfield code="B">SNL</subfield>
-   <subfield code="F">NB001</subfield>
-   <subfield code="j">Zf 1410/2009, févr</subfield>
-   <subfield code="z">2009 no 26-2009 no 49</subfield>
-  </datafield>
-  <datafield tag="949" ind1=" " ind2=" ">
-   <subfield code="B">SNL</subfield>
-   <subfield code="F">NB001</subfield>
-   <subfield code="j">Zf 1410/2009, avr</subfield>
-   <subfield code="z">2009 no 76-2009 no 99</subfield>
-  </datafield>
-  <datafield tag="950" ind1=" " ind2=" ">
-   <subfield code="B">SNL</subfield>
-   <subfield code="P">710</subfield>
-   <subfield code="E">2-</subfield>
-   <subfield code="a">Quotidien jurassien (Delémont)</subfield>
-  </datafield>
-  <datafield tag="950" ind1=" " ind2=" ">
-   <subfield code="B">SNL</subfield>
-   <subfield code="P">770</subfield>
-   <subfield code="E">08</subfield>
-   <subfield code="i">Suppl. 2005-2006</subfield>
-   <subfield code="t">RomandiEco</subfield>
-   <subfield code="w">(SNL)vtls001456595</subfield>
-   <subfield code="9">295832878</subfield>
-  </datafield>
-  <datafield tag="950" ind1=" " ind2=" ">
-   <subfield code="B">SNL</subfield>
-   <subfield code="P">770</subfield>
-   <subfield code="E">08</subfield>
-   <subfield code="i">Suppl. 2007-2011</subfield>
-   <subfield code="t">Auto</subfield>
-   <subfield code="w">(SNL)vtls001509270</subfield>
-   <subfield code="9">069184038</subfield>
-  </datafield>
-  <datafield tag="950" ind1=" " ind2=" ">
-   <subfield code="B">SNL</subfield>
-   <subfield code="P">770</subfield>
-   <subfield code="E">08</subfield>
-   <subfield code="i">Suppl. 2009-</subfield>
-   <subfield code="t">Quotidien magazine</subfield>
-   <subfield code="x">1662-3185</subfield>
-   <subfield code="w">(SNL)vtls001558480</subfield>
-   <subfield code="9">069647518</subfield>
-  </datafield>
-  <datafield tag="950" ind1=" " ind2=" ">
-   <subfield code="B">SNL</subfield>
-   <subfield code="P">770</subfield>
-   <subfield code="E">08</subfield>
-   <subfield code="i">Suppl. 2012-</subfield>
-   <subfield code="t">Jura l'original</subfield>
-   <subfield code="x">1664-4425</subfield>
-   <subfield code="w">(SNL)vtls001675666</subfield>
-   <subfield code="9">261199110</subfield>
-  </datafield>
-  <datafield tag="950" ind1=" " ind2=" ">
-   <subfield code="B">SNL</subfield>
-   <subfield code="P">780</subfield>
-   <subfield code="E">14</subfield>
-   <subfield code="t">Démocrate</subfield>
-   <subfield code="x">1012-0033</subfield>
-   <subfield code="w">(SNL)vtls001146742</subfield>
-   <subfield code="9">279925468</subfield>
-  </datafield>
-  <datafield tag="950" ind1=" " ind2=" ">
-   <subfield code="B">SNL</subfield>
-   <subfield code="P">780</subfield>
-   <subfield code="E">14</subfield>
-   <subfield code="t">Pays</subfield>
-   <subfield code="x">1012-0068</subfield>
-   <subfield code="w">(SNL)vtls001146744</subfield>
-   <subfield code="9">065802543</subfield>
-  </datafield>
-  <datafield tag="950" ind1=" " ind2=" ">
-   <subfield code="B">SGBN</subfield>
-   <subfield code="P">770</subfield>
-   <subfield code="E">--</subfield>
-   <subfield code="t">RomandiEco</subfield>
-  </datafield>
-  <datafield tag="950" ind1=" " ind2=" ">
-   <subfield code="B">SGBN</subfield>
-   <subfield code="P">770</subfield>
-   <subfield code="E">--</subfield>
-   <subfield code="t">Auto</subfield>
-  </datafield>
-  <datafield tag="950" ind1=" " ind2=" ">
-   <subfield code="B">SGBN</subfield>
-   <subfield code="P">770</subfield>
-   <subfield code="E">--</subfield>
-   <subfield code="t">Quotidien magazine</subfield>
-  </datafield>
-  <datafield tag="950" ind1=" " ind2=" ">
-   <subfield code="B">SGBN</subfield>
-   <subfield code="P">780</subfield>
-   <subfield code="E">-5</subfield>
-   <subfield code="t">Le Démocrate</subfield>
-   <subfield code="w">(SGBN)001067270</subfield>
-   <subfield code="9">054263077</subfield>
-  </datafield>
-  <datafield tag="950" ind1=" " ind2=" ">
-   <subfield code="B">SGBN</subfield>
-   <subfield code="P">780</subfield>
-   <subfield code="E">-5</subfield>
-   <subfield code="t">Le Pays</subfield>
-   <subfield code="w">(SGBN)001075149</subfield>
-   <subfield code="9">053966031</subfield>
-  </datafield>
-  <datafield tag="950" ind1=" " ind2=" ">
-   <subfield code="B">SGBN</subfield>
-   <subfield code="P">856</subfield>
-   <subfield code="E">4-</subfield>
-   <subfield code="u">http://aleph.sg.ch:80/F?func=service&amp;doc_library=SGB01&amp;doc_number=001075325&amp;line_number=0001&amp;func_code=DB_RECORDS&amp;service_type=MEDIA</subfield>
-   <subfield code="z">Cover</subfield>
-  </datafield>
-  <datafield tag="950" ind1=" " ind2=" ">
-   <subfield code="B">IDSBB</subfield>
-   <subfield code="P">770</subfield>
-   <subfield code="E">--</subfield>
-   <subfield code="t">Jura l'original</subfield>
-  </datafield>
-  <datafield tag="950" ind1=" " ind2=" ">
-   <subfield code="B">IDSBB</subfield>
-   <subfield code="P">780</subfield>
-   <subfield code="E">-5</subfield>
-   <subfield code="t">Le Pays</subfield>
-   <subfield code="w">(IDSBB)004858159</subfield>
-   <subfield code="9">113774044</subfield>
-  </datafield>
-  <datafield tag="950" ind1=" " ind2=" ">
-   <subfield code="B">IDSBB</subfield>
-   <subfield code="P">780</subfield>
-   <subfield code="E">-5</subfield>
-   <subfield code="t">Le démocrate</subfield>
-   <subfield code="w">(IDSBB)006149465</subfield>
-   <subfield code="9">279925468</subfield>
-  </datafield>
-  <datafield tag="950" ind1=" " ind2=" ">
-   <subfield code="B">IDSBB</subfield>
-   <subfield code="P">856</subfield>
-   <subfield code="E">--</subfield>
-   <subfield code="u">http://lqj.ch</subfield>
-   <subfield code="z">Volltext. Tagesaktuelle Ausgabe</subfield>
-   <subfield code="x">02.10.2012/A110/gje</subfield>
-  </datafield>
-  <datafield tag="950" ind1=" " ind2=" ">
-   <subfield code="B">RERO</subfield>
-   <subfield code="P">770</subfield>
-   <subfield code="E">1-</subfield>
-   <subfield code="t">RomandiEco</subfield>
-  </datafield>
-  <datafield tag="950" ind1=" " ind2=" ">
-   <subfield code="B">RERO</subfield>
-   <subfield code="P">770</subfield>
-   <subfield code="E">1-</subfield>
-   <subfield code="t">Salon de la formation professionnele Jura - Jura bernois</subfield>
-  </datafield>
-  <datafield tag="950" ind1=" " ind2=" ">
-   <subfield code="B">RERO</subfield>
-   <subfield code="P">770</subfield>
-   <subfield code="E">1-</subfield>
-   <subfield code="t">St-Ursanne - Les Rangiers</subfield>
-  </datafield>
-  <datafield tag="950" ind1=" " ind2=" ">
-   <subfield code="B">RERO</subfield>
-   <subfield code="P">780</subfield>
-   <subfield code="E">10</subfield>
-   <subfield code="t">Pays. Porrentruy</subfield>
-  </datafield>
-  <datafield tag="950" ind1=" " ind2=" ">
-   <subfield code="B">RERO</subfield>
-   <subfield code="P">780</subfield>
-   <subfield code="E">10</subfield>
-   <subfield code="t">Démocrate. Delémont</subfield>
-  </datafield>
-  <datafield tag="950" ind1=" " ind2=" ">
-   <subfield code="B">RERO</subfield>
-   <subfield code="P">856</subfield>
-   <subfield code="E">4-</subfield>
-   <subfield code="u">http://www.lqj.ch</subfield>
-   <subfield code="z">Page d'accueil</subfield>
-  </datafield>
-  <datafield tag="956" ind1="4" ind2=" ">
-   <subfield code="B">SGBN</subfield>
-   <subfield code="C">SGB50</subfield>
-   <subfield code="D">SGB01</subfield>
-   <subfield code="a">SGKBV</subfield>
-   <subfield code="u">http://aleph.sg.ch:80/F?func=service&amp;doc_library=SGB01&amp;doc_number=001075325&amp;line_number=0001&amp;func_code=DB_RECORDS&amp;service_type=MEDIA</subfield>
-   <subfield code="d">$alephe_dev/objects/sgb50/view/112</subfield>
-   <subfield code="f">SN1075325_000415839_000415840.JPG</subfield>
-   <subfield code="q">JPG</subfield>
-   <subfield code="x">VIEW</subfield>
-   <subfield code="y">Cover</subfield>
-  </datafield>
- </record>
+		<leader>     cas a22     1  4500</leader>
+		<controlfield tag="001">268337713</controlfield>
+		<controlfield tag="003">CHVBK</controlfield>
+		<controlfield tag="005">20150207045842.0</controlfield>
+		<controlfield tag="007">ta</controlfield>
+		<controlfield tag="008">130817c19939999sz dr n       0   b0fre d</controlfield>
+		<datafield tag="019" ind1=" " ind2=" ">
+			<subfield code="a">Bibliographiert in: Helveticat</subfield>
+			<subfield code="5">25.08.1997/bauub-/lbr</subfield>
+		</datafield>
+		<datafield tag="022" ind1="0" ind2=" ">
+			<subfield code="a">1423-1778</subfield>
+			<subfield code="2">40</subfield>
+		</datafield>
+		<datafield tag="035" ind1=" " ind2=" ">
+			<subfield code="a">(SNL)vtls000111484</subfield>
+		</datafield>
+		<datafield tag="035" ind1=" " ind2=" ">
+			<subfield code="a">(SGBN)001075325</subfield>
+		</datafield>
+		<datafield tag="035" ind1=" " ind2=" ">
+			<subfield code="a">(IDSBB)001419114</subfield>
+		</datafield>
+		<datafield tag="035" ind1=" " ind2=" ">
+			<subfield code="a">(RERO)1691138</subfield>
+		</datafield>
+		<datafield tag="035" ind1=" " ind2=" ">
+			<subfield code="a">(NEBIS)001738738</subfield>
+		</datafield>
+		<datafield tag="035" ind1=" " ind2=" ">
+			<subfield code="a">(Sz)000111484</subfield>
+		</datafield>
+		<datafield tag="035" ind1=" " ind2=" ">
+			<subfield code="a">(Sz)vtls000111484</subfield>
+		</datafield>
+		<datafield tag="040" ind1=" " ind2=" ">
+			<subfield code="a">Sz</subfield>
+			<subfield code="c">SAZ</subfield>
+			<subfield code="d">Sz</subfield>
+		</datafield>
+		<datafield tag="072" ind1=" " ind2="7">
+			<subfield code="a">s1ge</subfield>
+			<subfield code="2">rero</subfield>
+		</datafield>
+		<datafield tag="080" ind1=" " ind2=" ">
+			<subfield code="a">008(494)</subfield>
+		</datafield>
+		<datafield tag="210" ind1="0" ind2=" ">
+			<subfield code="a">Quotid. jura.</subfield>
+		</datafield>
+		<datafield tag="222" ind1=" " ind2="3">
+			<subfield code="a">Le Quotidien jurassien</subfield>
+		</datafield>
+		<datafield tag="245" ind1="0" ind2="3">
+			<subfield code="a">Le Quotidien jurassien</subfield>
+		</datafield>
+		<datafield tag="246" ind1="1" ind2=" ">
+			<subfield code="a">Démocrate</subfield>
+		</datafield>
+		<datafield tag="246" ind1="1" ind2=" ">
+			<subfield code="a">Pays</subfield>
+		</datafield>
+		<datafield tag="260" ind1=" " ind2=" ">
+			<subfield code="a">Delémont</subfield>
+			<subfield code="b">Le Quotidien jurassien</subfield>
+			<subfield code="c">1993-</subfield>
+		</datafield>
+		<datafield tag="300" ind1=" " ind2=" ">
+			<subfield code="a">vol</subfield>
+			<subfield code="b">Ill</subfield>
+			<subfield code="c">50 cm</subfield>
+		</datafield>
+		<datafield tag="310" ind1=" " ind2=" ">
+			<subfield code="a">Quotidien</subfield>
+		</datafield>
+		<datafield tag="362" ind1="0" ind2=" ">
+			<subfield code="a">1993, no 1 (1er juin 1993) -</subfield>
+		</datafield>
+		<datafield tag="500" ind1=" " ind2=" ">
+			<subfield code="a">Dernière éd. consultée: 2006, no 224 (30 sept. 2006)</subfield>
+		</datafield>
+		<datafield tag="520" ind1=" " ind2=" ">
+			<subfield code="a">Tageszeitung ; Schweiz : Jura</subfield>
+		</datafield>
+		<datafield tag="524" ind1=" " ind2=" ">
+			<subfield code="a">QUOJUR</subfield>
+		</datafield>
+		<datafield tag="525" ind1=" " ind2=" ">
+			<subfield code="a">Certaines éd. sont également accompagnées de suppl. non-numérotés</subfield>
+		</datafield>
+		<datafield tag="580" ind1=" " ind2=" ">
+			<subfield code="a">Fusion de: Le démocrate, et de: Le pays</subfield>
+		</datafield>
+		<datafield tag="651" ind1=" " ind2="7">
+			<subfield code="a">Delémont</subfield>
+			<subfield code="0">(DE-588)4266795-1</subfield>
+			<subfield code="2">gnd</subfield>
+		</datafield>
+		<datafield tag="710" ind1="2" ind2=" ">
+			<subfield code="a">Quotidien jurassien (Delémont)</subfield>
+		</datafield>
+		<datafield tag="770" ind1="0" ind2="8">
+			<subfield code="i">Suppl. 2005-2006</subfield>
+			<subfield code="t">RomandiEco</subfield>
+			<subfield code="w">(SNL)vtls001456595</subfield>
+			<subfield code="9">295832878</subfield>
+		</datafield>
+		<datafield tag="770" ind1="0" ind2="8">
+			<subfield code="i">Suppl. 2007-2011</subfield>
+			<subfield code="t">Auto</subfield>
+			<subfield code="w">(SNL)vtls001509270</subfield>
+			<subfield code="9">069184038</subfield>
+		</datafield>
+		<datafield tag="770" ind1="0" ind2="8">
+			<subfield code="i">Suppl. 2009-</subfield>
+			<subfield code="t">Quotidien magazine</subfield>
+			<subfield code="x">1662-3185</subfield>
+			<subfield code="w">(SNL)vtls001558480</subfield>
+			<subfield code="9">069647518</subfield>
+		</datafield>
+		<datafield tag="770" ind1="0" ind2="8">
+			<subfield code="i">Suppl. 2012-</subfield>
+			<subfield code="t">Jura l'original</subfield>
+			<subfield code="x">1664-4425</subfield>
+			<subfield code="w">(SNL)vtls001675666</subfield>
+			<subfield code="9">261199110</subfield>
+		</datafield>
+		<datafield tag="780" ind1="1" ind2="4">
+			<subfield code="t">Démocrate</subfield>
+			<subfield code="x">1012-0033</subfield>
+			<subfield code="w">(SNL)vtls001146742</subfield>
+			<subfield code="9">279925468</subfield>
+		</datafield>
+		<datafield tag="780" ind1="1" ind2="4">
+			<subfield code="t">Pays</subfield>
+			<subfield code="x">1012-0068</subfield>
+			<subfield code="w">(SNL)vtls001146744</subfield>
+			<subfield code="9">065802543</subfield>
+		</datafield>
+		<datafield tag="852" ind1="4" ind2=" ">
+			<subfield code="B">NEBIS</subfield>
+			<subfield code="F">E02</subfield>
+			<subfield code="a">Dernier numéro</subfield>
+		</datafield>
+		<datafield tag="852" ind1="4" ind2=" ">
+			<subfield code="B">NEBIS</subfield>
+			<subfield code="F">E19</subfield>
+			<subfield code="a">neuste 2 Nummern im Lesesaal: Fach B 25</subfield>
+		</datafield>
+		<datafield tag="852" ind1="4" ind2=" ">
+			<subfield code="B">RERO</subfield>
+			<subfield code="F">RE31037</subfield>
+			<subfield code="j">HEGN P 30</subfield>
+			<subfield code="a">On ne garde que l'année en cours (incomplet)</subfield>
+		</datafield>
+		<datafield tag="852" ind1="4" ind2=" ">
+			<subfield code="B">RERO</subfield>
+			<subfield code="F">RE81001</subfield>
+			<subfield code="j">- -</subfield>
+			<subfield code="a">[Les 7 derniers jours] ; [Prêt exclu, consultation sur place] ; PAC 4</subfield>
+		</datafield>
+		<datafield tag="852" ind1="4" ind2=" ">
+			<subfield code="B">RERO</subfield>
+			<subfield code="F">RE61040</subfield>
+			<subfield code="j">- -</subfield>
+			<subfield code="a">Conservé 1 mois</subfield>
+		</datafield>
+		<datafield tag="852" ind1="4" ind2=" ">
+			<subfield code="B">RERO</subfield>
+			<subfield code="F">RE31004</subfield>
+			<subfield code="j">CFV Journaux</subfield>
+			<subfield code="a">Conservé 1 mois</subfield>
+		</datafield>
+		<datafield tag="852" ind1="4" ind2=" ">
+			<subfield code="B">RERO</subfield>
+			<subfield code="F">RE11001</subfield>
+			<subfield code="j">- -</subfield>
+			<subfield code="a">[Conservé un mois.]</subfield>
+		</datafield>
+		<datafield tag="852" ind1="4" ind2=" ">
+			<subfield code="B">RERO</subfield>
+			<subfield code="F">RE31002</subfield>
+			<subfield code="j">BPUN Derniers numéros</subfield>
+			<subfield code="a">Conservation 3 mois ; La semaine en cours au Cabinet des périod. ; EXCLU DU PRET</subfield>
+		</datafield>
+		<datafield tag="852" ind1="4" ind2=" ">
+			<subfield code="B">RERO</subfield>
+			<subfield code="F">RE01001</subfield>
+			<subfield code="j">- -</subfield>
+			<subfield code="a">Uniquement la semaine en cours - Nur die laufende Woche ; Consultation sur place - Benutzung an Ort</subfield>
+		</datafield>
+		<datafield tag="852" ind1="4" ind2=" ">
+			<subfield code="B">RERO</subfield>
+			<subfield code="F">RE31044</subfield>
+			<subfield code="j">LCP QUO</subfield>
+			<subfield code="a">Conservé pendant 2 mois</subfield>
+		</datafield>
+		<datafield tag="852" ind1="4" ind2=" ">
+			<subfield code="B">RERO</subfield>
+			<subfield code="F">RE31041</subfield>
+			<subfield code="j">P QUJU</subfield>
+			<subfield code="a">1993-</subfield>
+		</datafield>
+		<datafield tag="852" ind1="4" ind2=" ">
+			<subfield code="B">RERO</subfield>
+			<subfield code="F">RE31008</subfield>
+			<subfield code="j">HEPBE LE QUOTIDIEN JURASSIEN</subfield>
+			<subfield code="a">Le quotidien du jour est à disposition à la médiathèque (abo PF4)</subfield>
+		</datafield>
+		<datafield tag="852" ind1="4" ind2=" ">
+			<subfield code="B">RERO</subfield>
+			<subfield code="F">RE31090</subfield>
+			<subfield code="j">HEPJU LE QUOTIDIEN JURASSIEN</subfield>
+			<subfield code="a">Le quotidien du jour est à disposition à la médiathèque (abo PF4) et à la cafétéria (abo PF1)</subfield>
+		</datafield>
+		<datafield tag="852" ind1="4" ind2=" ">
+			<subfield code="B">IDSBB</subfield>
+			<subfield code="F">A350</subfield>
+			<subfield code="j">-</subfield>
+			<subfield code="a">Ausgeschieden</subfield>
+		</datafield>
+		<datafield tag="852" ind1="4" ind2=" ">
+			<subfield code="B">IDSBB</subfield>
+			<subfield code="F">B500</subfield>
+			<subfield code="j">-</subfield>
+			<subfield code="a">Aktuelle Ausg</subfield>
+		</datafield>
+		<datafield tag="852" ind1="4" ind2=" ">
+			<subfield code="B">SGBN</subfield>
+			<subfield code="F">SGZFB</subfield>
+			<subfield code="a">1993, No 1 (1 juin 1993)</subfield>
+		</datafield>
+		<datafield tag="897" ind1=" " ind2=" ">
+			<subfield code="a">h</subfield>
+			<subfield code="b">7</subfield>
+		</datafield>
+		<datafield tag="898" ind1=" " ind2=" ">
+			<subfield code="a">CR030600</subfield>
+			<subfield code="b">XR030000</subfield>
+		</datafield>
+		<datafield tag="898" ind1=" " ind2=" ">
+			<subfield code="a">CR030500</subfield>
+			<subfield code="b">XR030500</subfield>
+		</datafield>
+		<datafield tag="908" ind1=" " ind2=" ">
+			<subfield code="D">1</subfield>
+			<subfield code="b">Zeitung = Journal</subfield>
+		</datafield>
+		<datafield tag="909" ind1=" " ind2="7">
+			<subfield code="d">ztgbs</subfield>
+			<subfield code="x">sz</subfield>
+			<subfield code="2">idsbb A</subfield>
+		</datafield>
+		<datafield tag="949" ind1=" " ind2=" ">
+			<subfield code="B">SNL</subfield>
+			<subfield code="F">NB001</subfield>
+			<subfield code="j">Zf 1410/2009, janv</subfield>
+			<subfield code="z">2009 no 1-2009 no 25</subfield>
+		</datafield>
+		<datafield tag="949" ind1=" " ind2=" ">
+			<subfield code="B">SNL</subfield>
+			<subfield code="F">NB001</subfield>
+			<subfield code="j">Zf 1410/2009, févr</subfield>
+			<subfield code="z">2009 no 26-2009 no 49</subfield>
+		</datafield>
+		<datafield tag="949" ind1=" " ind2=" ">
+			<subfield code="B">SNL</subfield>
+			<subfield code="F">NB001</subfield>
+			<subfield code="j">Zf 1410/2009, avr</subfield>
+			<subfield code="z">2009 no 76-2009 no 99</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">SNL</subfield>
+			<subfield code="P">710</subfield>
+			<subfield code="E">2-</subfield>
+			<subfield code="a">Quotidien jurassien (Delémont)</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">SNL</subfield>
+			<subfield code="P">770</subfield>
+			<subfield code="E">08</subfield>
+			<subfield code="i">Suppl. 2005-2006</subfield>
+			<subfield code="t">RomandiEco</subfield>
+			<subfield code="w">(SNL)vtls001456595</subfield>
+			<subfield code="9">295832878</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">SNL</subfield>
+			<subfield code="P">770</subfield>
+			<subfield code="E">08</subfield>
+			<subfield code="i">Suppl. 2007-2011</subfield>
+			<subfield code="t">Auto</subfield>
+			<subfield code="w">(SNL)vtls001509270</subfield>
+			<subfield code="9">069184038</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">SNL</subfield>
+			<subfield code="P">770</subfield>
+			<subfield code="E">08</subfield>
+			<subfield code="i">Suppl. 2009-</subfield>
+			<subfield code="t">Quotidien magazine</subfield>
+			<subfield code="x">1662-3185</subfield>
+			<subfield code="w">(SNL)vtls001558480</subfield>
+			<subfield code="9">069647518</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">SNL</subfield>
+			<subfield code="P">770</subfield>
+			<subfield code="E">08</subfield>
+			<subfield code="i">Suppl. 2012-</subfield>
+			<subfield code="t">Jura l'original</subfield>
+			<subfield code="x">1664-4425</subfield>
+			<subfield code="w">(SNL)vtls001675666</subfield>
+			<subfield code="9">261199110</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">SNL</subfield>
+			<subfield code="P">780</subfield>
+			<subfield code="E">14</subfield>
+			<subfield code="t">Démocrate</subfield>
+			<subfield code="x">1012-0033</subfield>
+			<subfield code="w">(SNL)vtls001146742</subfield>
+			<subfield code="9">279925468</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">SNL</subfield>
+			<subfield code="P">780</subfield>
+			<subfield code="E">14</subfield>
+			<subfield code="t">Pays</subfield>
+			<subfield code="x">1012-0068</subfield>
+			<subfield code="w">(SNL)vtls001146744</subfield>
+			<subfield code="9">065802543</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">SGBN</subfield>
+			<subfield code="P">770</subfield>
+			<subfield code="E">--</subfield>
+			<subfield code="t">RomandiEco</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">SGBN</subfield>
+			<subfield code="P">770</subfield>
+			<subfield code="E">--</subfield>
+			<subfield code="t">Auto</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">SGBN</subfield>
+			<subfield code="P">770</subfield>
+			<subfield code="E">--</subfield>
+			<subfield code="t">Quotidien magazine</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">SGBN</subfield>
+			<subfield code="P">780</subfield>
+			<subfield code="E">-5</subfield>
+			<subfield code="t">Le Démocrate</subfield>
+			<subfield code="w">(SGBN)001067270</subfield>
+			<subfield code="9">054263077</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">SGBN</subfield>
+			<subfield code="P">780</subfield>
+			<subfield code="E">-5</subfield>
+			<subfield code="t">Le Pays</subfield>
+			<subfield code="w">(SGBN)001075149</subfield>
+			<subfield code="9">053966031</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">SGBN</subfield>
+			<subfield code="P">856</subfield>
+			<subfield code="E">4-</subfield>
+			<subfield code="u">http://aleph.sg.ch:80/F?func=service&amp;doc_library=SGB01&amp;doc_number=001075325&amp;line_number=0001&amp;func_code=DB_RECORDS&amp;service_type=MEDIA</subfield>
+			<subfield code="z">Cover</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">IDSBB</subfield>
+			<subfield code="P">770</subfield>
+			<subfield code="E">--</subfield>
+			<subfield code="t">Jura l'original</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">IDSBB</subfield>
+			<subfield code="P">780</subfield>
+			<subfield code="E">-5</subfield>
+			<subfield code="t">Le Pays</subfield>
+			<subfield code="w">(IDSBB)004858159</subfield>
+			<subfield code="9">113774044</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">IDSBB</subfield>
+			<subfield code="P">780</subfield>
+			<subfield code="E">-5</subfield>
+			<subfield code="t">Le démocrate</subfield>
+			<subfield code="w">(IDSBB)006149465</subfield>
+			<subfield code="9">279925468</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">IDSBB</subfield>
+			<subfield code="P">856</subfield>
+			<subfield code="E">--</subfield>
+			<subfield code="u">http://lqj.ch</subfield>
+			<subfield code="z">Volltext. Tagesaktuelle Ausgabe</subfield>
+			<subfield code="x">02.10.2012/A110/gje</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">RERO</subfield>
+			<subfield code="P">770</subfield>
+			<subfield code="E">1-</subfield>
+			<subfield code="t">RomandiEco</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">RERO</subfield>
+			<subfield code="P">770</subfield>
+			<subfield code="E">1-</subfield>
+			<subfield code="t">Salon de la formation professionnele Jura - Jura bernois</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">RERO</subfield>
+			<subfield code="P">770</subfield>
+			<subfield code="E">1-</subfield>
+			<subfield code="t">St-Ursanne - Les Rangiers</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">RERO</subfield>
+			<subfield code="P">780</subfield>
+			<subfield code="E">10</subfield>
+			<subfield code="t">Pays. Porrentruy</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">RERO</subfield>
+			<subfield code="P">780</subfield>
+			<subfield code="E">10</subfield>
+			<subfield code="t">Démocrate. Delémont</subfield>
+		</datafield>
+		<datafield tag="950" ind1=" " ind2=" ">
+			<subfield code="B">RERO</subfield>
+			<subfield code="P">856</subfield>
+			<subfield code="E">4-</subfield>
+			<subfield code="u">http://www.lqj.ch</subfield>
+			<subfield code="z">Page d'accueil</subfield>
+		</datafield>
+		<datafield tag="956" ind1="4" ind2=" ">
+			<subfield code="B">SGBN</subfield>
+			<subfield code="C">SGB50</subfield>
+			<subfield code="D">SGB01</subfield>
+			<subfield code="a">SGKBV</subfield>
+			<subfield code="u">http://aleph.sg.ch:80/F?func=service&amp;doc_library=SGB01&amp;doc_number=001075325&amp;line_number=0001&amp;func_code=DB_RECORDS&amp;service_type=MEDIA</subfield>
+			<subfield code="d">$alephe_dev/objects/sgb50/view/112</subfield>
+			<subfield code="f">SN1075325_000415839_000415840.JPG</subfield>
+			<subfield code="q">JPG</subfield>
+			<subfield code="x">VIEW</subfield>
+			<subfield code="y">Cover</subfield>
+		</datafield>
+	</record>
 </collection>
 
