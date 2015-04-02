@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns:rdau="http://rdaregistry.info/Elements/u/" xmlns:void="http://rdfs.org/ns/void#" xmlns:dct="http://purl.org/dc/terms/" xmlns:owl="http://www.w3.org/2004/02/skos/core#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:rdau="http://rdaregistry.info/Elements/u/" xmlns:dbp="http://dbpedia.org/resource/" xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:owl="http://www.w3.org/2004/02/skos/core#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:void="http://rdfs.org/ns/void#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/316022063/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-02T14:36:02.216Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-02T17:26:07.622Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/316022063" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-05-27T15:12:24+01:00</dct:modified>
 			<dc:contributor>RERO</dc:contributor>
@@ -44,7 +44,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/31602208X/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-02T14:36:02.252Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-02T17:26:07.640Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/31602208X" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-16T23:44:29+01:00</dct:modified>
 			<dc:contributor>ABN</dc:contributor>
@@ -81,7 +81,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/316022098/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-02T14:36:02.277Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-02T17:26:07.650Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/316022098" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-05-24T07:05:47+01:00</dct:modified>
 			<dc:contributor>NEBIS</dc:contributor>
@@ -111,7 +111,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/316022101/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-02T14:36:02.291Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-02T17:26:07.658Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/316022101" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-08T08:00:34+01:00</dct:modified>
 			<dc:contributor>BGR</dc:contributor>
@@ -143,7 +143,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/vtls003010104/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-02T14:36:02.306Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-02T17:26:07.664Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/vtls003010104" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-04-21T07:02:00+01:00</dct:modified>
 			<dc:contributor>RERO</dc:contributor>
@@ -163,7 +163,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/268337713/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-02T14:36:02.311Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-02T17:26:07.667Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/268337713" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-07T04:58:42+01:00</dct:modified>
 			<dc:contributor>SNL</dc:contributor>
