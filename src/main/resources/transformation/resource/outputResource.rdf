@@ -2,7 +2,7 @@
 <rdf:RDF xmlns:rdau="http://rdaregistry.info/Elements/u/" xmlns:void="http://rdfs.org/ns/void#" xmlns:dct="http://purl.org/dc/terms/" xmlns:owl="http://www.w3.org/2004/02/skos/core#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dc="http://purl.org/dc/elements/1.1/">
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/316022063/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-02T13:53:06.889Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-02T14:36:02.216Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/316022063" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-05-27T15:12:24+01:00</dct:modified>
 			<dc:contributor>RERO</dc:contributor>
@@ -18,6 +18,7 @@
 			<dct:language rdf:resource="http://lexvo.org/id/iso639-3/spa" />
 			<dbp:originalLanguage rdf:resource="http://lexvo.org/id/iso639-3/ara" />
 			<dbp:originalLanguage rdf:resource="http://lexvo.org/id/iso639-3/spa" />
+			<rdau:placeOfPublication rdf:resource="http://data.swissbib.ch/place/swiss-canton-ju" />
 			<rdau:noteOnResource>Originaltitel: La realidad histórica de España</rdau:noteOnResource>
 			<dct:hasPart>Vol. 1: La voie des ombres</dct:hasPart>
 			<dct:hasPart>Vol. 2: Le choix des ombres</dct:hasPart>
@@ -30,11 +31,10 @@
 			<dc:contributor>Hipler, Günter</dc:contributor>
 			<dct:contributor>Voltaire</dct:contributor>
 			<dct:contributor>Nicolas</dct:contributor>
-			<rdau:contentType rdf:resource="http://rdvocab.info/termList/RDAContentType/1020" />
-			<rdau:mediaType rdf:resource="http://rdvocab.info/termList/RDAMediaType/1007" />
-			<rdau:modeOfIssuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1004" />
+			<rdau:contentType rdf:resource="http://rdvocab.info/termList/RDAContentType/1023" />
+			<rdau:contentType rdf:resource="http://rdvocab.info/termList/RDAContentType/1021" />
+			<rdau:mediaType rdf:resource="http://rdvocab.info/termList/RDAMediaType/1008" />
 			<dct:issued>1957</dct:issued>
-			<rdau:placeOfPublication rdf:resource="http://data.swissbib.ch/place/swiss-canton-ju" />
 			<dc:contributor>Castro, Américo</dc:contributor>
 			<dct:title>Spanien Vision und Wirklichkeit / Americo Castro ; [aus dem Spanischen übertragen von Suzanne Heintz]</dct:title>
 			<rdau:publicationStatement>Köln [etc.] : Kiepenheuer und Witsch, 1957</rdau:publicationStatement>
@@ -44,7 +44,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/31602208X/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-02T13:53:06.923Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-02T14:36:02.252Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/31602208X" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-16T23:44:29+01:00</dct:modified>
 			<dc:contributor>ABN</dc:contributor>
@@ -58,6 +58,7 @@
 			<rdau:placeOfPublication rdf:resource="http://sws.geonames.org/2921044/" />
 			<bibo:isbn13>9783825239886</bibo:isbn13>
 			<bibo:isbn10>3825239888</bibo:isbn10>
+			<rdau:placeOfPublication rdf:resource="http://data.swissbib.ch/place/swiss-canton-bl" />
 			<dct:alternative>Spain literature history</dct:alternative>
 			<dct:alternative>Historia de la literatura española</dct:alternative>
 			<dct:bibliographicCitation>UTB. Romanistik, Literaturwissenschaft</dct:bibliographicCitation>
@@ -73,7 +74,6 @@
 			<rdau:contentType rdf:resource="http://rdvocab.info/termList/RDAContentType/1020" />
 			<rdau:mediaType rdf:resource="http://rdvocab.info/termList/RDAMediaType/1007" />
 			<dct:issued>2014</dct:issued>
-			<rdau:placeOfPublication rdf:resource="http://data.swissbib.ch/place/swiss-canton-bl" />
 			<dct:title>Spanische Literaturgeschichte : eine kommentierte Anthologie / hrsg. von Carmen Rivero Iglesias</dct:title>
 			<rdau:publicationStatement>Paderborn : Fink, 2014</rdau:publicationStatement>
 			<dc:format>380 S</dc:format>
@@ -81,7 +81,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/316022098/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-02T13:53:06.948Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-02T14:36:02.277Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/316022098" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-05-24T07:05:47+01:00</dct:modified>
 			<dc:contributor>NEBIS</dc:contributor>
@@ -111,7 +111,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/316022101/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-02T13:53:06.964Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-02T14:36:02.291Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/316022101" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-08T08:00:34+01:00</dct:modified>
 			<dc:contributor>BGR</dc:contributor>
@@ -143,7 +143,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/vtls003010104/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-02T13:53:06.979Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-02T14:36:02.306Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/vtls003010104" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-04-21T07:02:00+01:00</dct:modified>
 			<dc:contributor>RERO</dc:contributor>
@@ -163,7 +163,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/268337713/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-02T13:53:06.984Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-02T14:36:02.311Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/268337713" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-07T04:58:42+01:00</dct:modified>
 			<dc:contributor>SNL</dc:contributor>
@@ -184,7 +184,7 @@
 			<dct:bibliographicCitation>Fusion de: Le démocrate, et de: Le pays</dct:bibliographicCitation>
 			<dct:subject rdf:resource="http://d-nb.info/gnd/4266795-1" />
 			<rdau:contentType rdf:resource="http://rdvocab.info/termList/RDAContentType/1020" />
-			<rdau:mediaType rdf:resource="http://rdvocab.info/termList/RDAMediaType/1007" rdf:resource="http://rdvocab.info/termList/RDAMediaType/1007" />
+			<rdau:mediaType rdf:resource="http://rdvocab.info/termList/RDAMediaType/1007" />
 			<rdau:modeOfIssuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1003" />
 			<dct:issued>1993-9999</dct:issued>
 			<dct:title>Le Quotidien jurassien</dct:title>

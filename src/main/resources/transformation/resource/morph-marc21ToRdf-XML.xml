@@ -140,7 +140,7 @@
 			</entity>
 
 			<!--RDA MEDIA TYPE -->
-			<entity name="rdau:mediaType" flushWith="record" >
+			<entity name="rdau:mediaType" >
 				<data name="~rdf:resource" source="898  .a">
 					<blacklist>
 						<entry name="CF010100"/><entry name="CF010200"/><entry name="CF010300"/><entry name="CF010400"/><entry name="CF010500"/><entry name="CF010600"/><entry name="CF010000"/><entry name="MU030000"/><entry name="MU030100"/><entry name="MU030200"/><entry name="MU030300"/><entry name="MU030400"/><entry name="MU030500"/><entry name="MU030600"/><entry name="MU040000"/><entry name="MU040100"/><entry name="MU040200"/><entry name="MU040300"/><entry name="MU040400"/><entry name="MU040500"/><entry name="MU040600"/><entry name="VM010000"/><entry name="VM010100"/><entry name="VM010200"/><entry name="VM010300"/><entry name="VM010400"/><entry name="VM020100"/><entry name="VM020200"/><entry name="VM030100"/><entry name="VM030200"/><entry name="VM030400"/><entry name="VM030000"/><entry name="VM040000"/><entry name="MX010000"/>
@@ -148,15 +148,17 @@
 					<substring  start="6"  end="8"/>
 					<!--To select only positions 6-7 of the field 898$a-->
 					<lookup in="type_media"/>
+					<unique part="value" />
 				</data>
 			</entity>
 
-			<entity name="rdau:mediaType" flushWith="record" >
+			<entity name="rdau:mediaType" >
 				<data name="~rdf:resource" source="898  .a">
 					<whitelist>
 						<entry name="CF010100"/><entry name="CF010200"/><entry name="CF010300"/><entry name="CF010400"/><entry name="CF010500"/><entry name="CF010600"/><entry name="CF010000"/><entry name="MU030000"/><entry name="MU030100"/><entry name="MU030200"/><entry name="MU030300"/><entry name="MU030400"/><entry name="MU030500"/><entry name="MU030600"/><entry name="MU040000"/><entry name="MU040100"/><entry name="MU040200"/><entry name="MU040300"/><entry name="MU040400"/><entry name="MU040500"/><entry name="MU040600"/><entry name="VM010000"/><entry name="VM010100"/><entry name="VM010200"/><entry name="VM010300"/><entry name="VM010400"/><entry name="VM020100"/><entry name="VM020200"/><entry name="VM030100"/><entry name="VM030200"/><entry name="VM030400"/><entry name="VM030000"/><entry name="VM040000"/><entry name="MX010000"/>
 					</whitelist>
 					<lookup in="type_media"/>
+					<unique part="value" />
 				</data>
 			</entity>
 
@@ -177,7 +179,7 @@
 
 			<!--RDA mode of issuance-->
 			<!--only for serials and integrating resources-->
-			<entity name="rdau:modeOfIssuance" flushWith="record" >
+			<entity name="rdau:modeOfIssuance" >
 				<choose>
 					<data source="898  .a" name="~rdf:resource" >
 						<substring  start="0"  end="4"/>
@@ -228,19 +230,18 @@
 				</data>
 			</entity>
 
-			<!--020: ISBN13-->
-			<data source="020  .a" name="bibo:isbn13">
+			<!--020: ISBN-->
+			<data source="020  .a" name="bibo:isbn13" >
 				<isbn to="clean"/>
 				<!--To remove possible hyphens or other complements like "(pbk)" that follow the ISBN-->
 				<isbn to="isbn13"/>
-				<!--To convert an ISBN10 into an ISBN13-->
+				<unique part="value" />
 			</data>
 
 			<data source="020  .a" name="bibo:isbn10">
 				<isbn to="clean"/>
-				<!--To remove possible hyphens or other complements like "(pbk)" that follow the ISBN-->
 				<isbn to="isbn10"/>
-				<!--To convert an ISBN13 into an ISBN10-->
+				<unique part="value" />
 			</data>
 
 			<!--020: ISSN-->
@@ -266,7 +267,7 @@
 			</entity>-->
 
 			<!--This solution implies that we describe the entities in another file-->
-			<entity name="rdau:placeOfPublication" flushWith="record">
+			<entity name="rdau:placeOfPublication" >
 				<data source="044  .c" name="~rdf:resource" >
 					<substring start="3" end="5" />
 					<compose prefix="http://data.swissbib.ch/place/swiss-canton-" />

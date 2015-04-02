@@ -238,7 +238,19 @@
 			<subfield code="b">271128399</subfield>
 		</datafield>
 		<datafield tag="898" ind1=" " ind2=" ">
-			<subfield code="a">CR020000</subfield>
+			<subfield code="a">VM010000</subfield>
+			<subfield code="b">BK020000</subfield>
+		</datafield>
+		<datafield tag="898" ind1=" " ind2=" ">
+			<subfield code="a">VM030400</subfield>
+			<subfield code="b">BK020000</subfield>
+		</datafield>
+		<datafield tag="898" ind1=" " ind2=" ">
+			<subfield code="a">VM040000</subfield>
+			<subfield code="b">BK020000</subfield>
+		</datafield>
+		<datafield tag="898" ind1=" " ind2=" ">
+			<subfield code="a">VM010200</subfield>
 			<subfield code="b">BK020000</subfield>
 		</datafield>
 		<datafield tag="949" ind1=" " ind2=" ">
@@ -386,6 +398,9 @@
 		</datafield>
 		<datafield tag="020" ind1=" " ind2=" ">
 			<subfield code="a">978-3-8252-3988-6</subfield>
+		</datafield>
+		<datafield tag="020" ind1=" " ind2=" ">
+			<subfield code="a">3-8252-3988-8</subfield>
 		</datafield>
 		<datafield tag="035" ind1=" " ind2=" ">
 			<subfield code="a">(ABN)000741970</subfield>
