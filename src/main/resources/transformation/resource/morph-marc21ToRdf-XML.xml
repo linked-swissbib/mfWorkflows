@@ -78,24 +78,17 @@
 			<data source="@swissbib_id" name="~rdf:about" />
 
 			<!--RDA CONTENT TYPE -->
-			<entity name="rdau:contentType" flushWith="record" >
+			<entity name="rdau:contentType" >
 				<data name="~rdf:resource" source="898  .a">
 					<substring  start="0"  end="6"/>
 					<!--To select only positions 0-5 of the field 898$a-->
 					<lookup in="type_content"/>
 					<!--To look up the links given in the file announced in the tag <map>-->
+					<unique part="value" />
 				</data>
 			</entity>
 
-			<!--
-			@Nicolas
-			error same as dct:language
-			rule creates
-			<rdau:contentType rdf:resource="http://rdvocab.info/termList/RDAContentType/1020" rdf:resource="http://rdvocab.info/termList/RDAContentType/1020" />
-			which throws an error
-			duplicate attribute same as dbp:originalLanguage
-			-->
-			<entity name="rdau:contentType" flushWith="record" >
+			<entity name="rdau:contentType" >
 				<if>
 					<!--To select only the record types MU03xxxx (=Sound/Ton/Son), that are sounds (vs. spoken words. Includes natural sounds, artificially produced sounds, etc. )
                     The function "if" uses the default boolean operator "OR" when various arguments/conditions are present!-->
@@ -123,7 +116,7 @@
 				</data>
 			</entity>
 
-			<entity name="rdau:contentType" flushWith="record" >
+			<entity name="rdau:contentType" >
 				<if>
 					<!--To select only the record types MU03xxxx (=Sound/Ton/Son), that are spoken words (Includes recorded readings, recitations, speeches, interviews, oral histories, etc., computer-generated speech, etc.)-->
 					<all>
@@ -205,26 +198,14 @@
 			</entity>
 
 			<!--008: LANGUAGE-->
-			<!--To complete with more precise rules, for example for multilingual documents-->
-			<entity name="dct:language" flushWith="record" >
-				<data source="008" name="~rdf:resource" >
-					<substring start="35" end="38" />
+			<entity name="dct:language" >
+				<data source="@language|041*.a" name="~rdf:resource" >
+					<trim />
+					<unique part="value" />
 					<lookup in="languages" />
 				</data>
 			</entity>
 
-			<!-- doesn't work because @language is not a string...
-			<entity name="dct:languageXXX" flushWith="record" >
-				<if>
-					<data source="041*.a" >
-						<not-equals string="@language" />
-					</data>
-				</if>
-				<data source="041*.a" name="~rdf:resource" >
-					<trim />
-					<lookup in="languages" />
-				</data>
-			</entity>-->
 
 			<!--008: PUBLICATION DATES-->
 			<!--To complete with analysing rules, for example for dates like 9999 (series)-->
@@ -268,13 +249,7 @@
 			</data>
 
 			<!--041: ORIGINAL LANGUAGE-->
-			<!-- problem: @Nicolas
-			RDF parsers create error message
-			<dbp:originalLanguage rdf:resource="http://lexvo.org/id/iso639-3/spa" rdf:resource="http://lexvo.org/id/iso639-3/ara" />
-			xml.sax._exceptions.SAXParseException: file:///home/swissbib/environment/code/linkeddata/data/r1.rdf:24:73: duplicate attribute
-			in Java, Python
-			-->
-			<entity name="dbp:originalLanguage" flushWith="record" >
+			<entity name="dbp:originalLanguage" >
 				<data source="041*.h" name="~rdf:resource" >
 					<trim />
 					<lookup in="languages" />

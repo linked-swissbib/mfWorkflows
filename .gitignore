@@ -2,3 +2,13 @@
 .idea
 target
 
+src/main/resources/transformation/resource/prov_np_output_rdfxml.rdf
+src/main/resources/statistics/swissbib.marc21/job1r112A020.mf.xml
+src/main/resources/statistics/swissbib.marc21/job1r112A001.mf.xml
+src/main/resources/transformation/resource/maps/type_document.txt
+src/main/resources/statistics/swissbib.marc21/job1r112A046.mf.xml
+src/main/resources/statistics/swissbib.marc21/job1r112A035.mf.xml
+src/main/resources/statistics/swissbib.marc21/job1r112A060.mf.xml
+src/main/resources/transformation/resource/prov_np_morph_marc21.xml
+src/main/resources/transformation/resource/prov_np_flux_to_rdfxml.flux
+src/main/resources/transformation/resource/representativeData.xml

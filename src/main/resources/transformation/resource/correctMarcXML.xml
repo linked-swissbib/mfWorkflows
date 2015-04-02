@@ -23,10 +23,10 @@
 			<subfield code="d">CHVBK</subfield>
 		</datafield>
 		<datafield tag="041" ind1="1" ind2=" ">
-			<subfield code="a">ger</subfield>
 			<subfield code="a">fre</subfield>
-			<subfield code="h">spa</subfield>
+			<subfield code="a">spa</subfield>
 			<subfield code="h">ara</subfield>
+			<subfield code="h">spa</subfield>
 		</datafield>
 		<datafield tag="044" ind1=" " ind2=" ">
 			<subfield code="a">sz</subfield>
