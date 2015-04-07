@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:rdau="http://rdaregistry.info/Elements/u/" xmlns:dbp="http://dbpedia.org/resource/" xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:owl="http://www.w3.org/2004/02/skos/core#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:void="http://rdfs.org/ns/void#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+<rdf:RDF xmlns:rdau="http://rdaregistry.info/Elements/u/" xmlns:void="http://rdfs.org/ns/void#" xmlns:dbp="http://dbpedia.org/ontology/" xmlns:dct="http://purl.org/dc/terms/" xmlns:owl="http://www.w3.org/2004/02/skos/core#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dc="http://purl.org/dc/elements/1.1/">
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/316022063/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-02T17:26:07.622Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-07T14:54:44.888Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/316022063" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-05-27T15:12:24+01:00</dct:modified>
 			<dc:contributor>RERO</dc:contributor>
@@ -44,7 +44,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/31602208X/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-02T17:26:07.640Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-07T14:54:44.927Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/31602208X" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-16T23:44:29+01:00</dct:modified>
 			<dc:contributor>ABN</dc:contributor>
@@ -73,6 +73,7 @@
 			<dc:contributor>Rivero Iglesias, Carmen</dc:contributor>
 			<rdau:contentType rdf:resource="http://rdvocab.info/termList/RDAContentType/1020" />
 			<rdau:mediaType rdf:resource="http://rdvocab.info/termList/RDAMediaType/1007" />
+			<rdf:type rdf:resource="http://purl.org/ontology/bibo/Book" />
 			<dct:issued>2014</dct:issued>
 			<dct:title>Spanische Literaturgeschichte : eine kommentierte Anthologie / hrsg. von Carmen Rivero Iglesias</dct:title>
 			<rdau:publicationStatement>Paderborn : Fink, 2014</rdau:publicationStatement>
@@ -81,7 +82,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/316022098/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-02T17:26:07.650Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-07T14:54:44.957Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/316022098" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-05-24T07:05:47+01:00</dct:modified>
 			<dc:contributor>NEBIS</dc:contributor>
@@ -101,6 +102,7 @@
 			<dc:contributor>Trüby, Stephan</dc:contributor>
 			<rdau:contentType rdf:resource="http://rdvocab.info/termList/RDAContentType/1020" />
 			<rdau:mediaType rdf:resource="http://rdvocab.info/termList/RDAMediaType/1007" />
+			<rdf:type rdf:resource="http://purl.org/ontology/bibo/Periodical" />
 			<rdau:modeOfIssuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1003" />
 			<dct:issued>2013</dct:issued>
 			<dct:title>Spatial Design : Gespräche über Architekturen, Ausstellungen, Bühnenbilder und Urbane Interventionen : ein Reader des MAS Spatial Design / Stephan Trüby (Hrsg.)</dct:title>
@@ -111,7 +113,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/316022101/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-02T17:26:07.658Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-07T14:54:44.978Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/316022101" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-08T08:00:34+01:00</dct:modified>
 			<dc:contributor>BGR</dc:contributor>
@@ -134,6 +136,7 @@
 			<dc:contributor>Rataj, Heinz</dc:contributor>
 			<rdau:contentType rdf:resource="http://rdvocab.info/termList/RDAContentType/1020" />
 			<rdau:mediaType rdf:resource="http://rdvocab.info/termList/RDAMediaType/1007" />
+			<rdf:type rdf:resource="http://purl.org/ontology/bibo/Book" />
 			<dct:issued>2013</dct:issued>
 			<dc:contributor>Rataj, Dorothée</dc:contributor>
 			<dct:title>Der spirituelle Weg : die Re-Sakralisierung des Lebens / Dorothée und Heinz Rataj</dct:title>
@@ -143,7 +146,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/vtls003010104/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-02T17:26:07.664Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-07T14:54:45.000Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/vtls003010104" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-04-21T07:02:00+01:00</dct:modified>
 			<dc:contributor>RERO</dc:contributor>
@@ -163,7 +166,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/268337713/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-02T17:26:07.667Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-07T14:54:45.007Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/268337713" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-07T04:58:42+01:00</dct:modified>
 			<dc:contributor>SNL</dc:contributor>
@@ -185,6 +188,8 @@
 			<dct:subject rdf:resource="http://d-nb.info/gnd/4266795-1" />
 			<rdau:contentType rdf:resource="http://rdvocab.info/termList/RDAContentType/1020" />
 			<rdau:mediaType rdf:resource="http://rdvocab.info/termList/RDAMediaType/1007" />
+			<rdf:type rdf:resource="http://purl.org/ontology/bibo/Periodical" />
+			<rdf:type rdf:resource="http://purl.org/ontology/bibo/Periodical" />
 			<rdau:modeOfIssuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1003" />
 			<dct:issued>1993-9999</dct:issued>
 			<dct:title>Le Quotidien jurassien</dct:title>

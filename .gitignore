@@ -12,3 +12,6 @@ src/main/resources/statistics/swissbib.marc21/job1r112A060.mf.xml
 src/main/resources/transformation/resource/prov_np_morph_marc21.xml
 src/main/resources/transformation/resource/prov_np_flux_to_rdfxml.flux
 src/main/resources/transformation/resource/representativeData.xml
+src/main/resources/transformation/resource/prov.flux
+src/main/resources/transformation/resource/prov_morph.xml
+src/main/resources/transformation/resource/prov_output.rdf

@@ -163,20 +163,91 @@
 			</entity>
 
 			<!--DOCUMENT TYPE-->
-			<!--The document type completes - when necessary - RDA media and content type with a more concrete document types.-->
-
-			<!--
-			class to add:
-			bibo:Article			> BK01....
-			bibo:Book				> BK02....
-			bibo:Manuscript			> BK03..../MU02..../MP02....
-			bibo:Periodical			> CR01..../CR03....
-			bibo:Proceedings		> BK0108../BK0208../CR0108../CR0208../CR0308..
-			bibo:Series				> CL01..../CL02....
-			bibo:Thesis				> BK0103../BK0203..
-			bibo:Website			> CR0104../CR0204../CR0304..
-			-->
-
+			<!--The document type completes - when necessary - RDA media and content type with a more concrete document type. A document can have more than one type, for instance bibo:Book and bibo:Thesis.-->
+			<entity name="rdf:type" >
+				<data source="898  .a" name="~rdf:resource" >
+					<substring  start="0"  end="4"/>
+					<whitelist>
+						<entry name="BK01"/>
+					</whitelist>
+					<constant value="http://purl.org/ontology/bibo/Article"/>
+				</data>
+			</entity>
+			<entity name="rdf:type" >
+				<data source="898  .a" name="~rdf:resource" >
+					<substring  start="0"  end="4"/>
+					<whitelist>
+						<entry name="BK02"/>
+					</whitelist>
+					<constant value="http://purl.org/ontology/bibo/Book"/>
+				</data>
+			</entity>
+			<entity name="rdf:type" >
+				<data source="898  .a" name="~rdf:resource" >
+					<substring  start="0"  end="4"/>
+					<whitelist>
+						<entry name="BK03"/>
+						<entry name="MU02"/>
+						<entry name="MP02"/>
+					</whitelist>
+					<constant value="http://purl.org/ontology/bibo/Manuscript"/>
+				</data>
+			</entity>
+			<entity name="rdf:type" >
+				<data source="898  .a" name="~rdf:resource" >
+					<substring  start="0"  end="4"/>
+					<whitelist>
+						<entry name="CR01"/>
+						<entry name="CR03"/>
+					</whitelist>
+					<constant value="http://purl.org/ontology/bibo/Periodical"/>
+				</data>
+			</entity>
+			<entity name="rdf:type" >
+				<data source="898  .a" name="~rdf:resource" >
+					<substring  start="0"  end="6"/>
+					<whitelist>
+						<entry name="BK0108"/>
+						<entry name="BK0208"/>
+						<entry name="CR0108"/>
+						<entry name="CR0208"/>
+						<entry name="CR0308"/>
+					</whitelist>
+					<constant value="http://purl.org/ontology/bibo/Proceedings"/>
+				</data>
+			</entity>
+			<entity name="rdf:type" >
+				<data source="898  .a" name="~rdf:resource" >
+					<substring  start="0"  end="4"/>
+					<whitelist>
+						<entry name="CL01"/>
+						<entry name="CL02"/>
+					</whitelist>
+					<constant value="http://purl.org/ontology/bibo/Series"/>
+				</data>
+			</entity>
+			<entity name="rdf:type" >
+				<data source="898  .a" name="~rdf:resource" >
+					<substring  start="0"  end="6"/>
+					<whitelist>
+						<entry name="BK0103"/>
+						<entry name="BK0203"/>
+					</whitelist>
+					<constant value="http://purl.org/ontology/bibo/Thesis"/>
+				</data>
+			</entity>
+			<entity name="rdf:type" >
+				<data source="898  .a" name="~rdf:resource" >
+					<substring  start="0"  end="6"/>
+					<whitelist>
+						<entry name="CR0104"/>
+						<entry name="CR0204"/>
+						<entry name="CR0304"/>
+					</whitelist>
+					<constant value="http://purl.org/ontology/bibo/Website"/>
+				</data>
+			</entity>
+			
 			<!--RDA mode of issuance-->
 			<!--only for serials and integrating resources-->
 			<entity name="rdau:modeOfIssuance" >
