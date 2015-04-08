@@ -15,3 +15,8 @@ src/main/resources/transformation/resource/representativeData.xml
 src/main/resources/transformation/resource/prov.flux
 src/main/resources/transformation/resource/prov_morph.xml
 src/main/resources/transformation/resource/prov_output.rdf
+src/main/resources/transformation/resource/oli.flux
+src/main/resources/transformation/resource/oli_filter.xml
+src/main/resources/transformation/resource/oli_morph.xml
+src/main/resources/transformation/resource/oli_output.rdf
+src/main/resources/transformation/resource/oli_output.csv
