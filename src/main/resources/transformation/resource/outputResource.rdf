@@ -2,7 +2,7 @@
 <rdf:RDF xmlns:rdau="http://rdaregistry.info/Elements/u/" xmlns:void="http://rdfs.org/ns/void#" xmlns:dbp="http://dbpedia.org/ontology/" xmlns:dct="http://purl.org/dc/terms/" xmlns:owl="http://www.w3.org/2004/02/skos/core#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dc="http://purl.org/dc/elements/1.1/">
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/318618583/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-08T13:08:37.123Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-08T13:41:21.491Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/318618583" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-03-27T05:24:27+01:00</dct:modified>
 			<dc:contributor>IDSBB</dc:contributor>
@@ -32,7 +32,13 @@
 			<dct:subject rdf:resource="http://d-nb.info/gnd/4062644-1" />
 			<dct:subject rdf:resource="http://d-nb.info/gnd/4062644-1" />
 			<dct:subject rdf:resource="http://d-nb.info/gnd/4062644-1" />
-			<dc:contributor>Wisenblit, Joseph</dc:contributor>
+			<dc:contributor>
+				<foaf:Person>
+					<foaf:lastName>Wisenblit</foaf:lastName>
+					<foaf:firstName>Joseph</foaf:firstName>
+					<rdfs:label>Wisenblit, Joseph</rdfs:label>
+				</foaf:Person>
+			</dc:contributor>
 			<rdau:contentType rdf:resource="http://rdvocab.info/termList/RDAContentType/1020" />
 			<rdau:mediaType rdf:resource="http://rdvocab.info/termList/RDAMediaType/1007" />
 			<rdf:type rdf:resource="http://purl.org/ontology/bibo/Book" />
@@ -44,7 +50,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/316022063/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-08T13:08:37.168Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-08T13:41:21.534Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/316022063" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-05-27T15:12:24+01:00</dct:modified>
 			<dc:contributor>RERO</dc:contributor>
@@ -77,10 +83,32 @@
 			<dct:subject rdf:resource="http://d-nb.info/gnd/4049396-9" />
 			<dct:subject rdf:resource="http://d-nb.info/gnd/4053168-5" />
 			<dct:subject rdf:resource="http://d-nb.info/gnd/4055964-6" />
-			<dc:contributor>Heintz, Suzanne</dc:contributor>
-			<dc:contributor>Hipler, Günter</dc:contributor>
-			<dct:contributor>Voltaire</dct:contributor>
-			<dct:contributor>Nicolas</dct:contributor>
+			<dc:contributor>
+				<foaf:Person>
+					<foaf:lastName>Heintz</foaf:lastName>
+					<foaf:firstName>Suzanne</foaf:firstName>
+					<rdfs:label>Heintz, Suzanne</rdfs:label>
+				</foaf:Person>
+			</dc:contributor>
+			<dc:contributor>
+				<foaf:Person>
+					<foaf:lastName>Hipler</foaf:lastName>
+					<foaf:firstName>Günter</foaf:firstName>
+					<rdfs:label>Hipler, Günter</rdfs:label>
+				</foaf:Person>
+			</dc:contributor>
+			<dc:contributor>
+				<foaf:Person>
+					<foaf:name>Voltaire</foaf:name>
+					<rdfs:label>Voltaire</rdfs:label>
+				</foaf:Person>
+			</dc:contributor>
+			<dc:contributor>
+				<foaf:Person>
+					<foaf:name>Nicolas</foaf:name>
+					<rdfs:label>Nicolas</rdfs:label>
+				</foaf:Person>
+			</dc:contributor>
 			<rdau:contentType rdf:resource="http://rdvocab.info/termList/RDAContentType/1023" />
 			<rdau:contentType rdf:resource="http://rdvocab.info/termList/RDAContentType/1021" />
 			<rdau:mediaType rdf:resource="http://rdvocab.info/termList/RDAMediaType/1008" />
@@ -94,7 +122,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/31602208X/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-08T13:08:37.223Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-08T13:41:21.589Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/31602208X" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-16T23:44:29+01:00</dct:modified>
 			<dc:contributor>ABN</dc:contributor>
@@ -119,7 +147,13 @@
 			<dct:subject rdf:resource="http://d-nb.info/gnd/4077640-2" />
 			<dct:subject rdf:resource="http://d-nb.info/gnd/4035964-5" />
 			<dct:subject rdf:resource="http://d-nb.info/gnd/4035964-5" />
-			<dc:contributor>Rivero Iglesias, Carmen</dc:contributor>
+			<dc:contributor>
+				<foaf:Person>
+					<foaf:lastName>Rivero Iglesias</foaf:lastName>
+					<foaf:firstName>Carmen</foaf:firstName>
+					<rdfs:label>Rivero Iglesias, Carmen</rdfs:label>
+				</foaf:Person>
+			</dc:contributor>
 			<rdau:contentType rdf:resource="http://rdvocab.info/termList/RDAContentType/1020" />
 			<rdau:mediaType rdf:resource="http://rdvocab.info/termList/RDAMediaType/1007" />
 			<rdf:type rdf:resource="http://purl.org/ontology/bibo/Book" />
@@ -132,7 +166,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/316022098/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-08T13:08:37.254Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-08T13:41:21.621Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/316022098" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-05-24T07:05:47+01:00</dct:modified>
 			<dc:contributor>NEBIS</dc:contributor>
@@ -149,7 +183,13 @@
 			<dct:subject rdf:resource="http://d-nb.info/gnd/4040795-0" />
 			<dct:subject rdf:resource="http://d-nb.info/gnd/4433627-5" />
 			<dct:subject rdf:resource="http://d-nb.info/gnd/4433627-5" />
-			<dc:contributor>Trüby, Stephan</dc:contributor>
+			<dc:contributor>
+				<foaf:Person>
+					<foaf:lastName>Trüby</foaf:lastName>
+					<foaf:firstName>Stephan</foaf:firstName>
+					<rdfs:label>Trüby, Stephan</rdfs:label>
+				</foaf:Person>
+			</dc:contributor>
 			<rdau:contentType rdf:resource="http://rdvocab.info/termList/RDAContentType/1020" />
 			<rdau:mediaType rdf:resource="http://rdvocab.info/termList/RDAMediaType/1007" />
 			<rdf:type rdf:resource="http://purl.org/ontology/bibo/Periodical" />
@@ -163,7 +203,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/316022101/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-08T13:08:37.274Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-08T13:41:21.640Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/316022101" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-08T08:00:34+01:00</dct:modified>
 			<dc:contributor>BGR</dc:contributor>
@@ -191,7 +231,13 @@
 			<dct:subject rdf:resource="http://d-nb.info/gnd/4116568-8" />
 			<dct:subject rdf:resource="http://d-nb.info/gnd/4827733-2" />
 			<dct:subject rdf:resource="http://d-nb.info/gnd/4216490-4" />
-			<dc:contributor>Rataj, Heinz</dc:contributor>
+			<dc:contributor>
+				<foaf:Person>
+					<foaf:lastName>Rataj</foaf:lastName>
+					<foaf:firstName>Heinz</foaf:firstName>
+					<rdfs:label>Rataj, Heinz</rdfs:label>
+				</foaf:Person>
+			</dc:contributor>
 			<rdau:contentType rdf:resource="http://rdvocab.info/termList/RDAContentType/1020" />
 			<rdau:mediaType rdf:resource="http://rdvocab.info/termList/RDAMediaType/1007" />
 			<rdf:type rdf:resource="http://purl.org/ontology/bibo/Book" />
@@ -203,7 +249,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/vtls003010104/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-08T13:08:37.297Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-08T13:41:21.658Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/vtls003010104" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-04-21T07:02:00+01:00</dct:modified>
 			<dc:contributor>RERO</dc:contributor>
@@ -222,7 +268,12 @@
 				</foaf:Person>
 			</dc:contributor>
 			<dct:bibliographicCitation>In: Le quotidien jurassien. - Delémont. - 23 mars 1996</dct:bibliographicCitation>
-			<dc:contributor>Bataillard, Josiane, </dc:contributor>
+			<dc:contributor>
+				<foaf:Person>
+					<foaf:lastName>Bataillard, Josiane</foaf:lastName>
+					<rdfs:label>Bataillard, Josiane</rdfs:label>
+				</foaf:Person>
+			</dc:contributor>
 			<dct:isPartOf rdf:resource="http://data.swissbib.ch/resource/268337713" />
 			<dct:issued>1996</dct:issued>
 			<dct:title>Nicolas Bouvier: &quot;les autres sont une terre, on sème, le lecteur fait fructifier&quot; / propos recueillis par Josiane Bataillard</dct:title>
@@ -231,7 +282,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/268337713/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-08T13:08:37.306Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-08T13:41:21.667Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/268337713" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-07T04:58:42+01:00</dct:modified>
 			<dc:contributor>SNL</dc:contributor>
