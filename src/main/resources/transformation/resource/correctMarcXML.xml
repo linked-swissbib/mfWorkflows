@@ -110,17 +110,17 @@
          </datafield>
          <datafield tag="691" ind1=" " ind2="7">
             <subfield code="B">u</subfield>
-            <subfield code="a">CONSUMER BEHAVIOUR</subfield>
+            <subfield code="a">Produktionsfaktoren und Verteilungsquoten</subfield>
             <subfield code="z">eng</subfield>
-            <subfield code="u">65,11.1.10.1</subfield>
-            <subfield code="2">nebis E1</subfield>
+            <subfield code="u">QC 200</subfield>
+            <subfield code="2">libib XF</subfield>
          </datafield>
          <datafield tag="691" ind1=" " ind2="7">
             <subfield code="B">u</subfield>
-            <subfield code="a">TEXTBOOKS (DOCUMENT TYPE)</subfield>
-            <subfield code="z">eng</subfield>
-            <subfield code="u">(075)</subfield>
-            <subfield code="2">nebis E1</subfield>
+            <subfield code="a">Kapital</subfield>
+            <subfield code="c">Wirtschaftswissenschaften</subfield>
+            <subfield code="u">330.14</subfield>
+            <subfield code="2">libib XD</subfield>
          </datafield>
          <datafield tag="691" ind1=" " ind2="7">
             <subfield code="B">u</subfield>
@@ -153,6 +153,7 @@
          <datafield tag="700" ind1="1" ind2=" ">
             <subfield code="a">Wisenblit</subfield>
             <subfield code="D">Joseph</subfield>
+			<subfield code="4">fmo</subfield>
          </datafield>
          <datafield tag="898" ind1=" " ind2=" ">
             <subfield code="a">BK020000</subfield>
@@ -456,6 +457,8 @@
 		<datafield tag="700" ind1="1" ind2=" ">
 			<subfield code="a">Heintz</subfield>
 			<subfield code="D">Suzanne</subfield>
+			<subfield code="d">1958-</subfield>
+			<subfield code="c">adjointe scientifique</subfield>
 		</datafield>
 		<datafield tag="700" ind1="1" ind2=" ">
 			<subfield code="a">Hipler</subfield>
@@ -463,6 +466,8 @@
 		</datafield>
 		<datafield tag="700" ind1="0" ind2=" ">
 			<subfield code="a">Voltaire</subfield>
+			<subfield code="d">1694-1778</subfield>
+			<subfield code="c">écrivain</subfield>
 		</datafield>
 		<datafield tag="700" ind1="0" ind2=" ">
 			<subfield code="a">Nicolas</subfield>
@@ -780,6 +785,13 @@
 			<subfield code="a">Lehrbuch</subfield>
 			<subfield code="2">gnd</subfield>
 		</datafield>
+		<datafield tag="691" ind1=" " ind2="7">
+            <subfield code="B">u</subfield>
+            <subfield code="a">Produktionsfaktoren und Verteilungsquoten</subfield>
+            <subfield code="z">eng</subfield>
+            <subfield code="u">QC 200</subfield>
+            <subfield code="2">libib XF</subfield>
+         </datafield>
 		<datafield tag="700" ind1="1" ind2=" ">
 			<subfield code="a">Rivero Iglesias</subfield>
 			<subfield code="D">Carmen</subfield>
@@ -1047,6 +1059,24 @@
 		<datafield tag="710" ind1="2" ind2=" ">
 			<subfield code="a">Zürcher Hochschule der Künste</subfield>
 			<subfield code="b">Institut Design2context</subfield>
+		</datafield>
+		<datafield tag="710" ind1="1" ind2=" ">
+			<subfield code="a">Schweiz</subfield>
+			<subfield code="b">Eidgenössisches Departement des Innern</subfield>
+			<subfield code="b">Bundesamt für Kultur</subfield>
+			<subfield code="n">3</subfield>
+			<subfield code="d">2015</subfield>
+			<subfield code="c">Berne</subfield>
+		</datafield>
+		<datafield tag="710" ind1="1" ind2=" ">
+			<subfield code="a">Energietechnische Gesellschaft (Schweiz)</subfield>
+			<subfield code="b">Tagungszyklus</subfield>
+			<subfield code="d">1997</subfield>
+			<subfield code="c">Baden (Aargau)</subfield>
+		</datafield>
+		<datafield tag="710" ind1="1" ind2=" ">
+			<subfield code="a">Association genevoise des bibliothécaires et documentalistes</subfield>
+			<subfield code="b">Comité</subfield>
 		</datafield>
 		<datafield tag="909" ind1=" " ind2="7">
 			<subfield code="a">ZH</subfield>
@@ -1586,6 +1616,7 @@
 		</datafield>
 		<datafield tag="710" ind1="2" ind2=" ">
 			<subfield code="a">Quotidien jurassien (Delémont)</subfield>
+			<subfield code="4">fmo</subfield>
 		</datafield>
 		<datafield tag="770" ind1="0" ind2="8">
 			<subfield code="i">Suppl. 2005-2006</subfield>

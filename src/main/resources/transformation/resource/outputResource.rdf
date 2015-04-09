@@ -2,7 +2,7 @@
 <rdf:RDF xmlns:rdau="http://rdaregistry.info/Elements/u/" xmlns:void="http://rdfs.org/ns/void#" xmlns:dbp="http://dbpedia.org/ontology/" xmlns:dct="http://purl.org/dc/terms/" xmlns:owl="http://www.w3.org/2004/02/skos/core#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dc="http://purl.org/dc/elements/1.1/">
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/318618583/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-08T13:41:21.491Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-09T12:31:21.141Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/318618583" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-03-27T05:24:27+01:00</dct:modified>
 			<dc:contributor>IDSBB</dc:contributor>
@@ -50,7 +50,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/316022063/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-08T13:41:21.534Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-09T12:31:21.171Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/316022063" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-05-27T15:12:24+01:00</dct:modified>
 			<dc:contributor>RERO</dc:contributor>
@@ -87,7 +87,9 @@
 				<foaf:Person>
 					<foaf:lastName>Heintz</foaf:lastName>
 					<foaf:firstName>Suzanne</foaf:firstName>
-					<rdfs:label>Heintz, Suzanne</rdfs:label>
+					<dbp:birthYear>1958</dbp:birthYear>
+					<skos:note>adjointe scientifique</skos:note>
+					<rdfs:label>Heintz, Suzanne, 1958-, adjointe scientifique</rdfs:label>
 				</foaf:Person>
 			</dc:contributor>
 			<dc:contributor>
@@ -100,7 +102,10 @@
 			<dc:contributor>
 				<foaf:Person>
 					<foaf:name>Voltaire</foaf:name>
-					<rdfs:label>Voltaire</rdfs:label>
+					<dbp:birthYear>1694</dbp:birthYear>
+					<dbp:deathYear>1778</dbp:deathYear>
+					<skos:note>écrivain</skos:note>
+					<rdfs:label>Voltaire, 1694-1778, écrivain</rdfs:label>
 				</foaf:Person>
 			</dc:contributor>
 			<dc:contributor>
@@ -122,7 +127,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/31602208X/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-08T13:41:21.589Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-09T12:31:21.203Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/31602208X" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-16T23:44:29+01:00</dct:modified>
 			<dc:contributor>ABN</dc:contributor>
@@ -166,7 +171,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/316022098/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-08T13:41:21.621Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-09T12:31:21.227Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/316022098" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-05-24T07:05:47+01:00</dct:modified>
 			<dc:contributor>NEBIS</dc:contributor>
@@ -190,6 +195,26 @@
 					<rdfs:label>Trüby, Stephan</rdfs:label>
 				</foaf:Person>
 			</dc:contributor>
+			<dc:contributor>
+				<foaf:Organization>
+					<rdfs:label>Zürcher Hochschule der Künste. Institut Design2context</rdfs:label>
+				</foaf:Organization>
+			</dc:contributor>
+			<dc:contributor>
+				<foaf:Organization>
+					<rdfs:label>Schweiz. Bundesamt für Kultur. 3. 2015. Berne</rdfs:label>
+				</foaf:Organization>
+			</dc:contributor>
+			<dc:contributor>
+				<foaf:Organization>
+					<rdfs:label>Energietechnische Gesellschaft (Schweiz). Tagungszyklus. 1997. Aargau</rdfs:label>
+				</foaf:Organization>
+			</dc:contributor>
+			<dc:contributor>
+				<foaf:Organization>
+					<rdfs:label>Association genevoise des bibliothécaires et documentalistes. Comité</rdfs:label>
+				</foaf:Organization>
+			</dc:contributor>
 			<rdau:contentType rdf:resource="http://rdvocab.info/termList/RDAContentType/1020" />
 			<rdau:mediaType rdf:resource="http://rdvocab.info/termList/RDAMediaType/1007" />
 			<rdf:type rdf:resource="http://purl.org/ontology/bibo/Periodical" />
@@ -198,12 +223,11 @@
 			<dct:title>Spatial Design : Gespräche über Architekturen, Ausstellungen, Bühnenbilder und Urbane Interventionen : ein Reader des MAS Spatial Design / Stephan Trüby (Hrsg.)</dct:title>
 			<rdau:publicationStatement>Zürich : Zürcher Hochschule der Künste, Institut für Designforschung, 2013</rdau:publicationStatement>
 			<dc:format>196 S : farbige Ill ; 21 cm</dc:format>
-			<dc:contributor>Zürcher Hochschule der Künste. Institut Design2context</dc:contributor>
 		</dct:BibliographicResource>
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/316022101/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-08T13:41:21.640Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-09T12:31:21.253Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/316022101" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-08T08:00:34+01:00</dct:modified>
 			<dc:contributor>BGR</dc:contributor>
@@ -249,7 +273,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/vtls003010104/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-08T13:41:21.658Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-09T12:31:21.267Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/vtls003010104" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-04-21T07:02:00+01:00</dct:modified>
 			<dc:contributor>RERO</dc:contributor>
@@ -282,7 +306,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/268337713/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-08T13:41:21.667Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-09T12:31:21.273Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/268337713" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-07T04:58:42+01:00</dct:modified>
 			<dc:contributor>SNL</dc:contributor>
@@ -302,6 +326,11 @@
 			<rdau:noteOnResource>Dernière éd. consultée: 2006, no 224 (30 sept. 2006)</rdau:noteOnResource>
 			<dct:bibliographicCitation>Fusion de: Le démocrate, et de: Le pays</dct:bibliographicCitation>
 			<dct:subject rdf:resource="http://d-nb.info/gnd/4266795-1" />
+			<dc:contributor>
+				<foaf:Organization>
+					<rdfs:label>Quotidien jurassien (Delémont)</rdfs:label>
+				</foaf:Organization>
+			</dc:contributor>
 			<rdau:contentType rdf:resource="http://rdvocab.info/termList/RDAContentType/1020" />
 			<rdau:mediaType rdf:resource="http://rdvocab.info/termList/RDAMediaType/1007" />
 			<rdf:type rdf:resource="http://purl.org/ontology/bibo/Periodical" />
@@ -310,7 +339,6 @@
 			<dct:title>Le Quotidien jurassien</dct:title>
 			<rdau:publicationStatement>Delémont : Le Quotidien jurassien, 1993-</rdau:publicationStatement>
 			<dc:format>vol : Ill ; 50 cm</dc:format>
-			<dc:contributor>Quotidien jurassien (Delémont)</dc:contributor>
 		</dct:BibliographicResource>
 	
 

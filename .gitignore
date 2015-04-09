@@ -20,3 +20,8 @@ src/main/resources/transformation/resource/oli_filter.xml
 src/main/resources/transformation/resource/oli_morph.xml
 src/main/resources/transformation/resource/oli_output.rdf
 src/main/resources/transformation/resource/oli_output.csv
+src/main/resources/transformation/resource/prov_filter.xml
+src/main/resources/transformation/resource/prov_stat_output.rdf
+src/main/resources/transformation/resource/prov_stat_morph.xml
+src/main/resources/transformation/resource/prov_stat_output.csv
+src/main/resources/transformation/resource/prov_stat.flux

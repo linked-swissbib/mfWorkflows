@@ -494,9 +494,30 @@
 			</entity>
 
 			<!--700: OTHER AUTHORS-->
-			<entity name="dc:contributor" flushWith="7001 " >
-				<entity name="foaf:Person" flushWith="7001 " >
-					<combine name="rdfs:label" value="${firstname}${lastname}${developed}${dates}${note}" flushWith="7001 ">
+			<entity name="dc:contributor" reset="true" flushWith="7000 " >
+				<entity name="foaf:Person" reset="true" flushWith="7000 " >
+					<combine name="rdfs:label" value="${name}${dates}${note}" reset="true" flushWith="7000 ">
+						<data source="7000 .a" name="name" />
+						<data source="7000 .d" name="dates" >
+							<compose prefix=", " />
+						</data>
+						<data source="7000 .c" name="note" >
+							<compose prefix=", " />
+						</data>
+					</combine>
+					<data source="7000 .d" name="dbp:birthYear" >
+						<regexp match="(\d\d\d\d).?[-]" format="${1}" />
+					</data>
+					<data source="7000 .d" name="dbp:deathYear" >
+						<regexp match="(\d\d\d\d)$" format="${1}" />
+					</data>
+					<data source="7000 .a" name="foaf:name" />
+					<data source="7000 .c" name="skos:note" />
+				</entity>		
+			</entity>
+			<entity name="dc:contributor" reset="true" flushWith="7001 " >
+				<entity name="foaf:Person" reset="true" flushWith="7001 " >
+					<combine name="rdfs:label" value="${firstname}${lastname}${developed}${dates}${note}" reset="true" flushWith="7001 ">
 						<data source="7001 .a" name="firstname" />
 						<data source="7001 .D" name="lastname" >
 							<compose prefix=", " />
@@ -522,37 +543,83 @@
 					<data source="7001 .D" name="foaf:firstName" />
 				</entity>		
 			</entity>
-			<entity name="dc:contributor" flushWith="7000 " >
-				<entity name="foaf:Person" flushWith="7000 " >
-					<combine name="rdfs:label" value="${name}${dates}${note}" flushWith="7000 ">
-						<data source="7000 .a" name="name" />
-						<data source="7000 .d" name="dates" >
-							<compose prefix=", " />
-						</data>
-						<data source="7000 .c" name="note" >
-							<compose prefix=", " />
-						</data>
-					</combine>
-					<data source="7000 .d" name="dbp:birthYear" >
-						<regexp match="(\d\d\d\d).?[-]" format="${1}" />
-					</data>
-					<data source="7000 .d" name="dbp:deathYear" >
-						<regexp match="(\d\d\d\d)$" format="${1}" />
-					</data>
-					<data source="7000 .a" name="foaf:name" />
-					<data source="7000 .c" name="skos:note" />
-				</entity>		
-			</entity>
 
 			<!--710: ORGANISATIONS-->
-			<concat name="dc:contributor" delimiter=". ">
-				<!--The values are concatenated in the order they appear in the input and not in the order of the data sources in this file.-->
-				<data source="710*.a"/>
-				<data source="710*.b"/>
-				<data source="710*.c"/>
-				<data source="710*.d"/>
-				<data source="710*.n"/>
-			</concat>
+			<entity name="dc:contributor"  reset="true" flushWith="7100 " >
+				<entity name="foaf:Organization"  reset="true" flushWith="7100 " >
+					<combine name="rdfs:label" value="${org}${subordinate}${no}${date}${place}" reset="true" flushWith="7100 ">
+						<data source="7100 .a" name="org" >
+							<regexp match="([^\.]*)" format="${1}" />
+							<!--regex because the data is not harmonised in the various library networks...
+							!!!!! This regex must be improved. It must take every character but the eventual final dot. Currently it doesn't work well if there is a dot in the middle of the string. Example:https://www.swissbib.ch/Record/032637934
+							-->
+						</data>
+						<data source="7100 .b" name="subordinate" >
+							<compose prefix=". " />
+						</data>
+						<data source="7100 .n" name="no" >
+							<regexp match="\(?([^\(\)]*)\)?" format="${1}" />
+							<compose prefix=". " />
+						</data>
+						<data source="7100 .d" name="date" >
+							<regexp match="\(?([^\(\)]*)\)?" format="${1}" />
+							<compose prefix=". " />
+						</data>
+						<data source="7100 .c" name="place" >
+							<regexp match="\(?([^\(\)]*)\)?" format="${1}" />
+							<compose prefix=". " />
+						</data>
+					</combine>
+				</entity>		
+			</entity>
+			<entity name="dc:contributor"  reset="true" flushWith="7101 " >
+				<entity name="foaf:Organization"  reset="true" flushWith="7101 " >
+					<combine name="rdfs:label" value="${org}${subordinate}${no}${date}${place}" reset="true" flushWith="7101 ">
+						<data source="7101 .a" name="org" >
+							<regexp match="([^\.]*)" format="${1}" />
+						</data>
+						<data source="7101 .b" name="subordinate" >
+							<compose prefix=". " />
+						</data>
+						<data source="7101 .n" name="no" >
+							<regexp match="\(?([^\(\)]*)\)?" format="${1}" />
+							<compose prefix=". " />
+						</data>
+						<data source="7101 .d" name="date" >
+							<regexp match="\(?([^\(\)]*)\)?" format="${1}" />
+							<compose prefix=". " />
+						</data>
+						<data source="7101 .c" name="place" >
+							<regexp match="\(?([^\(\)]*)\)?" format="${1}" />
+							<compose prefix=". " />
+						</data>
+					</combine>
+				</entity>		
+			</entity>
+			<entity name="dc:contributor"  reset="true" flushWith="7102 " >
+				<entity name="foaf:Organization"  reset="true" flushWith="7102 " >
+					<combine name="rdfs:label" value="${org}${subordinate}${no}${date}${place}" reset="true" flushWith="7102 ">
+						<data source="7102 .a" name="org" >
+							<regexp match="([^\.]*)" format="${1}" />
+						</data>
+						<data source="7102 .b" name="subordinate" >
+							<compose prefix=". " />
+						</data>
+						<data source="7102 .n" name="no" >
+							<regexp match="\(?([^\(\)]*)\)?" format="${1}" />
+							<compose prefix=". " />
+						</data>
+						<data source="7102 .d" name="date" >
+							<regexp match="\(?([^\(\)]*)\)?" format="${1}" />
+							<compose prefix=". " />
+						</data>
+						<data source="7102 .c" name="place" >
+							<regexp match="\(?([^\(\)]*)\)?" format="${1}" />
+							<compose prefix=". " />
+						</data>
+					</combine>
+				</entity>		
+			</entity>
 
 			<!--711: CONGRESSES-->
 			<concat name="dc:contributor" delimiter=". ">
