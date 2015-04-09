@@ -1061,12 +1061,12 @@
 			<subfield code="b">Institut Design2context</subfield>
 		</datafield>
 		<datafield tag="710" ind1="1" ind2=" ">
-			<subfield code="a">Schweiz</subfield>
-			<subfield code="b">Eidgenössisches Departement des Innern</subfield>
+			<subfield code="a">Schweiz.</subfield>
+			<subfield code="b">Eidgen. Departement des Innern.</subfield>
 			<subfield code="b">Bundesamt für Kultur</subfield>
-			<subfield code="n">3</subfield>
-			<subfield code="d">2015</subfield>
-			<subfield code="c">Berne</subfield>
+			<subfield code="n">(3 :</subfield>
+			<subfield code="d">2015 :</subfield>
+			<subfield code="c">Berne)</subfield>
 		</datafield>
 		<datafield tag="710" ind1="1" ind2=" ">
 			<subfield code="a">Energietechnische Gesellschaft (Schweiz)</subfield>
@@ -1617,6 +1617,26 @@
 		<datafield tag="710" ind1="2" ind2=" ">
 			<subfield code="a">Quotidien jurassien (Delémont)</subfield>
 			<subfield code="4">fmo</subfield>
+		</datafield>
+		<datafield tag="711" ind1="2" ind2=" ">
+			<subfield code="a">Schweizerischer Elektrotechnischer Verein</subfield>
+		</datafield>
+		<datafield tag="711" ind1="2" ind2=" ">
+			<subfield code="a">Kongress</subfield>
+			<subfield code="d">(1993</subfield>
+			<subfield code="c">Zurich, ZH)</subfield>
+		</datafield>
+		<datafield tag="711" ind1="2" ind2=" ">
+			<subfield code="a">Informationszyklus Elektronik und Informatik in Hausinstallationen.</subfield>
+			<subfield code="e">Tagung</subfield>
+			<subfield code="n">(2</subfield>
+			<subfield code="d">1993</subfield>
+			<subfield code="c">Zürich)</subfield>
+		</datafield>
+		<datafield tag="711" ind1="2" ind2=" ">
+			<subfield code="a">Tagung Wieviel Gebäudeleittechnik bei Aus- und Umbauten?</subfield>
+			<subfield code="d">(1993</subfield>
+			<subfield code="c">Zürich)</subfield>
 		</datafield>
 		<datafield tag="770" ind1="0" ind2="8">
 			<subfield code="i">Suppl. 2005-2006</subfield>

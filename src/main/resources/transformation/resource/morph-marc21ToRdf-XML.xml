@@ -406,14 +406,19 @@
 			</entity>
 
 			<!--245: TITLE-->
-			<!--We could add other subfields, like $p or $n (repetitive) -->
 			<concat name="dct:title" delimiter="" >
-				<data source="245*.a" /><!--* and ? enable to troncate-->
-				<data source="245*.b">
+				<data source="245*.a" />
+				<data source="245*.b" >
 					<compose prefix=" : " />
 				</data>
-				<data source="245*.c">
+				<data source="245*.c" >
 					<compose prefix=" / " />
+				</data>
+				<data source="245*.n" >
+					<compose prefix=". " />
+				</data>
+				<data source="245*.p" >
+					<compose prefix=". " />
 				</data>
 			</concat>
 
@@ -495,6 +500,7 @@
 
 			<!--700: OTHER AUTHORS-->
 			<entity name="dc:contributor" reset="true" flushWith="7000 " >
+			<!--reset="true" avoit a rule to keep in a collector the data collected in the precedent same field (for repetitive fields)-->
 				<entity name="foaf:Person" reset="true" flushWith="7000 " >
 					<combine name="rdfs:label" value="${name}${dates}${note}" reset="true" flushWith="7000 ">
 						<data source="7000 .a" name="name" />
@@ -545,14 +551,79 @@
 			</entity>
 
 			<!--710: ORGANISATIONS-->
+			<entity name="dc:contributor"  reset="true" flushWith="7100?" >
+				<entity name="foaf:Organization"  reset="true" flushWith="7100?" >
+					<concat name="rdfs:label" delimiter="" flushWith="7100?" reset="true" >
+						<data source="7100?.a" >
+							<regexp match="([^\.]*)" format="${1}" />
+						</data>
+						<data source="7100?.b" >
+							<regexp match="([^\.]*)" format="${1}" />
+							<compose prefix=". " />
+						</data>
+						<data source="7100?.c" >
+							<compose prefix=" " />
+						</data>
+						<data source="7100?.d" >
+							<compose prefix=" " />
+						</data>
+						<data source="7100?.n" >
+							<compose prefix=" " />
+						</data>
+					</concat>
+				</entity>
+			</entity>
+			<entity name="dc:contributor"  reset="true" flushWith="7101?" >
+				<entity name="foaf:Organization"  reset="true" flushWith="7101?" >
+					<concat name="rdfs:label" delimiter="" flushWith="7101?" reset="true" >
+						<data source="7101?.a" >
+							<regexp match="([^\.]*)" format="${1}" />
+						</data>
+						<data source="7101?.b" >
+							<regexp match="([^\.]*)" format="${1}" />
+							<compose prefix=". " />
+						</data>
+						<data source="7101?.c" >
+							<compose prefix=" " />
+						</data>
+						<data source="7101?.d" >
+							<compose prefix=" " />
+						</data>
+						<data source="7101?.n" >
+							<compose prefix=" " />
+						</data>
+					</concat>
+				</entity>
+			</entity>
+			<entity name="dc:contributor"  reset="true" flushWith="7102?" >
+				<entity name="foaf:Organization"  reset="true" flushWith="7102?" >
+					<concat name="rdfs:label" delimiter="" flushWith="7102?" reset="true" >
+						<data source="7102?.a" >
+							<regexp match="([^\.]*)" format="${1}" />
+						</data>
+						<data source="7102?.b" >
+							<regexp match="([^\.]*)" format="${1}" />
+							<compose prefix=". " />
+						</data>
+						<data source="7102?.c" >
+							<compose prefix=" " />
+						</data>
+						<data source="7102?.d" >
+							<compose prefix=" " />
+						</data>
+						<data source="7102?.n" >
+							<compose prefix=" " />
+						</data>
+					</concat>
+				</entity>
+			</entity>
+			
+			<!-- Previous solution, but the regex are not satisfying. The basis data should be harmonised at the source.
 			<entity name="dc:contributor"  reset="true" flushWith="7100 " >
 				<entity name="foaf:Organization"  reset="true" flushWith="7100 " >
 					<combine name="rdfs:label" value="${org}${subordinate}${no}${date}${place}" reset="true" flushWith="7100 ">
 						<data source="7100 .a" name="org" >
 							<regexp match="([^\.]*)" format="${1}" />
-							<!--regex because the data is not harmonised in the various library networks...
-							!!!!! This regex must be improved. It must take every character but the eventual final dot. Currently it doesn't work well if there is a dot in the middle of the string. Example:https://www.swissbib.ch/Record/032637934
-							-->
 						</data>
 						<data source="7100 .b" name="subordinate" >
 							<compose prefix=". " />
@@ -620,15 +691,53 @@
 					</combine>
 				</entity>		
 			</entity>
+			-->
 
 			<!--711: CONGRESSES-->
-			<concat name="dc:contributor" delimiter=". ">
-				<data source="711*.a"/>
-				<data source="711*.c"/>
-				<data source="711*.d"/>
-				<data source="711*.e"/>
-				<data source="711*.n"/>
-			</concat>
+			<entity name="dc:contributor"  reset="true" flushWith="7111?" >
+				<entity name="foaf:Organization"  reset="true" flushWith="7111?" >
+					<concat name="rdfs:label" delimiter="" flushWith="7111?" reset="true" >
+						<data source="7111?.a" >
+							<regexp match="([^\.]*)" format="${1}" />
+						</data>
+						<data source="7111?.c" >
+							<compose prefix=" " />
+						</data>
+						<data source="7111?.d" >
+							<compose prefix=" " />
+						</data>
+						<data source="7111?.e" >
+						<regexp match="([^\.]*)" format="${1}" />
+							<compose prefix=". " />
+						</data>
+						<data source="7111?.n" >
+							<compose prefix=" " />
+						</data>
+					</concat>
+				</entity>
+			</entity>
+			<entity name="dc:contributor"  reset="true" flushWith="7112?" >
+				<entity name="foaf:Organization"  reset="true" flushWith="7112?" >
+					<concat name="rdfs:label" delimiter="" flushWith="7112?" reset="true" >
+						<data source="7112?.a" >
+							<regexp match="([^\.]*)" format="${1}" />
+						</data>
+						<data source="7112?.c" >
+							<compose prefix=" " />
+						</data>
+						<data source="7112?.d" >
+							<compose prefix=" " />
+						</data>
+						<data source="7112?.e" >
+						<regexp match="([^\.]*)" format="${1}" />
+							<compose prefix=". " />
+						</data>
+						<data source="7112?.n" >
+							<compose prefix=" " />
+						</data>
+					</concat>
+				</entity>
+			</entity>
 
 			<!--580: NOTE ABOUT COMPLEX LINKS (optional because a string > to delete?)-->
 			<combine name="dct:bibliographicCitation" value="${field_580}" reset="false" flushWith="580*.a">
