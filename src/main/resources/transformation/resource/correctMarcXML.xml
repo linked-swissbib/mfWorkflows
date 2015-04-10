@@ -728,7 +728,10 @@
 			<subfield code="c">hrsg. von Carmen Rivero Iglesias</subfield>
 		</datafield>
 		<datafield tag="246" ind1="1" ind2="3">
+			<subfield code="i">Schmutztitel:</subfield>
 			<subfield code="a">Spain literature history</subfield>
+			<subfield code="n">7th tome</subfield>
+			<subfield code="p">History of the empire</subfield>
 		</datafield>
 		<datafield tag="246" ind1="1" ind2="3">
 			<subfield code="a">Historia de la literatura española</subfield>

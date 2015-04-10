@@ -423,7 +423,15 @@
 			</concat>
 
 			<!--246: OTHER TITLES-->
-			<data name="dct:alternative" source="246*.a" />
+			<concat name="dct:alternative" delimiter="" flushWith="246??" reset="true" >
+				<data source="246*.a" />
+				<data source="246*.n" >
+					<compose prefix=". " />
+				</data>
+				<data source="246*.p" >
+					<compose prefix=". " />
+				</data>
+			</concat>
 
 			<!--250: EDITION-->
 			<data name="bibo:edition" source="250  .a" />
@@ -551,188 +559,48 @@
 			</entity>
 
 			<!--710: ORGANISATIONS-->
-			<entity name="dc:contributor"  reset="true" flushWith="7100?" >
-				<entity name="foaf:Organization"  reset="true" flushWith="7100?" >
-					<concat name="rdfs:label" delimiter="" flushWith="7100?" reset="true" >
-						<data source="7100?.a" >
-							<regexp match="([^\.]*)" format="${1}" />
+			<entity name="dc:contributor"  reset="true" flushWith="710??" >
+				<entity name="foaf:Organization"  reset="true" flushWith="710??" >
+					<concat name="rdfs:label" delimiter="" flushWith="710??" reset="true" >
+						<data source="710??.a" >
+							<regexp match="(.*[^\.$])" format="${1}" />
+							<!--This regex matches everything except the eventual final dot.-->
 						</data>
-						<data source="7100?.b" >
-							<regexp match="([^\.]*)" format="${1}" />
+						<data source="710??.b" >
+							<regexp match="(.*[^\.$])" format="${1}" />
 							<compose prefix=". " />
 						</data>
-						<data source="7100?.c" >
+						<data source="710??.c" >
 							<compose prefix=" " />
 						</data>
-						<data source="7100?.d" >
+						<data source="710??.d" >
 							<compose prefix=" " />
 						</data>
-						<data source="7100?.n" >
-							<compose prefix=" " />
-						</data>
-					</concat>
-				</entity>
-			</entity>
-			<entity name="dc:contributor"  reset="true" flushWith="7101?" >
-				<entity name="foaf:Organization"  reset="true" flushWith="7101?" >
-					<concat name="rdfs:label" delimiter="" flushWith="7101?" reset="true" >
-						<data source="7101?.a" >
-							<regexp match="([^\.]*)" format="${1}" />
-						</data>
-						<data source="7101?.b" >
-							<regexp match="([^\.]*)" format="${1}" />
-							<compose prefix=". " />
-						</data>
-						<data source="7101?.c" >
-							<compose prefix=" " />
-						</data>
-						<data source="7101?.d" >
-							<compose prefix=" " />
-						</data>
-						<data source="7101?.n" >
+						<data source="710??.n" >
 							<compose prefix=" " />
 						</data>
 					</concat>
 				</entity>
 			</entity>
-			<entity name="dc:contributor"  reset="true" flushWith="7102?" >
-				<entity name="foaf:Organization"  reset="true" flushWith="7102?" >
-					<concat name="rdfs:label" delimiter="" flushWith="7102?" reset="true" >
-						<data source="7102?.a" >
-							<regexp match="([^\.]*)" format="${1}" />
-						</data>
-						<data source="7102?.b" >
-							<regexp match="([^\.]*)" format="${1}" />
-							<compose prefix=". " />
-						</data>
-						<data source="7102?.c" >
-							<compose prefix=" " />
-						</data>
-						<data source="7102?.d" >
-							<compose prefix=" " />
-						</data>
-						<data source="7102?.n" >
-							<compose prefix=" " />
-						</data>
-					</concat>
-				</entity>
-			</entity>
-			
-			<!-- Previous solution, but the regex are not satisfying. The basis data should be harmonised at the source.
-			<entity name="dc:contributor"  reset="true" flushWith="7100 " >
-				<entity name="foaf:Organization"  reset="true" flushWith="7100 " >
-					<combine name="rdfs:label" value="${org}${subordinate}${no}${date}${place}" reset="true" flushWith="7100 ">
-						<data source="7100 .a" name="org" >
-							<regexp match="([^\.]*)" format="${1}" />
-						</data>
-						<data source="7100 .b" name="subordinate" >
-							<compose prefix=". " />
-						</data>
-						<data source="7100 .n" name="no" >
-							<regexp match="\(?([^\(\)]*)\)?" format="${1}" />
-							<compose prefix=". " />
-						</data>
-						<data source="7100 .d" name="date" >
-							<regexp match="\(?([^\(\)]*)\)?" format="${1}" />
-							<compose prefix=". " />
-						</data>
-						<data source="7100 .c" name="place" >
-							<regexp match="\(?([^\(\)]*)\)?" format="${1}" />
-							<compose prefix=". " />
-						</data>
-					</combine>
-				</entity>		
-			</entity>
-			<entity name="dc:contributor"  reset="true" flushWith="7101 " >
-				<entity name="foaf:Organization"  reset="true" flushWith="7101 " >
-					<combine name="rdfs:label" value="${org}${subordinate}${no}${date}${place}" reset="true" flushWith="7101 ">
-						<data source="7101 .a" name="org" >
-							<regexp match="([^\.]*)" format="${1}" />
-						</data>
-						<data source="7101 .b" name="subordinate" >
-							<compose prefix=". " />
-						</data>
-						<data source="7101 .n" name="no" >
-							<regexp match="\(?([^\(\)]*)\)?" format="${1}" />
-							<compose prefix=". " />
-						</data>
-						<data source="7101 .d" name="date" >
-							<regexp match="\(?([^\(\)]*)\)?" format="${1}" />
-							<compose prefix=". " />
-						</data>
-						<data source="7101 .c" name="place" >
-							<regexp match="\(?([^\(\)]*)\)?" format="${1}" />
-							<compose prefix=". " />
-						</data>
-					</combine>
-				</entity>		
-			</entity>
-			<entity name="dc:contributor"  reset="true" flushWith="7102 " >
-				<entity name="foaf:Organization"  reset="true" flushWith="7102 " >
-					<combine name="rdfs:label" value="${org}${subordinate}${no}${date}${place}" reset="true" flushWith="7102 ">
-						<data source="7102 .a" name="org" >
-							<regexp match="([^\.]*)" format="${1}" />
-						</data>
-						<data source="7102 .b" name="subordinate" >
-							<compose prefix=". " />
-						</data>
-						<data source="7102 .n" name="no" >
-							<regexp match="\(?([^\(\)]*)\)?" format="${1}" />
-							<compose prefix=". " />
-						</data>
-						<data source="7102 .d" name="date" >
-							<regexp match="\(?([^\(\)]*)\)?" format="${1}" />
-							<compose prefix=". " />
-						</data>
-						<data source="7102 .c" name="place" >
-							<regexp match="\(?([^\(\)]*)\)?" format="${1}" />
-							<compose prefix=". " />
-						</data>
-					</combine>
-				</entity>		
-			</entity>
-			-->
 
 			<!--711: CONGRESSES-->
-			<entity name="dc:contributor"  reset="true" flushWith="7111?" >
-				<entity name="foaf:Organization"  reset="true" flushWith="7111?" >
-					<concat name="rdfs:label" delimiter="" flushWith="7111?" reset="true" >
-						<data source="7111?.a" >
-							<regexp match="([^\.]*)" format="${1}" />
+			<entity name="dc:contributor"  reset="true" flushWith="711??" >
+				<entity name="foaf:Organization"  reset="true" flushWith="711??" >
+					<concat name="rdfs:label" delimiter="" flushWith="711??" reset="true" >
+						<data source="711??.a" >
+							<regexp match="(.*[^\.$])" format="${1}" />
 						</data>
-						<data source="7111?.c" >
+						<data source="711??.c" >
 							<compose prefix=" " />
 						</data>
-						<data source="7111?.d" >
+						<data source="711??.d" >
 							<compose prefix=" " />
 						</data>
-						<data source="7111?.e" >
-						<regexp match="([^\.]*)" format="${1}" />
+						<data source="711??.e" >
+							<regexp match="(.*[^\.$])" format="${1}" />
 							<compose prefix=". " />
 						</data>
-						<data source="7111?.n" >
-							<compose prefix=" " />
-						</data>
-					</concat>
-				</entity>
-			</entity>
-			<entity name="dc:contributor"  reset="true" flushWith="7112?" >
-				<entity name="foaf:Organization"  reset="true" flushWith="7112?" >
-					<concat name="rdfs:label" delimiter="" flushWith="7112?" reset="true" >
-						<data source="7112?.a" >
-							<regexp match="([^\.]*)" format="${1}" />
-						</data>
-						<data source="7112?.c" >
-							<compose prefix=" " />
-						</data>
-						<data source="7112?.d" >
-							<compose prefix=" " />
-						</data>
-						<data source="7112?.e" >
-						<regexp match="([^\.]*)" format="${1}" />
-							<compose prefix=". " />
-						</data>
-						<data source="7112?.n" >
+						<data source="711??.n" >
 							<compose prefix=" " />
 						</data>
 					</concat>
