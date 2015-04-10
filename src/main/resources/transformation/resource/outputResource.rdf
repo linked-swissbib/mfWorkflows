@@ -2,7 +2,7 @@
 <rdf:RDF xmlns:rdau="http://rdaregistry.info/Elements/u/" xmlns:void="http://rdfs.org/ns/void#" xmlns:dbp="http://dbpedia.org/ontology/" xmlns:dct="http://purl.org/dc/terms/" xmlns:owl="http://www.w3.org/2004/02/skos/core#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dc="http://purl.org/dc/elements/1.1/">
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/318618583/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-10T10:06:37.305Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-10T14:47:44.618Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/318618583" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-03-27T05:24:27+01:00</dct:modified>
 			<dc:contributor>IDSBB</dc:contributor>
@@ -24,7 +24,10 @@
 					<rdfs:label>Schiffman, L. G. (Léon Gaspard), ?-1998</rdfs:label>
 				</foaf:Person>
 			</dc:contributor>
-			<bibo:edition>11th ed</bibo:edition>
+			<bibo:edition>11th ed / corr. and rev. by Joseph Wisenblit</bibo:edition>
+			<bibo:edition>3. Aufl.</bibo:edition>
+			<rdau:publicationStatement>Boston : Pearson, 2015</rdau:publicationStatement>
+			<dc:format>492 S : Ill</dc:format>
 			<dct:bibliographicCitation>Always learning</dct:bibliographicCitation>
 			<rdau:noteOnResource>Global edition</rdau:noteOnResource>
 			<dct:subject rdf:resource="http://d-nb.info/gnd/4062644-1" />
@@ -44,13 +47,11 @@
 			<rdf:type rdf:resource="http://purl.org/ontology/bibo/Book" />
 			<dct:issued>2015</dct:issued>
 			<dct:title>Consumer behavior / Leon G. Schiffman, Joseph L. Wisenblit</dct:title>
-			<rdau:publicationStatement>Boston : Pearson, 2015</rdau:publicationStatement>
-			<dc:format>492 S : Ill</dc:format>
 		</dct:BibliographicResource>
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/316022063/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-10T10:06:37.337Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-10T14:47:44.656Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/316022063" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-05-27T15:12:24+01:00</dct:modified>
 			<dc:contributor>RERO</dc:contributor>
@@ -75,6 +76,8 @@
 					<rdfs:label>Castro, Américo, ca. 1880-ca.1930</rdfs:label>
 				</foaf:Person>
 			</dc:contributor>
+			<rdau:publicationStatement>Köln [etc.] : Kiepenheuer und Witsch, 1957</rdau:publicationStatement>
+			<dc:format>720 S : 127 Taf ; 4&apos;</dc:format>
 			<rdau:noteOnResource>Originaltitel: La realidad histórica de España</rdau:noteOnResource>
 			<dct:hasPart>Vol. 1: La voie des ombres</dct:hasPart>
 			<dct:hasPart>Vol. 2: Le choix des ombres</dct:hasPart>
@@ -120,14 +123,12 @@
 			<dct:issued>1957</dct:issued>
 			<rdau:placeOfPublication rdf:resource="http://sws.geonames.org/2660207/" />
 			<dct:title>Spanien Vision und Wirklichkeit / Americo Castro ; [aus dem Spanischen übertragen von Suzanne Heintz]</dct:title>
-			<rdau:publicationStatement>Köln [etc.] : Kiepenheuer und Witsch, 1957</rdau:publicationStatement>
-			<dc:format>720 S : 127 Taf ; 4&apos;</dc:format>
 			<dct:bibliographicCitation>Quotidien jurassien ; 1996/03/23Biel/Bienne ; 1996/03/25</dct:bibliographicCitation>
 		</dct:BibliographicResource>
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/31602208X/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-10T10:06:37.369Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-10T14:47:44.708Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/31602208X" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-16T23:44:29+01:00</dct:modified>
 			<dc:contributor>ABN</dc:contributor>
@@ -143,8 +144,10 @@
 			<bibo:isbn10>3825239888</bibo:isbn10>
 			<dct:alternative>Spain literature history. 7th tome. History of the empire</dct:alternative>
 			<dct:alternative>Historia de la literatura española</dct:alternative>
-			<dct:bibliographicCitation>UTB. Romanistik, Literaturwissenschaft</dct:bibliographicCitation>
-			<dct:bibliographicCitation>UTB ; 3988</dct:bibliographicCitation>
+			<rdau:publicationStatement>Paderborn : Fink, 2014</rdau:publicationStatement>
+			<dc:format>380 S</dc:format>
+			<dct:bibliographicCitation>UTB ; 3988. </dct:bibliographicCitation>
+			<dct:bibliographicCitation>Collections de l&apos;INSEE ; 95. Série C, Comptes et planification ; 23. </dct:bibliographicCitation>
 			<dct:hasPart>Tome 1. A-D / Par Charles Laboulaye et MM. Debette, Barral</dct:hasPart>
 			<dct:hasPart>Tome 2. E-M / Par Charles Laboulaye et MM. Debette, Barral</dct:hasPart>
 			<dct:hasPart>Tome 3. N-Z / Par Charles Laboulaye et MM. Debette, Barral</dct:hasPart>
@@ -165,13 +168,11 @@
 			<dct:issued>2014</dct:issued>
 			<rdau:placeOfPublication rdf:resource="http://sws.geonames.org/2661603/" />
 			<dct:title>Spanische Literaturgeschichte : eine kommentierte Anthologie / hrsg. von Carmen Rivero Iglesias</dct:title>
-			<rdau:publicationStatement>Paderborn : Fink, 2014</rdau:publicationStatement>
-			<dc:format>380 S</dc:format>
 		</dct:BibliographicResource>
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/316022098/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-10T10:06:37.394Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-10T14:47:44.741Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/316022098" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-05-24T07:05:47+01:00</dct:modified>
 			<dc:contributor>NEBIS</dc:contributor>
@@ -183,6 +184,8 @@
 			<rdau:placeOfPublication rdf:resource="http://sws.geonames.org/2658434/" />
 			<bibo:isbn13>9783906178004</bibo:isbn13>
 			<bibo:isbn10>3906178005</bibo:isbn10>
+			<rdau:publicationStatement>Zürich : Zürcher Hochschule der Künste, Institut für Designforschung, 2013</rdau:publicationStatement>
+			<dc:format>196 S : farbige Ill ; 21 cm</dc:format>
 			<dct:subject rdf:resource="http://d-nb.info/gnd/4172385-5" />
 			<dct:subject rdf:resource="http://d-nb.info/gnd/4146857-0" />
 			<dct:subject rdf:resource="http://d-nb.info/gnd/4040795-0" />
@@ -221,13 +224,11 @@
 			<rdau:modeOfIssuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1003" />
 			<dct:issued>2013</dct:issued>
 			<dct:title>Spatial Design : Gespräche über Architekturen, Ausstellungen, Bühnenbilder und Urbane Interventionen : ein Reader des MAS Spatial Design / Stephan Trüby (Hrsg.)</dct:title>
-			<rdau:publicationStatement>Zürich : Zürcher Hochschule der Künste, Institut für Designforschung, 2013</rdau:publicationStatement>
-			<dc:format>196 S : farbige Ill ; 21 cm</dc:format>
 		</dct:BibliographicResource>
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/316022101/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-10T10:06:37.410Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-10T14:47:44.767Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/316022101" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-08T08:00:34+01:00</dct:modified>
 			<dc:contributor>BGR</dc:contributor>
@@ -249,6 +250,8 @@
 					<rdfs:label>Rataj, Dorothée, 1999 - ?, Mlle</rdfs:label>
 				</foaf:Person>
 			</dc:contributor>
+			<rdau:publicationStatement>Chur : Edition HerzWerk, 2013</rdau:publicationStatement>
+			<dc:format>213 S : Ill ; 21 cm</dc:format>
 			<rdau:dissertationOrThesisInformation>Travail de bachelor réalisé en vue de l&apos;obtention du master HES à la Haute école de gestion de Genève (HEG-GE), orientation management et ingénierie des services</rdau:dissertationOrThesisInformation>
 			<dct:bibliographicCitation>In: La tribune de Genève, mars 2014</dct:bibliographicCitation>
 			<dct:bibliographicCitation>In: Le journal du Jura, janvier 2014</dct:bibliographicCitation>
@@ -267,13 +270,11 @@
 			<rdf:type rdf:resource="http://purl.org/ontology/bibo/Book" />
 			<dct:issued>2013</dct:issued>
 			<dct:title>Der spirituelle Weg : die Re-Sakralisierung des Lebens / Dorothée und Heinz Rataj</dct:title>
-			<rdau:publicationStatement>Chur : Edition HerzWerk, 2013</rdau:publicationStatement>
-			<dc:format>213 S : Ill ; 21 cm</dc:format>
 		</dct:BibliographicResource>
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/vtls003010104/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-10T10:06:37.426Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-10T14:47:44.785Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/vtls003010104" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-04-21T07:02:00+01:00</dct:modified>
 			<dc:contributor>RERO</dc:contributor>
@@ -306,7 +307,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/268337713/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-10T10:06:37.433Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-10T14:47:44.790Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/268337713" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-07T04:58:42+01:00</dct:modified>
 			<dc:contributor>SNL</dc:contributor>
@@ -323,6 +324,8 @@
 			<rdau:placeOfPublication rdf:resource="http://sws.geonames.org/2658434/" />
 			<dct:alternative>Démocrate</dct:alternative>
 			<dct:alternative>Pays</dct:alternative>
+			<rdau:publicationStatement>Delémont ; Porrentruy ; Saignelégier : Le Quotidien jurassien : Le Pays, 1993-, (c) 1993</rdau:publicationStatement>
+			<dc:format>vol : Ill ; 50 cm</dc:format>
 			<rdau:noteOnResource>Dernière éd. consultée: 2006, no 224 (30 sept. 2006)</rdau:noteOnResource>
 			<dct:bibliographicCitation>Fusion de: Le démocrate, et de: Le pays</dct:bibliographicCitation>
 			<dct:subject rdf:resource="http://d-nb.info/gnd/4266795-1" />
@@ -357,8 +360,6 @@
 			<rdau:modeOfIssuance rdf:resource="http://rdaregistry.info/termList/ModeIssue/1003" />
 			<dct:issued>1993-9999</dct:issued>
 			<dct:title>Le Quotidien jurassien</dct:title>
-			<rdau:publicationStatement>Delémont : Le Quotidien jurassien, 1993-</rdau:publicationStatement>
-			<dc:format>vol : Ill ; 50 cm</dc:format>
 		</dct:BibliographicResource>
 	
 

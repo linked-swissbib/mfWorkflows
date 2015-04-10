@@ -61,6 +61,10 @@
          </datafield>
          <datafield tag="250" ind1=" " ind2=" ">
             <subfield code="a">11th ed</subfield>
+			<subfield code="b">corr. and rev. by Joseph Wisenblit</subfield>
+         </datafield>
+		 <datafield tag="250" ind1=" " ind2=" ">
+            <subfield code="a">3. Aufl.</subfield>
          </datafield>
          <datafield tag="260" ind1=" " ind2=" ">
             <subfield code="a">Boston</subfield>
@@ -745,11 +749,14 @@
 			<subfield code="a">380 S</subfield>
 		</datafield>
 		<datafield tag="490" ind1="0" ind2=" ">
-			<subfield code="a">UTB. Romanistik, Literaturwissenschaft</subfield>
-		</datafield>
-		<datafield tag="490" ind1="0" ind2=" ">
 			<subfield code="a">UTB</subfield>
 			<subfield code="v">3988</subfield>
+		</datafield>
+		<datafield tag="490" ind1="0" ind2=" ">
+			<subfield code="a">Collections de l'INSEE</subfield>
+			<subfield code="v">95</subfield>
+			<subfield code="a">Série C, Comptes et planification</subfield>
+			<subfield code="v">23</subfield>
 		</datafield>
 		<datafield tag="505" ind1="0" ind2="0">
 			<subfield code="g">Tome 1</subfield>
@@ -1583,8 +1590,12 @@
 		</datafield>
 		<datafield tag="260" ind1=" " ind2=" ">
 			<subfield code="a">Delémont</subfield>
+			<subfield code="a">Porrentruy</subfield>
+			<subfield code="a">Saignelégier</subfield>
 			<subfield code="b">Le Quotidien jurassien</subfield>
+			<subfield code="b">Le Pays</subfield>
 			<subfield code="c">1993-</subfield>
+			<subfield code="c">(c) 1993</subfield>
 		</datafield>
 		<datafield tag="300" ind1=" " ind2=" ">
 			<subfield code="a">vol</subfield>
