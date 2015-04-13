@@ -496,30 +496,28 @@
 			<data name="rdau:dissertationOrThesisInformation" source="502*.a" />
 
 			<!--505: NOTES ABOUT CONTENT-->
-			<combine name="dct:hasPart" value="${no}${title}${responsibility}" flushWith="50500">
-				<data source="50500.g" name="no" />
-				<data source="50500.t" name="title">
-					<compose prefix=". " />
-				</data>
-				<data source="50500.r" name="responsibility">
-					<compose prefix=" / " />
-				</data>
-			</combine>
-			<data name="dct:hasPart" source="5050 .a" />
+			<concat name="dct:hasPart" delimiter=". " flushWith="505??" reset="true" >
+				<data source="505??.g" />
+				<data source="505??.t" />
+				<data source="505??.r" />
+			</concat>
+			<data name="dct:hasPart" source="505??.a" />
 
 			<!--6XX: SUBJECTS (GND only)-->
 			<entity name="dct:subject">
-				<combine name="~rdf:resource" value="${gnd_id}" reset="false" flushWith="65? 7">
+				<combine name="~rdf:resource" value="${gnd_id}" reset="true" flushWith="65???">
 					<!--"combine" is essential when a field is repetitive
                     "flushWith" to restart  the process with every concerned fields (?)
                     "reset" default:true -->
 					<if>
-						<data source="65? 7.2" >
-							<equals string="gnd" />
+						<data source="65???.0" >
+							<substring  start="0"  end="8"/>
+							<equals string="(DE-588)" />
 						</data>
 					</if>
-					<data source="65? 7.0" name="gnd_id">
+					<data source="65???.0" name="gnd_id">
 						<regexp match="\)(.*)" format="http://d-nb.info/gnd/${1}"/>
+						<unique part="value" />
 					</data>
 				</combine>
 			</entity>

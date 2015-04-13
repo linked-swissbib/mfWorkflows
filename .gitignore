@@ -25,3 +25,10 @@ src/main/resources/transformation/resource/prov_stat_output.rdf
 src/main/resources/transformation/resource/prov_stat_morph.xml
 src/main/resources/transformation/resource/prov_stat_output.csv
 src/main/resources/transformation/resource/prov_stat.flux
+src/main/resources/transformation/resource/gh2_classif_912Test.xml
+src/main/resources/transformation/resource/gh2_transformField080.flux
+src/main/resources/transformation/resource/gh_transformVariantNames.flux
+src/main/resources/transformation/resource/gh_transformVariantNames.xml
+src/main/resources/transformation/resource/gh2_transformField080.xml
+src/main/resources/transformation/resource/gh_transFormVariantNameTest.xml
+src/main/resources/transformation/resource/prov_r.flux

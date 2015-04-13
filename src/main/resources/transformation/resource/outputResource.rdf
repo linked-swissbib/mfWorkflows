@@ -2,7 +2,7 @@
 <rdf:RDF xmlns:rdau="http://rdaregistry.info/Elements/u/" xmlns:void="http://rdfs.org/ns/void#" xmlns:dbp="http://dbpedia.org/ontology/" xmlns:dct="http://purl.org/dc/terms/" xmlns:owl="http://www.w3.org/2004/02/skos/core#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dc="http://purl.org/dc/elements/1.1/">
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/318618583/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-10T14:47:44.618Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-13T14:21:50.477Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/318618583" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-03-27T05:24:27+01:00</dct:modified>
 			<dc:contributor>IDSBB</dc:contributor>
@@ -31,10 +31,6 @@
 			<dct:bibliographicCitation>Always learning</dct:bibliographicCitation>
 			<rdau:noteOnResource>Global edition</rdau:noteOnResource>
 			<dct:subject rdf:resource="http://d-nb.info/gnd/4062644-1" />
-			<dct:subject rdf:resource="http://d-nb.info/gnd/4062644-1" />
-			<dct:subject rdf:resource="http://d-nb.info/gnd/4062644-1" />
-			<dct:subject rdf:resource="http://d-nb.info/gnd/4062644-1" />
-			<dct:subject rdf:resource="http://d-nb.info/gnd/4062644-1" />
 			<dc:contributor>
 				<foaf:Person>
 					<foaf:lastName>Wisenblit</foaf:lastName>
@@ -51,7 +47,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/316022063/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-10T14:47:44.656Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-13T14:21:50.516Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/316022063" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-05-27T15:12:24+01:00</dct:modified>
 			<dc:contributor>RERO</dc:contributor>
@@ -128,7 +124,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/31602208X/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-10T14:47:44.708Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-13T14:21:50.558Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/31602208X" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-16T23:44:29+01:00</dct:modified>
 			<dc:contributor>ABN</dc:contributor>
@@ -148,12 +144,11 @@
 			<dc:format>380 S</dc:format>
 			<dct:bibliographicCitation>UTB ; 3988. </dct:bibliographicCitation>
 			<dct:bibliographicCitation>Collections de l&apos;INSEE ; 95. Série C, Comptes et planification ; 23. </dct:bibliographicCitation>
-			<dct:hasPart>Tome 1. A-D / Par Charles Laboulaye et MM. Debette, Barral</dct:hasPart>
-			<dct:hasPart>Tome 2. E-M / Par Charles Laboulaye et MM. Debette, Barral</dct:hasPart>
-			<dct:hasPart>Tome 3. N-Z / Par Charles Laboulaye et MM. Debette, Barral</dct:hasPart>
-			<dct:hasPart>Tome 4. Complément, avec le concours de savants, d&apos;ingénieurs et de fabricants / Par Charles Laboulaye et MM. Debette, Barral</dct:hasPart>
+			<dct:hasPart>Tome 1. A-D. Par Charles Laboulaye et MM. Debette, Barral</dct:hasPart>
+			<dct:hasPart>Tome 2. E-M. Par Charles Laboulaye et MM. Debette, Barral</dct:hasPart>
+			<dct:hasPart>Tome 3. N-Z. Par Charles Laboulaye et MM. Debette, Barral</dct:hasPart>
+			<dct:hasPart>Tome 4. Complément, avec le concours de savants, d&apos;ingénieurs et de fabricants</dct:hasPart>
 			<dct:subject rdf:resource="http://d-nb.info/gnd/4077640-2" />
-			<dct:subject rdf:resource="http://d-nb.info/gnd/4035964-5" />
 			<dct:subject rdf:resource="http://d-nb.info/gnd/4035964-5" />
 			<dc:contributor>
 				<foaf:Person>
@@ -172,7 +167,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/316022098/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-10T14:47:44.741Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-13T14:21:50.582Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/316022098" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-05-24T07:05:47+01:00</dct:modified>
 			<dc:contributor>NEBIS</dc:contributor>
@@ -189,7 +184,6 @@
 			<dct:subject rdf:resource="http://d-nb.info/gnd/4172385-5" />
 			<dct:subject rdf:resource="http://d-nb.info/gnd/4146857-0" />
 			<dct:subject rdf:resource="http://d-nb.info/gnd/4040795-0" />
-			<dct:subject rdf:resource="http://d-nb.info/gnd/4433627-5" />
 			<dct:subject rdf:resource="http://d-nb.info/gnd/4433627-5" />
 			<dc:contributor>
 				<foaf:Person>
@@ -228,7 +222,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/316022101/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-10T14:47:44.767Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-13T14:21:50.601Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/316022101" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-08T08:00:34+01:00</dct:modified>
 			<dc:contributor>BGR</dc:contributor>
@@ -274,7 +268,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/vtls003010104/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-10T14:47:44.785Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-13T14:21:50.614Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/vtls003010104" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-04-21T07:02:00+01:00</dct:modified>
 			<dc:contributor>RERO</dc:contributor>
@@ -307,7 +301,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/268337713/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-10T14:47:44.790Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-13T14:21:50.622Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/268337713" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-07T04:58:42+01:00</dct:modified>
 			<dc:contributor>SNL</dc:contributor>
