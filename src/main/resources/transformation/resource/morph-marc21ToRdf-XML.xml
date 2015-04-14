@@ -442,7 +442,7 @@
 			</concat>
 
 			<!--260: IMPRINT-->
-			<concat name="rdau:publicationStatement" delimiter="" flushWith="260? " reset="true" >
+			<concat name="rdau:publicationStatement" delimiter="" flushWith="260? " reset="true" sameEntity="true" >
 				<!--Attribute "delimiter" obligatory-->
 				<data source="260? .a" >
 					<occurrence  only="1"/>
@@ -623,27 +623,22 @@
 				</entity>
 			</entity>
 
-			<!--580: NOTE ABOUT COMPLEX LINKS (optional because a string > to delete?)-->
-			<combine name="dct:bibliographicCitation" value="${field_580}" reset="false" flushWith="580*.a">
-				<data name="field_580" source="580*.a" />
-			</combine>
-
 			<!--773: NOTE ABOUT COMPLEX LINKS-->
-			<!--Field 580 not used in the German part of Switzerland. Rule to complete (target: avoid repetition with field 580 of the french records.-->
-			<concat name="dct:bibliographicCitation" delimiter="" >
-				<data source="773*.t" />
-				<data source="773*.a" >
-					<compose prefix=" / "/>
+			<concat name="dct:bibliographicCitation" delimiter="" flushWith="773??" >
+				<data source="773??.t" />
+				<data source="773??.d" >
+					<compose prefix=". - "/>
 				</data>
-				<data source="773*.g" >
-					<compose prefix=" ; "/>
+				<data source="773??.g" >
+					<compose prefix=". - "/>
 				</data>
 			</concat>
 
-			<!--773: LINK TO HOST ITEM (only for swiss german data that includes a subfield 773 $9)-->
+			<!--773: LINK TO HOST ITEM (works only with record that includes a subfield 773$9 (swiss german data))-->
 			<entity name="dct:isPartOf">
 				<data name="~rdf:resource" source="773*.9">
 					<compose prefix="http://data.swissbib.ch/resource/"/>
+					<unique part="value" />
 				</data>
 			</entity>
 
@@ -670,22 +665,11 @@
 	<!--TO DO:
 			
 	- to transform:
-		500 and 505 done, but to control with more records. > verify and test if it works on records with repetable subfield $t in 505 for example
-		
-		752: publication place for old books
-		
-		class to add: bibo:Article, bibo:Website, bibo:Periodical, bibo:Book, bibo:Series, bibo:Thesis, bibo:Manuscript, bibo:Map
-		
+		752: publication place for old books (3% der Records)
 		856/956 : accès électronique
-		913: IDS Kongress (in 3% of the records)
-		
-		has note on numbering of serials (in 2% of the records)
-		has note on frequency (in 1% of the records)
+		830?
 	
 	- possible problems, to think:
-
-		stream-to-triples???
-		
 		links between records: 730, 740, 760, 762, 767, 77X, 78X, 800, 810, 811, 830
 	
 	-->

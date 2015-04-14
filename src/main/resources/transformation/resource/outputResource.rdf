@@ -2,7 +2,7 @@
 <rdf:RDF xmlns:rdau="http://rdaregistry.info/Elements/u/" xmlns:void="http://rdfs.org/ns/void#" xmlns:dbp="http://dbpedia.org/ontology/" xmlns:dct="http://purl.org/dc/terms/" xmlns:owl="http://www.w3.org/2004/02/skos/core#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dc="http://purl.org/dc/elements/1.1/">
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/318618583/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-13T14:21:50.477Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-14T10:12:49.473Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/318618583" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-03-27T05:24:27+01:00</dct:modified>
 			<dc:contributor>IDSBB</dc:contributor>
@@ -47,7 +47,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/316022063/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-13T14:21:50.516Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-14T10:12:49.506Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/316022063" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-05-27T15:12:24+01:00</dct:modified>
 			<dc:contributor>RERO</dc:contributor>
@@ -113,18 +113,19 @@
 					<rdfs:label>Nicolas</rdfs:label>
 				</foaf:Person>
 			</dc:contributor>
+			<dct:bibliographicCitation>Quotidien jurassien. - 1996/03/23</dct:bibliographicCitation>
+			<dct:bibliographicCitation>Biel/Bienne. - 1996/03/25</dct:bibliographicCitation>
 			<rdau:contentType rdf:resource="http://rdvocab.info/termList/RDAContentType/1023" />
 			<rdau:contentType rdf:resource="http://rdvocab.info/termList/RDAContentType/1021" />
 			<rdau:mediaType rdf:resource="http://rdvocab.info/termList/RDAMediaType/1008" />
 			<dct:issued>1957</dct:issued>
 			<rdau:placeOfPublication rdf:resource="http://sws.geonames.org/2660207/" />
 			<dct:title>Spanien Vision und Wirklichkeit / Americo Castro ; [aus dem Spanischen übertragen von Suzanne Heintz]</dct:title>
-			<dct:bibliographicCitation>Quotidien jurassien ; 1996/03/23Biel/Bienne ; 1996/03/25</dct:bibliographicCitation>
 		</dct:BibliographicResource>
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/31602208X/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-13T14:21:50.558Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-14T10:12:49.540Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/31602208X" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-16T23:44:29+01:00</dct:modified>
 			<dc:contributor>ABN</dc:contributor>
@@ -167,7 +168,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/316022098/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-13T14:21:50.582Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-14T10:12:49.562Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/316022098" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-05-24T07:05:47+01:00</dct:modified>
 			<dc:contributor>NEBIS</dc:contributor>
@@ -222,7 +223,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/316022101/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-13T14:21:50.601Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-14T10:12:49.579Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/316022101" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-08T08:00:34+01:00</dct:modified>
 			<dc:contributor>BGR</dc:contributor>
@@ -247,8 +248,6 @@
 			<rdau:publicationStatement>Chur : Edition HerzWerk, 2013</rdau:publicationStatement>
 			<dc:format>213 S : Ill ; 21 cm</dc:format>
 			<rdau:dissertationOrThesisInformation>Travail de bachelor réalisé en vue de l&apos;obtention du master HES à la Haute école de gestion de Genève (HEG-GE), orientation management et ingénierie des services</rdau:dissertationOrThesisInformation>
-			<dct:bibliographicCitation>In: La tribune de Genève, mars 2014</dct:bibliographicCitation>
-			<dct:bibliographicCitation>In: Le journal du Jura, janvier 2014</dct:bibliographicCitation>
 			<dct:subject rdf:resource="http://d-nb.info/gnd/4116568-8" />
 			<dct:subject rdf:resource="http://d-nb.info/gnd/4827733-2" />
 			<dct:subject rdf:resource="http://d-nb.info/gnd/4216490-4" />
@@ -259,6 +258,10 @@
 					<rdfs:label>Rataj, Heinz</rdfs:label>
 				</foaf:Person>
 			</dc:contributor>
+			<dct:isPartOf rdf:resource="http://data.swissbib.ch/resource/078413621" />
+			<dct:bibliographicCitation>Le Journal du Jura. - Bienne. - 2014, N° 31 (5.2.), p. 15. - Ill.</dct:bibliographicCitation>
+			<dct:isPartOf rdf:resource="http://data.swissbib.ch/resource/273140949" />
+			<dct:bibliographicCitation>Le tribune de Genève. - Genève. - 2014, N° 30 (5.2.), p. 14. - Ill.</dct:bibliographicCitation>
 			<rdau:contentType rdf:resource="http://rdvocab.info/termList/RDAContentType/1020" />
 			<rdau:mediaType rdf:resource="http://rdvocab.info/termList/RDAMediaType/1007" />
 			<rdf:type rdf:resource="http://purl.org/ontology/bibo/Book" />
@@ -268,7 +271,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/vtls003010104/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-13T14:21:50.614Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-14T10:12:49.593Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/vtls003010104" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-04-21T07:02:00+01:00</dct:modified>
 			<dc:contributor>RERO</dc:contributor>
@@ -286,7 +289,6 @@
 					<rdfs:label>Bouvier, Nicolas, 1929-1998</rdfs:label>
 				</foaf:Person>
 			</dc:contributor>
-			<dct:bibliographicCitation>In: Le quotidien jurassien. - Delémont. - 23 mars 1996</dct:bibliographicCitation>
 			<dc:contributor>
 				<foaf:Person>
 					<foaf:lastName>Bataillard, Josiane</foaf:lastName>
@@ -294,14 +296,14 @@
 				</foaf:Person>
 			</dc:contributor>
 			<dct:isPartOf rdf:resource="http://data.swissbib.ch/resource/268337713" />
+			<dct:bibliographicCitation>Le Quotidien jurassien. - Delémont. - 2014, N° 29 (5.2.), p. 12. - Ill.</dct:bibliographicCitation>
 			<dct:issued>1996</dct:issued>
 			<dct:title>Nicolas Bouvier: &quot;les autres sont une terre, on sème, le lecteur fait fructifier&quot; / propos recueillis par Josiane Bataillard</dct:title>
-			<dct:bibliographicCitation>Le Quotidien jurassien ; 2014, N° 29 (5.2.), p. 12. - Ill.</dct:bibliographicCitation>
 		</dct:BibliographicResource>
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/268337713/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-13T14:21:50.622Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-14T10:12:49.601Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/268337713" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-07T04:58:42+01:00</dct:modified>
 			<dc:contributor>SNL</dc:contributor>
@@ -321,7 +323,6 @@
 			<rdau:publicationStatement>Delémont ; Porrentruy ; Saignelégier : Le Quotidien jurassien : Le Pays, 1993-, (c) 1993</rdau:publicationStatement>
 			<dc:format>vol : Ill ; 50 cm</dc:format>
 			<rdau:noteOnResource>Dernière éd. consultée: 2006, no 224 (30 sept. 2006)</rdau:noteOnResource>
-			<dct:bibliographicCitation>Fusion de: Le démocrate, et de: Le pays</dct:bibliographicCitation>
 			<dct:subject rdf:resource="http://d-nb.info/gnd/4266795-1" />
 			<dc:contributor>
 				<foaf:Organization>
