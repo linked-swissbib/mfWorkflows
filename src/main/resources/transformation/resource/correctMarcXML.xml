@@ -1330,26 +1330,6 @@
 			<subfield code="a">Rataj</subfield>
 			<subfield code="D">Heinz</subfield>
 		</datafield>
-		<datafield tag="773" ind1="1" ind2=" ">
-			<subfield code="t">Le Journal du Jura</subfield>
-			<subfield code="d">Bienne</subfield>
-			<subfield code="g">2014, N° 31 (5.2.), p. 15. - Ill.</subfield>
-			<subfield code="j">2014/29/12</subfield>
-			<subfield code="1">2014</subfield>
-			<subfield code="2">2014</subfield>
-			<subfield code="w">(IDSBB)002245784</subfield>
-			<subfield code="9">078413621</subfield>
-		</datafield>
-		<datafield tag="773" ind1="1" ind2=" ">
-			<subfield code="t">Le tribune de Genève</subfield>
-			<subfield code="d">Genève</subfield>
-			<subfield code="g">2014, N° 30 (5.2.), p. 14. - Ill.</subfield>
-			<subfield code="j">2014/29/12</subfield>
-			<subfield code="1">2014</subfield>
-			<subfield code="2">2014</subfield>
-			<subfield code="w">(IDSBB)000145736</subfield>
-			<subfield code="9">273140949</subfield>
-		</datafield>
 		<datafield tag="856" ind1=" " ind2=" ">
 			<subfield code="u">http://opac.admin.ch/gw/toc/pdf/toc001738136.pdf</subfield>
 			<subfield code="z">Inhaltsverzeichnis</subfield>
