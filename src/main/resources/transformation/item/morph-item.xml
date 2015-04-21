@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<metamorph xmlns="http://www.culturegraph.org/metamorph" version="1">
+
+
+	<rules>
+
+
+		<data source="001" name="@idnr" />
+
+		<combine name="collectItemValues" value="${949B}##${949b}##${949F}##${949E}##${idnr}" flushWith="949??">
+			<data source="949??.B" name="949B"/>
+			<data source="949??.b" name="949b"/>
+			<data source="949??.F" name="949F"/>
+			<data source="949??.E" name="949E"/>
+			<data source="@idnr" name="idnr"/>
+			<postprocess>
+				<java class="org.swissbib.linked.mf.morph.functions.ItemLink"/>
+			</postprocess>
+		</combine>
+
+	</rules>
+
+
+</metamorph>
