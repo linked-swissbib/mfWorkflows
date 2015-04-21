@@ -9,15 +9,22 @@
 		<data source="001" name="@idnr" />
 
 		<combine name="collectItemValues" value="${949B}##${949b}##${949F}##${949E}##${idnr}" flushWith="949??">
-			<data source="949??.B" name="949B"/>
-			<data source="949??.b" name="949b"/>
-			<data source="949??.F" name="949F"/>
-			<data source="949??.E" name="949E"/>
-			<data source="@idnr" name="idnr"/>
+
+			<data source="949??.B" name="949B"/> <!-- network e.g. IDSBB / NEBIS etc-->
+			<data source="949??.b" name="949b"/> <!-- institution code eg. A100 UB Basel -->
+			<data source="949??.F" name="949F"/> <!-- institution_chb special value created because of organizational reasons we shouldn't take care at the moment-->
+			<data source="949??.E" name="949E"/> <!--bibsysnumber -->
+			<data source="@idnr" name="idnr"/> <!-- swissbib record id used -->
 			<postprocess>
 				<java class="org.swissbib.linked.mf.morph.functions.ItemLink"/>
 			</postprocess>
 		</combine>
+
+		<!-- nebis example with bibsysnumber 010131061
+
+			http://recherche.nebis.ch/primo_library/libweb/action/display.do?tabs=locationsTab&ct=display&fn=search&doc=ebi01_prod010131061&indx=1&recIds=ebi01_prod010131061&recIdxs=0&elementId=0&renderMode=poppedOut&displayMode=full&frbrVersion=&dscnt=0&scp.scps=scope%3A%28ebi01_prod%29&frbg=&tab=default_tab&vl%28585331958UI1%29=all_items&srt=rank&mode=Basic&dum=true&tb=t&vid=NEBIS
+
+		-->
 
 	</rules>
 
