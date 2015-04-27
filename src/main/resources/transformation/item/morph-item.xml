@@ -5,16 +5,26 @@
 
 	<rules>
 
-
+        <!--
+		<concat name="@035Ids" delimiter="!!" flushWith="035??" reset="false">
+			<data source="035??.a" />
+		</concat>
+	   -->
 		<data source="001" name="@idnr" />
 
-		<combine name="collectItemValues" value="${949B}##${949b}##${949F}##${949E}##${idnr}" flushWith="949??">
+		<combine name="collectItemValues" value="${949B}##${949b}##${949F}##${949E}##${idnr}##${035Ids}" flushWith="949??">
+
+			<concat name="035Ids" delimiter="!!" flushWith="035??" reset="false">
+				<data source="035??.a" />
+			</concat>
 
 			<data source="949??.B" name="949B"/> <!-- network e.g. IDSBB / NEBIS etc-->
 			<data source="949??.b" name="949b"/> <!-- institution code eg. A100 UB Basel -->
 			<data source="949??.F" name="949F"/> <!-- institution_chb special value created because of organizational reasons we shouldn't take care at the moment-->
 			<data source="949??.E" name="949E"/> <!--bibsysnumber -->
 			<data source="@idnr" name="idnr"/> <!-- swissbib record id used -->
+			<data source="@035Ids" name="035Ids"/> <!-- bib system numbers -->
+
 			<postprocess>
 				<java class="org.swissbib.linked.mf.morph.functions.ItemLink"/>
 			</postprocess>
