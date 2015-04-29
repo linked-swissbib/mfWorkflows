@@ -7,3 +7,4 @@ handle-marcxml|
 morph(FLUX_DIR + "morph-item.xml")|
 encode-formeta (style="multiline") |
 write("stdout");
+
