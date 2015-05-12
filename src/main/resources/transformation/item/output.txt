@@ -1,0 +1,184 @@
+'' {
+	'bf:HeldItem' {
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/318618583',
+		'collectItemValues': '',
+		'bibo:locator': 'FSES M22 TEB 26664A'
+	},
+	'bf:HeldItem' {
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/318618583',
+		'collectItemValues': '',
+		'bibo:locator': 'BSE F5/ 1569'
+	},
+	'bf:HeldItem' {
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/318618583',
+		'collectItemValues': '',
+		'bibo:locator': 'BSE F5/ 1573'
+	},
+	'bf:HeldItem' {
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/318618583',
+		'collectItemValues': '',
+		'bibo:locator': 'BSE F5/ 1571'
+	},
+	'bf:HeldItem' {
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/318618583',
+		'collectItemValues': '',
+		'bibo:locator': 'BSE F5/ 1572'
+	},
+	'bf:HeldItem' {
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/318618583',
+		'collectItemValues': '',
+		'bibo:locator': 'BSE F5/ 1570'
+	},
+	'bf:HeldItem' {
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/318618583',
+		'collectItemValues': '"http://aleph.unibas.ch/F?func=item-global&doc_library=DSV01&doc_number=006237703&sub_library=A125"'
+	},
+	'bf:HeldItem' {
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/318618583',
+		'collectItemValues': '',
+		'bibo:locator': 'T 55278'
+	},
+	'bf:HeldItem' {
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/318618583',
+		'collectItemValues': '"http://aleph.unibas.ch/F?func=item-global&doc_library=DSV01&doc_number=006237703&sub_library=B400"',
+		'bibo:locator': 'ZB RAB 13511'
+	},
+	'bf:HeldItem' {
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/318618583',
+		'collectItemValues': '"http://aleph.unibas.ch/F?func=item-global&doc_library=DSV01&doc_number=006237703&sub_library=HSG"',
+		'bibo:locator': 'ZB RAB 13512'
+	}
+}
+'' {
+	'bf:HeldItem' {
+		'bibo:owner': 'ETH-BIB (Zürich)',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/316022063',
+		'collectItemValues': '',
+		'bibo:locator': '946332'
+	},
+	'bf:HeldItem' {
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/316022063',
+		'collectItemValues': '',
+		'bibo:locator': 'X 488'
+	},
+	'bf:HeldItem' {
+		'bibo:owner': 'Basel UB',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/316022063',
+		'collectItemValues': '"http://aleph.unibas.ch/F?func=item-global&doc_library=DSV01&doc_number=000217483&sub_library=A100"',
+		'bibo:locator': 'ef 124'
+	},
+	'bf:HeldItem' {
+		'bibo:owner': 'Basel Departement Geschichte',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/316022063',
+		'collectItemValues': '"http://aleph.unibas.ch/F?func=item-global&doc_library=DSV01&doc_number=000217483&sub_library=A202"',
+		'bibo:locator': 'HS AE 695'
+	},
+	'bf:HeldItem' {
+		'bibo:owner': 'Basel Sem. f. Iberoromanistik',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/316022063',
+		'collectItemValues': '"http://aleph.unibas.ch/F?func=item-global&doc_library=DSV01&doc_number=000217483&sub_library=A241"',
+		'bibo:locator': 'IBR SpA 205'
+	},
+	'bf:HeldItem' {
+		'bibo:owner': 'Bern UB ZB',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/316022063',
+		'collectItemValues': '"http://aleph.unibas.ch/F?func=item-global&doc_library=DSV01&doc_number=000217483&sub_library=B400"',
+		'bibo:locator': 'ZB RAB 9992'
+	},
+	'bf:HeldItem' {
+		'bibo:owner': 'KB St.Gallen Vadiana',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/316022063',
+		'collectItemValues': '"http://aleph.sg.ch/F?func=item-global&doc_library=SGB01&doc_number=000187319&sub_library=SGKBV"',
+		'bibo:locator': 'VGA Q 13'
+	}
+}
+'' {
+	'bf:HeldItem' {
+		'bibo:owner': 'UZH-ROSE (Zürich)',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/31602208X',
+		'collectItemValues': '',
+		'bibo:locator': 'RoSe Rq 108'
+	},
+	'bf:HeldItem' {
+		'bibo:owner': 'Bern UB ZB',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/31602208X',
+		'collectItemValues': '"http://aleph.unibas.ch/F?func=item-global&doc_library=DSV01&doc_number=006189645&sub_library=B400"',
+		'bibo:locator': 'ZB RFA 37984'
+	},
+	'bf:HeldItem' {
+		'bibo:owner': 'Bern UB BTO',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/31602208X',
+		'collectItemValues': '"http://aleph.unibas.ch/F?func=item-global&doc_library=DSV01&doc_number=006189645&sub_library=B410"',
+		'bibo:locator': 'BTO'
+	},
+	'bf:HeldItem' {
+		'bibo:owner': 'Aargauer Kantonsbibliothek',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/31602208X',
+		'collectItemValues': '"http://aleph.ag.ch/F?func=item-global&doc_library=ABN01&doc_number=000741970&sub_library=A125"',
+		'bibo:locator': 'AKB 100929'
+	}
+}
+'' {
+	'bf:HeldItem' {
+		'bibo:owner': 'ZHDK-MIZ (Zürich)',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/316022098',
+		'collectItemValues': '',
+		'bibo:locator': '506- 473'
+	},
+	'bf:HeldItem' {
+		'bibo:owner': 'ZHDK-MIZ (Zürich)',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/316022098',
+		'collectItemValues': '',
+		'bibo:locator': '395- 52'
+	},
+	'bf:HeldItem' {
+		'bibo:owner': 'ZB (Zürich)',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/316022098',
+		'collectItemValues': '',
+		'bibo:locator': 'HQ 9897'
+	},
+	'bf:HeldItem' {
+		'bibo:owner': 'HSLU Technik & Architektur',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/316022098',
+		'collectItemValues': '"http://ilu.zhbluzern.ch/F?func=item-global&doc_library=ILU01&doc_number=001144624&sub_library=LUHTA"',
+		'bibo:locator': 'AR FA 193'
+	}
+}
+'' {
+	'bf:HeldItem' {
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/316022101',
+		'collectItemValues': '',
+		'bibo:locator': 'N 335239'
+	},
+	'bf:HeldItem' {
+		'bibo:owner': 'CHUR-Kantonsbibliothek',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/316022101',
+		'collectItemValues': '"http://aleph.gr.ch/F?func=item-global&doc_library=BGR01&doc_number=000541268&sub_library=KBG"',
+		'bibo:locator': 'KBG B 1718'
+	},
+	'bf:HeldItem' {
+		'bibo:owner': 'CHUR-Kantonsbibliothek',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/316022101',
+		'collectItemValues': '"http://aleph.gr.ch/F?func=item-global&doc_library=BGR01&doc_number=000541268&sub_library=KBG"',
+		'bibo:locator': 'KBG U 2761'
+	}
+}
+'' {
+}
+'' {
+	'bf:HeldItem' {
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/268337713',
+		'collectItemValues': '',
+		'bibo:locator': 'Zf 1410/2009, janv'
+	},
+	'bf:HeldItem' {
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/268337713',
+		'collectItemValues': '',
+		'bibo:locator': 'Zf 1410/2009, févr'
+	},
+	'bf:HeldItem' {
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/268337713',
+		'collectItemValues': '',
+		'bibo:locator': 'Zf 1410/2009, avr'
+	}
+}

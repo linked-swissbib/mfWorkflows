@@ -12,25 +12,71 @@
 	   -->
 		<data source="001" name="@idnr" />
 
-		<combine name="collectItemValues" value="${949B}##${949b}##${949F}##${949E}##${idnr}##${035Ids}" flushWith="949??">
+		<entity name="bf:HeldItem" flushWith="949??" >
+			
+			<!--LINK WITH BILIOGRAPHICAL RESOURCE-->			
+			<combine name="bf:holdingFor" value="http://data.swissbib.ch/resource/${id_record}" flushWith="949??" >
+				<data source="@idnr" name="id_record" />
+			</combine>
+			
+			<!--ID of the item-->
+			<!--
+			<data source="..." name="~rdf:about" />
+			-->
+			
+			<!--LINK TO ITEM IN THE LOCAL LIBRARY INTERFACE-->
+			<combine name="collectItemValues" value="${949B}##${949b}##${949F}##${949E}##${idnr}##${035Ids}" flushWith="949??">
 
-			<concat name="035Ids" delimiter="!!" flushWith="035??" reset="false">
-				<data source="035??.a" />
+				<concat name="035Ids" delimiter="!!" flushWith="035??" reset="false">
+					<data source="035??.a" />
+				</concat>
+
+				<data source="949??.B" name="949B"/> <!-- network e.g. IDSBB / NEBIS etc-->
+				<data source="949??.b" name="949b"/> <!-- institution code eg. A100 UB Basel -->
+				<data source="949??.F" name="949F"/> <!-- institution_chb special value created because of organizational reasons we shouldn't take care at the moment-->
+				<data source="949??.E" name="949E"/> <!--bibsysnumber -->
+				<data source="@idnr" name="idnr"/> <!-- swissbib record id used -->
+				<data source="@035Ids" name="035Ids"/> <!-- bib system numbers -->
+
+				<postprocess>
+					<java class="org.swissbib.linked.mf.morph.functions.ItemLink"/>
+				</postprocess>
+			</combine>
+			
+			<!--SHELFMARK-->
+			<concat name="bibo:locator" delimiter="" flushWith="949??" reset="true" >
+				<data source="949??.j" />
+				<data source="949??.s" >
+					<compose prefix=" " />
+				</data>
 			</concat>
+			
+			<!--LIBRARY-->
+			<!-- Info à aller chercher soit dans $B soit dans $F, les deux sous-champs toujours présents! -->
+			<data source="949??.0" name="bibo:owner" /><!--would require a link to a RDF-resource of the library, in order to give other info such as the direction and the library network. Use the 949$E as system number??-->
+			
+			<!--SUBLOCATION WITHIN THE LIBRARY-->	
+			<!--<data source="949??.1" name="bf:subLocation" />-->
+			<!--to complete with Zweigstellencode (949$b)?-->
+			
+		</entity>
 
-			<data source="949??.B" name="949B"/> <!-- network e.g. IDSBB / NEBIS etc-->
-			<data source="949??.b" name="949b"/> <!-- institution code eg. A100 UB Basel -->
-			<data source="949??.F" name="949F"/> <!-- institution_chb special value created because of organizational reasons we shouldn't take care at the moment-->
-			<data source="949??.E" name="949E"/> <!--bibsysnumber -->
-			<data source="@idnr" name="idnr"/> <!-- swissbib record id used -->
-			<data source="@035Ids" name="035Ids"/> <!-- bib system numbers -->
-
-			<postprocess>
-				<java class="org.swissbib.linked.mf.morph.functions.ItemLink"/>
-			</postprocess>
-		</combine>
-
-
+		<!--ENDPOINT ITEM MUST CONTAIN:
+		0. id (bf:barcode, rdai:identifierForTheItem, dc:identifier, rdf:about)
+			> id not available??? Only in full holdings?
+		1. class (bf:HeldItem, rdac:Item)
+			OK
+		3. library (rdai:owner, bibo:owner)
+			> library description must be transformed!
+		4. shelfmark (bf:shelfMark, bibo:locator)
+			OK
+		5. link to item in the local library interface
+			> link appears in quotations marks
+			> data event "collectItemValues" is generated even if the link doesn't exist.
+		6. sublocation within the library (bf:subLocation)
+			> subfield not available??? Only in full holdings?
+		-->
+		
 		<!-- nebis example with bibsysnumber 010131061
 
 			http://recherche.nebis.ch/primo_library/libweb/action/display.do?tabs=locationsTab&ct=display&fn=search&doc=ebi01_prod010131061&indx=1&recIds=ebi01_prod010131061&recIdxs=0&elementId=0&renderMode=poppedOut&displayMode=full&frbrVersion=&dscnt=0&scp.scps=scope%3A%28ebi01_prod%29&frbg=&tab=default_tab&vl%28585331958UI1%29=all_items&srt=rank&mode=Basic&dum=true&tb=t&vid=NEBIS
