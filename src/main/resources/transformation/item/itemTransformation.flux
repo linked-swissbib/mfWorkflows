@@ -6,4 +6,6 @@ decode-xml|
 handle-marcxml|
 morph(FLUX_DIR + "morph-item.xml")|
 encode-formeta (style="multiline") |
-write("stdout");
+//write("stdout");
+write(FLUX_DIR + "output.txt");
+

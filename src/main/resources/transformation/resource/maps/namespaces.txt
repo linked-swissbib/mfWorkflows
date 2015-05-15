@@ -1,3 +1,4 @@
+bf http://bibframe.org/vocab/
 bibo http://purl.org/ontology/bibo/
 dbp http://dbpedia.org/ontology/
 dc http://purl.org/dc/elements/1.1/

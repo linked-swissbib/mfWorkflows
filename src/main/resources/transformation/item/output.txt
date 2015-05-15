@@ -1,0 +1,178 @@
+'' {
+	'bf:HeldItem' {
+		'rdf:about': 'http://data.swissbib.ch/item/SNL-1901274462',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/275037266',
+		'collectItemValues': '',
+		'bibo:locator': 'N 256283',
+		'bibo:owner': ' (SNL)'
+	},
+	'bf:HeldItem' {
+		'rdf:about': 'http://data.swissbib.ch/item/NEBIS-04500003128341',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/275037266',
+		'collectItemValues': '',
+		'bibo:locator': '081 MAA',
+		'bibo:owner': 'SIKJM (Zürich) (NEBIS)'
+	},
+	'bf:HeldItem' {
+		'bf:subLocation': 'Stockwerk G - frei zugänglich',
+		'rdf:about': 'http://data.swissbib.ch/item/NEBIS-UM470948',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/275037266',
+		'collectItemValues': '',
+		'bibo:locator': 'DX 1061 R884 M1',
+		'bibo:owner': 'PHZH (Zürich) (NEBIS)'
+	},
+	'bf:HeldItem' {
+		'rdf:about': 'http://data.swissbib.ch/item/NEBIS-UM211211',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/275037266',
+		'collectItemValues': '',
+		'bibo:locator': 'S 2.4:146',
+		'bibo:owner': 'UZH-VK (Zürich) (NEBIS)'
+	},
+	'bf:HeldItem' {
+		'bf:subLocation': 'Freihand 02',
+		'rdf:about': 'http://data.swissbib.ch/item/NEBIS-ZM00301823',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/275037266',
+		'collectItemValues': '',
+		'bibo:locator': 'GL 84810',
+		'bibo:owner': 'ZB (Zürich) (NEBIS)'
+	},
+	'bf:HeldItem' {
+		'rdf:about': 'http://data.swissbib.ch/item/RERO-RERO-12430691',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/275037266',
+		'collectItemValues': '',
+		'bibo:locator': '- -',
+		'bibo:owner': ' (RERO)'
+	},
+	'bf:HeldItem' {
+		'rdf:about': 'http://data.swissbib.ch/item/RERO-1010492871',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/275037266',
+		'collectItemValues': '',
+		'bibo:locator': '820 ROWL',
+		'bibo:owner': ' (RERO)'
+	},
+	'bf:HeldItem' {
+		'bf:subLocation': 'Freihandmagazin',
+		'rdf:about': 'http://data.swissbib.ch/item/IDSBB-A1001181028',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/275037266',
+		'collectItemValues': '"http://aleph.unibas.ch/F?func=item-global&doc_library=DSV01&doc_number=002508090&sub_library=A100"',
+		'bibo:locator': 'Ap II 8573',
+		'bibo:owner': 'Basel UB (IDSBB)'
+	},
+	'bf:HeldItem' {
+		'bf:subLocation': 'vonRoll Speicher K4',
+		'rdf:about': 'http://data.swissbib.ch/item/IDSBB-BM0386417',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/275037266',
+		'collectItemValues': '"http://aleph.unibas.ch/F?func=item-global&doc_library=DSV01&doc_number=002508090&sub_library=B400"',
+		'bibo:locator': 'ZB RAA 71188',
+		'bibo:owner': 'Bern UB ZB (IDSBB)'
+	},
+	'bf:HeldItem' {
+		'bf:subLocation': 'Aussenmagazin, bestellt bis 9.00/14.30: bereit ab 11.30 (Mo-Sa)/17.00 (Mo-Fr)',
+		'rdf:about': 'http://data.swissbib.ch/item/IDSLU-ILUM02089083',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/275037266',
+		'collectItemValues': '"http://ilu.zhbluzern.ch/F?func=item-global&doc_library=ILU01&doc_number=000230189&sub_library=LUZHB"',
+		'bibo:locator': 'A.a 8493',
+		'bibo:owner': 'Luzern ZHB - Sempacherstrasse (IDSLU)'
+	},
+	'bf:HeldItem' {
+		'bf:subLocation': 'Magazin',
+		'rdf:about': 'http://data.swissbib.ch/item/SGBN-GM00157178',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/275037266',
+		'collectItemValues': '"http://aleph.sg.ch/F?func=item-global&doc_library=SGB01&doc_number=000398766&sub_library=SGKBV"',
+		'bibo:locator': 'VE O 02.565',
+		'bibo:owner': 'KB St.Gallen Vadiana (SGBN)'
+	},
+	'bf:HeldItem' {
+		'bf:subLocation': 'Magazin SGZFB',
+		'rdf:about': 'http://data.swissbib.ch/item/SGBN-SGZB024042',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/275037266',
+		'collectItemValues': '"http://aleph.sg.ch/F?func=item-global&doc_library=SGB01&doc_number=000398766&sub_library=SGZFB"',
+		'bibo:locator': 'SGZB 81 4226',
+		'bibo:owner': 'SG Zentrum fuer d. Buch (SGBN)'
+	}
+}
+'' {
+	'bf:HeldItem' {
+		'rdf:about': 'http://data.swissbib.ch/item/SNL-1900836179',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/269492259',
+		'collectItemValues': '',
+		'bibo:locator': 'NG 31811',
+		'bibo:owner': ' (SNL)'
+	},
+	'bf:HeldItem' {
+		'rdf:about': 'http://data.swissbib.ch/item/NEBIS-B462783',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/269492259',
+		'collectItemValues': '',
+		'bibo:locator': 'Jud F 336',
+		'bibo:owner': 'UZH-JUD (Zürich) (NEBIS)'
+	},
+	'bf:HeldItem' {
+		'rdf:about': 'http://data.swissbib.ch/item/NEBIS-UM1148688',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/269492259',
+		'collectItemValues': '',
+		'bibo:locator': 'RoSe Cy 33',
+		'bibo:owner': 'UZH-ROSE (Zürich) (NEBIS)'
+	},
+	'bf:HeldItem' {
+		'bf:subLocation': 'Freihand 02',
+		'rdf:about': 'http://data.swissbib.ch/item/NEBIS-ZM00758075',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/269492259',
+		'collectItemValues': '',
+		'bibo:locator': 'GH 232',
+		'bibo:owner': 'ZB (Zürich) (NEBIS)'
+	},
+	'bf:HeldItem' {
+		'rdf:about': 'http://data.swissbib.ch/item/RERO-000229890',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/269492259',
+		'collectItemValues': '',
+		'bibo:locator': 'CDU 859.1(082) TLB 10614',
+		'bibo:owner': ' (RERO)'
+	},
+	'bf:HeldItem' {
+		'rdf:about': 'http://data.swissbib.ch/item/RERO-1070283000',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/269492259',
+		'collectItemValues': '',
+		'bibo:locator': '11.1*Mélanges*MUL BFLA 32937',
+		'bibo:owner': ' (RERO)'
+	},
+	'bf:HeldItem' {
+		'bf:subLocation': 'Freihandmagazin',
+		'rdf:about': 'http://data.swissbib.ch/item/IDSBB-0UBU0186605',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/269492259',
+		'collectItemValues': '"http://aleph.unibas.ch/F?func=item-global&doc_library=DSV01&doc_number=000384466&sub_library=A100"',
+		'bibo:locator': 'Bi IX 4131',
+		'bibo:owner': 'Basel UB (IDSBB)'
+	},
+	'bf:HeldItem' {
+		'bf:subLocation': 'vonRoll Speicher H3',
+		'rdf:about': 'http://data.swissbib.ch/item/IDSBB-000775255',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/269492259',
+		'collectItemValues': '"http://aleph.unibas.ch/F?func=item-global&doc_library=DSV01&doc_number=000384466&sub_library=B400"',
+		'bibo:locator': 'ZB Litt LII 8546',
+		'bibo:owner': 'Bern UB ZB (IDSBB)'
+	},
+	'bf:HeldItem' {
+		'bf:subLocation': 'Romanische Philologie Freihandbereich',
+		'rdf:about': 'http://data.swissbib.ch/item/IDSBB-BM2791731',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/269492259',
+		'collectItemValues': '"http://aleph.unibas.ch/F?func=item-global&doc_library=DSV01&doc_number=000384466&sub_library=B498"',
+		'bibo:locator': 'RO I A 236',
+		'bibo:owner': 'Bern UB Romanistik (IDSBB)'
+	},
+	'bf:HeldItem' {
+		'bf:subLocation': 'Livello 2',
+		'rdf:about': 'http://data.swissbib.ch/item/SBT-TM0393479',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/269492259',
+		'collectItemValues': '"http://aleph.sbt.ti.ch/F?func=item-global&doc_library=SBT01&doc_number=000452695&sub_library=BZCDE"',
+		'bibo:locator': 'CDE MI2-70',
+		'bibo:owner': 'BZ-Centro dialett-etnografia (SBT)'
+	},
+	'bf:HeldItem' {
+		'bf:subLocation': 'Aussenmagazin - Medien werden dienstags + freitags geholt',
+		'rdf:about': 'http://data.swissbib.ch/item/LIBIB-FLMA137756',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/269492259',
+		'collectItemValues': '',
+		'bibo:locator': 'PX 51140',
+		'bibo:owner': 'Landesbibliothek (LIBIB)'
+	}
+}

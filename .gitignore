@@ -32,3 +32,8 @@ src/main/resources/transformation/resource/gh_transformVariantNames.xml
 src/main/resources/transformation/resource/gh2_transformField080.xml
 src/main/resources/transformation/resource/gh_transFormVariantNameTest.xml
 src/main/resources/transformation/resource/prov_r.flux
+src/main/resources/transformation/resource/oli_output2.csv
+src/main/resources/transformation/item/prov.flux
+src/main/resources/transformation/item/prov_morph.xml
+src/main/resources/transformation/item/prov_output.formeta
+src/main/resources/transformation/item/correctMarcXML2.xml
