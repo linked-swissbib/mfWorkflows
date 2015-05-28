@@ -310,21 +310,21 @@
 			</entity>
 
 			<!--020: ISBN-->
-			<data source="020  .a" name="bibo:isbn13" >
+			<data source="020??.a" name="bibo:isbn13" >
 				<isbn to="clean"/>
 				<!--To remove possible hyphens or other complements like "(pbk)" that follow the ISBN-->
 				<isbn to="isbn13"/>
 				<unique part="value" />
 			</data>
 
-			<data source="020  .a" name="bibo:isbn10">
+			<data source="020??.a" name="bibo:isbn10">
 				<isbn to="clean"/>
 				<isbn to="isbn10"/>
 				<unique part="value" />
 			</data>
 
-			<!--020: ISSN-->
-			<data source="022  .a" name="bibo:issn" >
+			<!--022: ISSN-->
+			<data source="022??.a" name="bibo:issn" >
 				<regexp match="(\d\d\d\d)[\-]?(\d\d\d[Xx\d])" format="${1}-${2}" />
 			</data>
 
