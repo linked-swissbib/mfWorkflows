@@ -10,7 +10,8 @@ default out = FLUX_DIR +"out.foma";
 
 
 //default libadmin_as_formeta = "http://localhost/libadmin/api/formeta/green.formeta";
-default libadmin_as_formeta = "http://admin.swissbib.ch/libadmintest/api/formeta/green.formeta";
+default libadmin_as_formeta = "https://admin.swissbib.ch/libadmintest/api/formeta/green.formeta";
+//default libadmin_as_formeta = "http://localhost/libadmin/api/formeta/green.formeta";
 
 //file|
 //open-file|
