@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<metamorph xmlns="http://www.culturegraph.org/metamorph" version="1">
+
+	<vars>
+		<var name="swissbib_domain" value="http://data.swissbib.ch/resource/"/>
+	</vars>
+
+	<rules>
+
+		<!-- Definitions for recursions to be used later in substructures (must be set here!) -->
+
+		<data source="001" name="@swissbib_id">
+			<compose prefix="http://data.swissbib.ch/resource/"/>
+		</data>
+
+
+
+		<entity name="author" flushWith="record" >
+
+
+			<combine name="~rdf:about" value="${firstname}##${lastname}" flushWith="1001 ">
+				<data source="1001 .a" name="firstname" />
+				<data source="1001 .D" name="lastname" />
+
+				<postprocess>
+					<java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
+				</postprocess>
+
+			</combine>
+
+		</entity>
+
+
+
+	</rules>
+
+
+</metamorph>

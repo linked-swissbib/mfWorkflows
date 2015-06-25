@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdau="http://rdaregistry.info/Elements/u/" xmlns:void="http://rdfs.org/ns/void#" xmlns:dbp="http://dbpedia.org/ontology/" xmlns:dct="http://purl.org/dc/terms/" xmlns:bf="http://bibframe.org/vocab/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+		<author rdf:about="http://data.swissbib.ch/agent/58b0a8c3-792b-3c46-b682-fb7f88a6039c" />
+	
+
+		<author rdf:about="http://data.swissbib.ch/agent/6977bf0a-0f58-3d37-8da7-06104177996a" />
+	
+
+
+
+		<author rdf:about="http://data.swissbib.ch/agent/86001b4e-04cf-35fe-9b4b-d91ebd737d51" />
+	
+
+		<author rdf:about="http://data.swissbib.ch/agent/962112b3-e75b-379f-bc74-1c619fc1de25" />
+	
+
+
+</rdf:RDF>
