@@ -1,0 +1,4 @@
+dbp http://dbpedia.org/ontology/
+foaf http://xmlns.com/foaf/0.1/
+rdf http://www.w3.org/1999/02/22-rdf-syntax-ns#
+vcard http://www.w3.org/2006/vcard/ns#
