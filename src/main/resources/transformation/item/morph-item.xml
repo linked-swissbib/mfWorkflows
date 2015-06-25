@@ -55,8 +55,8 @@
 			
 			<!--LIBRARY-->
 			<!-- Info à aller chercher soit dans $B soit dans $F, les deux sous-champs toujours présents! -->
-			<combine name="bibo:owner" value="${library} (${network})" flushWith="949??" sameEntity="true" >
-				<data source="949??.0" name="library" />
+			<combine name="bibo:owner" value="http://data.swissbib.ch/organisation/${network}-${library_id}" flushWith="949??" sameEntity="true" >
+				<data source="949??.b" name="library_id" />
 				<data source="949??.B" name="network" />
 			</combine>
 			<!--would require a link to a RDF-resource of the library, in order to give other info such as the direction and the library network. Use the 949$E as system number??-->
@@ -80,7 +80,7 @@
 			> link appears in quotations marks
 			> data event "collectItemValues" is generated even if the link doesn't exist.
 		6. sublocation within the library (bf:subLocation)
-			> to do
+			> ok, but sublocation in 949$1 not available for RERO. It is not very important.
 		-->
 		
 		<!-- nebis example with bibsysnumber 010131061

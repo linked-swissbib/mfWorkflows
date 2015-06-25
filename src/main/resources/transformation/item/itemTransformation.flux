@@ -7,5 +7,5 @@ handle-marcxml|
 morph(FLUX_DIR + "morph-item.xml")|
 encode-formeta (style="multiline") |
 //write("stdout");
-write(FLUX_DIR + "output.txt");
+write(FLUX_DIR + "outputItem.rdf");
 
