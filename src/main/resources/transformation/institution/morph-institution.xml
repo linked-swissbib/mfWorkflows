@@ -16,9 +16,20 @@
 				</data>
 			</combine>
 			
-			<!--NAME-->
+			<!--OFFICIAL NAME-->
 			<!--must be completed with names in other languages-->
 			<entity name="foaf:name" flushWith="institutions.institution" >
+				<data name="~xml:lang" source="_id">
+					<constant value="de" />
+				</data>
+				<data name="" source="institutions.institution.name.de" >
+					<regexp match="(.*[^\s$])" format="${1}" />
+				</data>
+			</entity>
+			
+			<!--NAME FOR THE USER-->
+			<!--must be completed with names in other languages-->
+			<entity name="rdfs:label" flushWith="institutions.institution" >
 				<data name="~xml:lang" source="_id">
 					<constant value="de" />
 				</data>
