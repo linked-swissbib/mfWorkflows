@@ -3,7 +3,7 @@ default file = FLUX_DIR + "correctMarcXML.xml";
 
 file|
 open-file|
-decode-xml|
+decode-xml|	
 handle-marcxml|
 morph(FLUX_DIR + "morph-marc21ToRdf-XML.xml")|
 stream-to-xml(roottag="rdf:RDF", recordtag="", namespacefile= FLUX_DIR + "./maps/namespaces.txt")|

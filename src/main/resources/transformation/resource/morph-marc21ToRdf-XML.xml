@@ -356,6 +356,14 @@
 			<!--when first indicator is 1-->
 			<entity name="dc:contributor" flushWith="1001 " >
 				<entity name="foaf:Person" flushWith="1001 " >
+					<combine name="~rdf:about" value="${firstname}##${lastname}" flushWith="1001 ">
+						<data source="1001 .a" name="firstname" />
+						<data source="1001 .D" name="lastname" />
+						<postprocess>
+							<java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
+							<!--This plug-in function generates a URI with a hash value instead of the author's name, surname and other information.-->
+						</postprocess>
+					</combine>
 					<combine name="rdfs:label" value="${firstname}${lastname}${developed}${dates}${note}" flushWith="1001 ">
 						<data source="1001 .a" name="firstname" />
 						<data source="1001 .D" name="lastname" >

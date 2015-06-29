@@ -2,7 +2,7 @@
 <rdf:RDF xmlns:rdau="http://rdaregistry.info/Elements/u/" xmlns:void="http://rdfs.org/ns/void#" xmlns:dbp="http://dbpedia.org/ontology/" xmlns:dct="http://purl.org/dc/terms/" xmlns:bf="http://bibframe.org/vocab/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dc="http://purl.org/dc/elements/1.1/">
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/318618583/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-28T10:31:31.366Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-06-29T14:49:18.056Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/318618583" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-03-27T05:24:27+01:00</dct:modified>
 			<dc:contributor>IDSBB</dc:contributor>
@@ -17,7 +17,7 @@
 			<bibo:isbn13>9780132544368</bibo:isbn13>
 			<bibo:isbn10>0132544369</bibo:isbn10>
 			<dc:contributor>
-				<foaf:Person>
+				<foaf:Person rdf:about="http://data.swissbib.ch/agent/58b0a8c3-792b-3c46-b682-fb7f88a6039c">
 					<foaf:lastName>Schiffman</foaf:lastName>
 					<foaf:firstName>L. G.</foaf:firstName>
 					<dbp:deathYear>1998</dbp:deathYear>
@@ -47,7 +47,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/316022063/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-28T10:31:31.395Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-06-29T14:49:18.202Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/316022063" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-05-27T15:12:24+01:00</dct:modified>
 			<dc:contributor>RERO</dc:contributor>
@@ -64,7 +64,7 @@
 			<dbp:originalLanguage rdf:resource="http://lexvo.org/id/iso639-3/ara" />
 			<dbp:originalLanguage rdf:resource="http://lexvo.org/id/iso639-3/spa" />
 			<dc:contributor>
-				<foaf:Person>
+				<foaf:Person rdf:about="http://data.swissbib.ch/agent/6977bf0a-0f58-3d37-8da7-06104177996a">
 					<foaf:lastName>Castro</foaf:lastName>
 					<foaf:firstName>Américo</foaf:firstName>
 					<dbp:birthYear>1880</dbp:birthYear>
@@ -125,7 +125,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/31602208X/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-28T10:31:31.426Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-06-29T14:49:18.254Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/31602208X" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-16T23:44:29+01:00</dct:modified>
 			<dc:contributor>ABN</dc:contributor>
@@ -168,7 +168,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/316022098/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-28T10:31:31.448Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-06-29T14:49:18.312Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/316022098" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-05-24T07:05:47+01:00</dct:modified>
 			<dc:contributor>NEBIS</dc:contributor>
@@ -223,7 +223,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/316022101/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-28T10:31:31.463Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-06-29T14:49:18.349Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/316022101" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-08T08:00:34+01:00</dct:modified>
 			<dc:contributor>BGR</dc:contributor>
@@ -237,7 +237,7 @@
 			<bibo:isbn13>9783856374297</bibo:isbn13>
 			<bibo:isbn10>3856374299</bibo:isbn10>
 			<dc:contributor>
-				<foaf:Person>
+				<foaf:Person rdf:about="http://data.swissbib.ch/agent/86001b4e-04cf-35fe-9b4b-d91ebd737d51">
 					<foaf:lastName>Rataj</foaf:lastName>
 					<foaf:firstName>Dorothée</foaf:firstName>
 					<skos:note>Mlle</skos:note>
@@ -271,7 +271,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/vtls003010104/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-28T10:31:31.477Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-06-29T14:49:18.367Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/vtls003010104" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-04-21T07:02:00+01:00</dct:modified>
 			<dc:contributor>RERO</dc:contributor>
@@ -281,7 +281,7 @@
 			<dct:language rdf:resource="http://lexvo.org/id/iso639-3/fra" />
 			<rdau:placeOfPublication rdf:resource="http://sws.geonames.org/2658434/" />
 			<dc:contributor>
-				<foaf:Person>
+				<foaf:Person rdf:about="http://data.swissbib.ch/agent/962112b3-e75b-379f-bc74-1c619fc1de25">
 					<foaf:lastName>Bouvier</foaf:lastName>
 					<foaf:firstName>Nicolas</foaf:firstName>
 					<dbp:birthYear>1929</dbp:birthYear>
@@ -303,7 +303,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/268337713/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-28T10:31:31.487Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-06-29T14:49:18.375Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/268337713" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-07T04:58:42+01:00</dct:modified>
 			<dc:contributor>SNL</dc:contributor>
