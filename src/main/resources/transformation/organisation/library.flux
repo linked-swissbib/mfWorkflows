@@ -17,7 +17,7 @@ default libadmin_as_formeta = "https://admin.swissbib.ch/libadmintest/api/formet
 libadmin_as_formeta| open-http|
 as-formeta-records|
 decode-formeta|
-morph(FLUX_DIR + "morph-institution.xml")|
+morph(FLUX_DIR + "libraryMorph.xml")|
 //once this is done serialize it (Searchengine, Sparql)
 stream-to-xml(roottag="rdf:RDF", recordtag="", namespacefile= FLUX_DIR + "./maps/namespaces.txt")|
-write(FLUX_DIR + "outputInstitution.rdf");
+write(FLUX_DIR + "libraryOutput.rdf");

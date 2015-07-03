@@ -4,8 +4,8 @@ file|
 open-file|
 decode-xml|
 handle-marcxml|
-morph(FLUX_DIR + "morph-item.xml")|
+morph(FLUX_DIR + "itemMorph.xml")|
 encode-formeta (style="multiline") |
 //write("stdout");
-write(FLUX_DIR + "outputItem.rdf");
+write(FLUX_DIR + "itemOutput.rdf");
 
