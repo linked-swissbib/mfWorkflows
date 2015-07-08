@@ -8,7 +8,7 @@
 
 	<rules>
 
-		<combine name="@key" value="${firstname}##${lastname}" flushWith="1001 ">
+		<combine name="@key100" value="${firstname}##${lastname}" flushWith="1001 ">
 			<data source="1001 .a" name="firstname" />
 			<data source="1001 .D" name="lastname" />
 			<postprocess>
@@ -19,7 +19,7 @@
 		<!--BUILD THE BASIS RECORD -->
 
 		<entity name="foaf:Person" flushWith="record" >
-			<data name="~rdf:about" source="@key" >
+			<data name="~rdf:about" source="@key100" >
 				<compose prefix="http://data.swissbib.ch/agent/" />
 			</data>
 			<combine name="rdfs:label" value="${firstname}${lastname}${developed}${dates}${note}" flushWith="1001 ">
