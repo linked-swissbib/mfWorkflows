@@ -8,17 +8,20 @@
 
 	<rules>
 
+		<combine name="@key" value="${firstname}##${lastname}" flushWith="1001 ">
+			<data source="1001 .a" name="firstname" />
+			<data source="1001 .D" name="lastname" />
+			<postprocess>
+				<java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
+			</postprocess>
+		</combine>
+	
 		<!--BUILD THE BASIS RECORD -->
 
 		<entity name="foaf:Person" flushWith="record" >
-			<combine name="~rdf:about" value="${firstname}##${lastname}" flushWith="1001 ">
-				<data source="1001 .a" name="firstname" />
-				<data source="1001 .D" name="lastname" />
-				<postprocess>
-					<java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
-					<!--This plug-in function generates a URI with a hash value instead of the author's name, surname and other information.-->
-				</postprocess>
-			</combine>
+			<data name="~rdf:about" source="@key" >
+				<compose prefix="http://data.swissbib.ch/agent/" />
+			</data>
 			<combine name="rdfs:label" value="${firstname}${lastname}${developed}${dates}${note}" flushWith="1001 ">
 				<data source="1001 .a" name="firstname" />
 				<data source="1001 .D" name="lastname" >
