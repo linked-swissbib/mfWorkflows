@@ -2,13 +2,13 @@
 <rdf:RDF xmlns:rdau="http://rdaregistry.info/Elements/u/" xmlns:void="http://rdfs.org/ns/void#" xmlns:dbp="http://dbpedia.org/ontology/" xmlns:dct="http://purl.org/dc/terms/" xmlns:bf="http://bibframe.org/vocab/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dc="http://purl.org/dc/elements/1.1/">
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/318618583/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-07-03T15:31:51.395Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-07-10T08:57:09.961Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/318618583" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-03-27T05:24:27+01:00</dct:modified>
-			<dc:contributor>IDSBB</dc:contributor>
-			<dc:contributor>RERO</dc:contributor>
-			<dc:contributor>NEBIS</dc:contributor>
-			<dc:contributor>OCoLC</dc:contributor>
+			<dct:contributor rdf:resource="http://data.swissbib.ch/agent/IDSBB" />
+			<dct:contributor rdf:resource="http://data.swissbib.ch/agent/RERO" />
+			<dct:contributor rdf:resource="http://data.swissbib.ch/agent/NEBIS" />
+			<dct:contributor rdf:resource="http://d-nb.info/gnd/1046905-9" />
 		</bibo:Document>
 		<dct:BibliographicResource rdf:about="http://data.swissbib.ch/resource/318618583">
 			<rdfs:isDefinedBy rdf:resource="http://data.swissbib.ch/resource/318618583/about" />
@@ -47,13 +47,13 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/316022063/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-07-03T15:31:51.443Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-07-10T08:57:10.005Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/316022063" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-05-27T15:12:24+01:00</dct:modified>
-			<dc:contributor>RERO</dc:contributor>
-			<dc:contributor>SGBN</dc:contributor>
-			<dc:contributor>NEBIS</dc:contributor>
-			<dc:contributor>IDSBB</dc:contributor>
+			<dct:contributor rdf:resource="http://data.swissbib.ch/agent/RERO" />
+			<dct:contributor rdf:resource="http://data.swissbib.ch/agent/SGBN" />
+			<dct:contributor rdf:resource="http://data.swissbib.ch/agent/NEBIS" />
+			<dct:contributor rdf:resource="http://data.swissbib.ch/agent/IDSBB" />
 		</bibo:Document>
 		<dct:BibliographicResource rdf:about="http://data.swissbib.ch/resource/316022063">
 			<rdfs:isDefinedBy rdf:resource="http://data.swissbib.ch/resource/316022063/about" />
@@ -125,13 +125,13 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/31602208X/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-07-03T15:31:51.459Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-07-10T08:57:10.022Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/31602208X" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-16T23:44:29+01:00</dct:modified>
-			<dc:contributor>ABN</dc:contributor>
-			<dc:contributor>IDSBB</dc:contributor>
-			<dc:contributor>NEBIS</dc:contributor>
-			<dc:contributor>OCoLC</dc:contributor>
+			<dct:contributor rdf:resource="http://data.swissbib.ch/agent/ABN" />
+			<dct:contributor rdf:resource="http://data.swissbib.ch/agent/IDSBB" />
+			<dct:contributor rdf:resource="http://data.swissbib.ch/agent/NEBIS" />
+			<dct:contributor rdf:resource="http://d-nb.info/gnd/1046905-9" />
 		</bibo:Document>
 		<dct:BibliographicResource rdf:about="http://data.swissbib.ch/resource/31602208X">
 			<rdfs:isDefinedBy rdf:resource="http://data.swissbib.ch/resource/31602208X/about" />
@@ -168,11 +168,11 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/316022098/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-07-03T15:31:51.480Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-07-10T08:57:10.032Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/316022098" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-05-24T07:05:47+01:00</dct:modified>
-			<dc:contributor>NEBIS</dc:contributor>
-			<dc:contributor>IDSLU</dc:contributor>
+			<dct:contributor rdf:resource="http://data.swissbib.ch/agent/NEBIS" />
+			<dct:contributor rdf:resource="http://data.swissbib.ch/agent/IDSLU" />
 		</bibo:Document>
 		<dct:BibliographicResource rdf:about="http://data.swissbib.ch/resource/316022098">
 			<rdfs:isDefinedBy rdf:resource="http://data.swissbib.ch/resource/316022098/about" />
@@ -223,12 +223,11 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/316022101/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-07-03T15:31:51.490Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-07-10T08:57:10.039Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/316022101" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-08T08:00:34+01:00</dct:modified>
-			<dc:contributor>BGR</dc:contributor>
-			<dc:contributor>SNL</dc:contributor>
-			<dc:contributor>Sz</dc:contributor>
+			<dct:contributor rdf:resource="http://data.swissbib.ch/agent/BGR" />
+			<dct:contributor rdf:resource="http://data.swissbib.ch/agent/SNL" />
 		</bibo:Document>
 		<dct:BibliographicResource rdf:about="http://data.swissbib.ch/resource/316022101">
 			<rdfs:isDefinedBy rdf:resource="http://data.swissbib.ch/resource/316022101/about" />
@@ -271,10 +270,10 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/vtls003010104/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-07-03T15:31:51.500Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-07-10T08:57:10.045Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/vtls003010104" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-04-21T07:02:00+01:00</dct:modified>
-			<dc:contributor>RERO</dc:contributor>
+			<dct:contributor rdf:resource="http://data.swissbib.ch/agent/RERO" />
 		</bibo:Document>
 		<dct:BibliographicResource rdf:about="http://data.swissbib.ch/resource/vtls003010104">
 			<rdfs:isDefinedBy rdf:resource="http://data.swissbib.ch/resource/vtls003010104/about" />
@@ -303,16 +302,14 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/268337713/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-07-03T15:31:51.504Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-07-10T08:57:10.048Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/268337713" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-07T04:58:42+01:00</dct:modified>
-			<dc:contributor>SNL</dc:contributor>
-			<dc:contributor>SGBN</dc:contributor>
-			<dc:contributor>IDSBB</dc:contributor>
-			<dc:contributor>RERO</dc:contributor>
-			<dc:contributor>NEBIS</dc:contributor>
-			<dc:contributor>Sz</dc:contributor>
-			<dc:contributor>Sz</dc:contributor>
+			<dct:contributor rdf:resource="http://data.swissbib.ch/agent/SNL" />
+			<dct:contributor rdf:resource="http://data.swissbib.ch/agent/SGBN" />
+			<dct:contributor rdf:resource="http://data.swissbib.ch/agent/IDSBB" />
+			<dct:contributor rdf:resource="http://data.swissbib.ch/agent/RERO" />
+			<dct:contributor rdf:resource="http://data.swissbib.ch/agent/NEBIS" />
 		</bibo:Document>
 		<dct:BibliographicResource rdf:about="http://data.swissbib.ch/resource/268337713">
 			<rdfs:isDefinedBy rdf:resource="http://data.swissbib.ch/resource/268337713/about" />
