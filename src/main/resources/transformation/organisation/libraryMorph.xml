@@ -4,8 +4,60 @@
 
 	<rules>
 
-		<entity name="foaf:Organization" flushWith="institutions.institution" >
+		<!--ENTITY NETWORK-->
+		<entity name="foaf:Organization" >
 
+			<!--URI OF THE NETWORK-->
+			<combine name="~rdf:about" value="http://data.swissbib.ch/organisation/${network}">
+				<data source="code" name="network" >
+					<trim />
+					<blacklist>
+						<entry name="REPOS"/>
+					</blacklist>
+				</data>
+			</combine>
+			
+			<entity name="rdfs:label" >
+				<data name="~xml:lang" source="label.de">
+					<constant value="de" />
+				</data>
+				<data name="" source="label.de" >
+					<regexp match="(.*[^\s$])" format="${1}" />
+					<!--Regex that deletes a white space if there is one at the end of the literal.-->
+				</data>
+			</entity>
+			<entity name="rdfs:label" >
+				<data name="~xml:lang" source="label.fr">
+					<constant value="fr" />
+				</data>
+				<data name="" source="label.fr" >
+					<regexp match="(.*[^\s$])" format="${1}" />
+				</data>
+			</entity>
+			<entity name="rdfs:label" >
+				<data name="~xml:lang" source="label.it">
+					<constant value="it" />
+				</data>
+				<data name="" source="label.it" >
+					<regexp match="(.*[^\s$])" format="${1}" />
+				</data>
+			</entity>
+			<entity name="rdfs:label" >
+				<data name="~xml:lang" source="label.en">
+					<constant value="en" />
+				</data>
+				<data name="" source="label.en" >
+					<regexp match="(.*[^\s$])" format="${1}" />
+				</data>
+			</entity>
+			
+		</entity>
+		
+		
+		<!--ENTITY LIBRARY-->
+		
+		<entity name="foaf:Organization" flushWith="institutions.institution" >
+			
 			<!--URI OF THE LIBRARY-->
 			<combine name="~rdf:about" value="http://data.swissbib.ch/organisation/${network}-${id}">
 				<data source="institutions.institution.id" name="id">
@@ -17,9 +69,11 @@
 			</combine>
 			
 			<!--OFFICIAL NAME-->
-			<!--must be completed with names in other languages-->
 			<entity name="foaf:name" flushWith="institutions.institution" >
-				<data name="~xml:lang" source="_id">
+				<data name="~xml:lang" source="institutions.institution.name.de">
+					<blacklist>
+						<entry name=""/>
+					</blacklist>
 					<constant value="de" />
 				</data>
 				<data name="" source="institutions.institution.name.de" >
@@ -29,16 +83,80 @@
 					<regexp match="(.*[^\s$])" format="${1}" />
 				</data>
 			</entity>
+			<entity name="foaf:name" flushWith="institutions.institution" >
+				<data name="~xml:lang" source="institutions.institution.name.fr">
+					<blacklist>
+						<entry name=""/>
+					</blacklist>
+					<constant value="fr" />
+				</data>
+				<data name="" source="institutions.institution.name.fr" >
+					<blacklist>
+						<entry name=""/>
+					</blacklist>
+					<regexp match="(.*[^\s$])" format="${1}" />
+				</data>
+			</entity>
+			<entity name="foaf:name" flushWith="institutions.institution" >
+				<data name="~xml:lang" source="institutions.institution.name.it">
+					<blacklist>
+						<entry name=""/>
+					</blacklist>
+					<constant value="it" />
+				</data>
+				<data name="" source="institutions.institution.name.it" >
+					<blacklist>
+						<entry name=""/>
+					</blacklist>
+					<regexp match="(.*[^\s$])" format="${1}" />
+				</data>
+			</entity>
+			<entity name="foaf:name" flushWith="institutions.institution" >
+				<data name="~xml:lang" source="institutions.institution.name.en">
+					<blacklist>
+						<entry name=""/>
+					</blacklist>
+					<constant value="en" />
+				</data>
+				<data name="" source="institutions.institution.name.en" >
+					<blacklist>
+						<entry name=""/>
+					</blacklist>
+					<regexp match="(.*[^\s$])" format="${1}" />
+				</data>
+			</entity>
 			
 			<!--NAME FOR THE USER-->
-			<!--must be completed with names in other languages-->
 			<entity name="rdfs:label" flushWith="institutions.institution" >
-				<data name="~xml:lang" source="_id">
+				<data name="~xml:lang" source="institutions.institution.label.de">
 					<constant value="de" />
 				</data>
 				<data name="" source="institutions.institution.label.de" >
 					<regexp match="(.*[^\s$])" format="${1}" />
 					<!--Regex that deletes a white space if there is one at the end of the literal.-->
+				</data>
+			</entity>
+			<entity name="rdfs:label" flushWith="institutions.institution" >
+				<data name="~xml:lang" source="institutions.institution.label.fr">
+					<constant value="fr" />
+				</data>
+				<data name="" source="institutions.institution.label.fr" >
+					<regexp match="(.*[^\s$])" format="${1}" />
+				</data>
+			</entity>
+			<entity name="rdfs:label" flushWith="institutions.institution" >
+				<data name="~xml:lang" source="institutions.institution.label.it">
+					<constant value="it" />
+				</data>
+				<data name="" source="institutions.institution.label.it" >
+					<regexp match="(.*[^\s$])" format="${1}" />
+				</data>
+			</entity>			<entity name="rdfs:label" flushWith="institutions.institution" >
+				<data name="~xml:lang" source="institutions.institution.label.en">
+					<constant value="en" />
+				</data>
+				<data name="" source="institutions.institution.label.en" >
+					<regexp match="(.*[^\s$])" format="${1}" />
 				</data>
 			</entity>
 			
