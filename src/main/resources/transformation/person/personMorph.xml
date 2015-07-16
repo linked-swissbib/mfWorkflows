@@ -8,9 +8,13 @@
 
 	<rules>
 
-		<combine name="@key100" value="${firstname}##${lastname}" flushWith="1001 ">
+		<combine name="@key100" value="${firstname}##${lastname}##${number}##${title}##${lifedata}##${fullname}" flushWith="1001 ">
 			<data source="1001 .a" name="firstname" />
 			<data source="1001 .D" name="lastname" />
+			<data source="1001 .b" name="number" />
+			<data source="1001 .c" name="title" />
+			<data source="1001 .d" name="lifedata" />
+			<data source="1001 .q" name="fullname" />
 			<postprocess>
 				<java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
 			</postprocess>
@@ -20,7 +24,7 @@
 
 		<entity name="foaf:Person" flushWith="record" >
 			<data name="~rdf:about" source="@key100" >
-				<compose prefix="http://data.swissbib.ch/agent/" />
+				<compose prefix="http://data.swissbib.ch/person/" />
 			</data>
 			<combine name="rdfs:label" value="${firstname}${lastname}${developed}${dates}${note}" flushWith="1001 ">
 				<data source="1001 .a" name="firstname" />
