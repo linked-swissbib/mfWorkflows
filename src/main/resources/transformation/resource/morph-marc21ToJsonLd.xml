@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<metamorph xmlns="http://www.culturegraph.org/metamorph" version="1" >
+
+	<vars>
+		<var name="swissbib_domain" value="http://data.swissbib.ch/resource/"/>
+	</vars>
+
+
+	<macros>
+		<macro name="bulk-header">
+			<!-- This macro is used to write the header for the Bulk API in Elasticsearch -->
+			<entity name="index" flushWith="record">
+
+				<data name="_type" source="_id">
+					<constant value="$[type]"/>
+				</data>
+
+				<data name="_id" source="001" />
+
+				<data name="_index" source="_id">
+					<constant value="testsb"/>
+				</data>
+
+			</entity>
+		</macro>
+	</macros>
+
+
+	<rules>
+
+		<!-- Definitions for recursions to be used later in substructures (must be set here!) -->
+
+		<data source="001" name="@swissbib_id">
+			<compose prefix="http://data.swissbib.ch/resource/"/>
+		</data>
+		<data source="008" name="@language">
+			<substring  start="35"  end="38"/>
+		</data>
+
+		<!--BUILD BULK API HEADER FOR TYPE "DOCUMENT"-->
+
+		<call-macro name="bulk-header" type="document" />
+
+		<!--BUILD THE RECORD "ABOUT"-->
+
+		<entity name="bibo:Document" flushWith="record" >
+			<!--To define the subject (root element) of each record.
+			"entity" makes it possible to create a hierarchical tag structure.
+			"flushWith" enables to group various subfields into one output, even if the field appears more than one time. -->
+
+			<data source="@swissbib_id" name="@id" >
+				<compose postfix="/about" />
+			</data>
+
+			<!--PUBLICATION DATE OF THE RDF RECORD-->
+			<entity name="dct:issued">
+				<data name="@type" source="_id">
+					<!--The symbol '~' before rdf:about is very important: it permits to integrate rdf:about as an attribute in the tag rdf:Description-->
+					<!-- compare http://b3e.net/metamorph-book/latest/datamodel.html
+                        section "Strukturierte Literal- und Entitätsnamen"
+                        about the possibilities and background for the chosen design and implementation provided by the Metamorph datamodel
+                        to express structured data elements (like XML attributes or list elements)
+                        and data types
+                    -->
+					<constant value="http://www.w3.org/2001/XMLSchema#dateTime"/>
+				</data>
+				<data name="@id" source="_id">
+					<timestamp format="yyyy-MM-dd'T'HH:mm:ss.SSSXXX" />
+				</data>
+			</entity>
+
+			<!--LAST MODIFICATION DATE OF THE MARC RECORD-->
+			<entity name="dct:modified">
+				<data name="@type" source="_id">
+					<constant value="http://www.w3.org/2001/XMLSchema#dateTime"/>
+				</data>
+				<data name="@id" source="005">
+					<regexp match="^(\d\d\d\d)(\d\d)(\d\d)(\d\d)(\d\d)(\d\d)\.(\d)" format="${1}-${2}-${3}T${4}:${5}:${6}+01:00"/>
+				</data>
+			</entity>
+
+			<!--NETWORK(S) THAT CREATED THE RECORD-->
+			<data source="035  .a" name="dc:contributor[]">
+				<regexp match="\((.*)\)" format="${1}" />
+				<!--To be replaced with Swissbib URI-->
+			</data>
+
+			<!--LINK WITH THE BASIS RECORD-->
+			<entity name="foaf:primaryTopic" >
+				<data source="@swissbib_id" name="@id" />
+			</entity>
+
+
+		</entity>
+
+
+		<!--BUILD BULK API HEADER FOR TYPE "BIBLIOGRAPHICRESOURCE"-->
+
+		<call-macro name="bulk-header" type="bibliographicResource" />
+
+
+
+		<!--BUILD THE BASIS RECORD -->
+
+		<entity name="dct:BibliographicResource" flushWith="record" >
+			<!--To define the subject (root element) of each record.
+            "entity" makes it possible to create a hierarchical tag structure.-->
+			<data source="@swissbib_id" name="@id" />
+
+			<!--RDA CONTENT TYPE -->
+			<entity name="rdau:contentType" >
+				<data name="@id" source="898  .a">
+					<substring  start="0"  end="6"/>
+					<!--To select only positions 0-5 of the field 898$a-->
+					<lookup in="type_content"/>
+					<!--To look up the links given in the file announced in the tag <map>-->
+					<unique part="value" />
+				</data>
+			</entity>
+
+			<entity name="rdau:contentType" >
+				<if>
+					<!--To select only the record types MU03xxxx (=Sound/Ton/Son), that are sounds (vs. spoken words. Includes natural sounds, artificially produced sounds, etc. )
+                    The function "if" uses the default boolean operator "OR" when various arguments/conditions are present!-->
+					<!--Could also use the functions "whitelist" and "blacklist"-->
+					<all>
+						<data source="898  .a">
+							<substring  start="0"  end="4"/>
+							<equals string="MU03" />
+						</data>
+						<any>
+							<data source="008">
+								<substring  start="35"  end="38"/>
+								<equals string="und" />
+							</data>
+							<data source="008">
+								<substring  start="35"  end="38"/>
+								<equals string="zxx" />
+							</data>
+						</any>
+					</all>
+				</if>
+				<data name="@id" source="_id">
+					<!--"_id" is used as "source"-value when the value doesn't come from directly the record itself-->
+					<constant value="http://rdvocab.info/termList/RDAContentType/1012"/>
+				</data>
+			</entity>
+
+			<entity name="rdau:contentType" >
+				<if>
+					<!--To select only the record types MU03xxxx (=Sound/Ton/Son), that are spoken words (Includes recorded readings, recitations, speeches, interviews, oral histories, etc., computer-generated speech, etc.)-->
+					<all>
+						<data source="898  .a">
+							<substring  start="0"  end="4"/>
+							<equals string="MU03" />
+						</data>
+						<data source="008">
+							<substring  start="35"  end="38"/>
+							<not-equals string="und" />
+						</data>
+						<data source="008">
+							<substring  start="35"  end="38"/>
+							<not-equals string="zxx" />
+						</data>
+					</all>
+				</if>
+				<data name="@id" source="_id">
+					<constant value="http://rdvocab.info/termList/RDAContentType/1013"/>
+				</data>
+			</entity>
+
+			<!--RDA MEDIA TYPE -->
+			<entity name="rdau:mediaType" >
+				<data name="@id" source="898  .a">
+					<blacklist>
+						<entry name="CF010100"/><entry name="CF010200"/><entry name="CF010300"/><entry name="CF010400"/><entry name="CF010500"/><entry name="CF010600"/><entry name="CF010000"/><entry name="MU030000"/><entry name="MU030100"/><entry name="MU030200"/><entry name="MU030300"/><entry name="MU030400"/><entry name="MU030500"/><entry name="MU030600"/><entry name="MU040000"/><entry name="MU040100"/><entry name="MU040200"/><entry name="MU040300"/><entry name="MU040400"/><entry name="MU040500"/><entry name="MU040600"/><entry name="VM010000"/><entry name="VM010100"/><entry name="VM010200"/><entry name="VM010300"/><entry name="VM010400"/><entry name="VM020100"/><entry name="VM020200"/><entry name="VM030100"/><entry name="VM030200"/><entry name="VM030400"/><entry name="VM030000"/><entry name="VM040000"/><entry name="MX010000"/>
+					</blacklist>
+					<substring  start="6"  end="8"/>
+					<!--To select only positions 6-7 of the field 898$a-->
+					<lookup in="type_media"/>
+					<unique part="value" />
+				</data>
+			</entity>
+
+			<entity name="rdau:mediaType" >
+				<data name="@id" source="898  .a">
+					<whitelist>
+						<entry name="CF010100"/><entry name="CF010200"/><entry name="CF010300"/><entry name="CF010400"/><entry name="CF010500"/><entry name="CF010600"/><entry name="CF010000"/><entry name="MU030000"/><entry name="MU030100"/><entry name="MU030200"/><entry name="MU030300"/><entry name="MU030400"/><entry name="MU030500"/><entry name="MU030600"/><entry name="MU040000"/><entry name="MU040100"/><entry name="MU040200"/><entry name="MU040300"/><entry name="MU040400"/><entry name="MU040500"/><entry name="MU040600"/><entry name="VM010000"/><entry name="VM010100"/><entry name="VM010200"/><entry name="VM010300"/><entry name="VM010400"/><entry name="VM020100"/><entry name="VM020200"/><entry name="VM030100"/><entry name="VM030200"/><entry name="VM030400"/><entry name="VM030000"/><entry name="VM040000"/><entry name="MX010000"/>
+					</whitelist>
+					<lookup in="type_media"/>
+					<unique part="value" />
+				</data>
+			</entity>
+
+			<!--DOCUMENT TYPE-->
+			<!--The document type completes - when necessary - RDA media and content type with a more concrete document type. A document can have more than one type, for instance bibo:Book and bibo:Thesis.-->
+			<entity name="rdf:type" >
+				<data source="898  .a" name="@id" >
+					<substring  start="0"  end="4"/>
+					<whitelist>
+						<entry name="BK01"/>
+					</whitelist>
+					<constant value="http://purl.org/ontology/bibo/Article"/>
+					<unique part="value" />
+				</data>
+			</entity>
+			<entity name="rdf:type" >
+				<data source="898  .a" name="@id" >
+					<substring  start="0"  end="4"/>
+					<whitelist>
+						<entry name="BK02"/>
+					</whitelist>
+					<constant value="http://purl.org/ontology/bibo/Book"/>
+					<unique part="value" />
+				</data>
+			</entity>
+			<entity name="rdf:type" >
+				<data source="898  .a" name="@id" >
+					<substring  start="0"  end="4"/>
+					<whitelist>
+						<entry name="BK03"/>
+						<entry name="MU02"/>
+						<entry name="MP02"/>
+					</whitelist>
+					<constant value="http://purl.org/ontology/bibo/Manuscript"/>
+					<unique part="value" />
+				</data>
+			</entity>
+			<entity name="rdf:type" >
+				<data source="898  .a" name="@id" >
+					<substring  start="0"  end="4"/>
+					<whitelist>
+						<entry name="CR01"/>
+						<entry name="CR03"/>
+					</whitelist>
+					<constant value="http://purl.org/ontology/bibo/Periodical"/>
+					<unique part="value" />
+				</data>
+			</entity>
+			<entity name="rdf:type" >
+				<data source="898  .a" name="@id" >
+					<substring  start="0"  end="6"/>
+					<whitelist>
+						<entry name="BK0108"/>
+						<entry name="BK0208"/>
+						<entry name="CR0108"/>
+						<entry name="CR0208"/>
+						<entry name="CR0308"/>
+					</whitelist>
+					<constant value="http://purl.org/ontology/bibo/Proceedings"/>
+					<unique part="value" />
+				</data>
+			</entity>
+			<entity name="rdf:type" >
+				<data source="898  .a" name="@id" >
+					<substring  start="0"  end="4"/>
+					<whitelist>
+						<entry name="CL01"/>
+						<entry name="CL02"/>
+					</whitelist>
+					<constant value="http://purl.org/ontology/bibo/Series"/>
+					<unique part="value" />
+				</data>
+			</entity>
+			<entity name="rdf:type" >
+				<data source="898  .a" name="@id" >
+					<substring  start="0"  end="6"/>
+					<whitelist>
+						<entry name="BK0103"/>
+						<entry name="BK0203"/>
+					</whitelist>
+					<constant value="http://purl.org/ontology/bibo/Thesis"/>
+					<unique part="value" />
+				</data>
+			</entity>
+			<entity name="rdf:type" >
+				<data source="898  .a" name="@id" >
+					<substring  start="0"  end="6"/>
+					<whitelist>
+						<entry name="CR0104"/>
+						<entry name="CR0204"/>
+						<entry name="CR0304"/>
+					</whitelist>
+					<constant value="http://purl.org/ontology/bibo/Website"/>
+					<unique part="value" />
+				</data>
+			</entity>
+			
+			<!--RDA mode of issuance-->
+			<!--only for serials and integrating resources-->
+			<entity name="rdau:modeOfIssuance" >
+				<choose>
+					<data source="898  .a" name="@id" >
+						<substring  start="0"  end="4"/>
+						<whitelist>
+							<entry name="CR01"/>
+							<entry name="CR03"/>
+						</whitelist>
+						<constant value="http://rdaregistry.info/termList/ModeIssue/1003"/>
+					</data>
+					<data source="898  .a" name="@id" >
+						<substring  start="0"  end="4"/>
+						<whitelist>
+							<entry name="CR02"/>
+						</whitelist>
+						<constant value="http://rdaregistry.info/termList/ModeIssue/1004"/>
+					</data>
+				</choose>
+			</entity>
+
+			<!--008: LANGUAGE-->
+			<entity name="dct:language" >
+				<data source="@language|041*.a" name="@id" >
+					<trim />
+					<unique part="value" />
+					<lookup in="languages" />
+				</data>
+			</entity>
+
+
+			<!--008: PUBLICATION DATES-->
+			<!--To complete with analysing rules, for example for dates like 9999 (series)-->
+			<choose>
+				<data name="dct:issued" source="008">
+					<substring  start="7"  end="15"/>
+					<regexp match="(\d\d\d\d)(\d\d\d\d)" format="${1}-${2}" />
+				</data>
+				<data name="dct:issued" source="008">
+					<substring  start="7"  end="11"/>
+				</data>
+			</choose>
+
+			<!--008: PUBLICATION COUNTRY-->
+			<entity name="rdau:placeOfPublication" >
+				<data source="008" name="@id" >
+					<substring  start="15"  end="18"/>
+					<trim /><!--To remove white spaces before and after the string-->
+					<lookup in="countries" />
+				</data>
+			</entity>
+
+			<!--020: ISBN-->
+			<data source="020??.a" name="bibo:isbn13" >
+				<isbn to="clean"/>
+				<!--To remove possible hyphens or other complements like "(pbk)" that follow the ISBN-->
+				<isbn to="isbn13"/>
+				<unique part="value" />
+			</data>
+
+			<data source="020??.a" name="bibo:isbn10">
+				<isbn to="clean"/>
+				<isbn to="isbn10"/>
+				<unique part="value" />
+			</data>
+
+			<!--022: ISSN-->
+			<data source="022??.a" name="bibo:issn" >
+				<regexp match="(\d\d\d\d)[\-]?(\d\d\d[Xx\d])" format="${1}-${2}" />
+			</data>
+
+			<!--041: ORIGINAL LANGUAGE-->
+			<entity name="dbp:originalLanguage" >
+				<data source="041*.h" name="@id" >
+					<trim />
+					<lookup in="languages" />
+				</data>
+			</entity>
+
+			<!--044: PUBLICATION CANTON (RERO DATA)-->
+			<entity name="rdau:placeOfPublication" flushWith="record" >
+				<data source="044  .c" name="@id" >
+					<substring start="3" end="5" />
+					<lookup in="cantons" />
+				</data>
+			</entity>
+			<!--This solution implies that we describe the entities in another file:
+			<entity name="rdau:placeOfPublication" >
+				<data source="044  .c" name="~rdf:resource" >
+					<substring start="3" end="5" />
+					<compose prefix="http://data.swissbib.ch/place/swiss-canton-" />
+				</data>
+			</entity>
+			-->
+
+			<!--100: MAIN AUTHOR-->
+			<!--when first indicator is 1-->
+			<entity name="dc:contributor[]" flushWith="1001 " >
+				<entity name="foaf:Person{}" flushWith="1001 " >
+					<combine name="@id" value="${firstname}##${lastname}" flushWith="1001 ">
+						<data source="1001 .a" name="firstname" />
+						<data source="1001 .D" name="lastname" />
+						<postprocess>
+							<java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
+							<!--This plug-in function generates a URI with a hash value instead of the author's name, surname and other information.-->
+						</postprocess>
+					</combine>
+					<combine name="rdfs:label" value="${firstname}${lastname}${developed}${dates}${note}" flushWith="1001 ">
+						<data source="1001 .a" name="firstname" />
+						<data source="1001 .D" name="lastname" >
+							<compose prefix=", " />
+						</data>
+						<data source="1001 .q" name="developed" >
+							<compose prefix=" (" postfix=")" />
+						</data>
+						<data source="1001 .d" name="dates" >
+							<compose prefix=", " />
+						</data>
+						<data source="1001 .c" name="note" >
+							<compose prefix=", " />
+						</data>
+					</combine>
+					<data source="1001 .d" name="dbp:birthYear" >
+						<regexp match="(\d\d\d\d).?[-]" format="${1}" />
+					</data>
+					<data source="1001 .d" name="dbp:deathYear" >
+						<regexp match="(\d\d\d\d)$" format="${1}" />
+					</data>
+					<data source="1001 .a" name="foaf:lastName" />
+					<data source="1001 .c" name="skos:note" />
+					<data source="1001 .D" name="foaf:firstName" />
+					<data name="@type" source="source">
+						<constant value="foaf:Organization"/>
+					</data>
+				</entity>		
+			</entity>
+			<!--when first indicator is 0-->
+			<entity name="dc:contributor[]" flushWith="1000 " >
+				<entity name="foaf:Person{}" flushWith="1000 " >
+					<combine name="rdfs:label" value="${name}${dates}${note}" flushWith="1000 ">
+						<data source="1000 .a" name="name" />
+						<data source="1000 .d" name="dates" >
+							<compose prefix=", " />
+						</data>
+						<data source="1000 .c" name="note" >
+							<compose prefix=", " />
+						</data>
+					</combine>
+					<data source="1000 .d" name="dbp:birthYear" >
+						<regexp match="(\d\d\d\d).?[-]" format="${1}" />
+					</data>
+					<data source="1000 .d" name="dbp:deathYear" >
+						<regexp match="(\d\d\d\d)$" format="${1}" />
+					</data>
+					<data source="1000 .a" name="foaf:name" />
+					<data source="1000 .c" name="skos:note" />
+					<data name="@type" source="source">
+						<constant value="foaf:Organization"/>
+					</data>
+				</entity>		
+			</entity>
+
+			<!--245: TITLE-->
+			<concat name="dct:title" delimiter="" >
+				<data source="245*.a" />
+				<data source="245*.b" >
+					<compose prefix=" : " />
+				</data>
+				<data source="245*.c" >
+					<compose prefix=" / " />
+				</data>
+				<data source="245*.n" >
+					<compose prefix=". " />
+				</data>
+				<data source="245*.p" >
+					<compose prefix=". " />
+				</data>
+			</concat>
+
+			<!--246: OTHER TITLES-->
+			<concat name="dct:alternative" delimiter="" flushWith="246??" reset="true" >
+				<data source="246*.a" />
+				<data source="246*.n" >
+					<compose prefix=". " />
+				</data>
+				<data source="246*.p" >
+					<compose prefix=". " />
+				</data>
+			</concat>
+
+			<!--250: EDITION-->
+			<concat name="bibo:edition" delimiter="" flushWith="250  " reset="true" >
+				<data source="250  .a" />
+				<data source="250  .b" >
+					<compose prefix=" / " />
+				</data>
+			</concat>
+
+			<!--260: IMPRINT-->
+			<concat name="rdau:publicationStatement" delimiter="" flushWith="260? " reset="true" sameEntity="true" >
+				<!--Attribute "delimiter" obligatory-->
+				<data source="260? .a" >
+					<occurrence  only="1"/>
+				</data>
+				<!--The "data"-tag above matches just the first publication place and doesn't give him any prefix. The "data"-tag below matches all the publication places except the first one, and attributes them a prefix. Can leads to small errors when the field 260 appears more than once in the record.-->
+				<data source="260? .a" >
+					<occurrence  only="moreThen 1"/>
+					<compose prefix=" ; "/>
+				</data>
+				<data source="260? .b" >
+					<compose prefix=" : "/>
+					<!--To add a prefix or a suffix (="postfix")-->
+				</data>
+				<data source="260? .c" >
+					<compose prefix=", "/>
+				</data>
+			</concat>
+
+			<!--300: PHYSICAL DESCRIPTION-->
+			<concat name="dc:format" delimiter="" flushWith="300  " reset="true" >
+				<data source="300  .a" >
+					<occurrence  only="1"/>
+				</data>
+				<data source="300  .a" >
+					<occurrence  only="moreThen 1"/>
+					<compose prefix=" ; " />
+				</data>
+				<data source="300  .b" >
+					<compose prefix=" : "/>
+				</data>
+				<data source="300  .c" >
+					<compose prefix=" ; "/>
+				</data>
+				<data source="300  .e" >
+					<compose prefix=" + "/>
+				</data>
+			</concat>
+
+			<!--490: SERIES STATEMENT-->
+			<concat name="dct:bibliographicCitation" delimiter="" flushWith="490? " reset="true">
+				<data source="490? .a" />
+				<data source="490? .v" >
+					<compose prefix=" ; " postfix=". " />
+				</data>
+			</concat>
+
+			<!--500: GENERAL NOTES-->
+			<data name="rdau:noteOnResource" source="500*.a" />
+
+			<!--502: NOTES ABOUT THESIS-->
+			<data name="rdau:dissertationOrThesisInformation" source="502*.a" />
+
+			<!--505: NOTES ABOUT CONTENT-->
+			<concat name="dct:hasPart" delimiter=". " flushWith="505??" reset="true" >
+				<data source="505??.g" />
+				<data source="505??.t" />
+				<data source="505??.r" />
+			</concat>
+			<data name="dct:hasPart" source="505??.a" />
+
+			<!--6XX: SUBJECTS (GND only)-->
+			<entity name="dct:subject">
+				<combine name="@id" value="${gnd_id}" reset="true" flushWith="65???">
+					<!--"combine" is essential when a field is repetitive
+                    "flushWith" to restart  the process with every concerned fields (?)
+                    "reset" default:true -->
+					<if>
+						<data source="65???.0" >
+							<substring  start="0"  end="8"/>
+							<equals string="(DE-588)" />
+						</data>
+					</if>
+					<data source="65???.0" name="gnd_id">
+						<regexp match="\)(.*)" format="http://d-nb.info/gnd/${1}"/>
+						<unique part="value" />
+					</data>
+				</combine>
+			</entity>
+
+			<!--700: OTHER AUTHORS-->
+			<entity name="dc:contributor[]" reset="true" flushWith="7000 " >
+			<!--reset="true" avoit a rule to keep in a collector the data collected in the precedent same field (for repetitive fields)-->
+				<entity name="foaf:Person{}" reset="true" flushWith="7000 " >
+					<combine name="rdfs:label" value="${name}${dates}${note}" reset="true" flushWith="7000 ">
+						<data source="7000 .a" name="name" />
+						<data source="7000 .d" name="dates" >
+							<compose prefix=", " />
+						</data>
+						<data source="7000 .c" name="note" >
+							<compose prefix=", " />
+						</data>
+					</combine>
+					<data source="7000 .d" name="dbp:birthYear" >
+						<regexp match="(\d\d\d\d).?[-]" format="${1}" />
+					</data>
+					<data source="7000 .d" name="dbp:deathYear" >
+						<regexp match="(\d\d\d\d)$" format="${1}" />
+					</data>
+					<data source="7000 .a" name="foaf:name" />
+					<data source="7000 .c" name="skos:note" />
+				<data name="@type" source="source">
+					<constant value="foaf:Person"/>
+				</data>
+				</entity>
+			</entity>
+			<entity name="dc:contributor[]" reset="true" flushWith="7001 " >
+				<entity name="foaf:Person{}" reset="true" flushWith="7001 " >
+					<combine name="rdfs:label" value="${firstname}${lastname}${developed}${dates}${note}" reset="true" flushWith="7001 ">
+						<data source="7001 .a" name="firstname" />
+						<data source="7001 .D" name="lastname" >
+							<compose prefix=", " />
+						</data>
+						<data source="7001 .q" name="developed" >
+							<compose prefix=" (" postfix=")" />
+						</data>
+						<data source="7001 .d" name="dates" >
+							<compose prefix=", " />
+						</data>
+						<data source="7001 .c" name="note" >
+							<compose prefix=", " />
+						</data>
+					</combine>
+					<data source="7001 .d" name="dbp:birthYear" >
+						<regexp match="(\d\d\d\d).?[-]" format="${1}" />
+					</data>
+					<data source="7001 .d" name="dbp:deathYear" >
+						<regexp match="(\d\d\d\d)$" format="${1}" />
+					</data>
+					<data source="7001 .a" name="foaf:lastName" />
+					<data source="7001 .c" name="skos:note" />
+					<data source="7001 .D" name="foaf:firstName" />
+				</entity>
+				<data name="@type" source="source">
+					<constant value="foaf:Person"/>
+				</data>
+			</entity>
+
+			<!--710: ORGANISATIONS-->
+			<entity name="dc:contributor[]"  reset="true" flushWith="710??" >
+				<entity name="foaf:Organization{}"  reset="true" flushWith="710??" >
+					<concat name="rdfs:label" delimiter="" flushWith="710??" reset="true" >
+						<data source="710??.a" >
+							<regexp match="(.*[^\.$])" format="${1}" />
+							<!--This regex matches everything except the eventual final dot.-->
+						</data>
+						<data source="710??.b" >
+							<regexp match="(.*[^\.$])" format="${1}" />
+							<compose prefix=". " />
+						</data>
+						<data source="710??.c" >
+							<compose prefix=" " />
+						</data>
+						<data source="710??.d" >
+							<compose prefix=" " />
+						</data>
+						<data source="710??.n" >
+							<compose prefix=" " />
+						</data>
+					</concat>
+				<data name="@type" source="source">
+					<constant value="foaf:Organization"/>
+				</data>
+				</entity>
+			</entity>
+
+			<!--711: CONGRESSES-->
+			<entity name="dc:contributor[]"  reset="true" flushWith="711??" >
+				<entity name="foaf:Organization{}"  reset="true" flushWith="711??" >
+					<concat name="rdfs:label" delimiter="" flushWith="711??" reset="true" >
+						<data source="711??.a" >
+							<regexp match="(.*[^\.$])" format="${1}" />
+						</data>
+						<data source="711??.c" >
+							<compose prefix=" " />
+						</data>
+						<data source="711??.d" >
+							<compose prefix=" " />
+						</data>
+						<data source="711??.e" >
+							<regexp match="(.*[^\.$])" format="${1}" />
+							<compose prefix=". " />
+						</data>
+						<data source="711??.n" >
+							<compose prefix=" " />
+						</data>
+					</concat>
+				<data name="@type" source="source">
+					<constant value="foaf:Organization"/>
+				</data>
+				</entity>
+			</entity>
+
+			<!--773: NOTE ABOUT COMPLEX LINKS-->
+			<concat name="dct:bibliographicCitation" delimiter="" flushWith="773??" >
+				<data source="773??.t" />
+				<data source="773??.d" >
+					<compose prefix=". - "/>
+				</data>
+				<data source="773??.g" >
+					<compose prefix=". - "/>
+				</data>
+			</concat>
+
+			<!--773: LINK TO HOST ITEM (works only with record that includes a subfield 773$9 (swiss german data))-->
+			<entity name="dct:isPartOf">
+				<data name="@id" source="773*.9">
+					<compose prefix="http://data.swissbib.ch/resource/"/>
+					<unique part="value" />
+				</data>
+			</entity>
+
+			<!--META-->
+			<entity name="rdfs:isDefinedBy" >
+				<!--Do not add "flushWith="record"": if there is more than one field 035, the attributes "rdf:resource" will be repeated within the tag "rdfs:isDefinedBy"-->
+				<data source="@swissbib_id" name="@id" >
+					<compose postfix="/about" />
+				</data>
+			</entity>
+
+
+		</entity>
+
+	</rules>
+
+
+	<maps>
+		<filemap name="cantons" files="./src/main/resources/transformation/resource/maps/cantons.txt" separator="\t"/>
+		<filemap name="languages" files="./src/main/resources/transformation/resource/maps/languages.txt" separator="\t"/>
+		<filemap name="countries" files="./src/main/resources/transformation/resource/maps/countries.txt" separator="\t"/>
+		<filemap name="type_content" files="./src/main/resources/transformation/resource/maps/type_content.txt" separator="\t"/>
+		<filemap name="type_media" files="./src/main/resources/transformation/resource/maps/type_media.txt" separator="\t"/>
+	</maps>
+
+	<!--TO DO:
+			
+	- to transform:
+		752: publication place for old books (3% der Records)
+		856/956 : accès électronique
+		830?
+	
+	- possible problems, to think:
+		links between records: 730, 740, 760, 762, 767, 77X, 78X, 800, 810, 811, 830
+	
+	-->
+
+</metamorph>
