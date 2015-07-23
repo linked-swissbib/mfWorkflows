@@ -81,10 +81,12 @@
 			</entity>
 
 			<!--NETWORK(S) THAT CREATED THE RECORD-->
-			<data source="035  .a" name="dc:contributor[]">
-				<regexp match="\((.*)\)" format="${1}" />
+			<entity name="dc:contributor[]">
+				<data source="035  .a" name="dc:contributor">
+					<regexp match="\((.*)\)" format="${1}" />
 				<!--To be replaced with Swissbib URI-->
-			</data>
+				</data>
+				</entity>
 
 			<!--LINK WITH THE BASIS RECORD-->
 			<entity name="foaf:primaryTopic" >
