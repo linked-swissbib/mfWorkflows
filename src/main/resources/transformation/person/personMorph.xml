@@ -8,9 +8,9 @@
 
 	<rules>
 
-		<combine name="@key100" value="${firstname}##${lastname}##${number}##${title}##${lifedata}##${fullname}" flushWith="1001 ">
-			<data source="1001 .a" name="firstname" />
-			<data source="1001 .D" name="lastname" />
+		<combine name="@key100" value="${lastname}##${firstname}##${number}##${title}##${lifedata}##${fullname}" flushWith="1001 ">
+			<data source="1001 .a" name="lastname" />
+			<data source="1001 .D" name="firstname" />
 			<data source="1001 .b" name="number" />
 			<data source="1001 .c" name="title" />
 			<data source="1001 .d" name="lifedata" />
@@ -26,9 +26,9 @@
 			<data name="~rdf:about" source="@key100" >
 				<compose prefix="http://data.swissbib.ch/person/" />
 			</data>
-			<combine name="rdfs:label" value="${firstname}${lastname}${developed}${dates}${note}" flushWith="1001 ">
-				<data source="1001 .a" name="firstname" />
-				<data source="1001 .D" name="lastname" >
+			<combine name="rdfs:label" value="${lastname}${firstname}${developed}${dates}${note}" flushWith="1001 ">
+				<data source="1001 .a" name="lastname" />
+				<data source="1001 .D" name="firstname" >
 					<compose prefix=", " />
 				</data>
 				<data source="1001 .q" name="developed" >

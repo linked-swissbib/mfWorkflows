@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdau="http://rdaregistry.info/Elements/u/" xmlns:void="http://rdfs.org/ns/void#" xmlns:dbp="http://dbpedia.org/ontology/" xmlns:dct="http://purl.org/dc/terms/" xmlns:bf="http://bibframe.org/vocab/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dc="http://purl.org/dc/elements/1.1/">
 
-		<foaf:Person rdf:about="http://data.swissbib.ch/agent/58b0a8c3-792b-3c46-b682-fb7f88a6039c">
+		<foaf:Person rdf:about="http://data.swissbib.ch/person/23991a18-b1cf-346b-b650-21421e17ba73">
 			<foaf:lastName>Schiffman</foaf:lastName>
 			<foaf:firstName>L. G.</foaf:firstName>
 			<dbp:deathYear>1998</dbp:deathYear>
@@ -9,7 +9,7 @@
 		</foaf:Person>
 	
 
-		<foaf:Person rdf:about="http://data.swissbib.ch/agent/6977bf0a-0f58-3d37-8da7-06104177996a">
+		<foaf:Person rdf:about="http://data.swissbib.ch/person/aca9b1d6-76dd-3650-acca-1d8bf620c459">
 			<foaf:lastName>Castro</foaf:lastName>
 			<foaf:firstName>Américo</foaf:firstName>
 			<dbp:birthYear>1880</dbp:birthYear>
@@ -20,7 +20,7 @@
 
 
 
-		<foaf:Person rdf:about="http://data.swissbib.ch/agent/962112b3-e75b-379f-bc74-1c619fc1de25">
+		<foaf:Person rdf:about="http://data.swissbib.ch/person/74154108-1949-3bd1-9471-c3502cdbe8f5">
 			<foaf:lastName>Bouvier</foaf:lastName>
 			<foaf:firstName>Nicolas</foaf:firstName>
 			<dbp:birthYear>1929</dbp:birthYear>
@@ -29,7 +29,7 @@
 		</foaf:Person>
 	
 
-		<foaf:Person rdf:about="http://data.swissbib.ch/agent/962112b3-e75b-379f-bc74-1c619fc1de25">
+		<foaf:Person rdf:about="http://data.swissbib.ch/person/74154108-1949-3bd1-9471-c3502cdbe8f5">
 			<foaf:lastName>Bouvier</foaf:lastName>
 			<foaf:firstName>Nicolas</foaf:firstName>
 			<dbp:birthYear>1929</dbp:birthYear>
