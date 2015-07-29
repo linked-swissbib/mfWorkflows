@@ -5,10 +5,12 @@ file|
 open-file|
 decode-xml|	
 handle-marcxml|
+//morph(FLUX_DIR + "personMorphViaf.xml")|
 morph(FLUX_DIR + "personMorph.xml")|
 //morph(FLUX_DIR + "personMorph2.xml")|
 stream-to-xml(roottag="rdf:RDF", recordtag="", namespacefile= FLUX_DIR + "./maps/namespaces.txt")|
 write(FLUX_DIR + "personOutput.rdf");
+//write(FLUX_DIR + "personOutputviaf.rdf");
 //we can use this mechanism to produce files where each RDF Document is written to one line
 //this is very handy for the next python step (and for Gesis Sparql processes)
 //at the moment we use Python for the JSON-LD ES transformation

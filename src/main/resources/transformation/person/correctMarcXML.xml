@@ -50,9 +50,9 @@
             <subfield code="2">rvk</subfield>
          </datafield>
          <datafield tag="100" ind1="1" ind2=" ">
-            <subfield code="a">Schiffman</subfield>
-            <subfield code="D">L. G.</subfield>
-			<subfield code="q">Léon Gaspard</subfield>
+            <subfield code="a">Amine</subfield>
+            <subfield code="D">Patrick</subfield>
+			<subfield code="q">Patrick Amine</subfield>
 			<subfield code="d">?-1998</subfield>
          </datafield>
          <datafield tag="245" ind1="1" ind2="0">
@@ -1466,7 +1466,7 @@
 			<subfield code="y">Titelseite und Inhaltsverzeichnis</subfield>
 		</datafield>
 	</record>
-	<record>
+	<record type="Bibliographic">
 		<leader>00920naa a2200277 a 4500</leader>
 		<controlfield tag="001">vtls003010104</controlfield>
 		<controlfield tag="003">RERO</controlfield>
@@ -1520,6 +1520,9 @@
 		<datafield tag="700" ind1="1" ind2=" ">
 			<subfield code="a">Bataillard, Josiane</subfield>
 		</datafield>
+        <datafield tag="700" ind1="1" ind2=" ">
+            <subfield code="a">Hipler, Guenter</subfield>
+        </datafield>
 		<datafield tag="773" ind1="1" ind2=" ">
 			<subfield code="t">Le Quotidien jurassien</subfield>
 			<subfield code="d">Delémont</subfield>
@@ -1544,7 +1547,7 @@
 			<subfield code="a">4.3</subfield>
 		</datafield>
 	</record>
-	<record>
+	<record type="Bibliographic">
 		<leader>     cas a22     1  4500</leader>
 		<controlfield tag="001">268337713</controlfield>
 		<controlfield tag="003">CHVBK</controlfield>
