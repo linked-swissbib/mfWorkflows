@@ -6,6 +6,7 @@
 			<foaf:firstName>Patrick</foaf:firstName>
 			<dbp:deathYear>1998</dbp:deathYear>
 			<rdfs:label>Amine, Patrick (Patrick Amine), ?-1998</rdfs:label>
+			<test_work_viaf>Consumer behavior</test_work_viaf>
 		</foaf:Person>
 	
 
@@ -15,10 +16,19 @@
 			<dbp:birthYear>1880</dbp:birthYear>
 			<dbp:deathYear>1930</dbp:deathYear>
 			<rdfs:label>Castro, Américo, ca. 1880-ca.1930</rdfs:label>
+			<test_work_viaf>Spanien Vision und Wirklichkeit</test_work_viaf>
 		</foaf:Person>
 	
 
+		<foaf:Person>
+			<test_work_viaf>Spanische Literaturgeschichte</test_work_viaf>
+		</foaf:Person>
+	
 
+		<foaf:Person>
+			<test_work_viaf>Spatial Design</test_work_viaf>
+		</foaf:Person>
+	
 
 		<foaf:Person rdf:about="http://data.swissbib.ch/person/74154108-1949-3bd1-9471-c3502cdbe8f5">
 			<foaf:lastName>Bouvier</foaf:lastName>
@@ -27,6 +37,7 @@
 			<dbp:deathYear>1998</dbp:deathYear>
 			<rdfs:label>Bouvier, Nicolas, 1929-1998</rdfs:label>
 			<viafNumbers>http://viaf.org/viaf/312204555,http://viaf.org/viaf/313583522,http://viaf.org/viaf/313612467,http://viaf.org/viaf/312059458,http://viaf.org/viaf/313580733,http://viaf.org/viaf/314567671,http://viaf.org/viaf/313874072,http://viaf.org/viaf/314627443,http://viaf.org/viaf/201893591,http://viaf.org/viaf/34453647</viafNumbers>
+			<test_work_viaf>Der spirituelle Weg</test_work_viaf>
 		</foaf:Person>
 	
 
@@ -37,8 +48,13 @@
 			<dbp:deathYear>1998</dbp:deathYear>
 			<rdfs:label>Bouvier, Nicolas, 1929-1998</rdfs:label>
 			<viafNumbers>http://viaf.org/viaf/312204555,http://viaf.org/viaf/313583522,http://viaf.org/viaf/313612467,http://viaf.org/viaf/312059458,http://viaf.org/viaf/313580733,http://viaf.org/viaf/314567671,http://viaf.org/viaf/313874072,http://viaf.org/viaf/314627443,http://viaf.org/viaf/201893591,http://viaf.org/viaf/34453647</viafNumbers>
+			<test_work_viaf>Nicolas Bouvier: &quot;les autres sont une terre, on sème, le lecteur fait fructifier&quot;</test_work_viaf>
 		</foaf:Person>
 	
 
+		<foaf:Person>
+			<test_work_viaf>Le Quotidien jurassien</test_work_viaf>
+		</foaf:Person>
+	
 
 </rdf:RDF>

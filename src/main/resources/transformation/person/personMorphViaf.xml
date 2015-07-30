@@ -21,8 +21,8 @@
 			</postprocess>
 		</combine>
 
-		<combine name="@work" value="${t}" flushWith="245  ">
-			<data source="24510.a" name="t"/>
+		<combine name="@work" value="${t}" flushWith="245??">
+			<data source="245??.a" name="t"/>
 		</combine>
 
 		<!--BUILD THE BASIS RECORD -->
@@ -71,6 +71,8 @@
 				</postprocess>
 			</combine>
 		</entity>
+		
+		
 
 
 
