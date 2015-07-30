@@ -55,21 +55,24 @@
 			<data source="1001 .a" name="foaf:lastName" />
 			<data source="1001 .c" name="skos:note" />
 			<data source="1001 .D" name="foaf:firstName" />
-
-			<combine name="viafNumbers" value="${firstname}##${lastname}##${number}##${title}##${lifedata}##${fullname}##personname"  flushWith="1001 " reset="true">
-				<data source="1001 .a" name="lastname" />
-				<data source="1001 .D" name="firstname" />
-				<data source="1001 .b" name="number" />
-				<data source="@work" name="title" />
-				<data source="1001 .d" name="lifedata" />
-				<data source="1001 .q" name="fullname" />
-				<postprocess>
-					<java class="org.swissbib.linked.mf.morph.functions.MatchViaf"/>
-					<blacklist>
-						<entry name=""/>
-					</blacklist>
-				</postprocess>
-			</combine>
+			
+			<entity name="skos:closeMatch" >
+				<combine name="~rdf:resource" value="${firstname}##${lastname}##${number}##${title}##${lifedata}##${fullname}##personname" flushWith="record" reset="true">
+					<data source="1001 .a" name="lastname" />
+					<data source="1001 .D" name="firstname" />
+					<data source="1001 .b" name="number" />
+					<data source="@work" name="title" />
+					<data source="1001 .d" name="lifedata" />
+					<data source="1001 .q" name="fullname" />
+					<postprocess>
+						<java class="org.swissbib.linked.mf.morph.functions.MatchViaf"/>
+						<blacklist>
+							<entry name=""/>
+						</blacklist>
+					</postprocess>
+				</combine>
+			</entity>
+			
 		</entity>
 		
 		
