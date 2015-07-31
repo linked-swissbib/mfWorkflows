@@ -16,7 +16,18 @@
 		<data source="008" name="@language">
 			<substring  start="35"  end="38"/>
 		</data>
-		<combine name="@key100" value="${lastname}##${firstname}##${number}##${title}##${lifedata}##${fullname}" flushWith="1001 ">
+
+		<combine name="@key1000" value="${name}##${number}##${title}##${lifedata}##${fullname}" flushWith="1000 ">
+			<data source="1000 .a" name="name" />
+			<data source="1000 .b" name="number" />
+			<data source="1000 .c" name="title" />
+			<data source="1000 .d" name="lifedata" />
+			<data source="1000 .q" name="fullname" />
+			<postprocess>
+				<java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
+			</postprocess>
+		</combine>
+		<combine name="@key1001" value="${lastname}##${firstname}##${number}##${title}##${lifedata}##${fullname}" flushWith="1001 ">
 			<data source="1001 .a" name="lastname" />
 			<data source="1001 .D" name="firstname" />
 			<data source="1001 .b" name="number" />
@@ -27,7 +38,48 @@
 				<java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
 			</postprocess>
 		</combine>
-
+		<combine name="@key7000" value="${name}##${number}##${title}##${lifedata}##${fullname}" flushWith="7000 ">
+			<data source="7000 .a" name="name" />
+			<data source="7000 .b" name="number" />
+			<data source="7000 .c" name="title" />
+			<data source="7000 .d" name="lifedata" />
+			<data source="7000 .q" name="fullname" />
+			<postprocess>
+				<java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
+			</postprocess>
+		</combine>
+		<combine name="@key7001" value="${lastname}##${firstname}##${number}##${title}##${lifedata}##${fullname}" flushWith="7001 ">
+			<data source="7001 .a" name="lastname" />
+			<data source="7001 .D" name="firstname" />
+			<data source="7001 .b" name="number" />
+			<data source="7001 .c" name="title" />
+			<data source="7001 .d" name="lifedata" />
+			<data source="7001 .q" name="fullname" />
+			<postprocess>
+				<java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
+			</postprocess>
+		</combine>
+		<combine name="@key710" value="${name}##${subunit}##${number}##${date}##${location}" flushWith="710??">
+			<data source="710??.a" name="name" />
+			<data source="710??.b" name="subunit" />
+			<data source="710??.n" name="number" />
+			<data source="710??.d" name="date" />
+			<data source="710??.c" name="location" />
+			<postprocess>
+				<java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
+			</postprocess>
+		</combine>
+		<combine name="@key711" value="${name}##${subunit}##${number}##${date}##${location}" flushWith="711??">
+			<data source="710??.a" name="name" />
+			<data source="710??.e" name="subunit" />
+			<data source="710??.n" name="number" />
+			<data source="710??.d" name="date" />
+			<data source="710??.c" name="location" />
+			<postprocess>
+				<java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
+			</postprocess>
+		</combine>
+		
 		<!--BUILD THE RECORD "ABOUT"-->
 
 		<entity name="bibo:Document" flushWith="record" >
@@ -99,7 +151,7 @@
 			<data source="@swissbib_id" name="~rdf:about" />
 
 			<!--RDA CONTENT TYPE -->
-			<entity name="rdau:contentType" >
+			<entity name="rdau:contentType.en" >
 				<data name="~rdf:resource" source="898  .a">
 					<substring  start="0"  end="6"/>
 					<!--To select only positions 0-5 of the field 898$a-->
@@ -109,7 +161,7 @@
 				</data>
 			</entity>
 
-			<entity name="rdau:contentType" >
+			<entity name="rdau:contentType.en" >
 				<if>
 					<!--To select only the record types MU03xxxx (=Sound/Ton/Son), that are sounds (vs. spoken words. Includes natural sounds, artificially produced sounds, etc. )
                     The function "if" uses the default boolean operator "OR" when various arguments/conditions are present!-->
@@ -137,7 +189,7 @@
 				</data>
 			</entity>
 
-			<entity name="rdau:contentType" >
+			<entity name="rdau:contentType.en" >
 				<if>
 					<!--To select only the record types MU03xxxx (=Sound/Ton/Son), that are spoken words (Includes recorded readings, recitations, speeches, interviews, oral histories, etc., computer-generated speech, etc.)-->
 					<all>
@@ -161,7 +213,7 @@
 			</entity>
 
 			<!--RDA MEDIA TYPE -->
-			<entity name="rdau:mediaType" >
+			<entity name="rdau:mediaType.en" >
 				<data name="~rdf:resource" source="898  .a">
 					<blacklist>
 						<entry name="CF010100"/><entry name="CF010200"/><entry name="CF010300"/><entry name="CF010400"/><entry name="CF010500"/><entry name="CF010600"/><entry name="CF010000"/><entry name="MU030000"/><entry name="MU030100"/><entry name="MU030200"/><entry name="MU030300"/><entry name="MU030400"/><entry name="MU030500"/><entry name="MU030600"/><entry name="MU040000"/><entry name="MU040100"/><entry name="MU040200"/><entry name="MU040300"/><entry name="MU040400"/><entry name="MU040500"/><entry name="MU040600"/><entry name="VM010000"/><entry name="VM010100"/><entry name="VM010200"/><entry name="VM010300"/><entry name="VM010400"/><entry name="VM020100"/><entry name="VM020200"/><entry name="VM030100"/><entry name="VM030200"/><entry name="VM030400"/><entry name="VM030000"/><entry name="VM040000"/><entry name="MX010000"/>
@@ -173,7 +225,7 @@
 				</data>
 			</entity>
 
-			<entity name="rdau:mediaType" >
+			<entity name="rdau:mediaType.en" >
 				<data name="~rdf:resource" source="898  .a">
 					<whitelist>
 						<entry name="CF010100"/><entry name="CF010200"/><entry name="CF010300"/><entry name="CF010400"/><entry name="CF010500"/><entry name="CF010600"/><entry name="CF010000"/><entry name="MU030000"/><entry name="MU030100"/><entry name="MU030200"/><entry name="MU030300"/><entry name="MU030400"/><entry name="MU030500"/><entry name="MU030600"/><entry name="MU040000"/><entry name="MU040100"/><entry name="MU040200"/><entry name="MU040300"/><entry name="MU040400"/><entry name="MU040500"/><entry name="MU040600"/><entry name="VM010000"/><entry name="VM010100"/><entry name="VM010200"/><entry name="VM010300"/><entry name="VM010400"/><entry name="VM020100"/><entry name="VM020200"/><entry name="VM030100"/><entry name="VM030200"/><entry name="VM030400"/><entry name="VM030000"/><entry name="VM040000"/><entry name="MX010000"/>
@@ -279,7 +331,7 @@
 			
 			<!--RDA mode of issuance-->
 			<!--only for serials and integrating resources-->
-			<entity name="rdau:modeOfIssuance" >
+			<entity name="rdau:modeOfIssuance.en" >
 				<choose>
 					<data source="898  .a" name="~rdf:resource" >
 						<substring  start="0"  end="4"/>
@@ -322,7 +374,7 @@
 			</choose>
 
 			<!--008: PUBLICATION COUNTRY-->
-			<entity name="rdau:placeOfPublication" >
+			<entity name="rdau:placeOfPublication.en" >
 				<data source="008" name="~rdf:resource" >
 					<substring  start="15"  end="18"/>
 					<trim /><!--To remove white spaces before and after the string-->
@@ -358,7 +410,7 @@
 			</entity>
 
 			<!--044: PUBLICATION CANTON (RERO DATA)-->
-			<entity name="rdau:placeOfPublication" flushWith="record" >
+			<entity name="rdau:placeOfPublication.en" flushWith="record" >
 				<data source="044  .c" name="~rdf:resource" >
 					<substring start="3" end="5" />
 					<lookup in="cantons" />
@@ -374,16 +426,53 @@
 			-->
 
 			<!--100: MAIN AUTHOR-->
-			<!--when first indicator is 1-->
-			<entity name="dc:contributor" flushWith="1001 " >
-				<entity name="foaf:Person" flushWith="1001 " >
-					<data name="~rdf:about" source="@key100">
-						<compose prefix="http://data.swissbib.ch/agent/" />
+			
+			<!--when first indicator is 0-->
+			<entity name="dct:contributor" reset="true" flushWith="1000 " >
+				<entity name="foaf:Person" reset="true" flushWith="1000 " >
+					<data name="~rdf:about" source="@key1000">
+						<compose prefix="http://data.swissbib.ch/person/" />
 					</data>
-					<combine name="rdfs:label" value="${lastname}${firstname}${developed}${dates}${note}" flushWith="1001 ">
+					<combine name="rdfs:label" value="${name}${number}${developed}${dates}${note}" reset="true" flushWith="1000 " sameEntity="true" >
+						<data source="1000 .a" name="name" />
+						<data source="1000 .b" name="number" >
+							<compose prefix=" " />
+						</data>
+						<data source="1000 .q" name="developed" >
+							<compose prefix=" (" postfix=")" />
+						</data>
+						<data source="1000 .d" name="dates" >
+							<compose prefix=", " />
+						</data>
+						<data source="1000 .c" name="note" >
+							<compose prefix=", " />
+						</data>
+					</combine>
+					<!--Details here below could/should be omitted because already available in the person transformation. Same applies for fields 1001/7000/7001/710/711-->
+					<data source="1000 .d" name="dbp:birthYear" >
+						<regexp match="(\d\d\d\d).?[-]" format="${1}" />
+					</data>
+					<data source="1000 .d" name="dbp:deathYear" >
+						<regexp match="(\d\d\d\d)$" format="${1}" />
+					</data>
+					<data source="1000 .a" name="foaf:name" />
+					<data source="1000 .c" name="skos:note" />
+				</entity>		
+			</entity>
+			
+			<!--when first indicator is 1-->
+			<entity name="dct:contributor" reset="true" flushWith="1001 " >
+				<entity name="foaf:Person" reset="true" flushWith="1001 " >
+					<data name="~rdf:about" source="@key1001">
+						<compose prefix="http://data.swissbib.ch/person/" />
+					</data>
+					<combine name="rdfs:label" value="${lastname}${firstname}${number}${developed}${dates}${note}" reset="true" flushWith="1001 " sameEntity="true" >
 						<data source="1001 .a" name="lastname" />
 						<data source="1001 .D" name="firstname" >
 							<compose prefix=", " />
+						</data>
+						<data source="1001 .b" name="number" >
+							<compose prefix=" " />
 						</data>
 						<data source="1001 .q" name="developed" >
 							<compose prefix=" (" postfix=")" />
@@ -402,33 +491,11 @@
 						<regexp match="(\d\d\d\d)$" format="${1}" />
 					</data>
 					<data source="1001 .a" name="foaf:lastName" />
-					<data source="1001 .c" name="skos:note" />
 					<data source="1001 .D" name="foaf:firstName" />
+					<data source="1001 .c" name="skos:note" />
 				</entity>		
 			</entity>
-			<!--when first indicator is 0-->
-			<entity name="dc:contributor" flushWith="1000 " >
-				<entity name="foaf:Person" flushWith="1000 " >
-					<combine name="rdfs:label" value="${name}${dates}${note}" flushWith="1000 ">
-						<data source="1000 .a" name="name" />
-						<data source="1000 .d" name="dates" >
-							<compose prefix=", " />
-						</data>
-						<data source="1000 .c" name="note" >
-							<compose prefix=", " />
-						</data>
-					</combine>
-					<data source="1000 .d" name="dbp:birthYear" >
-						<regexp match="(\d\d\d\d).?[-]" format="${1}" />
-					</data>
-					<data source="1000 .d" name="dbp:deathYear" >
-						<regexp match="(\d\d\d\d)$" format="${1}" />
-					</data>
-					<data source="1000 .a" name="foaf:name" />
-					<data source="1000 .c" name="skos:note" />
-				</entity>		
-			</entity>
-
+			
 			<!--245: TITLE-->
 			<concat name="dct:title" delimiter="" >
 				<data source="245*.a" />
@@ -466,7 +533,7 @@
 			</concat>
 
 			<!--260: IMPRINT-->
-			<concat name="rdau:publicationStatement" delimiter="" flushWith="260? " reset="true" sameEntity="true" >
+			<concat name="rdau:publicationStatement.en" delimiter="" flushWith="260? " reset="true" sameEntity="true" >
 				<!--Attribute "delimiter" obligatory-->
 				<data source="260? .a" >
 					<occurrence  only="1"/>
@@ -514,10 +581,10 @@
 			</concat>
 
 			<!--500: GENERAL NOTES-->
-			<data name="rdau:noteOnResource" source="500*.a" />
+			<data name="rdau:noteOnResource.en" source="500*.a" />
 
 			<!--502: NOTES ABOUT THESIS-->
-			<data name="rdau:dissertationOrThesisInformation" source="502*.a" />
+			<data name="rdau:dissertationOrThesisInformation.en" source="502*.a" />
 
 			<!--505: NOTES ABOUT CONTENT-->
 			<concat name="dct:hasPart" delimiter=". " flushWith="505??" reset="true" >
@@ -547,11 +614,20 @@
 			</entity>
 
 			<!--700: OTHER AUTHORS-->
-			<entity name="dc:contributor" reset="true" flushWith="7000 " >
-			<!--reset="true" avoit a rule to keep in a collector the data collected in the precedent same field (for repetitive fields)-->
+			<entity name="dct:contributor" reset="true" flushWith="7000 " >
+			<!--reset="true" avoid a rule to keep in a collector the data collected in the precedent same field (for repetitive fields)-->
 				<entity name="foaf:Person" reset="true" flushWith="7000 " >
-					<combine name="rdfs:label" value="${name}${dates}${note}" reset="true" flushWith="7000 ">
+					<data name="~rdf:about" source="@key7000">
+						<compose prefix="http://data.swissbib.ch/person/" />
+					</data>
+					<combine name="rdfs:label" value="${name}${number}${developed}${dates}${note}" reset="true" flushWith="7000 " sameEntity="true" >
 						<data source="7000 .a" name="name" />
+						<data source="7000 .b" name="number" >
+							<compose prefix=" " />
+						</data>
+						<data source="7000 .q" name="developed" >
+							<compose prefix=" (" postfix=")" />
+						</data>
 						<data source="7000 .d" name="dates" >
 							<compose prefix=", " />
 						</data>
@@ -567,14 +643,20 @@
 					</data>
 					<data source="7000 .a" name="foaf:name" />
 					<data source="7000 .c" name="skos:note" />
-				</entity>		
+				</entity>	
 			</entity>
-			<entity name="dc:contributor" reset="true" flushWith="7001 " >
+			<entity name="dct:contributor" reset="true" flushWith="7001 " >
 				<entity name="foaf:Person" reset="true" flushWith="7001 " >
-					<combine name="rdfs:label" value="${lastname}${firstname}${developed}${dates}${note}" reset="true" flushWith="7001 ">
+					<data name="~rdf:about" source="@key7001">
+						<compose prefix="http://data.swissbib.ch/person/" />
+					</data>
+					<combine name="rdfs:label" value="${lastname}${firstname}${number}${developed}${dates}${note}" reset="true" flushWith="7001 " sameEntity="true" >
 						<data source="7001 .a" name="lastname" />
 						<data source="7001 .D" name="firstname" >
 							<compose prefix=", " />
+						</data>
+						<data source="7001 .b" name="number" >
+							<compose prefix=" " />
 						</data>
 						<data source="7001 .q" name="developed" >
 							<compose prefix=" (" postfix=")" />
@@ -593,15 +675,19 @@
 						<regexp match="(\d\d\d\d)$" format="${1}" />
 					</data>
 					<data source="7001 .a" name="foaf:lastName" />
-					<data source="7001 .c" name="skos:note" />
 					<data source="7001 .D" name="foaf:firstName" />
+					<data source="7001 .c" name="skos:note" />
 				</entity>		
 			</entity>
 
 			<!--710: ORGANISATIONS-->
-			<entity name="dc:contributor"  reset="true" flushWith="710??" >
+			<!--Ev. to complete with sub properties, like location, date, etc.-->
+			<entity name="dct:contributor"  reset="true" flushWith="710??" >
 				<entity name="foaf:Organization"  reset="true" flushWith="710??" >
-					<concat name="rdfs:label" delimiter="" flushWith="710??" reset="true" >
+					<data name="~rdf:about" source="@key710">
+						<compose prefix="http://data.swissbib.ch/organisation/" />
+					</data>
+					<concat name="rdfs:label" delimiter="" flushWith="710??" reset="true" sameEntity="true" >
 						<data source="710??.a" >
 							<regexp match="(.*[^\.$])" format="${1}" />
 							<!--This regex matches everything except the eventual final dot.-->
@@ -624,9 +710,13 @@
 			</entity>
 
 			<!--711: CONGRESSES-->
-			<entity name="dc:contributor"  reset="true" flushWith="711??" >
+			<!--Ev. to complete with sub properties, like location, date, etc.-->
+			<entity name="dct:contributor"  reset="true" flushWith="711??" >
 				<entity name="foaf:Organization"  reset="true" flushWith="711??" >
-					<concat name="rdfs:label" delimiter="" flushWith="711??" reset="true" >
+					<data name="~rdf:about" source="@key711">
+						<compose prefix="http://data.swissbib.ch/organisation/" />
+					</data>
+					<concat name="rdfs:label" delimiter="" flushWith="711??" reset="true" sameEntity="true" >
 						<data source="711??.a" >
 							<regexp match="(.*[^\.$])" format="${1}" />
 						</data>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:dbp="http://dbpedia.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:foaf="http://xmlns.com/foaf/0.1/">
+
+
+
+
+		<foaf:Organization rdf:about="http://data.swissbib.ch/organisation/3cbcaa96-704c-3b8d-bd53-298362b92269">
+			<rdfs:label>Zürcher Hochschule der Künste. Institut Design2context</rdfs:label>
+		</foaf:Organization>
+		<foaf:Organization rdf:about="http://data.swissbib.ch/organisation/f823c248-c3ec-3da3-9c30-98f0706694c3">
+			<rdfs:label>Schweiz. Eidgen. Departement des Innern. Bundesamt für Kultur (3 : 2015 : Berne)</rdfs:label>
+		</foaf:Organization>
+		<foaf:Organization rdf:about="http://data.swissbib.ch/organisation/49ef7af5-9560-3c1b-87cc-c07cc3eb7535">
+			<rdfs:label>Energietechnische Gesellschaft (Schweiz). Tagungszyklus 1997 Baden (Aargau)</rdfs:label>
+		</foaf:Organization>
+		<foaf:Organization rdf:about="http://data.swissbib.ch/organisation/5bb91366-c9a0-3b61-b1ae-c77eeab0dc69">
+			<rdfs:label>Association genevoise des bibliothécaires et documentalistes. Comité</rdfs:label>
+		</foaf:Organization>
+	
+
+
+
+		<foaf:Organization rdf:about="http://data.swissbib.ch/organisation/f29db7ed-d739-3cd1-9a38-24802edead0b">
+			<rdfs:label>Quotidien jurassien (Delémont)</rdfs:label>
+		</foaf:Organization>
+		<foaf:Organization rdf:about="http://data.swissbib.ch/organisation/f29db7ed-d739-3cd1-9a38-24802edead0b">
+			<rdfs:label>Schweizerischer Elektrotechnischer Verein</rdfs:label>
+		</foaf:Organization>
+		<foaf:Organization rdf:about="http://data.swissbib.ch/organisation/f29db7ed-d739-3cd1-9a38-24802edead0b">
+			<rdfs:label>Kongress (1993 Zurich, ZH)</rdfs:label>
+		</foaf:Organization>
+		<foaf:Organization rdf:about="http://data.swissbib.ch/organisation/f29db7ed-d739-3cd1-9a38-24802edead0b">
+			<rdfs:label>Informationszyklus Elektronik und Informatik in Hausinstallationen. Tagung (2 1993 Zürich)</rdfs:label>
+		</foaf:Organization>
+		<foaf:Organization rdf:about="http://data.swissbib.ch/organisation/f29db7ed-d739-3cd1-9a38-24802edead0b">
+			<rdfs:label>Tagung Wieviel Gebäudeleittechnik bei Aus- und Umbauten? (1993 Zürich)</rdfs:label>
+		</foaf:Organization>
+	
+
+</rdf:RDF>
