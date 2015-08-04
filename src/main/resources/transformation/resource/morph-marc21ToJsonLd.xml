@@ -9,7 +9,7 @@
 
 	<macros>
 		<macro name="bulk-header">
-			<!-- This macro is used to write the header for the Bulk API in Elasticsearch -->
+			<!-- Writes header line as required by the Elasticsearch Bulk API -->
 			<entity name="index" flushWith="record">
 
 				<data name="_type" source="_id">
@@ -20,6 +20,49 @@
 
 				<data name="_index" source="_id">
 					<constant value="testsb"/>
+				</data>
+
+			</entity>
+		</macro>
+
+		<macro name="context">
+			<!-- Writes JSON-LD context -->
+			<entity name="@context" flushWith="record">
+
+				<data name="rdfs" source="_id">
+					<constant value="http://www.w3.org/2000/01/rdf-schema#" />
+				</data>
+
+				<data name="dbp" source="_id">
+					<constant value="http://dbpedia.org/ontology/" />
+				</data>
+
+				<data name="rdau" source="_id">
+					<constant value="http://rdaregistry.info/Elements/u/" />
+				</data>
+
+				<data name="dct" source="_id">
+					<constant value="http://purl.org/dc/terms/" />
+				</data>
+
+				<data name="rdf" source="_id">
+					<constant value="http://www.w3.org/1999/02/22-rdf-syntax-ns#" />
+				</data>
+
+				<data name="foaf" source="_id">
+					<constant value="http://xmlns.com/foaf/0.1/" />
+				</data>
+
+				<data name="bibo" source="_id">
+					<constant value="http://purl.org/ontology/bibo/" />
+				</data>
+
+				<data name="dc" source="_id">
+					<constant value="http://purl.org/dc/elements/1.1/" />
+				</data>
+
+				<data name="skos" source="_id">
+					<constant value="http://www.w3.org/2004/02/skos/core#" />
 				</data>
 
 			</entity>
@@ -48,6 +91,9 @@
 			<!--To define the subject (root element) of each record.
 			"entity" makes it possible to create a hierarchical tag structure.
 			"flushWith" enables to group various subfields into one output, even if the field appears more than one time. -->
+
+			<!-- Integrate JSON-LD context -->
+			<call-macro name="context" />
 
 			<data source="@swissbib_id" name="@id" >
 				<compose postfix="/about" />
@@ -108,6 +154,10 @@
 		<entity name="dct:BibliographicResource" flushWith="record" >
 			<!--To define the subject (root element) of each record.
             "entity" makes it possible to create a hierarchical tag structure.-->
+
+			<!-- Integrate JSON-LD context -->
+			<call-macro name="context" />
+
 			<data source="@swissbib_id" name="@id" />
 
 			<!--RDA CONTENT TYPE -->

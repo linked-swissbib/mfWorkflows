@@ -8,5 +8,5 @@ decode-xml|
 handle-marcxml|
 morph(FLUX_DIR + "morph-marc21ToJsonLd.xml")|
 write-esbulk|
-// encode-json|
-write-jsonld(baseOutDir="/home/sebastian/temp/outputResource",fileSize="10000", contextFile="/home/sebastian/workspace/utilities/examples/04/context.jsonld");
+// write-jsonld(baseOutDir="/home/sebastian/temp/outputResource",fileSize="10000", contextFile="/home/sebastian/workspace/utilities/examples/04/context.jsonld");
+write-jsonld(baseOutDir="/home/sebastian/temp/outputResource",fileSize="10000");
