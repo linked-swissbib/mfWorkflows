@@ -6,6 +6,70 @@
 		<var name="swissbib_domain" value="http://data.swissbib.ch/resource/"/>
 	</vars>
 
+
+	<macros>
+		<macro name="bulk-header">
+			<!-- Writes header line as required by the Elasticsearch Bulk API -->
+			<entity name="index" flushWith="record">
+
+				<data name="_type" source="_id">
+					<constant value="$[type]"/>
+				</data>
+
+				<data name="_id" source="001" />
+
+				<data name="_index" source="_id">
+					<constant value="testsb"/>
+				</data>
+
+			</entity>
+		</macro>
+
+		<macro name="context">
+			<!-- Writes JSON-LD context -->
+			<entity name="@context" flushWith="record">
+
+				<data name="rdfs" source="_id">
+					<constant value="http://www.w3.org/2000/01/rdf-schema#" />
+				</data>
+
+				<data name="dbp" source="_id">
+					<constant value="http://dbpedia.org/ontology/" />
+				</data>
+
+				<data name="rdau" source="_id">
+					<constant value="http://rdaregistry.info/Elements/u/" />
+				</data>
+
+				<data name="dct" source="_id">
+					<constant value="http://purl.org/dc/terms/" />
+				</data>
+
+				<data name="rdf" source="_id">
+					<constant value="http://www.w3.org/1999/02/22-rdf-syntax-ns#" />
+				</data>
+
+				<data name="foaf" source="_id">
+					<constant value="http://xmlns.com/foaf/0.1/" />
+				</data>
+
+				<data name="bibo" source="_id">
+					<constant value="http://purl.org/ontology/bibo/" />
+				</data>
+
+				<data name="dc" source="_id">
+					<constant value="http://purl.org/dc/elements/1.1/" />
+				</data>
+
+				<data name="skos" source="_id">
+					<constant value="http://www.w3.org/2004/02/skos/core#" />
+				</data>
+
+			</entity>
+		</macro>
+	</macros>
+
+
 	<rules>
 
 		<!-- Definitions for recursions to be used later in substructures (must be set here!) -->
@@ -79,7 +143,11 @@
 				<java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
 			</postprocess>
 		</combine>
-		
+
+		<!--BUILD BULK API HEADER FOR TYPE "DOCUMENT"-->
+
+		<call-macro name="bulk-header" type="document" />
+
 		<!--BUILD THE RECORD "ABOUT"-->
 
 		<entity name="bibo:Document" flushWith="record" >
@@ -87,13 +155,16 @@
 			"entity" makes it possible to create a hierarchical tag structure.
 			"flushWith" enables to group various subfields into one output, even if the field appears more than one time. -->
 
-			<data source="@swissbib_id" name="~rdf:about" >
+			<!-- Integrate JSON-LD context -->
+			<call-macro name="context" />
+
+			<data source="@swissbib_id" name="@id" >
 				<compose postfix="/about" />
 			</data>
 
 			<!--PUBLICATION DATE OF THE RDF RECORD-->
 			<entity name="dct:issued">
-				<data name="~rdf:datatype" source="_id">
+				<data name="@type" source="_id">
 					<!--The symbol '~' before rdf:about is very important: it permits to integrate rdf:about as an attribute in the tag rdf:Description-->
 					<!-- compare http://b3e.net/metamorph-book/latest/datamodel.html
                         section "Strukturierte Literal- und Entitätsnamen"
@@ -103,29 +174,30 @@
                     -->
 					<constant value="http://www.w3.org/2001/XMLSchema#dateTime"/>
 				</data>
-				<data name="" source="_id">
+				<data name="@id" source="_id">
 					<timestamp format="yyyy-MM-dd'T'HH:mm:ss.SSSXXX" />
 				</data>
 			</entity>
 
 			<!--LAST MODIFICATION DATE OF THE MARC RECORD-->
 			<entity name="dct:modified">
-				<data name="~rdf:datatype" source="_id">
+				<data name="@type" source="_id">
 					<constant value="http://www.w3.org/2001/XMLSchema#dateTime"/>
 				</data>
-				<data name="" source="005">
+				<data name="@id" source="005">
 					<regexp match="^(\d\d\d\d)(\d\d)(\d\d)(\d\d)(\d\d)(\d\d)\.(\d)" format="${1}-${2}-${3}T${4}:${5}:${6}+01:00"/>
 				</data>
 			</entity>
 
 			<!--NETWORK(S) THAT CREATED THE RECORD-->
-			<entity name="dct:contributor">
-				<data source="035  .a" name="~rdf:resource">
+			<entity name="dct:contributor[]">
+				<data source="035  .a" name="dct:contributor">
 					<regexp match="\((.*)\)" format="${1}" />
 					<lookup in="networks"/>
 					<unique part="value" />
 				</data>
 			</entity>
+
 			<data source="035  .a" name="dc:contributor">
 			<!--rule for the case where the network is not in the lookup here above-->
 				<regexp match="\((.*)\)" format="${1}" />
@@ -133,14 +205,20 @@
 					<entry name="ABN" /><entry name="ALEX" /><entry name="BGR" /><entry name="CCSA" /><entry name="CH-CCSA" /><entry name="DDB" /><entry name="DE-599" /><entry name="ECOD" /><entry name="IDSBB" /><entry name="IDSLU" /><entry name="IDSSG" /><entry name="IDSSG2" /><entry name="LIBIB" /><entry name="NEBIS" /><entry name="OCoLC" /><entry name="RERO" /><entry name="RETROS" /><entry name="SBT" /><entry name="SERVAL" /><entry name="SGBN" /><entry name="SLB" /><entry name="SNL" /><entry name="Sz" /><entry name="ZORA" />
 				</blacklist>
 			</data>
-				
+
 			<!--LINK WITH THE BASIS RECORD-->
 			<entity name="foaf:primaryTopic" >
-				<data source="@swissbib_id" name="~rdf:resource" />
+				<data source="@swissbib_id" name="@id" />
 			</entity>
 
 
 		</entity>
+
+
+		<!--BUILD BULK API HEADER FOR TYPE "BIBLIOGRAPHICRESOURCE"-->
+
+		<call-macro name="bulk-header" type="bibliographicResource" />
+
 
 
 		<!--BUILD THE BASIS RECORD -->
@@ -148,11 +226,15 @@
 		<entity name="dct:BibliographicResource" flushWith="record" >
 			<!--To define the subject (root element) of each record.
             "entity" makes it possible to create a hierarchical tag structure.-->
-			<data source="@swissbib_id" name="~rdf:about" />
+
+			<!-- Integrate JSON-LD context -->
+			<call-macro name="context" />
+
+			<data source="@swissbib_id" name="@id" />
 
 			<!--RDA CONTENT TYPE -->
 			<entity name="rdau:contentType.en" >
-				<data name="~rdf:resource" source="898  .a">
+				<data name="@id" source="898  .a">
 					<substring  start="0"  end="6"/>
 					<!--To select only positions 0-5 of the field 898$a-->
 					<lookup in="type_content"/>
@@ -183,7 +265,7 @@
 						</any>
 					</all>
 				</if>
-				<data name="~rdf:resource" source="_id">
+				<data name="@id" source="_id">
 					<!--"_id" is used as "source"-value when the value doesn't come from directly the record itself-->
 					<constant value="http://rdvocab.info/termList/RDAContentType/1012"/>
 				</data>
@@ -207,14 +289,14 @@
 						</data>
 					</all>
 				</if>
-				<data name="~rdf:resource" source="_id">
+				<data name="@id" source="_id">
 					<constant value="http://rdvocab.info/termList/RDAContentType/1013"/>
 				</data>
 			</entity>
 
 			<!--RDA MEDIA TYPE -->
 			<entity name="rdau:mediaType.en" >
-				<data name="~rdf:resource" source="898  .a">
+				<data name="@id" source="898  .a">
 					<blacklist>
 						<entry name="CF010100"/><entry name="CF010200"/><entry name="CF010300"/><entry name="CF010400"/><entry name="CF010500"/><entry name="CF010600"/><entry name="CF010000"/><entry name="MU030000"/><entry name="MU030100"/><entry name="MU030200"/><entry name="MU030300"/><entry name="MU030400"/><entry name="MU030500"/><entry name="MU030600"/><entry name="MU040000"/><entry name="MU040100"/><entry name="MU040200"/><entry name="MU040300"/><entry name="MU040400"/><entry name="MU040500"/><entry name="MU040600"/><entry name="VM010000"/><entry name="VM010100"/><entry name="VM010200"/><entry name="VM010300"/><entry name="VM010400"/><entry name="VM020100"/><entry name="VM020200"/><entry name="VM030100"/><entry name="VM030200"/><entry name="VM030400"/><entry name="VM030000"/><entry name="VM040000"/><entry name="MX010000"/>
 					</blacklist>
@@ -226,7 +308,7 @@
 			</entity>
 
 			<entity name="rdau:mediaType.en" >
-				<data name="~rdf:resource" source="898  .a">
+				<data name="@id" source="898  .a">
 					<whitelist>
 						<entry name="CF010100"/><entry name="CF010200"/><entry name="CF010300"/><entry name="CF010400"/><entry name="CF010500"/><entry name="CF010600"/><entry name="CF010000"/><entry name="MU030000"/><entry name="MU030100"/><entry name="MU030200"/><entry name="MU030300"/><entry name="MU030400"/><entry name="MU030500"/><entry name="MU030600"/><entry name="MU040000"/><entry name="MU040100"/><entry name="MU040200"/><entry name="MU040300"/><entry name="MU040400"/><entry name="MU040500"/><entry name="MU040600"/><entry name="VM010000"/><entry name="VM010100"/><entry name="VM010200"/><entry name="VM010300"/><entry name="VM010400"/><entry name="VM020100"/><entry name="VM020200"/><entry name="VM030100"/><entry name="VM030200"/><entry name="VM030400"/><entry name="VM030000"/><entry name="VM040000"/><entry name="MX010000"/>
 					</whitelist>
@@ -238,7 +320,7 @@
 			<!--DOCUMENT TYPE-->
 			<!--The document type completes - when necessary - RDA media and content type with a more concrete document type. A document can have more than one type, for instance bibo:Book and bibo:Thesis.-->
 			<entity name="rdf:type" >
-				<data source="898  .a" name="~rdf:resource" >
+				<data source="898  .a" name="@id" >
 					<substring  start="0"  end="4"/>
 					<whitelist>
 						<entry name="BK01"/>
@@ -248,7 +330,7 @@
 				</data>
 			</entity>
 			<entity name="rdf:type" >
-				<data source="898  .a" name="~rdf:resource" >
+				<data source="898  .a" name="@id" >
 					<substring  start="0"  end="4"/>
 					<whitelist>
 						<entry name="BK02"/>
@@ -258,7 +340,7 @@
 				</data>
 			</entity>
 			<entity name="rdf:type" >
-				<data source="898  .a" name="~rdf:resource" >
+				<data source="898  .a" name="@id" >
 					<substring  start="0"  end="4"/>
 					<whitelist>
 						<entry name="BK03"/>
@@ -270,7 +352,7 @@
 				</data>
 			</entity>
 			<entity name="rdf:type" >
-				<data source="898  .a" name="~rdf:resource" >
+				<data source="898  .a" name="@id" >
 					<substring  start="0"  end="4"/>
 					<whitelist>
 						<entry name="CR01"/>
@@ -281,7 +363,7 @@
 				</data>
 			</entity>
 			<entity name="rdf:type" >
-				<data source="898  .a" name="~rdf:resource" >
+				<data source="898  .a" name="@id" >
 					<substring  start="0"  end="6"/>
 					<whitelist>
 						<entry name="BK0108"/>
@@ -295,7 +377,7 @@
 				</data>
 			</entity>
 			<entity name="rdf:type" >
-				<data source="898  .a" name="~rdf:resource" >
+				<data source="898  .a" name="@id" >
 					<substring  start="0"  end="4"/>
 					<whitelist>
 						<entry name="CL01"/>
@@ -306,7 +388,7 @@
 				</data>
 			</entity>
 			<entity name="rdf:type" >
-				<data source="898  .a" name="~rdf:resource" >
+				<data source="898  .a" name="@id" >
 					<substring  start="0"  end="6"/>
 					<whitelist>
 						<entry name="BK0103"/>
@@ -317,7 +399,7 @@
 				</data>
 			</entity>
 			<entity name="rdf:type" >
-				<data source="898  .a" name="~rdf:resource" >
+				<data source="898  .a" name="@id" >
 					<substring  start="0"  end="6"/>
 					<whitelist>
 						<entry name="CR0104"/>
@@ -333,7 +415,7 @@
 			<!--only for serials and integrating resources-->
 			<entity name="rdau:modeOfIssuance.en" >
 				<choose>
-					<data source="898  .a" name="~rdf:resource" >
+					<data source="898  .a" name="@id" >
 						<substring  start="0"  end="4"/>
 						<whitelist>
 							<entry name="CR01"/>
@@ -341,7 +423,7 @@
 						</whitelist>
 						<constant value="http://rdaregistry.info/termList/ModeIssue/1003"/>
 					</data>
-					<data source="898  .a" name="~rdf:resource" >
+					<data source="898  .a" name="@id" >
 						<substring  start="0"  end="4"/>
 						<whitelist>
 							<entry name="CR02"/>
@@ -353,7 +435,7 @@
 
 			<!--008: LANGUAGE-->
 			<entity name="dct:language" >
-				<data source="@language|041*.a" name="~rdf:resource" >
+				<data source="@language|041*.a" name="@id" >
 					<trim />
 					<unique part="value" />
 					<lookup in="languages" />
@@ -375,7 +457,7 @@
 
 			<!--008: PUBLICATION COUNTRY-->
 			<entity name="rdau:placeOfPublication.en" >
-				<data source="008" name="~rdf:resource" >
+				<data source="008" name="@id" >
 					<substring  start="15"  end="18"/>
 					<trim /><!--To remove white spaces before and after the string-->
 					<lookup in="countries" />
@@ -403,7 +485,7 @@
 
 			<!--041: ORIGINAL LANGUAGE-->
 			<entity name="dbp:originalLanguage" >
-				<data source="041*.h" name="~rdf:resource" >
+				<data source="041*.h" name="@id" >
 					<trim />
 					<lookup in="languages" />
 				</data>
@@ -411,7 +493,7 @@
 
 			<!--044: PUBLICATION CANTON (RERO DATA)-->
 			<entity name="rdau:placeOfPublication.en" flushWith="record" >
-				<data source="044  .c" name="~rdf:resource" >
+				<data source="044  .c" name="@id" >
 					<substring start="3" end="5" />
 					<lookup in="cantons" />
 				</data>
@@ -426,11 +508,11 @@
 			-->
 
 			<!--100: MAIN AUTHOR-->
-			
+
 			<!--when first indicator is 0-->
-			<entity name="dct:contributor" reset="true" flushWith="1000 " >
-				<entity name="foaf:Person" reset="true" flushWith="1000 " >
-					<data name="~rdf:about" source="@key1000">
+			<entity name="dc:contributor[]" flushWith="1000 " >
+				<entity name="foaf:Person{}" flushWith="1000 " >
+					<data name="@id" source="@key1000">
 						<compose prefix="http://data.swissbib.ch/person/" />
 					</data>
 					<combine name="rdfs:label" value="${name}${number}${developed}${dates}${note}" reset="true" flushWith="1000 " sameEntity="true" >
@@ -457,13 +539,16 @@
 					</data>
 					<data source="1000 .a" name="foaf:name" />
 					<data source="1000 .c" name="skos:note" />
-				</entity>		
+					<!-- Todo: Should this be removed? -->
+					<data name="@type" source="source">
+						<constant value="foaf:Organization"/>
+					</data>
+				</entity>
 			</entity>
-			
 			<!--when first indicator is 1-->
-			<entity name="dct:contributor" reset="true" flushWith="1001 " >
-				<entity name="foaf:Person" reset="true" flushWith="1001 " >
-					<data name="~rdf:about" source="@key1001">
+			<entity name="dc:contributor[]" flushWith="1001 " >
+				<entity name="foaf:Person{}" flushWith="1001 " >
+					<data name="@id" source="@key1001">
 						<compose prefix="http://data.swissbib.ch/person/" />
 					</data>
 					<combine name="rdfs:label" value="${lastname}${firstname}${number}${developed}${dates}${note}" reset="true" flushWith="1001 " sameEntity="true" >
@@ -493,9 +578,13 @@
 					<data source="1001 .a" name="foaf:lastName" />
 					<data source="1001 .D" name="foaf:firstName" />
 					<data source="1001 .c" name="skos:note" />
+					<!-- Todo: Should this be removed? -->
+					<data name="@type" source="source">
+						<constant value="foaf:Organization"/>
+					</data>
 				</entity>		
 			</entity>
-			
+
 			<!--245: TITLE-->
 			<concat name="dct:title" delimiter="" >
 				<data source="245*.a" />
@@ -596,7 +685,7 @@
 
 			<!--6XX: SUBJECTS (GND only)-->
 			<entity name="dct:subject">
-				<combine name="~rdf:resource" value="${gnd_id}" reset="true" flushWith="65???">
+				<combine name="@id" value="${gnd_id}" reset="true" flushWith="65???">
 					<!--"combine" is essential when a field is repetitive
                     "flushWith" to restart  the process with every concerned fields (?)
                     "reset" default:true -->
@@ -614,10 +703,10 @@
 			</entity>
 
 			<!--700: OTHER AUTHORS-->
-			<entity name="dct:contributor" reset="true" flushWith="7000 " >
+			<entity name="dc:contributor[]" reset="true" flushWith="7000 " >
 			<!--reset="true" avoid a rule to keep in a collector the data collected in the precedent same field (for repetitive fields)-->
-				<entity name="foaf:Person" reset="true" flushWith="7000 " >
-					<data name="~rdf:about" source="@key7000">
+				<entity name="foaf:Person{}" reset="true" flushWith="7000 " >
+					<data name="@id" source="@key7000">
 						<compose prefix="http://data.swissbib.ch/person/" />
 					</data>
 					<combine name="rdfs:label" value="${name}${number}${developed}${dates}${note}" reset="true" flushWith="7000 " sameEntity="true" >
@@ -643,11 +732,15 @@
 					</data>
 					<data source="7000 .a" name="foaf:name" />
 					<data source="7000 .c" name="skos:note" />
-				</entity>	
+					<!-- Todo: Should this be removed? -->
+                    <data name="@type" source="source">
+                        <constant value="foaf:Person"/>
+                    </data>
+				</entity>
 			</entity>
-			<entity name="dct:contributor" reset="true" flushWith="7001 " >
-				<entity name="foaf:Person" reset="true" flushWith="7001 " >
-					<data name="~rdf:about" source="@key7001">
+			<entity name="dc:contributor[]" reset="true" flushWith="7001 " >
+				<entity name="foaf:Person{}" reset="true" flushWith="7001 " >
+					<data name="@id" source="@key7001">
 						<compose prefix="http://data.swissbib.ch/person/" />
 					</data>
 					<combine name="rdfs:label" value="${lastname}${firstname}${number}${developed}${dates}${note}" reset="true" flushWith="7001 " sameEntity="true" >
@@ -677,14 +770,17 @@
 					<data source="7001 .a" name="foaf:lastName" />
 					<data source="7001 .D" name="foaf:firstName" />
 					<data source="7001 .c" name="skos:note" />
-				</entity>		
+					<!-- Todo: Should this be removed? -->
+					<data name="@type" source="source">
+						<constant value="foaf:Person"/>
+					</data>
+				</entity>
 			</entity>
 
 			<!--710: ORGANISATIONS-->
-			<!--Ev. to complete with sub properties, like location, date, etc.-->
-			<entity name="dct:contributor"  reset="true" flushWith="710??" >
-				<entity name="foaf:Organization"  reset="true" flushWith="710??" >
-					<data name="~rdf:about" source="@key710">
+			<entity name="dc:contributor[]"  reset="true" flushWith="710??" >
+				<entity name="foaf:Organization{}"  reset="true" flushWith="710??" >
+					<data name="@id" source="@key710">
 						<compose prefix="http://data.swissbib.ch/organisation/" />
 					</data>
 					<concat name="rdfs:label" delimiter="" flushWith="710??" reset="true" sameEntity="true" >
@@ -706,14 +802,17 @@
 							<compose prefix=" " />
 						</data>
 					</concat>
+					<!-- Todo: Should this be removed? -->
+                    <data name="@type" source="source">
+                        <constant value="foaf:Organization"/>
+                    </data>
 				</entity>
 			</entity>
 
 			<!--711: CONGRESSES-->
-			<!--Ev. to complete with sub properties, like location, date, etc.-->
-			<entity name="dct:contributor"  reset="true" flushWith="711??" >
-				<entity name="foaf:Organization"  reset="true" flushWith="711??" >
-					<data name="~rdf:about" source="@key711">
+			<entity name="dc:contributor[]"  reset="true" flushWith="711??" >
+				<entity name="foaf:Organization{}"  reset="true" flushWith="711??" >
+					<data name="@id" source="@key711">
 						<compose prefix="http://data.swissbib.ch/organisation/" />
 					</data>
 					<concat name="rdfs:label" delimiter="" flushWith="711??" reset="true" sameEntity="true" >
@@ -734,6 +833,10 @@
 							<compose prefix=" " />
 						</data>
 					</concat>
+					<!-- Todo: Should this be removed? -->
+                    <data name="@type" source="source">
+                        <constant value="foaf:Organization"/>
+                    </data>
 				</entity>
 			</entity>
 
@@ -750,7 +853,7 @@
 
 			<!--773: LINK TO HOST ITEM (works only with record that includes a subfield 773$9 (swiss german data))-->
 			<entity name="dct:isPartOf">
-				<data name="~rdf:resource" source="773*.9">
+				<data name="@id" source="773*.9">
 					<compose prefix="http://data.swissbib.ch/resource/"/>
 					<unique part="value" />
 				</data>
@@ -759,7 +862,7 @@
 			<!--META-->
 			<entity name="rdfs:isDefinedBy" >
 				<!--Do not add "flushWith="record"": if there is more than one field 035, the attributes "rdf:resource" will be repeated within the tag "rdfs:isDefinedBy"-->
-				<data source="@swissbib_id" name="~rdf:resource" >
+				<data source="@swissbib_id" name="@id" >
 					<compose postfix="/about" />
 				</data>
 			</entity>
