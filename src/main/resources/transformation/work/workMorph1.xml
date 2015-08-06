@@ -32,21 +32,26 @@
 			<compose prefix="http://data.swissbib.ch/work/" />
 		</data>
 		
+		<!--SUBJECT OF THE WORK AS LITERAL VALUE OF THE RECORD-->
+		<data source="986  .b" name="id" >
+			<compose prefix="http://data.swissbib.ch/work/" />
+		</data>
+		
 		<!--001 RELATED RESOURCES/MANIFESTATIONS-->
-		<data source="001" name="bf:hasInstance">
+		<data source="001" name="instance">
 			<compose prefix="http://data.swissbib.ch/resource/"/>
 		</data>
 		
 		<!--100 MAIN AUTHOR-->
-		<data name="dct:contributor" source="@key1000">
+		<data name="contributor0" source="@key1000">
 			<compose prefix="http://data.swissbib.ch/person/" />
 		</data>
-		<data name="dct:contributor" source="@key1001">
+		<data name="contributor1" source="@key1001">
 			<compose prefix="http://data.swissbib.ch/person/" />
 		</data>
 		
 		<!--245 TITLE-->
-		<concat name="dct:title" delimiter="" >
+		<concat name="title" delimiter="" >
 			<data source="245*.a" />
 			<data source="245*.b" >
 				<compose prefix=" : " />
