@@ -1,12 +1,13 @@
 // default file = "/home/sebastian/temp/job1r112A001.mf.xml";
-default file = FLUX_DIR + "correctMarcXML.xml";
+default file = "/home/sebastian/temp/marc_mfcompatible/job1r115A001.format.xml.gz";
 // basedir = "/home/sebastian/workspace/mfWorkflows/src/main/resources/transformation/resource";
 
 file|
-open-file|
+open-gzip|
+// open-file|
 decode-xml|
 handle-marcxml|
-morph(FLUX_DIR + "morph-marc21ToJsonLd.xml")|
-write-esbulk|
-write-jsonld(baseOutDir="/home/sebastian/temp/outputResource",recordsPerUpload="10000", contextFile="/home/sebastian/workspace/utilities/examples/04/context.jsonld");
-// upload-esbulk(tmpDir="/home/sebastian/temp/outputResource", recordsPerUpload="1");
+morph(FLUX_DIR + "resourceMorph.xml")|
+encode-esbulk|
+// write-esbulk(baseOutDir="<Your path here>", fileSize="10000");
+index-esbulk(esNode="localhost", esPort="9300", esClustername="linked-swissbib", recordsPerUpload="10000");
