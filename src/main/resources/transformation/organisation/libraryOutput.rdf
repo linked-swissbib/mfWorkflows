@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns:dbp="http://dbpedia.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<rdf:RDF xmlns:dbp="http://dbpedia.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:foaf="http://xmlns.com/foaf/0.1/">
 
 		<foaf:Organization rdf:about="http://data.swissbib.ch/organisation/SNL">
 			<rdfs:label xml:lang="de">Nationalbibliothek</rdfs:label>
@@ -85,6 +85,27 @@
 					<vcard:street-address>Giebenacherstr. 17</vcard:street-address>
 					<vcard:postal-code>4302</vcard:postal-code>
 					<vcard:locality>Augst</vcard:locality>
+				</vcard:Address>
+			</vcard:hasAddress>
+		</foaf:Organization>
+	
+
+		<foaf:Organization rdf:about="http://data.swissbib.ch/organisation/BORIS">
+			<foaf:name xml:lang="de">BORIS - Bern Open Repository and Information System</foaf:name>
+			<foaf:name xml:lang="fr">BORIS - Bern Open Repository and Information System</foaf:name>
+			<foaf:name xml:lang="it">BORIS - Bern Open Repository and Information System</foaf:name>
+			<foaf:name xml:lang="en">BORIS - Bern Open Repository and Information System</foaf:name>
+			<rdfs:label xml:lang="de">BORIS - Bern Open Repository and Information System</rdfs:label>
+			<rdfs:label xml:lang="fr">BORIS - Bern Open Repository and Information System</rdfs:label>
+			<rdfs:label xml:lang="it">BORIS - Bern Open Repository and Information System</rdfs:label>
+			<rdfs:label xml:lang="en">BORIS - Bern Open Repository and Information System</rdfs:label>
+			<foaf:mbox rdf:resource="mailto:boris@ub.unibe.ch" />
+			<vcard:hasAddress>
+				<vcard:Address>
+					<vcard:street-address>Muesmattstr. 27</vcard:street-address>
+					<vcard:postal-code>3012</vcard:postal-code>
+					<vcard:locality>Bern</vcard:locality>
+					<vcard:hasRegion rdf:resource="http://sws.geonames.org/2661551/" />
 				</vcard:Address>
 			</vcard:hasAddress>
 		</foaf:Organization>
