@@ -10,4 +10,4 @@ handle-marcxml|
 morph(FLUX_DIR + "resourceMorph.xml")|
 encode-esbulk|
 // write-esbulk(baseOutDir="<Your path here>", fileSize="10000");
-index-esbulk(esNode="localhost", esPort="9300", esClustername="linked-swissbib", recordsPerUpload="10000");
+index-esbulk(esNodes="localhost", esClustername="linked-swissbib", recordsPerUpload="10000");
