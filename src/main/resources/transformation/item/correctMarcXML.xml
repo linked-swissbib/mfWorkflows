@@ -682,6 +682,26 @@
 			<subfield code="a">Muljačić</subfield>
 			<subfield code="D">Žarko</subfield>
 		</datafield>
+		<datafield tag="852" ind1="4" ind2=" ">
+			<subfield code="B">NEBIS</subfield>
+			<subfield code="C">EAD50</subfield>
+			<subfield code="D">EBI01</subfield>
+			<subfield code="E">001738738</subfield>
+			<subfield code="F">E19</subfield>
+			<subfield code="b">E19</subfield>
+			<subfield code="0">SOZARCH (Zürich)</subfield>
+			<subfield code="a">neuste 2 Nummern im Lesesaal: Fach B 25</subfield>
+		</datafield>
+		<datafield tag="852" ind1="4" ind2=" ">
+			<subfield code="B">RERO</subfield>
+			<subfield code="E">1691138</subfield>
+			<subfield code="F">RE31037</subfield>
+			<subfield code="b">RE31037</subfield>
+			<subfield code="c">RE310370001</subfield>
+			<subfield code="j">HEGN P 30</subfield>
+			<subfield code="u">http://services.rero.ch/...</subfield>
+			<subfield code="a">On ne garde que l'année en cours (incomplet)</subfield>
+		</datafield>
 		<datafield tag="856" ind1=" " ind2=" ">
 			<subfield code="a">http://doc1.lbfl.li</subfield>
 			<subfield code="d">/aak</subfield>
