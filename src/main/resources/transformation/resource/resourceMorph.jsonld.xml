@@ -858,7 +858,15 @@
 					<unique part="value" />
 				</data>
 			</entity>
-
+			
+			<!--986: FRBR CLUSTER (WORK)-->
+			<!--40% of the records-->
+			<entity name="bf:instanceOf">
+				<data name="~rdf:resource" source="986  .b">
+					<compose prefix="http://data.swissbib.ch/work/"/>
+				</data>
+			</entity>
+			
 			<!--META-->
 			<entity name="rdfs:isDefinedBy" >
 				<!--Do not add "flushWith="record"": if there is more than one field 035, the attributes "rdf:resource" will be repeated within the tag "rdfs:isDefinedBy"-->

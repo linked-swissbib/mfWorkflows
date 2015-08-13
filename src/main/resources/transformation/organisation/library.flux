@@ -1,5 +1,6 @@
 
 default file = FLUX_DIR + "bibliotheken_ausschnitt.formeta";
+//default file = FLUX_DIR + "bibliotheken.formeta";
 default out = FLUX_DIR +"out.foma";
 
 

@@ -2,7 +2,7 @@
 <rdf:RDF xmlns:rdau="http://rdaregistry.info/Elements/u/" xmlns:void="http://rdfs.org/ns/void#" xmlns:dbp="http://dbpedia.org/ontology/" xmlns:dct="http://purl.org/dc/terms/" xmlns:bf="http://bibframe.org/vocab/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dc="http://purl.org/dc/elements/1.1/">
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/318618583/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-07-31T07:17:11.195Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-08-05T13:28:29.624Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/318618583" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-03-27T05:24:27+01:00</dct:modified>
 			<dct:contributor rdf:resource="http://data.swissbib.ch/agent/IDSBB" />
@@ -41,13 +41,14 @@
 			<rdau:contentType.en rdf:resource="http://rdvocab.info/termList/RDAContentType/1020" />
 			<rdau:mediaType.en rdf:resource="http://rdvocab.info/termList/RDAMediaType/1007" />
 			<rdf:type rdf:resource="http://purl.org/ontology/bibo/Book" />
+			<bf:instanceOf rdf:resource="http://data.swissbib.ch/work/279124783" />
 			<dct:issued>2015</dct:issued>
 			<dct:title>Consumer behavior / Leon G. Schiffman, Joseph L. Wisenblit</dct:title>
 		</dct:BibliographicResource>
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/316022063/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-07-31T07:17:11.235Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-08-05T13:28:29.834Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/316022063" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-05-27T15:12:24+01:00</dct:modified>
 			<dct:contributor rdf:resource="http://data.swissbib.ch/agent/RERO" />
@@ -115,6 +116,7 @@
 			</dct:contributor>
 			<dct:bibliographicCitation>Quotidien jurassien. - 1996/03/23</dct:bibliographicCitation>
 			<dct:bibliographicCitation>Biel/Bienne. - 1996/03/25</dct:bibliographicCitation>
+			<bf:instanceOf rdf:resource="http://data.swissbib.ch/work/271128399" />
 			<rdau:contentType.en rdf:resource="http://rdvocab.info/termList/RDAContentType/1023" />
 			<rdau:contentType.en rdf:resource="http://rdvocab.info/termList/RDAContentType/1021" />
 			<rdau:mediaType.en rdf:resource="http://rdvocab.info/termList/RDAMediaType/1008" />
@@ -125,7 +127,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/31602208X/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-07-31T07:17:11.252Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-08-05T13:28:29.854Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/31602208X" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-16T23:44:29+01:00</dct:modified>
 			<dct:contributor rdf:resource="http://data.swissbib.ch/agent/ABN" />
@@ -158,6 +160,7 @@
 					<rdfs:label>Rivero Iglesias, Carmen</rdfs:label>
 				</foaf:Person>
 			</dct:contributor>
+			<bf:instanceOf rdf:resource="http://data.swissbib.ch/work/31602208X" />
 			<rdau:contentType.en rdf:resource="http://rdvocab.info/termList/RDAContentType/1020" />
 			<rdau:mediaType.en rdf:resource="http://rdvocab.info/termList/RDAMediaType/1007" />
 			<rdf:type rdf:resource="http://purl.org/ontology/bibo/Book" />
@@ -168,7 +171,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/316022098/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-07-31T07:17:11.263Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-08-05T13:28:29.867Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/316022098" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-05-24T07:05:47+01:00</dct:modified>
 			<dct:contributor rdf:resource="http://data.swissbib.ch/agent/NEBIS" />
@@ -213,6 +216,7 @@
 					<rdfs:label>Association genevoise des bibliothécaires et documentalistes. Comité</rdfs:label>
 				</foaf:Organization>
 			</dct:contributor>
+			<bf:instanceOf rdf:resource="http://data.swissbib.ch/work/303465476" />
 			<rdau:contentType.en rdf:resource="http://rdvocab.info/termList/RDAContentType/1020" />
 			<rdau:mediaType.en rdf:resource="http://rdvocab.info/termList/RDAMediaType/1007" />
 			<rdf:type rdf:resource="http://purl.org/ontology/bibo/Periodical" />
@@ -223,7 +227,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/316022101/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-07-31T07:17:11.273Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-08-05T13:28:29.880Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/316022101" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-08T08:00:34+01:00</dct:modified>
 			<dct:contributor rdf:resource="http://data.swissbib.ch/agent/BGR" />
@@ -270,7 +274,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/vtls003010104/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-07-31T07:17:11.278Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-08-05T13:28:29.889Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/vtls003010104" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-04-21T07:02:00+01:00</dct:modified>
 			<dct:contributor rdf:resource="http://data.swissbib.ch/agent/RERO" />
@@ -302,7 +306,7 @@
 	
 
 		<bibo:Document rdf:about="http://data.swissbib.ch/resource/268337713/about">
-			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-07-31T07:17:11.282Z</dct:issued>
+			<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-08-05T13:28:29.939Z</dct:issued>
 			<foaf:primaryTopic rdf:resource="http://data.swissbib.ch/resource/268337713" />
 			<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-02-07T04:58:42+01:00</dct:modified>
 			<dct:contributor rdf:resource="http://data.swissbib.ch/agent/SNL" />

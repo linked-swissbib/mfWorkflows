@@ -100,11 +100,53 @@
 		'bibo:owner': 'http://data.swissbib.ch/organisation/SNL-NB001'
 	},
 	'bf:HeldItem' {
+		'rdf:about': 'http://data.swissbib.ch/item/ZORA-29163',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/269492259',
+		'collectItemValues': '',
+		'bibo:locator': 'Journal Article',
+		'bibo:owner': 'http://data.swissbib.ch/organisation/ZORA'
+	},
+	'bf:HeldItem' {
+		'rdf:about': 'http://data.swissbib.ch/item/RETROS-buw-001:1969:23::2197',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/269492259',
+		'collectItemValues': '',
+		'bibo:locator': 'article',
+		'bibo:owner': 'http://data.swissbib.ch/organisation/RETROS'
+	},
+	'bf:HeldItem' {
+		'rdf:about': 'http://data.swissbib.ch/item/ECOD-bcul/Ms0350',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/269492259',
+		'collectItemValues': '',
+		'bibo:locator': 'Lausanne, Bibliothèque cantonale et universitaire de Lausanne, Ms 350',
+		'bibo:owner': 'http://data.swissbib.ch/organisation/ECOD'
+	},
+	'bf:HeldItem' {
+		'rdf:about': 'http://data.swissbib.ch/item/BORIS-69164',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/269492259',
+		'collectItemValues': '',
+		'bibo:locator': 'info:eu-repo/semantics/bookPart',
+		'bibo:owner': 'http://data.swissbib.ch/organisation/BORIS'
+	},
+	'bf:HeldItem' {
+		'rdf:about': 'http://data.swissbib.ch/item/SERVAL-BIB_E21BA74A283D',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/269492259',
+		'collectItemValues': '',
+		'bibo:locator': 'phdthesis',
+		'bibo:owner': 'http://data.swissbib.ch/organisation/SERVAL'
+	},
+	'bf:HeldItem' {
 		'rdf:about': 'http://data.swissbib.ch/item/NEBIS-B462783',
 		'bf:holdingFor': 'http://data.swissbib.ch/resource/269492259',
 		'collectItemValues': '"http://recherche.nebis.ch/primo_library/libweb/action/display.do?tabs=locationsTab&ct=display&fn=search&doc=ebi01_prod003043295&indx=1&recIds=ebi01_prod003043295&recIdxs=0&elementId=0&renderMode=poppedOut&displayMode=full&frbrVersion=&dscnt=0&scp.scps=scope%3A%28ebi01_prod%29&frbg=&tab=default_tab&vl%28585331958UI1%29=all_items&srt=rank&mode=Basic&dum=true&tb=t&vid=NEBIS"',
 		'bibo:locator': 'Jud F 336',
 		'bibo:owner': 'http://data.swissbib.ch/organisation/NEBIS-UJUD'
+	},
+	'bf:HeldItem' {
+		'rdf:about': 'http://data.swissbib.ch/item/ZORA-32538',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/269492259',
+		'collectItemValues': '',
+		'bibo:locator': 'Journal Article',
+		'bibo:owner': 'http://data.swissbib.ch/organisation/ZORA'
 	},
 	'bf:HeldItem' {
 		'rdf:about': 'http://data.swissbib.ch/item/NEBIS-UM1148688',
@@ -158,6 +200,13 @@
 		'collectItemValues': '"http://baselbern.swissbib.ch/Record/269492259?expandlib=B498#holding-institution-IDSBB-B498"',
 		'bibo:locator': 'RO I A 236',
 		'bibo:owner': 'http://data.swissbib.ch/organisation/IDSBB-B498'
+	},
+	'bf:HeldItem' {
+		'rdf:about': 'http://data.swissbib.ch/item/BORIS-14309',
+		'bf:holdingFor': 'http://data.swissbib.ch/resource/269492259',
+		'collectItemValues': '',
+		'bibo:locator': 'info:eu-repo/semantics/article',
+		'bibo:owner': 'http://data.swissbib.ch/organisation/BORIS'
 	},
 	'bf:HeldItem' {
 		'bf:subLocation': 'Livello 2',

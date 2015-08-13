@@ -432,9 +432,9 @@
 			<subfield code="r">000010</subfield>
 			<subfield code="0">KB St.Gallen Vadiana</subfield>
 			<subfield code="1">Magazin</subfield>
-			<subfield code="3">BOOK</subfield>
 			<subfield code="4">01</subfield>
 			<subfield code="5">ausleihbar</subfield>
+			<subfield code="3">BOOK</subfield>
 		</datafield>
 		<datafield tag="949" ind1=" " ind2=" ">
 			<subfield code="B">SGBN</subfield>
@@ -682,6 +682,26 @@
 			<subfield code="a">Muljačić</subfield>
 			<subfield code="D">Žarko</subfield>
 		</datafield>
+		<datafield tag="852" ind1="4" ind2=" ">
+			<subfield code="B">NEBIS</subfield>
+			<subfield code="C">EAD50</subfield>
+			<subfield code="D">EBI01</subfield>
+			<subfield code="E">001738738</subfield>
+			<subfield code="F">E19</subfield>
+			<subfield code="b">E19</subfield>
+			<subfield code="0">SOZARCH (Zürich)</subfield>
+			<subfield code="a">neuste 2 Nummern im Lesesaal: Fach B 25</subfield>
+		</datafield>
+		<datafield tag="852" ind1="4" ind2=" ">
+			<subfield code="B">RERO</subfield>
+			<subfield code="E">1691138</subfield>
+			<subfield code="F">RE31037</subfield>
+			<subfield code="b">RE31037</subfield>
+			<subfield code="c">RE310370001</subfield>
+			<subfield code="j">HEGN P 30</subfield>
+			<subfield code="u">http://services.rero.ch/...</subfield>
+			<subfield code="a">On ne garde que l'année en cours (incomplet)</subfield>
+		</datafield>
 		<datafield tag="856" ind1=" " ind2=" ">
 			<subfield code="a">http://doc1.lbfl.li</subfield>
 			<subfield code="d">/aak</subfield>
@@ -863,6 +883,49 @@
 			<subfield code="4">100</subfield>
 		</datafield>
 		<datafield tag="949" ind1=" " ind2=" ">
+			<subfield code="B">ZORA</subfield>
+			<subfield code="E">oai:www.zora.uzh.ch:29163</subfield>
+			<subfield code="F">ZORA</subfield>
+			<subfield code="b">ZORA</subfield>
+			<subfield code="j">Journal Article</subfield>
+			<subfield code="c">openAccess</subfield>
+			<subfield code="u">http://www.zora.uzh.ch/29163</subfield>
+		</datafield>
+		<datafield tag="949" ind1=" " ind2=" ">
+			<subfield code="B">RETROS</subfield>
+			<subfield code="E">oai:agora.ch:buw-001:1969:23::2197</subfield>
+			<subfield code="F">RETROS</subfield>
+			<subfield code="b">RETROS</subfield>
+			<subfield code="j">article</subfield>
+			<subfield code="c">openAccess</subfield>
+			<subfield code="u">http://dx.doi.org/10.5169/seals-333667</subfield>
+		</datafield>
+		<datafield tag="949" ind1=" " ind2=" ">
+			<subfield code="B">ECOD</subfield>
+			<subfield code="E">bcul/Ms0350</subfield>
+			<subfield code="F">ECOD</subfield>
+			<subfield code="b">ECOD</subfield>
+			<subfield code="j">Lausanne, Bibliothèque cantonale et universitaire de Lausanne, Ms 350</subfield>
+			<subfield code="u">http://www.e-codices.unifr.ch/en/list/one/bcul/Ms0350</subfield>
+		</datafield>
+		<datafield tag="949" ind1=" " ind2=" ">
+			<subfield code="B">BORIS</subfield>
+			<subfield code="E">oai:boris.unibe.ch:69164</subfield>
+			<subfield code="F">BORIS</subfield>
+			<subfield code="b">BORIS</subfield>
+			<subfield code="j">info:eu-repo/semantics/bookPart</subfield>
+			<subfield code="c">openAccess</subfield>
+			<subfield code="u">http://boris.unibe.ch/69164</subfield>
+		</datafield>
+		<datafield tag="949" ind1=" " ind2=" ">
+			<subfield code="B">SERVAL</subfield>
+			<subfield code="E">BIB_E21BA74A283D</subfield>
+			<subfield code="F">SERVAL</subfield>
+			<subfield code="b">SERVAL</subfield>
+			<subfield code="j">phdthesis</subfield>
+			<subfield code="u">http://serval.unil.ch/?id=serval:BIB_E21BA74A283D</subfield>
+		</datafield>
+		<datafield tag="949" ind1=" " ind2=" ">
 			<subfield code="B">NEBIS</subfield>
 			<subfield code="C">UZH50</subfield>
 			<subfield code="D">EBI01</subfield>
@@ -878,6 +941,15 @@
 			<subfield code="3">BOOK</subfield>
 			<subfield code="4">21</subfield>
 			<subfield code="5">Präsenzbestand, keine Ausl</subfield>
+		</datafield>
+		<datafield tag="949" ind1=" " ind2=" ">
+			<subfield code="B">ZORA</subfield>
+			<subfield code="E">oai:www.zora.uzh.ch:32538</subfield>
+			<subfield code="F">ZORA</subfield>
+			<subfield code="b">ZORA</subfield>
+			<subfield code="j">Journal Article</subfield>
+			<subfield code="c">openAccess</subfield>
+			<subfield code="u">http://www.zora.uzh.ch/32538</subfield>
 		</datafield>
 		<datafield tag="949" ind1=" " ind2=" ">
 			<subfield code="B">NEBIS</subfield>
@@ -991,6 +1063,15 @@
 			<subfield code="3">BOOK</subfield>
 			<subfield code="4">50</subfield>
 			<subfield code="5">Siehe Bibliothek: Info</subfield>
+		</datafield>
+		<datafield tag="949" ind1=" " ind2=" ">
+			<subfield code="B">BORIS</subfield>
+			<subfield code="E">oai:boris.unibe.ch:14309</subfield>
+			<subfield code="F">BORIS</subfield>
+			<subfield code="b">BORIS</subfield>
+			<subfield code="j">info:eu-repo/semantics/article</subfield>
+			<subfield code="c">openAccess</subfield>
+			<subfield code="u">http://boris.unibe.ch/14309</subfield>
 		</datafield>
 		<datafield tag="949" ind1=" " ind2=" ">
 			<subfield code="B">SBT</subfield>

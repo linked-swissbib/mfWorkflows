@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<metamorph xmlns="http://www.culturegraph.org/metamorph"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		version="1" entityMarker=".">
+	
+	<rules>
+		
+		<data source="001" name="001" />
+		
+		<!--949-->
+		
+		<choose>
+			<data source="949*.*" name="949 (un champ par notice)" />
+		</choose>
+		<data source="949*.*" name="949 (tous les sous-champs)" />
+		<concat name="949 (tous les champs)" flushWith="949??" delimiter="-" >
+			<data source="949??.B" />
+			<data source="949??.C" />
+			<data source="949??.D" />
+			<data source="949??.E" />
+			<data source="949??.F" />
+			<data source="949??.b" />
+			<data source="949??.j" />
+			<data source="949??.c" />
+			<data source="949??.p" />
+			<data source="949??.z" />
+			<data source="949??.0" />
+			<data source="949??.1" />
+			<data source="949??.3" />
+			<data source="949??.4" />
+			<data source="949??.5" />
+		</concat>
+		<concat name="949 $b (un par champ)" flushWith="949??" delimiter="-" >
+			<data source="949??.b" />
+		</concat>
+		<concat name="949 $E (un par champ)" flushWith="949??" delimiter="-" >
+			<data source="949??.E" />
+		</concat>
+		<concat name="949 $j (un par champ)" flushWith="949??" delimiter="-" >
+			<data source="949??.j" />
+		</concat>
+		<concat name="949 $p (un par champ)" flushWith="949??" delimiter="-" >
+			<data source="949??.p" />
+		</concat>		
+		
+		<!--852-->
+		
+		<choose>
+			<data source="852*.*" name="852 (un champ par notice)" />
+		</choose>
+		<data source="852*.*" name="852 (tous les sous-champs)" />
+		<concat name="852 (tous les champs)" flushWith="852??" delimiter="-" >
+			<data source="852??.B" />
+			<data source="852??.C" />
+			<data source="852??.D" />
+			<data source="852??.E" />
+			<data source="852??.F" />
+			<data source="852??.b" />
+			<data source="852??.c" />
+			<data source="852??.j" />
+			<data source="852??.u" />
+			<data source="852??.z" />
+			<data source="852??.0" />
+			<data source="852??.a" />
+		</concat>
+		<concat name="852 $b (un par champ)" flushWith="852??" delimiter="-" >
+			<data source="852??.b" />
+		</concat>
+		<concat name="852 $E (un par champ)" flushWith="852??" delimiter="-" >
+			<data source="852??.E" />
+		</concat>
+		<concat name="852 $j (un par champ)" flushWith="852??" delimiter="-" >
+			<data source="852??.j" />
+		</concat>
+		<concat name="852 $p (un par champ, normalement interdit)" flushWith="852??" delimiter="-" >
+			<data source="852??.p" />
+		</concat>
+
+	</rules>
+	
+</metamorph>

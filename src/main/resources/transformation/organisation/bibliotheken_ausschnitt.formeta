@@ -168,4 +168,52 @@ SNL {
 			'backlink' : 'http://aleph.unibas.ch/F?func=item-global&doc_library=DSV01&doc_number={bib-system-number}&sub_library=A256',
 		},
 	}
+}, REPOS {
+	'id' : '25 ',
+	'code' : 'REPOS ',
+	label {
+		'de' : 'Schweizer Repositories und Digitale Inhalte',
+		'fr' : 'Schweizer Repositories und Digitale Inhalte',
+		'it' : 'Schweizer Repositories und Digitale Inhalte',
+		'en' : 'Schweizer Repositories und Digitale Inhalte',
+	},
+	institutions {
+		institution {
+			'id' : 'BORIS',
+			'sysDbId' : '2690',
+			'sys_code' : 'BORIS',
+			label {
+				'de' : 'BORIS - Bern Open Repository and Information System',
+				'fr' : 'BORIS - Bern Open Repository and Information System',
+				'it' : 'BORIS - Bern Open Repository and Information System',
+				'en' : 'BORIS - Bern Open Repository and Information System',
+			}, ,
+			name {
+				'de' : 'BORIS - Bern Open Repository and Information System',
+				'fr' : 'BORIS - Bern Open Repository and Information System',
+				'it' : 'BORIS - Bern Open Repository and Information System',
+				'en' : 'BORIS - Bern Open Repository and Information System',
+			}, ,
+			url {
+				'de' : 'https://boris.unibe.ch',
+				'fr' : 'https://boris.unibe.ch',
+				'it' : 'https://boris.unibe.ch',
+				'en' : 'https://boris.unibe.ch',
+			}, ,
+			'address' : 'Muesmattstr. 27',
+			'zip' : '3012',
+			'city' : 'Bern',
+			'country' : 'ch',
+			'canton' : 'be',
+			'website' : '',
+			'email' : 'boris@ub.unibe.ch',
+			'phone' : '',
+			'skype' : '',
+			'facebook' : '',
+			'coordinates' : '',
+			'isil' : '',
+			'notes' : '',
+			'backlink' : '',
+		}
+	}
 }
