@@ -174,7 +174,7 @@
                     -->
 					<constant value="http://www.w3.org/2001/XMLSchema#dateTime"/>
 				</data>
-				<data name="@id" source="_id">
+				<data name="@value" source="_id">
 					<timestamp format="yyyy-MM-dd'T'HH:mm:ss.SSSXXX" />
 				</data>
 			</entity>
@@ -184,7 +184,7 @@
 				<data name="@type" source="_id">
 					<constant value="http://www.w3.org/2001/XMLSchema#dateTime"/>
 				</data>
-				<data name="@id" source="005">
+				<data name="@value" source="005">
 					<regexp match="^(\d\d\d\d)(\d\d)(\d\d)(\d\d)(\d\d)(\d\d)\.(\d)" format="${1}-${2}-${3}T${4}:${5}:${6}+01:00"/>
 				</data>
 			</entity>
@@ -862,7 +862,7 @@
 			<!--986: FRBR CLUSTER (WORK)-->
 			<!--40% of the records-->
 			<entity name="bf:instanceOf">
-				<data name="~rdf:resource" source="986  .b">
+				<data name="@id" source="986  .b">
 					<compose prefix="http://data.swissbib.ch/work/"/>
 				</data>
 			</entity>
