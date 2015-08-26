@@ -1,14 +1,12 @@
-001	171018
-852 $E (un par champ)	19474
-852 $b (un par champ)	19474
-852 $j (un par champ)	17228
-852 (tous les champs)	19474
-852 (tous les sous-champs)	171446
-852 (un champ par notice)	5670
-949 $E (un par champ)	629623
-949 $b (un par champ)	629623
-949 $j (un par champ)	623096
-949 $p (un par champ)	584674
-949 (tous les champs)	629623
-949 (tous les sous-champs)	8611115
-949 (un champ par notice)	166863
+001	6
+852 $j (un par champ)	13
+852 (tous les champs)	16
+852 (tous les sous-champs)	61
+852 (un champ par notice)	1
+949 $E (un par champ)	18
+949 $b (un par champ)	18
+949 $j (un par champ)	21
+949 $p (un par champ)	18
+949 (tous les champs)	21
+949 (tous les sous-champs)	296
+949 (un champ par notice)	5
