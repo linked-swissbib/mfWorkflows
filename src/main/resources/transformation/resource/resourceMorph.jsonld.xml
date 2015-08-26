@@ -29,6 +29,10 @@
 			<!-- Writes JSON-LD context -->
 			<entity name="@context" flushWith="record">
 
+				<data name="bf" source="_id">
+					<constant value="http://bibframe.org/vocab/" />
+				</data>
+
 				<data name="rdfs" source="_id">
 					<constant value="http://www.w3.org/2000/01/rdf-schema#" />
 				</data>
