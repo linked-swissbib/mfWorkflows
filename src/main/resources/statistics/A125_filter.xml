@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<metamorph xmlns="http://www.culturegraph.org/metamorph" version="1">
+
+    <rules>
+
+        <combine name="OK" value="OK">
+            <data source="949*.F" >
+                <equals string="A125" />
+            </data>
+            <data source="898  .a" >
+                <substring start="0" end="4" />
+                <whitelist>
+                    <entry name="BK02" />
+                </whitelist>
+            </data>
+        </combine>
+
+    </rules>
+
+</metamorph>

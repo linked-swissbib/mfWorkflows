@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<metamorph xmlns="http://www.culturegraph.org/metamorph" version="1">
+
+    <rules>
+
+        <!--001-->
+        <data source="001" name="Swissbib id (001)" />
+
+        <!--035-->
+        <data source="035  .a" name="IDSBB id (035$a)" >
+            <regexp match="(\(IDSBB\))(\d*)" format="${2}"/>
+        </data>
+
+        <!--084-->
+        <combine name="RVK (084$a)" value="${indiz}" reset="true" flushWith="084*" >
+            <if>
+                <data source="084*.2" >
+                    <trim />
+                    <whitelist>
+                        <entry name="rvk" />
+                    </whitelist>
+                </data>
+            </if>
+            <data source="084*.a" name="indiz" />
+        </combine>
+
+        <data source="245*.a" name="Titel (245$a)" />
+
+        <!--691-->
+        <concat name="Lokale Klassifikation (691)" delimiter="" flushWith="691??" reset="true" sameEntity="true" >
+            <if>
+                <data source="691??.2" >
+                    <regexp match="(..$)" format="${1}"/>
+                    <equals  string="XF"/>
+                </data>
+            </if>
+            <data source="691??.B" name="B" >
+                <compose prefix=" $B " />
+            </data>
+            <data source="691??.a" name="a" >
+                <compose prefix=" $a " />
+            </data>
+            <data source="691??.b" name="b" >
+                <compose prefix=" $b " />
+            </data>
+            <data source="691??.c" name="c" >
+                <compose prefix=" $c " />
+            </data>
+            <data source="691??.k" name="k" >
+                <compose prefix=" $k " />
+            </data>
+            <data source="691??.z" name="z" >
+                <compose prefix=" $z " />
+            </data>
+            <data source="691??.u" name="u" >
+                <compose prefix="  $u " />
+            </data>
+            <data source="691??.2" name="2" >
+                <compose prefix=" $2 " />
+            </data>
+        </concat>
+        <concat name="Lokale Klassifikation (691)" delimiter="" flushWith="691??" reset="true" sameEntity="true" >
+            <if>
+                <data source="691??.2" >
+                    <regexp match="(..$)" format="${1}"/>
+                    <equals  string="GR"/>
+                </data>
+            </if>
+            <data source="691??.B" name="B" >
+                <compose prefix=" $B " />
+            </data>
+            <data source="691??.a" name="a" >
+                <compose prefix=" $a " />
+            </data>
+            <data source="691??.b" name="b" >
+                <compose prefix=" $b " />
+            </data>
+            <data source="691??.c" name="c" >
+                <compose prefix=" $c " />
+            </data>
+            <data source="691??.k" name="k" >
+                <compose prefix=" $k " />
+            </data>
+            <data source="691??.z" name="z" >
+                <compose prefix=" $z " />
+            </data>
+            <data source="691??.u" name="u" >
+                <compose prefix="  $u " />
+            </data>
+            <data source="691??.2" name="2" >
+                <compose prefix=" $2 " />
+            </data>
+        </concat>
+        <concat name="Lokale Klassifikation (691)" delimiter="" flushWith="691??" reset="true" sameEntity="true" >
+            <if>
+                <data source="691??.2" >
+                    <regexp match="(..$)" format="${1}"/>
+                    <equals  string="LR"/>
+                </data>
+            </if>
+            <data source="691??.B" name="B" >
+                <compose prefix=" $B " />
+            </data>
+            <data source="691??.a" name="a" >
+                <compose prefix=" $a " />
+            </data>
+            <data source="691??.b" name="b" >
+                <compose prefix=" $b " />
+            </data>
+            <data source="691??.c" name="c" >
+                <compose prefix=" $c " />
+            </data>
+            <data source="691??.k" name="k" >
+                <compose prefix=" $k " />
+            </data>
+            <data source="691??.z" name="z" >
+                <compose prefix=" $z " />
+            </data>
+            <data source="691??.u" name="u" >
+                <compose prefix="  $u " />
+            </data>
+            <data source="691??.2" name="2" >
+                <compose prefix=" $2 " />
+            </data>
+        </concat>
+
+        <!--949-->
+        <combine name="Signatur (949$j)" value="${signat}" reset="true" flushWith="949  " sameEntity="true" >
+            <if>
+                <data source="949  .F" >
+                    <whitelist>
+                        <entry name="A125" />
+                        <entry name="HSG" />
+                        <entry name="B400" />
+                        <entry name="B500" />
+                        <entry name="N07" />
+                        <entry name="E60" />
+                    </whitelist>
+                </data>
+            </if>
+            <data source="949  .j" name="signat" />
+        </combine>
+
+    </rules>
+
+</metamorph>
