@@ -126,7 +126,7 @@
         </concat>
 
         <!--949-->
-        <combine name="Signatur (949$j)" value="${signat}" reset="true" flushWith="949  " sameEntity="true" >
+        <combine name="Verb./Zweigst./Signatur" value="${signat}" reset="true" flushWith="949  " sameEntity="true" >
             <if>
                 <data source="949  .F" >
                     <whitelist>
@@ -139,7 +139,13 @@
                     </whitelist>
                 </data>
             </if>
-            <data source="949  .j" name="signat" />
+            <!-- Ausgabe von 949 $B, $F, $j. Lösung unten funktioniert nicht ??? (28.08.2015/osc) -->
+            <data source="949*.*" name="signat" />
+                <concat name="signat" delimiter="--">
+                    <data source="949??.B" />
+                    <data source="949??.F" />
+                    <data source="949??.j" />
+                </concat>
         </combine>
 
     </rules>
