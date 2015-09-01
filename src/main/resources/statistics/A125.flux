@@ -1,8 +1,8 @@
-basedir = "/home/oliver/Dokumente/sbfull"
+basedir = "/swissbib_index/marcDataCBS/MFcompatibleFormat.all"
 //default file = FLUX_DIR + "job1r115A001.format.xml";
 //default file = FLUX_DIR + "representativeData.xml";
 //default file = FLUX_DIR + "inputData/job1r112A001.mf.xml";
-default out = "stdout";
+//default out = "stdout";
 
 basedir |
 read-dir|
