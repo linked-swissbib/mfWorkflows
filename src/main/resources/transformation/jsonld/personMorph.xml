@@ -12,14 +12,14 @@
 			<!-- Writes header line as required by the Elasticsearch Bulk API -->
 			<entity name="index" flushWith="$[fw]">
 
-				<data name="_type" source="_id">
+				<data name="_type" source="$[id]">
 					<constant value="person"/>
 				</data>
 
 				<data name="_id" source="$[id]" />
 
-				<data name="_index" source="_id">
-					<constant value="testsb"/>
+				<data name="_index" source="$[id]">
+					<constant value="testsb" />
 				</data>
 
 			</entity>
@@ -71,10 +71,10 @@
 				<java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
 			</postprocess>
 		</combine>
-	
+
 		<!--BUILD THE BASIS RECORD -->
 
-		<call-macro name="bulk-header" fw="1000" id="@key1000" />
+		<call-macro name="bulk-header" fw="1000 " id="@key1000" />
 		<!--100 first indicator 0-->
 		<entity name="--" flushWith="1000 " >
 			<data name="@id" source="@key1000" >
@@ -105,7 +105,7 @@
 			<data source="1000 .c" name="skos:note" />
 		</entity>
 
-		<call-macro name="bulk-header" fw="1001" id="@key1001" />
+		<call-macro name="bulk-header" fw="1001 " id="@key1001" />
 		<!--100 first indicator 1-->
 		<entity name="--" flushWith="1001 " >
 			<data name="@id" source="@key1001" >
@@ -140,7 +140,7 @@
 			<data source="1001 .c" name="skos:note" />
 		</entity>
 
-		<call-macro name="bulk-header" fw="7000" id="@key7000" />
+		<call-macro name="bulk-header" fw="7000 " id="@key7000" />
 		<!--700 first indicator 0-->
 		<entity name="--" flushWith="7000 " >
 			<data name="@id" source="@key7000" >
@@ -171,7 +171,7 @@
 			<data source="7000 .c" name="skos:note" />
 		</entity>
 
-		<call-macro name="bulk-header" fw="7001" id="@key7001" />
+		<call-macro name="bulk-header" fw="7001 " id="@key7001" />
 		<!--700 first indicator 1-->
 		<entity name="--" flushWith="7001 " >
 			<data name="@id" source="@key7001" >

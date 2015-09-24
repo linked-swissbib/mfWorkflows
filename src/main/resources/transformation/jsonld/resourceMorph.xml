@@ -154,7 +154,7 @@
 
 		<!--BUILD THE RECORD "ABOUT"-->
 
-		<entity name="bibo:Document" flushWith="record" >
+		<entity name="--" flushWith="record" >
 			<!--To define the subject (root element) of each record.
 			"entity" makes it possible to create a hierarchical tag structure.
 			"flushWith" enables to group various subfields into one output, even if the field appears more than one time. -->
@@ -227,7 +227,7 @@
 
 		<!--BUILD THE BASIS RECORD -->
 
-		<entity name="dct:BibliographicResource" flushWith="record" >
+		<entity name="--" flushWith="record" >
 			<!--To define the subject (root element) of each record.
             "entity" makes it possible to create a hierarchical tag structure.-->
 
