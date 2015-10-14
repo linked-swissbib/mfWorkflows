@@ -1,4 +1,7 @@
-basedir = "/home/seb/temp/marcDataMF";
+basedir = "/swissbib_index/linkedProcessing/marcDataCBS";
+baseout = "/swissbib_index/linkedProcessing/linkedTestOutput";
+nodes = "localhost:9300";
+clusterName = "linked-swissbib-local";
 
 basedir|
 read-dir|
@@ -8,18 +11,18 @@ handle-marcxml|
 stream-tee| {
     morph(FLUX_DIR + "resourceMorph.xml")|
     encode-esbulk|
-    write-esbulk(baseOutDir="/home/seb/temp/outputBulkJson", fileSize="10000")
-    //index-esbulk(esNodes="", esClustername="elasticsearch", recordsPerUpload="5000")
+    //write-esbulk(baseOutDir=baseout, fileSize="10000")
+    index-esbulk(esNodes=nodes, esClustername=clusterName, recordsPerUpload="5000")
 }{
     morph(FLUX_DIR + "personMorph.xml")|
     encode-esbulk|
-    write-esbulk(baseOutDir="/home/seb/temp/outputBulkJson", fileSize="10000")
-    //index-esbulk(esNodes="localhost:9300", esClustername="elasticsearch", recordsPerUpload="5000")
+    //write-esbulk(baseOutDir=baseout, fileSize="10000")
+    index-esbulk(esNodes=nodes, esClustername=clusterName, recordsPerUpload="5000")
 }{
-    morph(FLUX_DIR + "organisationMorph.xml")|
-    encode-esbulk|
-    write-esbulk(baseOutDir="/home/seb/temp/outputBulkJson", fileSize="10000")
-    //index-esbulk(esNodes="", esClustername="elasticsearch", recordsPerUpload="5000")
+    filter(FLUX_DIR + "organisationFilter.xml")|
+    morph(FLUX_DIR + "organisationMorph.xml")|    encode-esbulk|
+    //write-esbulk(baseOutDir=baseout, fileSize="10000")
+    index-esbulk(esNodes=nodes, esClustername=clusterName, recordsPerUpload="5000")
 }{
     filter(FLUX_DIR + "workFilter.xml")|
     morph(FLUX_DIR + "workMorph1.xml")|
@@ -28,8 +31,8 @@ stream-tee| {
     collect-triples|
     morph(FLUX_DIR + "workMorph2.xml")|
     encode-esbulk|
-    write-esbulk(baseOutDir="/home/seb/temp/outputBulkJson", fileSize="10000")
-    //index-esbulk(esNodes="", esClustername="elasticsearch", recordsPerUpload="5000")
+    //write-esbulk(baseOutDir=baseout, fileSize="10000")
+    index-esbulk(esNodes=nodes, esClustername=clusterName, recordsPerUpload="5000")
 };
 
 //TODO:
