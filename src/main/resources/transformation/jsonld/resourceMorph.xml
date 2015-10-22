@@ -8,23 +8,6 @@
 
 
 	<macros>
-		<macro name="bulk-header">
-			<!-- Writes header line as required by the Elasticsearch Bulk API -->
-			<entity name="index" flushWith="record">
-
-				<data name="_type" source="_id">
-					<constant value="$[type]"/>
-				</data>
-
-				<data name="_id" source="001" />
-
-				<data name="_index" source="_id">
-					<constant value="testsb"/>
-				</data>
-
-			</entity>
-		</macro>
-
 		<macro name="context">
 			<!-- Writes JSON-LD context -->
 			<entity name="@context" flushWith="record">
@@ -148,93 +131,23 @@
 			</postprocess>
 		</combine>
 
-		<!--BUILD BULK API HEADER FOR TYPE "DOCUMENT"-->
-
-		<call-macro name="bulk-header" type="document" />
-
-		<!--BUILD THE RECORD "ABOUT"-->
-
-		<entity name="--" flushWith="record" >
-			<!--To define the subject (root element) of each record.
-			"entity" makes it possible to create a hierarchical tag structure.
-			"flushWith" enables to group various subfields into one output, even if the field appears more than one time. -->
-
-			<!-- Integrate JSON-LD context -->
-			<call-macro name="context" />
-
-			<data source="@swissbib_id" name="@id" >
-				<compose postfix="/about" />
-			</data>
-
-			<!--PUBLICATION DATE OF THE RDF RECORD-->
-			<entity name="dct:issued">
-				<data name="@type" source="_id">
-					<!--The symbol '~' before rdf:about is very important: it permits to integrate rdf:about as an attribute in the tag rdf:Description-->
-					<!-- compare http://b3e.net/metamorph-book/latest/datamodel.html
-                        section "Strukturierte Literal- und Entitätsnamen"
-                        about the possibilities and background for the chosen design and implementation provided by the Metamorph datamodel
-                        to express structured data elements (like XML attributes or list elements)
-                        and data types
-                    -->
-					<constant value="http://www.w3.org/2001/XMLSchema#dateTime"/>
-				</data>
-				<data name="@value" source="_id">
-					<timestamp format="yyyy-MM-dd'T'HH:mm:ss.SSSXXX" />
-				</data>
-			</entity>
-
-			<!--LAST MODIFICATION DATE OF THE MARC RECORD-->
-			<entity name="dct:modified">
-				<data name="@type" source="_id">
-					<constant value="http://www.w3.org/2001/XMLSchema#dateTime"/>
-				</data>
-				<data name="@value" source="005">
-					<regexp match="^(\d\d\d\d)(\d\d)(\d\d)(\d\d)(\d\d)(\d\d)\.(\d)" format="${1}-${2}-${3}T${4}:${5}:${6}+01:00"/>
-				</data>
-			</entity>
-
-			<!--NETWORK(S) THAT CREATED THE RECORD-->
-			<entity name="dct:contributor[]">
-				<data source="035  .a" name="dct:contributor">
-					<regexp match="\((.*)\)" format="${1}" />
-					<lookup in="networks"/>
-					<unique part="value" />
-				</data>
-			</entity>
-
-			<data source="035  .a" name="dc:contributor">
-			<!--rule for the case where the network is not in the lookup here above-->
-				<regexp match="\((.*)\)" format="${1}" />
-				<blacklist>
-					<entry name="ABN" /><entry name="ALEX" /><entry name="BGR" /><entry name="CCSA" /><entry name="CH-CCSA" /><entry name="DDB" /><entry name="DE-599" /><entry name="ECOD" /><entry name="IDSBB" /><entry name="IDSLU" /><entry name="IDSSG" /><entry name="IDSSG2" /><entry name="LIBIB" /><entry name="NEBIS" /><entry name="OCoLC" /><entry name="RERO" /><entry name="RETROS" /><entry name="SBT" /><entry name="SERVAL" /><entry name="SGBN" /><entry name="SLB" /><entry name="SNL" /><entry name="Sz" /><entry name="ZORA" />
-				</blacklist>
-			</data>
-
-			<!--LINK WITH THE BASIS RECORD-->
-			<entity name="foaf:primaryTopic" >
-				<data source="@swissbib_id" name="@id" />
-			</entity>
-
-
-		</entity>
-
-
 		<!--BUILD BULK API HEADER FOR TYPE "BIBLIOGRAPHICRESOURCE"-->
-
-		<call-macro name="bulk-header" type="bibliographicResource" />
-
-
 
 		<!--BUILD THE BASIS RECORD -->
 
-		<entity name="--" flushWith="record" >
+<!--		<entity name="&#45;&#45;" flushWith="record" >-->
 			<!--To define the subject (root element) of each record.
             "entity" makes it possible to create a hierarchical tag structure.-->
 
 			<!-- Integrate JSON-LD context -->
 			<call-macro name="context" />
 
+		<!-- Set id -->
+		<data source="@swissbib_id" name="_id" />
+
 			<data source="@swissbib_id" name="@id" />
+
+		<data source="@swissbib_id" name="@blabla" />
 
 			<!--RDA CONTENT TYPE -->
 			<entity name="rdau:contentType.en" >
@@ -514,8 +427,8 @@
 			<!--100: MAIN AUTHOR-->
 
 			<!--when first indicator is 0-->
-			<entity name="dc:contributor[]" flushWith="1000 " >
-				<entity name="foaf:Person{}" flushWith="1000 " >
+			<entity name="dc:contributor" flushWith="1000 " >
+				<entity name="foaf:Person" flushWith="1000 " >
 					<data name="@id" source="@key1000">
 						<compose prefix="http://data.swissbib.ch/person/" />
 					</data>
@@ -550,8 +463,8 @@
 				</entity>
 			</entity>
 			<!--when first indicator is 1-->
-			<entity name="dc:contributor[]" flushWith="1001 " >
-				<entity name="foaf:Person{}" flushWith="1001 " >
+			<entity name="dc:contributor" flushWith="1001 " >
+				<entity name="foaf:Person" flushWith="1001 " >
 					<data name="@id" source="@key1001">
 						<compose prefix="http://data.swissbib.ch/person/" />
 					</data>
@@ -707,9 +620,9 @@
 			</entity>
 
 			<!--700: OTHER AUTHORS-->
-			<entity name="dc:contributor[]" reset="true" flushWith="7000 " >
+			<entity name="dc:contributor" reset="true" flushWith="7000 " >
 			<!--reset="true" avoid a rule to keep in a collector the data collected in the precedent same field (for repetitive fields)-->
-				<entity name="foaf:Person{}" reset="true" flushWith="7000 " >
+				<entity name="foaf:Person" reset="true" flushWith="7000 " >
 					<data name="@id" source="@key7000">
 						<compose prefix="http://data.swissbib.ch/person/" />
 					</data>
@@ -742,8 +655,8 @@
                     </data>
 				</entity>
 			</entity>
-			<entity name="dc:contributor[]" reset="true" flushWith="7001 " >
-				<entity name="foaf:Person{}" reset="true" flushWith="7001 " >
+			<entity name="dc:contributor" reset="true" flushWith="7001 " >
+				<entity name="foaf:Person" reset="true" flushWith="7001 " >
 					<data name="@id" source="@key7001">
 						<compose prefix="http://data.swissbib.ch/person/" />
 					</data>
@@ -782,8 +695,8 @@
 			</entity>
 
 			<!--710: ORGANISATIONS-->
-			<entity name="dc:contributor[]"  reset="true" flushWith="710??" >
-				<entity name="foaf:Organization{}"  reset="true" flushWith="710??" >
+			<entity name="dc:contributor"  reset="true" flushWith="710??" >
+				<entity name="foaf:Organization"  reset="true" flushWith="710??" >
 					<data name="@id" source="@key710">
 						<compose prefix="http://data.swissbib.ch/organisation/" />
 					</data>
@@ -814,8 +727,8 @@
 			</entity>
 
 			<!--711: CONGRESSES-->
-			<entity name="dc:contributor[]"  reset="true" flushWith="711??" >
-				<entity name="foaf:Organization{}"  reset="true" flushWith="711??" >
+			<entity name="dc:contributor"  reset="true" flushWith="711??" >
+				<entity name="foaf:Organization"  reset="true" flushWith="711??" >
 					<data name="@id" source="@key711">
 						<compose prefix="http://data.swissbib.ch/organisation/" />
 					</data>
@@ -879,7 +792,7 @@
 				</data>
 			</entity>
 
-		</entity>
+<!--		</entity>-->
 
 	</rules>
 

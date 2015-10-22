@@ -6,26 +6,8 @@
 		<var name="swissbib_domain" value="http://data.swissbib.ch/resource/"/>
 	</vars>
 
-	<macros>
-		<macro name="bulk-header">
-			<!-- Writes header line as required by the Elasticsearch Bulk API -->
-			<entity name="index" flushWith="$[fw]">
-
-				<data name="_type" source="$[id]">
-					<constant value="organisation"/>
-				</data>
-
-				<data name="_id" source="$[id]" />
-
-				<data name="_index" source="$[id]">
-					<constant value="testsb"/>
-				</data>
-
-			</entity>
-		</macro>
-	</macros>
-
 	<rules>
+
 
 		<combine name="@key710" value="${name}##${subunit}##${number}##${date}##${location}" flushWith="710??">
 			<data source="710??.a" name="name" />
@@ -50,7 +32,6 @@
 	
 		<!--BUILD THE BASIS RECORD -->
 
-		<call-macro name="bulk-header" fw="710??" id="@key710" />
 		<!--710-->
 		<entity name="--" flushWith="710??" >
 			<data name="@id" source="@key710" >
@@ -77,7 +58,6 @@
 			</concat>
 		</entity>
 		
-		<call-macro name="bulk-header" fw="711??" id="@key711" />
 		<!--711-->
 		<entity name="--" flushWith="711??" >
 			<data name="@id" source="@key711" >
