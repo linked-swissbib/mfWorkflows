@@ -34,6 +34,9 @@
 
 		<!--710-->
 		<entity name="--" flushWith="710??" >
+			<data name="_id" source="@key710" >
+				<compose prefix="http://data.swissbib.ch/organisation/" />
+			</data>
 			<data name="@id" source="@key710" >
 				<compose prefix="http://data.swissbib.ch/organisation/" />
 			</data>
@@ -60,6 +63,9 @@
 		
 		<!--711-->
 		<entity name="--" flushWith="711??" >
+			<data name="_id" source="@key711" >
+				<compose prefix="http://data.swissbib.ch/organisation/" />
+			</data>
 			<data name="@id" source="@key711" >
 				<compose prefix="http://data.swissbib.ch/organisation/" />
 			</data>

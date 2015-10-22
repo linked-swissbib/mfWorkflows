@@ -55,6 +55,9 @@
 
 		<!--100 first indicator 0-->
 		<entity name="--" flushWith="1000 " >
+			<data name="_id" source="@key1000" >
+				<compose prefix="http://data.swissbib.ch/person/" />
+			</data>
 			<data name="@id" source="@key1000" >
 				<compose prefix="http://data.swissbib.ch/person/" />
 			</data>
@@ -85,6 +88,9 @@
 
 		<!--100 first indicator 1-->
 		<entity name="--" flushWith="1001 " >
+			<data name="_id" source="@key1001" >
+				<compose prefix="http://data.swissbib.ch/person/" />
+			</data>
 			<data name="@id" source="@key1001" >
 				<compose prefix="http://data.swissbib.ch/person/" />
 			</data>
@@ -119,6 +125,9 @@
 
 		<!--700 first indicator 0-->
 		<entity name="--" flushWith="7000 " >
+			<data name="_id" source="@key7000" >
+				<compose prefix="http://data.swissbib.ch/person/" />
+			</data>
 			<data name="@id" source="@key7000" >
 				<compose prefix="http://data.swissbib.ch/person/" />
 			</data>
@@ -149,6 +158,9 @@
 
 		<!--700 first indicator 1-->
 		<entity name="--" flushWith="7001 " >
+			<data name="_id" source="@key7001" >
+				<compose prefix="http://data.swissbib.ch/person/" />
+			</data>
 			<data name="@id" source="@key7001" >
 				<compose prefix="http://data.swissbib.ch/person/" />
 			</data>

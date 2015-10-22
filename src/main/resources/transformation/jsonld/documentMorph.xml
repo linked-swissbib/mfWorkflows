@@ -180,13 +180,11 @@
 			</entity>
 
 			<!--NETWORK(S) THAT CREATED THE RECORD-->
-			<entity name="dct:contributor">
 				<data source="035  .a" name="dct:contributor">
 					<regexp match="\((.*)\)" format="${1}" />
 					<lookup in="networks"/>
 					<unique part="value" />
 				</data>
-			</entity>
 
 			<data source="035  .a" name="dc:contributor">
 			<!--rule for the case where the network is not in the lookup here above-->
