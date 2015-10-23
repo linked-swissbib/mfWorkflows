@@ -428,7 +428,7 @@
 
 			<!--when first indicator is 0-->
 			<entity name="dc:contributor" flushWith="1000 " >
-				<entity name="foaf:Person" flushWith="1000 " >
+				<entity name="foaf:Person{}" flushWith="1000 " >
 					<data name="@id" source="@key1000">
 						<compose prefix="http://data.swissbib.ch/person/" />
 					</data>
@@ -464,7 +464,7 @@
 			</entity>
 			<!--when first indicator is 1-->
 			<entity name="dc:contributor" flushWith="1001 " >
-				<entity name="foaf:Person" flushWith="1001 " >
+				<entity name="foaf:Person{}" flushWith="1001 " >
 					<data name="@id" source="@key1001">
 						<compose prefix="http://data.swissbib.ch/person/" />
 					</data>
@@ -622,7 +622,7 @@
 			<!--700: OTHER AUTHORS-->
 			<entity name="dc:contributor" reset="true" flushWith="7000 " >
 			<!--reset="true" avoid a rule to keep in a collector the data collected in the precedent same field (for repetitive fields)-->
-				<entity name="foaf:Person" reset="true" flushWith="7000 " >
+				<entity name="foaf:Person{}" reset="true" flushWith="7000 " >
 					<data name="@id" source="@key7000">
 						<compose prefix="http://data.swissbib.ch/person/" />
 					</data>
@@ -656,7 +656,7 @@
 				</entity>
 			</entity>
 			<entity name="dc:contributor" reset="true" flushWith="7001 " >
-				<entity name="foaf:Person" reset="true" flushWith="7001 " >
+				<entity name="foaf:Person{}" reset="true" flushWith="7001 " >
 					<data name="@id" source="@key7001">
 						<compose prefix="http://data.swissbib.ch/person/" />
 					</data>
@@ -696,7 +696,7 @@
 
 			<!--710: ORGANISATIONS-->
 			<entity name="dc:contributor"  reset="true" flushWith="710??" >
-				<entity name="foaf:Organization"  reset="true" flushWith="710??" >
+				<entity name="foaf:Organization{}"  reset="true" flushWith="710??" >
 					<data name="@id" source="@key710">
 						<compose prefix="http://data.swissbib.ch/organisation/" />
 					</data>
@@ -728,7 +728,7 @@
 
 			<!--711: CONGRESSES-->
 			<entity name="dc:contributor"  reset="true" flushWith="711??" >
-				<entity name="foaf:Organization"  reset="true" flushWith="711??" >
+				<entity name="foaf:Organization{}"  reset="true" flushWith="711??" >
 					<data name="@id" source="@key711">
 						<compose prefix="http://data.swissbib.ch/organisation/" />
 					</data>
