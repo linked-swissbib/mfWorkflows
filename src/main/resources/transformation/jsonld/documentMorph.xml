@@ -62,13 +62,16 @@
 		<!-- Set id -->
 		<data source="001" name="_id">
 			<compose prefix="http://data.swissbib.ch/resource/"/>
+			<compose postfix="/about" />
 		</data>
 
 		<!-- Definitions for recursions to be used later in substructures (must be set here!) -->
 
 		<data source="001" name="@swissbib_id">
 			<compose prefix="http://data.swissbib.ch/resource/"/>
+			<compose postfix="/about" />
 		</data>
+
 		<data source="008" name="@language">
 			<substring  start="35"  end="38"/>
 		</data>
@@ -147,10 +150,6 @@
 
 			<!-- Integrate JSON-LD context -->
 			<call-macro name="context" />
-
-			<data source="@swissbib_id" name="@id" >
-				<compose postfix="/about" />
-			</data>
 
 			<!--PUBLICATION DATE OF THE RDF RECORD-->
 			<entity name="dct:issued">
