@@ -7,17 +7,17 @@
             <data name="@id" source="id">
                 <unique part="value"/>
             </data>
-            <entity name="bf:hasInstance">
+            <entity name="bf:hasInstance{}">
                 <data source="instance" name="@id"/>
             </entity>
-            <entity name="dct:contributor">
+            <entity name="dct:contributor{}">
                 <data source="contributor0" name="@id">
                     <!--OPTION:
                     <unique part="value" />
                     -->
                 </data>
             </entity>
-            <entity name="dct:contributor">
+            <entity name="dct:contributor{}">
                 <data source="contributor1" name="@id">
                     <!--OPTION:
                     <unique part="value" />

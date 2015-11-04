@@ -194,7 +194,7 @@
 			</data>
 
 			<!--LINK WITH THE BASIS RECORD-->
-			<entity name="foaf:primaryTopic" >
+			<entity name="foaf:primaryTopic{}" >
 				<data source="@swissbib_id" name="@id" />
 			</entity>
 
