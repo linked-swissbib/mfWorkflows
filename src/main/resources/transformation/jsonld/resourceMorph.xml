@@ -150,7 +150,7 @@
         <data source="@swissbib_id" name="@id"/>
 
         <!--RDA CONTENT TYPE -->
-        <entity name="rdau:contentType.en{}">
+        <entity name="rdau:contentType{}">
             <data name="@id" source="898  .a">
                 <substring start="0" end="6"/>
                 <!--To select only positions 0-5 of the field 898$a-->
@@ -160,7 +160,7 @@
             </data>
         </entity>
 
-        <entity name="rdau:contentType.en{}">
+        <entity name="rdau:contentType{}">
             <if>
                 <!--To select only the record types MU03xxxx (=Sound/Ton/Son), that are sounds (vs. spoken words. Includes natural sounds, artificially produced sounds, etc. )
                 The function "if" uses the default boolean operator "OR" when various arguments/conditions are present!-->
@@ -188,7 +188,7 @@
             </data>
         </entity>
 
-        <entity name="rdau:contentType.en{}">
+        <entity name="rdau:contentType{}">
             <if>
                 <!--To select only the record types MU03xxxx (=Sound/Ton/Son), that are spoken words (Includes recorded readings, recitations, speeches, interviews, oral histories, etc., computer-generated speech, etc.)-->
                 <all>
@@ -212,7 +212,7 @@
         </entity>
 
         <!--RDA MEDIA TYPE -->
-        <entity name="rdau:mediaType.en{}">
+        <entity name="rdau:mediaType{}">
             <data name="@id" source="898  .a">
                 <blacklist>
                     <entry name="CF010100"/>
@@ -257,7 +257,7 @@
             </data>
         </entity>
 
-        <entity name="rdau:mediaType.en{}">
+        <entity name="rdau:mediaType{}">
             <data name="@id" source="898  .a">
                 <whitelist>
                     <entry name="CF010100"/>
@@ -396,7 +396,7 @@
 
         <!--RDA mode of issuance-->
         <!--only for serials and integrating resources-->
-        <entity name="rdau:modeOfIssuance.en{}">
+        <entity name="rdau:modeOfIssuance{}">
             <choose>
                 <data source="898  .a" name="@id">
                     <substring start="0" end="4"/>
@@ -439,7 +439,7 @@
         </choose>
 
         <!--008: PUBLICATION COUNTRY-->
-        <entity name="rdau:placeOfPublication.en{}">
+        <entity name="rdau:placeOfPublication{}">
             <data source="008" name="@id">
                 <substring start="15" end="18"/>
                 <trim/><!--To remove white spaces before and after the string-->
@@ -475,7 +475,7 @@
         </entity>
 
         <!--044: PUBLICATION CANTON (RERO DATA)-->
-        <entity name="rdau:placeOfPublication.en{}" flushWith="record">
+        <entity name="rdau:placeOfPublication{}" flushWith="record">
             <data source="044  .c" name="@id">
                 <substring start="3" end="5"/>
                 <lookup in="cantons"/>
@@ -607,7 +607,7 @@
         </concat>
 
         <!--260: IMPRINT-->
-        <concat name="rdau:publicationStatement.en" delimiter="" flushWith="260? " reset="true" sameEntity="true">
+        <concat name="rdau:publicationStatement" delimiter="" flushWith="260? " reset="true" sameEntity="true">
             <!--Attribute "delimiter" obligatory-->
             <data source="260? .a">
                 <occurrence only="1"/>
@@ -655,10 +655,10 @@
         </concat>
 
         <!--500: GENERAL NOTES-->
-        <data name="rdau:noteOnResource.en" source="500*.a"/>
+        <data name="rdau:noteOnResource" source="500*.a"/>
 
         <!--502: NOTES ABOUT THESIS-->
-        <data name="rdau:dissertationOrThesisInformation.en" source="502*.a"/>
+        <data name="rdau:dissertationOrThesisInformation" source="502*.a"/>
 
         <!--505: NOTES ABOUT CONTENT-->
         <concat name="dct:hasPart" delimiter=". " flushWith="505??" reset="true">
