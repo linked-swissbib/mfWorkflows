@@ -1,13 +1,13 @@
-indir       = "/home/seb/temp/marcDataMFSample";
-outdir      = "/home/seb/temp/marcDataMFSample";
-file        = "/home/seb/temp/marcDataMFSample/sample.xml.gz";
+indir       = "/data/sbdump/marcDataMFSample";
+outdir      = "/data/sbdump/marcDataMFSample";
+file        = "/data/sbdump/marcDataMFSample/sample.xml.gz";
 filesize    = "10000";
 esnodes     = "localhost:9300";
 escluster   = "elasticsearch";
 records     = "5000";
-index       = "testsb";
-bulkheader      = "false";
-jsoncompliant = "true";
+index       = "testsb_151118";
+bulkheader      = "true";
+jsoncompliant = "false";
 
 indir|
 read-dir|
