@@ -6,13 +6,13 @@
 		<macro name="split-literal">
 			<entity name="$[abbrev]{}" flushWith="$[predicate]">
 				<data source="$[predicate]" name="@value">
-					<regexp match='"(.*?)"' format="${1}" />
+					<regexp match='"(.*?)"' format="${1}"/>
 				</data>
 				<data source="$[predicate]" name="@language">
-					<regexp match='"@(.*)$' format="${1}" />
+					<regexp match='"@(.*)$' format="${1}"/>
 				</data>
 				<data source="$[predicate]" name="@type">
-					<regexp match='"\^\^.(.*).$' format="${1}" />
+					<regexp match='"\^\^.(.*).$' format="${1}"/>
 				</data>
 			</entity>
 		</macro>
@@ -20,21 +20,23 @@
 
 	<rules>
 
-		<data source="_id" name="@id" />
+		<data source="_id" name="@id"/>
 
-		<call-macro name="split-literal" abbrev="schema:alternateName" predicate="http://schema.org/alternateName" />
-		<call-macro name="split-literal" abbrev="owl:differentFrom" predicate="http://www.w3.org/2002/07/owl#differentFrom" />
-		<call-macro name="split-literal" abbrev="rdf:type" predicate="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" />
-		<call-macro name="split-literal" abbrev="schema:description" predicate="http://schema.org/description" />
-		<call-macro name="split-literal" abbrev="schema:sameAs" predicate="http://schema.org/sameAs" />
-		<call-macro name="split-literal" abbrev="dc:identifier" predicate="http://purl.org/dc/terms/identifier" />
-		<call-macro name="split-literal" abbrev="schema:deathDate" predicate="http://schema.org/deathDate" />
-		<call-macro name="split-literal" abbrev="schema:name" predicate="http://schema.org/name" />
-		<call-macro name="split-literal" abbrev="schema:givenName" predicate="http://schema.org/givenName" />
-		<call-macro name="split-literal" abbrev="rdf:value" predicate="http://www.w3.org/1999/02/22-rdf-syntax-ns#value" />
-		<call-macro name="split-literal" abbrev="schema:familyName" predicate="http://schema.org/familyName" />
-		<call-macro name="split-literal" abbrev="schema:birthDate" predicate="http://schema.org/birthDate" />
-		<call-macro name="split-literal" abbrev="schema:gender" predicate="http://schema.org/gender" />
+		<call-macro name="split-literal" abbrev="schema:alternateName" predicate="http://schema.org/alternateName"/>
+		<call-macro name="split-literal" abbrev="owl:differentFrom"
+					predicate="http://www.w3.org/2002/07/owl#differentFrom"/>
+		<call-macro name="split-literal" abbrev="rdf:type" predicate="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+		<call-macro name="split-literal" abbrev="schema:description" predicate="http://schema.org/description"/>
+		<call-macro name="split-literal" abbrev="schema:sameAs" predicate="http://schema.org/sameAs"/>
+		<call-macro name="split-literal" abbrev="dc:identifier" predicate="http://purl.org/dc/terms/identifier"/>
+		<call-macro name="split-literal" abbrev="schema:deathDate" predicate="http://schema.org/deathDate"/>
+		<call-macro name="split-literal" abbrev="schema:name" predicate="http://schema.org/name"/>
+		<call-macro name="split-literal" abbrev="schema:givenName" predicate="http://schema.org/givenName"/>
+		<call-macro name="split-literal" abbrev="rdf:value"
+					predicate="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+		<call-macro name="split-literal" abbrev="schema:familyName" predicate="http://schema.org/familyName"/>
+		<call-macro name="split-literal" abbrev="schema:birthDate" predicate="http://schema.org/birthDate"/>
+		<call-macro name="split-literal" abbrev="schema:gender" predicate="http://schema.org/gender"/>
 
 	</rules>
 
