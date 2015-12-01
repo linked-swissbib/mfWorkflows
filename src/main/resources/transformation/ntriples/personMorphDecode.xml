@@ -7,27 +7,27 @@
         <data source="_id" name="@id"/>
 
         <data source="http://dbpedia.org/ontology/birthYear" name="dbp:birthYear">
-            <regexp match='"?(.*)"?' format="${1}" />
+            <regexp match='"(.*)"|(.*)' format="${1}" />
         </data>
         <data source="http://www.w3.org/2004/02/skos/core#note" name="skos:note">
-            <regexp match='"?(.*)"?' format="${1}" />
+            <regexp match='"(.*)"|(.*)' format="${1}" />
         </data>
         <data source="http://xmlns.com/foaf/0.1/lastName" name="foaf:lastName">
-            <regexp match='"?(.*)"?' format="${1}" />
+            <regexp match='"(.*)"|(.*)' format="${1}" />
         </data>
         <data source="http://xmlns.com/foaf/0.1/firstName" name="foaf:firstName">
-            <regexp match='"?(.*)"?' format="${1}" />
+            <regexp match='"(.*)"|(.*)' format="${1}" />
         </data>
         <data source="http://www.w3.org/2000/01/rdf-schema#label" name="rdfs:label">
-            <regexp match='"?(.*)"?' format="${1}" />
+            <regexp match='"(.*)"|(.*)' format="${1}" />
         </data>
         <data source="owl:sameAs" name="owl:sameAs"/>
         <data source="http://www.w3.org/2002/07/owl#sameAs" name="owl:sameAs"/>
         <data source="http://xmlns.com/foaf/0.1/name" name="foaf:name">
-            <regexp match='"?(.*)"?' format="${1}" />
+            <regexp match='"(.*)"|(.*)' format="${1}" />
         </data>
         <data source="http://dbpedia.org/ontology/deathYear" name="dbp:deathYear">
-            <regexp match='"?(.*)"?' format="${1}" />
+            <regexp match='"(.*)"|(.*)' format="${1}" />
         </data>
 
     </rules>
