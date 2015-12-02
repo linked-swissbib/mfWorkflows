@@ -1,8 +1,8 @@
-outdir      = "/data/sbdump/outputBulkJson";
+outdir      = "/data/sbdump/test";
 filesize    = "10000";
 records     = "5000";
 bulkheader      = "true";
-index = "testsb_151117";
+index = "testsb_151202";
 jsoncompliant = "false";
 file = "/data/sbdump/swissbib_persons_final.nt";
 
@@ -15,18 +15,16 @@ decode-ntriples(unicodeEscapeSeq="true")|
 stream-to-triples(redirect="true")|
 sort-triples(by="all")|
 filter-duplicate-objects|
-object-tee| {
-    filter-triples(subjectpattern="http://viaf.org/.*")|
-    collect-triples|
-    morph(FLUX_DIR + "viafMorphDecode.xml")|
+collect-triples|
+morph(FLUX_DIR + "morphDecode.xml")|
+stream-tee| {
+    filter(FLUX_DIR + "viafFilter.xml")|
     encode-esbulk(escapeChars="true", header=bulkheader, index=index, type="viaf")|
-    write-esbulk(baseOutDir=outdir, fileSize=filesize, jsonCompliant=jsoncompliant)
-    //index-esbulk(esNodes=esnodes, esClustername=escluster, recordsPerUpload=records)
+    //write-esbulk(baseOutDir=outdir, fileSize=filesize, jsonCompliant=jsoncompliant)
+    index-esbulk(esNodes=esnodes, esClustername=escluster, recordsPerUpload=records)
 } {
-    filter-triples(subjectpattern="http://data.swissbib.*")|
-    collect-triples|
-    morph(FLUX_DIR + "personMorphDecode.xml")|
+    filter(FLUX_DIR + "personFilter.xml")|
     encode-esbulk(escapeChars="true", header=bulkheader, index=index, type="person")|
-    write-esbulk(baseOutDir=outdir, fileSize=filesize, jsonCompliant=jsoncompliant)
-    //index-esbulk(esNodes=esnodes, esClustername=escluster, recordsPerUpload=records)
+    //write-esbulk(baseOutDir=outdir, fileSize=filesize, jsonCompliant=jsoncompliant)
+    index-esbulk(esNodes=esnodes, esClustername=escluster, recordsPerUpload=records)
 };
