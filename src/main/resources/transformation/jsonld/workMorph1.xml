@@ -28,10 +28,8 @@
 		</combine>
 		
 		<!--SUBJECT OF THE WORK-->
-		<data source="986  .b" name="_id" >
-			<compose prefix="http://data.swissbib.ch/work/" />
-		</data>
-		
+		<data source="986  .b" name="_id" />
+
 		<!--SUBJECT OF THE WORK AS LITERAL VALUE OF THE RECORD-->
 		<data source="986  .b" name="id" >
 			<compose prefix="http://data.swissbib.ch/work/" />

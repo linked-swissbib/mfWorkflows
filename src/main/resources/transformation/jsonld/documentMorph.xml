@@ -60,17 +60,14 @@
 	<rules>
 
 		<!-- Set id -->
-		<data source="001" name="_id">
+		<data source="001" name="_id" />
+
+		<data source="001" name="\@id">
 			<compose prefix="http://data.swissbib.ch/resource/"/>
 			<compose postfix="/about" />
 		</data>
 
 		<!-- Definitions for recursions to be used later in substructures (must be set here!) -->
-
-		<data source="001" name="@swissbib_id">
-			<compose prefix="http://data.swissbib.ch/resource/"/>
-			<compose postfix="/about" />
-		</data>
 
 		<data source="008" name="@language">
 			<substring  start="35"  end="38"/>
@@ -195,7 +192,10 @@
 
 			<!--LINK WITH THE BASIS RECORD-->
 			<entity name="foaf:primaryTopic{}" >
-				<data source="@swissbib_id" name="@id" />
+				<data source="001" name="@id">
+					<compose prefix="http://data.swissbib.ch/resource/"/>
+					<compose postfix="/about" />
+				</data>
 			</entity>
 
 

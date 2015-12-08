@@ -20,11 +20,11 @@
 			</postprocess>
 		</combine>
 		<combine name="@key711" value="${name}##${subunit}##${number}##${date}##${location}" flushWith="711??">
-			<data source="710??.a" name="name" />
-			<data source="710??.e" name="subunit" />
-			<data source="710??.n" name="number" />
-			<data source="710??.d" name="date" />
-			<data source="710??.c" name="location" />
+			<data source="711??.a" name="name" />
+			<data source="711??.e" name="subunit" />
+			<data source="711??.n" name="number" />
+			<data source="711??.d" name="date" />
+			<data source="711??.c" name="location" />
 			<postprocess>
 				<java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
 			</postprocess>
@@ -34,9 +34,7 @@
 
 		<!--710-->
 		<entity name="--" flushWith="710??" >
-			<data name="_id" source="@key710" >
-				<compose prefix="http://data.swissbib.ch/organisation/" />
-			</data>
+			<data name="_id" source="@key710" />
 			<data name="@id" source="@key710" >
 				<compose prefix="http://data.swissbib.ch/organisation/" />
 			</data>
@@ -63,9 +61,7 @@
 		
 		<!--711-->
 		<entity name="--" flushWith="711??" >
-			<data name="_id" source="@key711" >
-				<compose prefix="http://data.swissbib.ch/organisation/" />
-			</data>
+			<data name="_id" source="@key711" />
 			<data name="@id" source="@key711" >
 				<compose prefix="http://data.swissbib.ch/organisation/" />
 			</data>

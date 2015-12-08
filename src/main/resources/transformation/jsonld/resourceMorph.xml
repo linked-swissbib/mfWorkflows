@@ -61,9 +61,6 @@
 
         <!-- Definitions for recursions to be used later in substructures (must be set here!) -->
 
-        <data source="001" name="@swissbib_id">
-            <compose prefix="http://data.swissbib.ch/resource/"/>
-        </data>
         <data source="008" name="@language">
             <substring start="35" end="38"/>
         </data>
@@ -145,9 +142,11 @@
         <call-macro name="context"/>
 
         <!-- Set id -->
-        <data source="@swissbib_id" name="_id"/>
+        <data source="001" name="_id" />
 
-        <data source="@swissbib_id" name="@id"/>
+        <data source="001" name="\@id">
+            <compose prefix="http://data.swissbib.ch/resource/"/>
+        </data>
 
         <!--RDA CONTENT TYPE -->
         <entity name="rdau:contentType{}">
@@ -857,7 +856,8 @@
         <!--META-->
         <entity name="rdfs:isDefinedBy{}">
             <!--Do not add "flushWith="record"": if there is more than one field 035, the attributes "rdf:resource" will be repeated within the tag "rdfs:isDefinedBy"-->
-            <data source="@swissbib_id" name="@id">
+            <data source="001" name="@id">
+                <compose prefix="http://data.swissbib.ch/resource/" />
                 <compose postfix="/about"/>
             </data>
         </entity>

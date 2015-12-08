@@ -4,7 +4,7 @@
 
     <rules>
 
-            <data name="@id" source="id">
+            <data name="\@id" source="id">
                 <unique part="value"/>
             </data>
             <entity name="bf:hasInstance{}">

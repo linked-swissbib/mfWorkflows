@@ -1,44 +1,44 @@
 indir       = "/data/sbdump/marcDataMFSample";
 outdir      = "/data/sbdump/marcDataMFSample";
-file        = "/data/sbdump/marcDataMFSample/sample.xml.gz";
+file        = "/data/sbdump/marcDataMFSample.xml.gz";
 filesize    = "10000";
 esnodes     = "localhost:9300";
 escluster   = "elasticsearch";
 records     = "5000";
-index       = "testsb_151118";
+index       = "testsb_151208";
 bulkheader      = "true";
 jsoncompliant = "false";
 
-indir|
-read-dir|
-//file|
+//indir|
+//read-dir|
+file|
 open-gzip|
 decode-xml|
 handle-marcxml|
 stream-tee| {
     morph(FLUX_DIR + "resourceMorph.xml")|
     change-id|
-    encode-esbulk-ng(escapeChars="true", header=bulkheader, index=index, type="bibliographicResource")|
+    encode-esbulk(escapeChars="true", header=bulkheader, index=index, type="bibliographicResource")|
     write-esbulk(baseOutDir=outdir, fileSize=filesize, jsonCompliant=jsoncompliant)
     //index-esbulk(esNodes=esnodes, esClustername=escluster, recordsPerUpload=records)
 }{
     morph(FLUX_DIR + "documentMorph.xml")|
     change-id|
-    encode-esbulk-ng(escapeChars="true", header=bulkheader, index=index, type="document")|
+    encode-esbulk(escapeChars="true", header=bulkheader, index=index, type="document")|
     write-esbulk(baseOutDir=outdir, fileSize=filesize, jsonCompliant=jsoncompliant)
     //index-esbulk(esNodes=esnodes, esClustername=escluster, recordsPerUpload=records)
 }{
     morph(FLUX_DIR + "personMorph.xml")|
     split-entities|
     change-id|
-    encode-esbulk-ng(escapeChars="true", header=bulkheader, index=index, type="person")|
+    encode-esbulk(escapeChars="true", header=bulkheader, index=index, type="person")|
     write-esbulk(baseOutDir=outdir, fileSize=filesize, jsonCompliant=jsoncompliant)
     //index-esbulk(esNodes=esnodes, esClustername=escluster, recordsPerUpload=records)
 }{
     morph(FLUX_DIR + "organisationMorph.xml")|
     split-entities|
     change-id|
-    encode-esbulk-ng(escapeChars="true", header=bulkheader, index=index, type="organisation")|
+    encode-esbulk(escapeChars="true", header=bulkheader, index=index, type="organisation")|
     write-esbulk(baseOutDir=outdir, fileSize=filesize, jsonCompliant=jsoncompliant)
     //index-esbulk(esNodes=esnodes, esClustername=escluster, recordsPerUpload=records)
 }{
@@ -48,7 +48,7 @@ stream-tee| {
     sort-triples(by="all")|
     collect-triples|
     morph(FLUX_DIR + "workMorph2.xml")|
-    encode-esbulk-ng(escapeChars="true", header=bulkheader, index=index, type="work")|
+    encode-esbulk(escapeChars="true", header=bulkheader, index=index, type="work")|
     write-esbulk(baseOutDir=outdir, fileSize=filesize, jsonCompliant=jsoncompliant)
     //index-esbulk(esNodes=esnodes, esClustername=escluster, recordsPerUpload=records)
 };

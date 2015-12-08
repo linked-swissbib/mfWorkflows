@@ -30,7 +30,11 @@
 
     <rules>
 
-        <data source="_id" name="@id"/>
+        <data source="_id" name="\@id" />
+        <data source="_id" name="id">
+            <replace pattern="http://viaf.org/viaf/" with="" />
+            <replace pattern="http://data.swissbib.ch/person/" with="" />
+        </data>
 
         <!-- VIAF resources -->
         <call-macro name="viaf-literal" abbrev="schema:alternateName" predicate="http://schema.org/alternateName"/>
