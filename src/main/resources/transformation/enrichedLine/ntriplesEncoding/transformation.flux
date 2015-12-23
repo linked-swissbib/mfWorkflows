@@ -14,7 +14,7 @@ read-dir|
 open-gzip|
 decode-xml|
 handle-marcxml|
-morph(FLUX_DIR + "personMorphEncode.xml")|
+morph(FLUX_DIR + "personMorph.xml")|
 split-entities|
 change-id|
 stream-to-triples(redirect="true")|

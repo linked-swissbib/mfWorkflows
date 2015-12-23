@@ -16,7 +16,7 @@ stream-to-triples(redirect="true")|
 sort-triples(by="all")|
 filter-duplicate-objects|
 collect-triples|
-morph(FLUX_DIR + "morphDecodeIntegralType.xml")|
+morph(FLUX_DIR + "personMorph.xml")|
 change-id(idname="id")|
 encode-esbulk(escapeChars="true", header=bulkheader, index=index, type="person")|
 write-esbulk(baseOutDir=outdir, fileSize=filesize, jsonCompliant=jsoncompliant);

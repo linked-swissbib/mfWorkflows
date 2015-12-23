@@ -16,7 +16,7 @@ stream-to-triples(redirect="true")|
 sort-triples(by="all")|
 filter-duplicate-objects|
 collect-triples|
-morph(FLUX_DIR + "morphDecode.xml")|
+morph(FLUX_DIR + "morph.xml")|
 stream-tee| {
     filter(FLUX_DIR + "viafFilter.xml")|
     change-id(idname="id")|
