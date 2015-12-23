@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<metamorph xmlns="http://www.culturegraph.org/metamorph" version="1">
+
+
+    <macros>
+
+        <macro name="viaf-literal">
+            <entity name="$[abbrev]{}" flushWith="$[predicate]">
+                <data source="$[predicate]" name="@value">
+                    <regexp match='"(.*?)"' format="${1}"/>
+                </data>
+                <data source="$[predicate]" name="@language">
+                    <regexp match='"@(.*)$' format="${1}"/>
+                </data>
+                <data source="$[predicate]" name="@type">
+                    <regexp match='"\^\^.(.*).$' format="${1}"/>
+                </data>
+            </entity>
+        </macro>
+
+        <macro name="person-literal">
+            <data source="$[predicate]" name="$[abbrev]">
+                <regexp match='"(.*)"|(.*)' format="${1}"/>
+            </data>
+        </macro>
+
+    </macros>
+
+
+    <rules>
+
+        <data source="_id" name="\@id" />
+        <data source="_id" name="id">
+            <replace pattern="http://viaf.org/viaf/" with="" />
+            <replace pattern="http://data.swissbib.ch/person/" with="" />
+        </data>
+
+        <!-- VIAF resources -->
+        <call-macro name="viaf-literal" abbrev="schema:alternateName" predicate="http://schema.org/alternateName"/>
+        <call-macro name="viaf-literal" abbrev="owl:differentFrom"
+                    predicate="http://www.w3.org/2002/07/owl#differentFrom"/>
+        <call-macro name="viaf-literal" abbrev="rdf:type" predicate="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <call-macro name="viaf-literal" abbrev="schema:description" predicate="http://schema.org/description"/>
+        <call-macro name="viaf-literal" abbrev="schema:sameAs" predicate="http://schema.org/sameAs"/>
+        <call-macro name="viaf-literal" abbrev="dc:identifier" predicate="http://purl.org/dc/terms/identifier"/>
+        <call-macro name="viaf-literal" abbrev="schema:deathDate" predicate="http://schema.org/deathDate"/>
+        <call-macro name="viaf-literal" abbrev="schema:name" predicate="http://schema.org/name"/>
+        <call-macro name="viaf-literal" abbrev="schema:givenName" predicate="http://schema.org/givenName"/>
+        <call-macro name="viaf-literal" abbrev="rdf:value"
+                    predicate="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+        <call-macro name="viaf-literal" abbrev="schema:familyName" predicate="http://schema.org/familyName"/>
+        <call-macro name="viaf-literal" abbrev="schema:birthDate" predicate="http://schema.org/birthDate"/>
+        <call-macro name="viaf-literal" abbrev="schema:gender" predicate="http://schema.org/gender"/>
+
+        <!-- Person resources -->
+        <call-macro name="person-literal" abbrev="dbp:birthYear" predicate="http://dbpedia.org/ontology/birthYear"/>
+        <call-macro name="person-literal" abbrev="skos:note" predicate="http://www.w3.org/2004/02/skos/core#note"/>
+        <call-macro name="person-literal" abbrev="foaf:lastName" predicate="http://xmlns.com/foaf/0.1/lastName"/>
+        <call-macro name="person-literal" abbrev="foaf:firstName" predicate="http://xmlns.com/foaf/0.1/firstName"/>
+        <call-macro name="person-literal" abbrev="rdfs:label" predicate="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <call-macro name="person-literal" abbrev="foaf:name" predicate="http://xmlns.com/foaf/0.1/name"/>
+        <call-macro name="person-literal" abbrev="dbp:deathYear" predicate="http://dbpedia.org/ontology/deathYear"/>
+        <data source="owl:sameAs" name="owl:sameAs"/>
+        <data source="http://www.w3.org/2002/07/owl#sameAs" name="owl:sameAs"/>
+
+    </rules>
+
+</metamorph>

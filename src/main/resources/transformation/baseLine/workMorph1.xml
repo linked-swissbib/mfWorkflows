@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<metamorph xmlns="http://www.culturegraph.org/metamorph" version="1">
+
+	<rules>
+
+		<!--RECURSIONS-->
+		<combine name="@key1000" value="${name}##${number}##${title}##${lifedata}##${fullname}" flushWith="1000 ">
+			<data source="1000 .a" name="name" />
+			<data source="1000 .b" name="number" />
+			<data source="1000 .c" name="title" />
+			<data source="1000 .d" name="lifedata" />
+			<data source="1000 .q" name="fullname" />
+			<postprocess>
+				<java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
+			</postprocess>
+		</combine>
+		<combine name="@key1001" value="${lastname}##${firstname}##${number}##${title}##${lifedata}##${fullname}" flushWith="1001 ">
+			<data source="1001 .a" name="lastname" />
+			<data source="1001 .D" name="firstname" />
+			<data source="1001 .b" name="number" />
+			<data source="1001 .c" name="title" />
+			<data source="1001 .d" name="lifedata" />
+			<data source="1001 .q" name="fullname" />
+			<postprocess>
+				<java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
+			</postprocess>
+		</combine>
+		
+		<!--SUBJECT OF THE WORK-->
+		<data source="986  .b" name="_id" />
+
+		<!--SUBJECT OF THE WORK AS LITERAL VALUE OF THE RECORD-->
+		<data source="986  .b" name="id" >
+			<compose prefix="http://data.swissbib.ch/work/" />
+		</data>
+		
+		<!--001 RELATED RESOURCES/MANIFESTATIONS-->
+		<data source="001" name="instance">
+			<compose prefix="http://data.swissbib.ch/resource/"/>
+		</data>
+		
+		<!--100 MAIN AUTHOR-->
+		<data name="contributor0" source="@key1000">
+			<compose prefix="http://data.swissbib.ch/person/" />
+		</data>
+		<data name="contributor1" source="@key1001">
+			<compose prefix="http://data.swissbib.ch/person/" />
+		</data>
+		
+		<!--245 TITLE-->
+		<concat name="title" delimiter="" >
+			<data source="245*.a" />
+			<data source="245*.b" >
+				<compose prefix=" : " />
+			</data>
+			<data source="245*.c" >
+				<compose prefix=" / " />
+			</data>
+			<data source="245*.n" >
+				<compose prefix=". " />
+			</data>
+			<data source="245*.p" >
+				<compose prefix=". " />
+			</data>
+		</concat>
+
+	</rules>
+
+	<maps />
+
+</metamorph>
