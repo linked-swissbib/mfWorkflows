@@ -4,31 +4,43 @@
 
     <rules>
 
-            <data name="\@id" source="id">
-                <unique part="value"/>
-            </data>
-            <entity name="bf:hasInstance{}">
-                <data source="instance" name="@id"/>
-            </entity>
-            <entity name="dct:contributor{}">
-                <data source="contributor0" name="@id">
-                    <!--OPTION:
-                    <unique part="value" />
-                    -->
-                </data>
-            </entity>
-            <entity name="dct:contributor{}">
-                <data source="contributor1" name="@id">
-                    <!--OPTION:
-                    <unique part="value" />
-                    -->
-                </data>
-            </entity>
-            <data name="dct:title" source="title">
-                <!--OPTION (removes ~8,3% of title fields):
+        <data name="\@id" source="id">
+            <unique part="value"/>
+        </data>
+
+        <!--RDF TYPE (CLASS)-->
+
+        <data source="_id" name="\@type">
+            <constant value="http://bibframe.org/vocab/Work"/>
+        </data>
+
+        <!--REFERENCED JSON-LD CONTEXT-->
+        <data source="_id" name="\@context">
+            <constant value="http://data.swissbib.ch/work/context.jsonld"/>
+        </data>
+
+        <entity name="bf:hasInstance{}">
+            <data source="instance" name="@id"/>
+        </entity>
+        <entity name="dct:contributor{}">
+            <data source="contributor0" name="@id">
+                <!--OPTION:
                 <unique part="value" />
                 -->
             </data>
+        </entity>
+        <entity name="dct:contributor{}">
+            <data source="contributor1" name="@id">
+                <!--OPTION:
+                <unique part="value" />
+                -->
+            </data>
+        </entity>
+        <data name="dct:title" source="title">
+            <!--OPTION (removes ~8,3% of title fields):
+            <unique part="value" />
+            -->
+        </data>
     </rules>
 
     <maps/>

@@ -6,31 +6,6 @@
         <var name="swissbib_domain" value="http://data.swissbib.ch/resource/"/>
     </vars>
 
-    <macros>
-        <macro name="context">
-            <!-- Writes JSON-LD context -->
-            <entity name="@context" flushWith="record">
-
-                <data name="bf" source="_id">
-                    <constant value="http://bibframe.org/vocab/"/>
-                </data>
-
-                <data name="rdf" source="_id">
-                    <constant value="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-                </data>
-
-                <data name="foaf" source="_id">
-                    <constant value="http://xmlns.com/foaf/0.1/"/>
-                </data>
-
-                <data name="bibo" source="_id">
-                    <constant value="http://purl.org/ontology/bibo/"/>
-                </data>
-
-            </entity>
-        </macro>
-    </macros>
-
     <rules>
 
         <!--RECURSION-->
@@ -85,11 +60,14 @@
 
             <!--RDF TYPE (CLASS)-->
 
-            <entity name="rdf:type{}">
-                <data source="949??" name="@id">
-                    <constant value="http://bibframe.org/vocab/HeldItem"/>
-                </data>
-            </entity>
+            <data source="_id" name="@type">
+                <constant value="http://bibframe.org/vocab/HeldItem"/>
+            </data>
+
+            <!--REFERENCED JSON-LD CONTEXT-->
+            <data source="_id" name="@context">
+                <constant value="http://data.swissbib.ch/item/context.jsonld"/>
+            </data>
 
             <!--LINK WITH BILIOGRAPHICAL RESOURCE-->
 
@@ -132,8 +110,9 @@
             </concat>
 
             <!--LIBRARY-->
-            <entity name="bibo:owner{}" flushWith="949??" >
-                <combine name="@id" value="http://data.swissbib.ch/organisation/${network}${library_id}" flushWith="949??">
+            <entity name="bibo:owner{}" flushWith="949??">
+                <combine name="@id" value="http://data.swissbib.ch/organisation/${network}${library_id}"
+                         flushWith="949??">
                     <data source="949??.b" name="library_id">
                         <blacklist>
                             <!--Doesn't consider the REPO libraries for this part, because their URI consist of one part only:-->
@@ -148,11 +127,11 @@
                     <data source="949??.B" name="network"/>
                 </combine>
             </entity>
-			
-			<!--SUBLOCATION WITHIN THE LIBRARY-->
-			<data source="949??.1" name="bf:subLocation"/>
 
-		</entity>
+            <!--SUBLOCATION WITHIN THE LIBRARY-->
+            <data source="949??.1" name="bf:subLocation"/>
+
+        </entity>
 
     </rules>
 

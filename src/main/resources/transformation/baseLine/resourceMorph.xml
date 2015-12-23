@@ -138,14 +138,22 @@
         <!--To define the subject (root element) of each record.
         "entity" makes it possible to create a hierarchical tag structure.-->
 
-        <!-- Integrate JSON-LD context -->
-        <call-macro name="context"/>
-
         <!-- Set id -->
-        <data source="001" name="_id" />
+        <data source="001" name="_id"/>
 
         <data source="001" name="\@id">
             <compose prefix="http://data.swissbib.ch/resource/"/>
+        </data>
+
+        <!--RDF TYPE (CLASS)-->
+
+        <data source="_id" name="\@type">
+            <constant value="http://purl.org/dc/terms/BibliographicResource"/>
+        </data>
+
+        <!--REFERENCED JSON-LD CONTEXT-->
+        <data source="_id" name="\@context">
+            <constant value="http://data.swissbib.ch/resource/context.jsonld"/>
         </data>
 
         <!--RDA CONTENT TYPE -->
@@ -857,7 +865,7 @@
         <entity name="rdfs:isDefinedBy{}">
             <!--Do not add "flushWith="record"": if there is more than one field 035, the attributes "rdf:resource" will be repeated within the tag "rdfs:isDefinedBy"-->
             <data source="001" name="@id">
-                <compose prefix="http://data.swissbib.ch/resource/" />
+                <compose prefix="http://data.swissbib.ch/resource/"/>
                 <compose postfix="/about"/>
             </data>
         </entity>
