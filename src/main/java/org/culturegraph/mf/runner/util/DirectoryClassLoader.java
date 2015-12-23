@@ -15,13 +15,13 @@
  */
 package org.culturegraph.mf.runner.util;
 
-import org.culturegraph.mf.exceptions.MetafactureException;
-
 import java.io.File;
 import java.io.FilenameFilter;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLClassLoader;
+
+import org.culturegraph.mf.exceptions.MetafactureException;
 
 /**
  * A class loader which allows adding directories to the class

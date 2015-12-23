@@ -15,18 +15,18 @@
  */
 package org.culturegraph.mf.runner;
 
-import org.antlr.runtime.RecognitionException;
-import org.culturegraph.mf.flux.FluxCompiler;
-import org.culturegraph.mf.flux.parser.FluxProgramm;
-import org.culturegraph.mf.runner.util.DirectoryClassLoader;
-import org.culturegraph.mf.util.ResourceUtil;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import org.antlr.runtime.RecognitionException;
+import org.culturegraph.mf.flux.FluxCompiler;
+import org.culturegraph.mf.flux.parser.FluxProgramm;
+import org.culturegraph.mf.runner.util.DirectoryClassLoader;
+import org.culturegraph.mf.util.ResourceUtil;
 
 /**
  * @author Markus Michael Geipel
