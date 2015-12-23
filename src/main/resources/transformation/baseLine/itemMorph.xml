@@ -94,7 +94,7 @@
             <!--LINK WITH BILIOGRAPHICAL RESOURCE-->
 
             <entity name="bf:holdingFor{}" flushWith="949??">
-                <combine name="@id" value="http://data.swissbib.ch/resource/${id_record}">
+                <combine name="@id" value="http://data.swissbib.ch/resource/${id_record}" flushWith="949??">
                     <data source="@idnr" name="id_record"/>
                 </combine>
             </entity>
@@ -132,8 +132,8 @@
             </concat>
 
             <!--LIBRARY-->
-            <entity name="bibo:owner{}" flushWith="949??" sameEntity="true">
-                <combine name="@id" value="http://data.swissbib.ch/organisation/${network}${library_id}">
+            <entity name="bibo:owner{}" flushWith="949??" >
+                <combine name="@id" value="http://data.swissbib.ch/organisation/${network}${library_id}" flushWith="949??">
                     <data source="949??.b" name="library_id">
                         <blacklist>
                             <!--Doesn't consider the REPO libraries for this part, because their URI consist of one part only:-->
@@ -147,13 +147,12 @@
                     </data>
                     <data source="949??.B" name="network"/>
                 </combine>
-
-                <!--SUBLOCATION WITHIN THE LIBRARY-->
-
-                <data source="949??.1" name="bf:subLocation"/>
-
             </entity>
-        </entity>
+			
+			<!--SUBLOCATION WITHIN THE LIBRARY-->
+			<data source="949??.1" name="bf:subLocation"/>
+
+		</entity>
 
     </rules>
 
