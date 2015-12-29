@@ -4,6 +4,18 @@
 # end in an unexpected location if CDPATH is not empty.
 unset CDPATH
 
+# This script uses extended regular expressions in sed. As
+# there are two ways to enable them, we need to find out what
+# the installed version of sed supports:
+if echo "" | sed -r "" > /dev/null 2>&1 ; then
+	extended_regexp="-r"
+elif echo "" | sed -E "" > /dev/null 2>&1 ; then
+	extended_regexp="-E"
+else
+	echo "Error: sed does not seem to support extended regular expressions (neither -r nor -E works)" >&2
+	exit 2
+fi
+
 if [ -z "$BASH_SOURCE" ] ; then
 	echo "Error: cannot determine script location (\$BASH_SOURCE is not set)" >&2
 	exit 2
@@ -48,8 +60,7 @@ if [ -z "$FLUX_JAVA_BIN" ] ; then
 fi
 
 java_opts_file="$METAFACTURE_HOME/config/java-options.conf"
-#jar_file="$METAFACTURE_HOME/metafacture-runner-2.0.1-SNAPSHOT.jar"
-jar_file="$METAFACTURE_HOME/metafacture-runner-3.0.1-SNAPSHOT.jar"
+jar_file="$METAFACTURE_HOME/metafacture-runner-3.3.0-SNAPSHOT.jar"
 
 # Load java options from configuration file. Lines starting 
 # with # are treated as comments. Empty lines are ignored.
@@ -64,15 +75,23 @@ if [ -z "$FLUX_JAVA_OPTIONS" ] ; then
 fi
 # This sed script turns the output of set into a sed script
 # which replaces the dollar prefixed name of each environment
-# variable with its value:
+# variable with its value. As the output of the set command
+# is a list of variables followed by a list of functions, the
+# script terminates at the first line which appears not to be
+# a variable definition:
 vars_to_script=$( cat <<'EOF'
-	s/\\/\\\\/g ;
-	s/!/\\!/g ; 
-	s/='(.*)'$/=\1/ ;
-	s/^([^=]+)=(.*)$/s!\\$\1!\2!g ; /g
+	s/^[^=]*$//g ;                        # is this not a variable definition?
+	t quit ;                              # then jump to quit
+	s/\\/\\\\/g ;                         # otherwise escape backslashes,
+	s/!/\\!/g ;                           # escape exclamation marks,
+	s/='(.*)'$/=\1/ ;                     # remove quotes,
+	s/^([^=]+)=(.*)$/s!\\$\1!\2!g ; /g ;  # convert to sed regexp command
+	b ;                                   # and continue with next line
+	: quit
+	q
 EOF
 )
-substitute_vars_script=$( set | sed -r "$vars_to_script" )
+substitute_vars_script=$( set | sed $extended_regexp "$vars_to_script" )
 # Substitute environment variables in the java options:
 java_opts=$( echo "$java_opts" | sed "$substitute_vars_script")
 
@@ -85,11 +104,9 @@ option_pattern="[^\"' ]*(\"[^\"\\]*(\\\\.[^\"\\]*)*\"|'[^'\\]*(\\\\.[^'\\]*)*'|\
 remove_quotes="s/(^[\"'])|(([^\\])[\"'])/\3/g"
 java_opts_array=()
 while read line ; do
-	line=$( echo "$line" | sed -r "$remove_quotes" )
+	line=$( echo "$line" | sed $extended_regexp "$remove_quotes" )
 	java_opts_array+=("$line")
 done < <( echo "$java_opts" | grep -Eo "$option_pattern" )
 
 # Start flux:
-#echo ${java_opts_array[@]}
-#echo $jar_file 
 "$FLUX_JAVA_BIN" "${java_opts_array[@]}" -jar "$jar_file" "$@"
