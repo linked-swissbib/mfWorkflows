@@ -27,9 +27,7 @@
 
         <macro name="dbpedia-uri">
             <entity name="$[abbrev]{}" flushWith="$[predicate]">
-                <data source="$[predicate]" name="@id">
-                    <regexp match='(.*?)' format="${1}"/>
-                </data>
+                <data source="$[predicate]" name="@id"/>
             </entity>
         </macro>
 
@@ -83,7 +81,7 @@
         <call-macro name="dbpedia-uri" abbrev="dbp:thumbnail" predicate="http://dbpedia.org/ontology/thumbnail" />
         <call-macro name="dbpedia-uri" abbrev="dbp:influencedBy" predicate="http://dbpedia.org/ontology/influencedBy" />
         <call-macro name="dbpedia-uri" abbrev="dbp:partner" predicate="http://dbpedia.org/ontology/partner" />
-        <call-macro name="dbpedia-uri" abbrev="dbp:spouse" predicate="http://dbpedia.org/ontolo   gy/spouse" />
+        <call-macro name="dbpedia-uri" abbrev="dbp:spouse" predicate="http://dbpedia.org/ontology/spouse" />
         <call-macro name="dbpedia-uri" abbrev="dbp:author" predicate="http://dbpedia.org/ontology/author" />
         <call-macro name="dbpedia-uri" abbrev="dbp:influenced" predicate="http://dbpedia.org/ontology/influenced" />
         <data source="http://dbpedia.org/ontology/abstract" name="dbp:abstract"/>
