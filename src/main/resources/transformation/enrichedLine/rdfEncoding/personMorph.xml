@@ -50,18 +50,15 @@
 				<java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
 			</postprocess>
 		</combine>
-
+	
 		<!--BUILD THE BASIS RECORD -->
 
 		<!--100 first indicator 0-->
-		<entity name="--" flushWith="1000 " >
-			<data name="_id" source="@key1000" >
+		<entity name="foaf:Person" flushWith="1000 " >
+			<data name="~rdf:about" source="@key1000" >
 				<compose prefix="http://data.swissbib.ch/person/" />
 			</data>
-			<data name="http://www.w3.org/1999/02/22-rdf-syntax-ns#about" source="@key1000" >
-				<compose prefix="http://data.swissbib.ch/person/" />
-			</data>
-			<combine name="http://www.w3.org/2000/01/rdf-schema#label" value="${name}${number}${developed}${dates}${note}" flushWith="1000 " sameEntity="true" >
+			<combine name="rdfs:label" value="${name}${number}${developed}${dates}${note}" flushWith="1000 " sameEntity="true" >
 				<data source="1000 .a" name="name" />
 				<data source="1000 .b" name="number" >
 					<compose prefix=" " />
@@ -76,25 +73,22 @@
 					<compose prefix=", " />
 				</data>
 			</combine>
-			<data source="1000 .d" name="http://dbpedia.org/ontology/birthYear" >
+			<data source="1000 .d" name="dbp:birthYear" >
 				<regexp match="(\d\d\d\d).?[-]" format="${1}" />
 			</data>
-			<data source="1000 .d" name="http://dbpedia.org/ontology/deathYear" >
+			<data source="1000 .d" name="dbp:deathYear" >
 				<regexp match="(\d\d\d\d)$" format="${1}" />
 			</data>
-			<data source="1000 .a" name="http://xmlns.com/foaf/0.1/name" />
-			<data source="1000 .c" name="http://www.w3.org/2004/02/skos/core#note" />
+			<data source="1000 .a" name="foaf:name" />
+			<data source="1000 .c" name="skos:note" />
 		</entity>
-
+		
 		<!--100 first indicator 1-->
-		<entity name="--" flushWith="1001 " >
-			<data name="_id" source="@key1001" >
+		<entity name="foaf:Person" flushWith="1001 " >
+			<data name="~rdf:about" source="@key1001" >
 				<compose prefix="http://data.swissbib.ch/person/" />
 			</data>
-			<data name="http://www.w3.org/1999/02/22-rdf-syntax-ns#about" source="@key1001" >
-				<compose prefix="http://data.swissbib.ch/person/" />
-			</data>
-			<combine name="http://www.w3.org/2000/01/rdf-schema#label" value="${lastname}${firstname}${number}${developed}${dates}${note}" flushWith="1001 " sameEntity="true" >
+			<combine name="rdfs:label" value="${lastname}${firstname}${number}${developed}${dates}${note}" flushWith="1001 " sameEntity="true" >
 				<data source="1001 .a" name="lastname" />
 				<data source="1001 .D" name="firstname" >
 					<compose prefix=", " />
@@ -112,26 +106,23 @@
 					<compose prefix=", " />
 				</data>
 			</combine>
-			<data source="1001 .d" name="http://dbpedia.org/ontology/birthYear" >
+			<data source="1001 .d" name="dbp:birthYear" >
 				<regexp match="(\d\d\d\d).?[-]" format="${1}" />
 			</data>
-			<data source="1001 .d" name="http://dbpedia.org/ontology/deathYear" >
+			<data source="1001 .d" name="dbp:deathYear" >
 				<regexp match="(\d\d\d\d)$" format="${1}" />
 			</data>
-			<data source="1001 .a" name="http://xmlns.com/foaf/0.1/lastName" />
-			<data source="1001 .D" name="http://xmlns.com/foaf/0.1/firstName" />
-			<data source="1001 .c" name="http://www.w3.org/2004/02/skos/core#note" />
+			<data source="1001 .a" name="foaf:lastName" />
+			<data source="1001 .D" name="foaf:firstName" />
+			<data source="1001 .c" name="skos:note" />
 		</entity>
-
+		
 		<!--700 first indicator 0-->
-		<entity name="--" flushWith="7000 " >
-			<data name="_id" source="@key7000" >
+		<entity name="foaf:Person" flushWith="7000 " >
+			<data name="~rdf:about" source="@key7000" >
 				<compose prefix="http://data.swissbib.ch/person/" />
 			</data>
-			<data name="http://www.w3.org/1999/02/22-rdf-syntax-ns#about" source="@key7000" >
-				<compose prefix="http://data.swissbib.ch/person/" />
-			</data>
-			<combine name="http://www.w3.org/2000/01/rdf-schema#label" value="${name}${number}${developed}${dates}${note}" flushWith="7000 " sameEntity="true" >
+			<combine name="rdfs:label" value="${name}${number}${developed}${dates}${note}" flushWith="7000 " sameEntity="true" >
 				<data source="7000 .a" name="name" />
 				<data source="7000 .b" name="number" >
 					<compose prefix=" " />
@@ -146,25 +137,22 @@
 					<compose prefix=", " />
 				</data>
 			</combine>
-			<data source="7000 .d" name="http://dbpedia.org/ontology/birthYear" >
+			<data source="7000 .d" name="dbp:birthYear" >
 				<regexp match="(\d\d\d\d).?[-]" format="${1}" />
 			</data>
-			<data source="7000 .d" name="http://dbpedia.org/ontology/deathYear" >
+			<data source="7000 .d" name="dbp:deathYear" >
 				<regexp match="(\d\d\d\d)$" format="${1}" />
 			</data>
-			<data source="7000 .a" name="http://xmlns.com/foaf/0.1/name" />
-			<data source="7000 .c" name="http://www.w3.org/2004/02/skos/core#note" />
+			<data source="7000 .a" name="foaf:name" />
+			<data source="7000 .c" name="skos:note" />
 		</entity>
 
 		<!--700 first indicator 1-->
-		<entity name="--" flushWith="7001 " >
-			<data name="_id" source="@key7001" >
+		<entity name="foaf:Person" flushWith="7001 " >
+			<data name="~rdf:about" source="@key7001" >
 				<compose prefix="http://data.swissbib.ch/person/" />
 			</data>
-			<data name="http://www.w3.org/1999/02/22-rdf-syntax-ns#about" source="@key7001" >
-				<compose prefix="http://data.swissbib.ch/person/" />
-			</data>
-			<combine name="http://www.w3.org/2000/01/rdf-schema#label" value="${lastname}${firstname}${number}${developed}${dates}${note}" flushWith="7001 " sameEntity="true" >
+			<combine name="rdfs:label" value="${lastname}${firstname}${number}${developed}${dates}${note}" flushWith="7001 " sameEntity="true" >
 				<data source="7001 .a" name="lastname" />
 				<data source="7001 .D" name="firstname" >
 					<compose prefix=", " />
@@ -182,15 +170,15 @@
 					<compose prefix=", " />
 				</data>
 			</combine>
-			<data source="7001 .d" name="http://dbpedia.org/ontology/birthYear" >
+			<data source="7001 .d" name="dbp:birthYear" >
 				<regexp match="(\d\d\d\d).?[-]" format="${1}" />
 			</data>
-			<data source="7001 .d" name="http://dbpedia.org/ontology/deathYear" >
+			<data source="7001 .d" name="dbp:deathYear" >
 				<regexp match="(\d\d\d\d)$" format="${1}" />
 			</data>
-			<data source="7001 .a" name="http://xmlns.com/foaf/0.1/lastName" />
-			<data source="7001 .D" name="http://xmlns.com/foaf/0.1/firstName" />
-			<data source="7001 .c" name="http://www.w3.org/2004/02/skos/core#note" />
+			<data source="7001 .a" name="foaf:lastName" />
+			<data source="7001 .D" name="foaf:firstName" />
+			<data source="7001 .c" name="skos:note" />
 		</entity>		
 
 	</rules>
