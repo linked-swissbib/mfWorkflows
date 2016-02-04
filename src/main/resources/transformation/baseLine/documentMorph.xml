@@ -110,13 +110,6 @@
         <!--PUBLICATION DATE OF THE RDF RECORD-->
         <entity name="dct:issued">
             <data name="@type" source="_id">
-                <!--The symbol '~' before rdf:about is very important: it permits to integrate rdf:about as an attribute in the tag rdf:Description-->
-                <!-- compare http://b3e.net/metamorph-book/latest/datamodel.html
-                    section "Strukturierte Literal- und Entitätsnamen"
-                    about the possibilities and background for the chosen design and implementation provided by the Metamorph datamodel
-                    to express structured data elements (like XML attributes or list elements)
-                    and data types
-                -->
                 <constant value="http://www.w3.org/2001/XMLSchema#dateTime"/>
             </data>
             <data name="@value" source="_id">
@@ -125,15 +118,10 @@
         </entity>
 
         <!--LAST MODIFICATION DATE OF THE MARC RECORD-->
-        <entity name="dct:modified">
-            <data name="@type" source="_id">
-                <constant value="http://www.w3.org/2001/XMLSchema#dateTime"/>
-            </data>
-            <data name="@value" source="005">
-                <regexp match="^(\d\d\d\d)(\d\d)(\d\d)(\d\d)(\d\d)(\d\d)\.(\d)"
-                        format="${1}-${2}-${3}T${4}:${5}:${6}+01:00"/>
-            </data>
-        </entity>
+        <data name="dct:modified" source="005">
+            <regexp match="^(\d\d\d\d)(\d\d)(\d\d)(\d\d)(\d\d)(\d\d)\.(\d)"
+                    format="${1}-${2}-${3}T${4}:${5}:${6}+01:00"/>
+        </data>
 
         <!--NETWORK(S) THAT CREATED THE RECORD-->
         <entity name="dct:contributor{}">
@@ -176,12 +164,12 @@
             </blacklist>
         </data>
 
-		<!--LOCAL ID OF THE RESOURCE-->
-		<data source="035  .a" name="bf:local">
-			<regexp match="\((.*)\)(.*)" format="${1}/${2}" />
-			<unique part="value"/>
-		</data>
-		
+        <!--LOCAL ID OF THE RESOURCE-->
+        <data source="035  .a" name="bf:local">
+            <regexp match="\((.*)\)(.*)" format="${1}/${2}"/>
+            <unique part="value"/>
+        </data>
+
         <!--LINK WITH THE BASIS RECORD-->
         <entity name="foaf:primaryTopic{}">
             <data source="001" name="@id">

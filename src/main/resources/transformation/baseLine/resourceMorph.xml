@@ -590,9 +590,9 @@
                 <compose prefix=". "/>
             </data>
         </concat>
-		
-		<!--245: STATEMENT OF RESPONSIBILITY-->
-		<data name="rdau:P60339" source="245*.c" />
+
+        <!--245: STATEMENT OF RESPONSIBILITY-->
+        <data name="rdau:P60339" source="245*.c"/>
 
         <!--246: OTHER TITLES-->
         <concat name="dct:alternative" delimiter="" flushWith="246??" reset="true">
