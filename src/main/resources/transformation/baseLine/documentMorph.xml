@@ -139,7 +139,7 @@
                 <entry name="ABN"/>
                 <entry name="ALEX"/>
                 <entry name="BGR"/>
-				<entry name="BORIS"/>
+                <entry name="BORIS"/>
                 <entry name="CCSA"/>
                 <entry name="CH-CCSA"/>
                 <entry name="DDB"/>
@@ -171,12 +171,10 @@
         </data>
 
         <!--LINK WITH THE BASIS RECORD-->
-        <entity name="foaf:primaryTopic{}">
-            <data source="001" name="@id">
-                <compose prefix="http://data.swissbib.ch/resource/"/>
-                <compose postfix="/about"/>
-            </data>
-        </entity>
+        <data source="001" name="foaf:primaryTopic">
+            <compose prefix="http://data.swissbib.ch/resource/"/>
+            <compose postfix="/about"/>
+        </data>
 
 
         <!--		</entity>-->

@@ -157,17 +157,15 @@
         </data>
 
         <!--RDA CONTENT TYPE -->
-        <entity name="rdau:P60049{}">
-            <data name="@id" source="898  .a">
-                <substring start="0" end="6"/>
-                <!--To select only positions 0-5 of the field 898$a-->
-                <lookup in="type_content"/>
-                <!--To look up the links given in the file announced in the tag <map>-->
-                <unique part="value"/>
-            </data>
-        </entity>
+        <data name="P60049" source="898  .a">
+            <substring start="0" end="6"/>
+            <!--To select only positions 0-5 of the field 898$a-->
+            <lookup in="type_content"/>
+            <!--To look up the links given in the file announced in the tag <map>-->
+            <unique part="value"/>
+        </data>
 
-        <entity name="rdau:P60049{}">
+        <combine name="rdau:P60049" value="${uid}">
             <if>
                 <!--To select only the record types MU03xxxx (=Sound/Ton/Son), that are sounds (vs. spoken words. Includes natural sounds, artificially produced sounds, etc. )
                 The function "if" uses the default boolean operator "OR" when various arguments/conditions are present!-->
@@ -189,13 +187,13 @@
                     </any>
                 </all>
             </if>
-            <data name="@id" source="_id">
+            <data name="uid" source="_id">
                 <!--"_id" is used as "source"-value when the value doesn't come from directly the record itself-->
                 <constant value="http://rdvocab.info/termList/RDAContentType/1012"/>
             </data>
-        </entity>
+        </combine>
 
-        <entity name="rdau:P60049{}">
+        <combine name="rdau:P60049" value="${uid}">
             <if>
                 <!--To select only the record types MU03xxxx (=Sound/Ton/Son), that are spoken words (Includes recorded readings, recitations, speeches, interviews, oral histories, etc., computer-generated speech, etc.)-->
                 <all>
@@ -213,224 +211,200 @@
                     </data>
                 </all>
             </if>
-            <data name="@id" source="_id">
+            <data name="uid" source="_id">
                 <constant value="http://rdvocab.info/termList/RDAContentType/1013"/>
             </data>
-        </entity>
+        </combine>
 
         <!--RDA MEDIA TYPE -->
-        <entity name="rdau:P60050{}">
-            <data name="@id" source="898  .a">
-                <blacklist>
-                    <entry name="CF010100"/>
-                    <entry name="CF010200"/>
-                    <entry name="CF010300"/>
-                    <entry name="CF010400"/>
-                    <entry name="CF010500"/>
-                    <entry name="CF010600"/>
-                    <entry name="CF010000"/>
-                    <entry name="MU030000"/>
-                    <entry name="MU030100"/>
-                    <entry name="MU030200"/>
-                    <entry name="MU030300"/>
-                    <entry name="MU030400"/>
-                    <entry name="MU030500"/>
-                    <entry name="MU030600"/>
-                    <entry name="MU040000"/>
-                    <entry name="MU040100"/>
-                    <entry name="MU040200"/>
-                    <entry name="MU040300"/>
-                    <entry name="MU040400"/>
-                    <entry name="MU040500"/>
-                    <entry name="MU040600"/>
-                    <entry name="VM010000"/>
-                    <entry name="VM010100"/>
-                    <entry name="VM010200"/>
-                    <entry name="VM010300"/>
-                    <entry name="VM010400"/>
-                    <entry name="VM020100"/>
-                    <entry name="VM020200"/>
-                    <entry name="VM030100"/>
-                    <entry name="VM030200"/>
-                    <entry name="VM030400"/>
-                    <entry name="VM030000"/>
-                    <entry name="VM040000"/>
-                    <entry name="MX010000"/>
-                </blacklist>
-                <substring start="6" end="8"/>
-                <!--To select only positions 6-7 of the field 898$a-->
-                <lookup in="type_media"/>
-                <unique part="value"/>
-            </data>
-        </entity>
+        <data name="rdau:P60050" source="898  .a">
+            <blacklist>
+                <entry name="CF010100"/>
+                <entry name="CF010200"/>
+                <entry name="CF010300"/>
+                <entry name="CF010400"/>
+                <entry name="CF010500"/>
+                <entry name="CF010600"/>
+                <entry name="CF010000"/>
+                <entry name="MU030000"/>
+                <entry name="MU030100"/>
+                <entry name="MU030200"/>
+                <entry name="MU030300"/>
+                <entry name="MU030400"/>
+                <entry name="MU030500"/>
+                <entry name="MU030600"/>
+                <entry name="MU040000"/>
+                <entry name="MU040100"/>
+                <entry name="MU040200"/>
+                <entry name="MU040300"/>
+                <entry name="MU040400"/>
+                <entry name="MU040500"/>
+                <entry name="MU040600"/>
+                <entry name="VM010000"/>
+                <entry name="VM010100"/>
+                <entry name="VM010200"/>
+                <entry name="VM010300"/>
+                <entry name="VM010400"/>
+                <entry name="VM020100"/>
+                <entry name="VM020200"/>
+                <entry name="VM030100"/>
+                <entry name="VM030200"/>
+                <entry name="VM030400"/>
+                <entry name="VM030000"/>
+                <entry name="VM040000"/>
+                <entry name="MX010000"/>
+            </blacklist>
+            <substring start="6" end="8"/>
+            <!--To select only positions 6-7 of the field 898$a-->
+            <lookup in="type_media"/>
+            <unique part="value"/>
+        </data>
 
-        <entity name="rdau:P60050{}">
-            <data name="@id" source="898  .a">
-                <whitelist>
-                    <entry name="CF010100"/>
-                    <entry name="CF010200"/>
-                    <entry name="CF010300"/>
-                    <entry name="CF010400"/>
-                    <entry name="CF010500"/>
-                    <entry name="CF010600"/>
-                    <entry name="CF010000"/>
-                    <entry name="MU030000"/>
-                    <entry name="MU030100"/>
-                    <entry name="MU030200"/>
-                    <entry name="MU030300"/>
-                    <entry name="MU030400"/>
-                    <entry name="MU030500"/>
-                    <entry name="MU030600"/>
-                    <entry name="MU040000"/>
-                    <entry name="MU040100"/>
-                    <entry name="MU040200"/>
-                    <entry name="MU040300"/>
-                    <entry name="MU040400"/>
-                    <entry name="MU040500"/>
-                    <entry name="MU040600"/>
-                    <entry name="VM010000"/>
-                    <entry name="VM010100"/>
-                    <entry name="VM010200"/>
-                    <entry name="VM010300"/>
-                    <entry name="VM010400"/>
-                    <entry name="VM020100"/>
-                    <entry name="VM020200"/>
-                    <entry name="VM030100"/>
-                    <entry name="VM030200"/>
-                    <entry name="VM030400"/>
-                    <entry name="VM030000"/>
-                    <entry name="VM040000"/>
-                    <entry name="MX010000"/>
-                </whitelist>
-                <lookup in="type_media"/>
-                <unique part="value"/>
-            </data>
-        </entity>
+        <data name="P60050" source="898  .a">
+            <whitelist>
+                <entry name="CF010100"/>
+                <entry name="CF010200"/>
+                <entry name="CF010300"/>
+                <entry name="CF010400"/>
+                <entry name="CF010500"/>
+                <entry name="CF010600"/>
+                <entry name="CF010000"/>
+                <entry name="MU030000"/>
+                <entry name="MU030100"/>
+                <entry name="MU030200"/>
+                <entry name="MU030300"/>
+                <entry name="MU030400"/>
+                <entry name="MU030500"/>
+                <entry name="MU030600"/>
+                <entry name="MU040000"/>
+                <entry name="MU040100"/>
+                <entry name="MU040200"/>
+                <entry name="MU040300"/>
+                <entry name="MU040400"/>
+                <entry name="MU040500"/>
+                <entry name="MU040600"/>
+                <entry name="VM010000"/>
+                <entry name="VM010100"/>
+                <entry name="VM010200"/>
+                <entry name="VM010300"/>
+                <entry name="VM010400"/>
+                <entry name="VM020100"/>
+                <entry name="VM020200"/>
+                <entry name="VM030100"/>
+                <entry name="VM030200"/>
+                <entry name="VM030400"/>
+                <entry name="VM030000"/>
+                <entry name="VM040000"/>
+                <entry name="MX010000"/>
+            </whitelist>
+            <lookup in="type_media"/>
+            <unique part="value"/>
+        </data>
 
         <!--DOCUMENT TYPE-->
         <!--The document type completes - when necessary - RDA media and content type with a more concrete document type. A document can have more than one type, for instance bibo:Book and bibo:Thesis.-->
-        <entity name="rdf:type{}">
-            <data source="898  .a" name="@id">
-                <substring start="0" end="4"/>
-                <whitelist>
-                    <entry name="BK01"/>
-                </whitelist>
-                <constant value="http://purl.org/ontology/bibo/Article"/>
-                <unique part="value"/>
-            </data>
-        </entity>
-        <entity name="rdf:type{}">
-            <data source="898  .a" name="@id">
-                <substring start="0" end="4"/>
-                <whitelist>
-                    <entry name="BK02"/>
-                </whitelist>
-                <constant value="http://purl.org/ontology/bibo/Book"/>
-                <unique part="value"/>
-            </data>
-        </entity>
-        <entity name="rdf:type{}">
-            <data source="898  .a" name="@id">
-                <substring start="0" end="4"/>
-                <whitelist>
-                    <entry name="BK03"/>
-                    <entry name="MU02"/>
-                    <entry name="MP02"/>
-                </whitelist>
-                <constant value="http://purl.org/ontology/bibo/Manuscript"/>
-                <unique part="value"/>
-            </data>
-        </entity>
-        <entity name="rdf:type{}">
-            <data source="898  .a" name="@id">
+        <data source="898  .a" name="rdf:type">
+            <substring start="0" end="4"/>
+            <whitelist>
+                <entry name="BK01"/>
+            </whitelist>
+            <constant value="http://purl.org/ontology/bibo/Article"/>
+            <unique part="value"/>
+        </data>
+        <data source="898  .a" name="rdf:type">
+            <substring start="0" end="4"/>
+            <whitelist>
+                <entry name="BK02"/>
+            </whitelist>
+            <constant value="http://purl.org/ontology/bibo/Book"/>
+            <unique part="value"/>
+        </data>
+        <data source="898  .a" name="rdf:type">
+            <substring start="0" end="4"/>
+            <whitelist>
+                <entry name="BK03"/>
+                <entry name="MU02"/>
+                <entry name="MP02"/>
+            </whitelist>
+            <constant value="http://purl.org/ontology/bibo/Manuscript"/>
+            <unique part="value"/>
+        </data>
+        <data source="898  .a" name="rdf:type">
+            <substring start="0" end="4"/>
+            <whitelist>
+                <entry name="CR01"/>
+                <entry name="CR03"/>
+            </whitelist>
+            <constant value="http://purl.org/ontology/bibo/Periodical"/>
+            <unique part="value"/>
+        </data>
+        <data source="898  .a" name="rdf:type">
+            <substring start="0" end="6"/>
+            <whitelist>
+                <entry name="BK0108"/>
+                <entry name="BK0208"/>
+                <entry name="CR0108"/>
+                <entry name="CR0208"/>
+                <entry name="CR0308"/>
+            </whitelist>
+            <constant value="http://purl.org/ontology/bibo/Proceedings"/>
+            <unique part="value"/>
+        </data>
+        <data source="898  .a" name="rdf:type">
+            <substring start="0" end="4"/>
+            <whitelist>
+                <entry name="CL01"/>
+                <entry name="CL02"/>
+            </whitelist>
+            <constant value="http://purl.org/ontology/bibo/Series"/>
+            <unique part="value"/>
+        </data>
+        <data source="898  .a" name="rdf:type">
+            <substring start="0" end="6"/>
+            <whitelist>
+                <entry name="BK0103"/>
+                <entry name="BK0203"/>
+            </whitelist>
+            <constant value="http://purl.org/ontology/bibo/Thesis"/>
+            <unique part="value"/>
+        </data>
+        <data source="898  .a" name="rdf:type">
+            <substring start="0" end="6"/>
+            <whitelist>
+                <entry name="CR0104"/>
+                <entry name="CR0204"/>
+                <entry name="CR0304"/>
+            </whitelist>
+            <constant value="http://purl.org/ontology/bibo/Website"/>
+            <unique part="value"/>
+        </data>
+
+        <!--RDA mode of issuance-->
+        <!--only for serials and integrating resources-->
+        <choose>
+            <data source="898  .a" name="rdau:P60051">
                 <substring start="0" end="4"/>
                 <whitelist>
                     <entry name="CR01"/>
                     <entry name="CR03"/>
                 </whitelist>
-                <constant value="http://purl.org/ontology/bibo/Periodical"/>
-                <unique part="value"/>
+                <constant value="http://rdaregistry.info/termList/ModeIssue/1003"/>
             </data>
-        </entity>
-        <entity name="rdf:type{}">
-            <data source="898  .a" name="@id">
-                <substring start="0" end="6"/>
-                <whitelist>
-                    <entry name="BK0108"/>
-                    <entry name="BK0208"/>
-                    <entry name="CR0108"/>
-                    <entry name="CR0208"/>
-                    <entry name="CR0308"/>
-                </whitelist>
-                <constant value="http://purl.org/ontology/bibo/Proceedings"/>
-                <unique part="value"/>
-            </data>
-        </entity>
-        <entity name="rdf:type{}">
-            <data source="898  .a" name="@id">
+            <data source="898  .a" name="rdau:P60051">
                 <substring start="0" end="4"/>
                 <whitelist>
-                    <entry name="CL01"/>
-                    <entry name="CL02"/>
+                    <entry name="CR02"/>
                 </whitelist>
-                <constant value="http://purl.org/ontology/bibo/Series"/>
-                <unique part="value"/>
+                <constant value="http://rdaregistry.info/termList/ModeIssue/1004"/>
             </data>
-        </entity>
-        <entity name="rdf:type{}">
-            <data source="898  .a" name="@id">
-                <substring start="0" end="6"/>
-                <whitelist>
-                    <entry name="BK0103"/>
-                    <entry name="BK0203"/>
-                </whitelist>
-                <constant value="http://purl.org/ontology/bibo/Thesis"/>
-                <unique part="value"/>
-            </data>
-        </entity>
-        <entity name="rdf:type{}">
-            <data source="898  .a" name="@id">
-                <substring start="0" end="6"/>
-                <whitelist>
-                    <entry name="CR0104"/>
-                    <entry name="CR0204"/>
-                    <entry name="CR0304"/>
-                </whitelist>
-                <constant value="http://purl.org/ontology/bibo/Website"/>
-                <unique part="value"/>
-            </data>
-        </entity>
-
-        <!--RDA mode of issuance-->
-        <!--only for serials and integrating resources-->
-        <entity name="rdau:P60051{}">
-            <choose>
-                <data source="898  .a" name="@id">
-                    <substring start="0" end="4"/>
-                    <whitelist>
-                        <entry name="CR01"/>
-                        <entry name="CR03"/>
-                    </whitelist>
-                    <constant value="http://rdaregistry.info/termList/ModeIssue/1003"/>
-                </data>
-                <data source="898  .a" name="@id">
-                    <substring start="0" end="4"/>
-                    <whitelist>
-                        <entry name="CR02"/>
-                    </whitelist>
-                    <constant value="http://rdaregistry.info/termList/ModeIssue/1004"/>
-                </data>
-            </choose>
-        </entity>
+        </choose>
 
         <!--008: LANGUAGE-->
-        <entity name="dct:language{}">
-            <data source="@language|041*.a" name="@id">
-                <trim/>
-                <unique part="value"/>
-                <lookup in="languages"/>
-            </data>
-        </entity>
+        <data source="@language|041*.a" name="dct:language">
+            <trim/>
+            <unique part="value"/>
+            <lookup in="languages"/>
+        </data>
 
 
         <!--008: PUBLICATION DATES-->
@@ -446,13 +420,11 @@
         </choose>
 
         <!--008: PUBLICATION COUNTRY-->
-        <entity name="rdau:P60163{}">
-            <data source="008" name="@id">
-                <substring start="15" end="18"/>
-                <trim/><!--To remove white spaces before and after the string-->
-                <lookup in="countries"/>
-            </data>
-        </entity>
+        <data source="008" name="rdau:P60163">
+            <substring start="15" end="18"/>
+            <trim/><!--To remove white spaces before and after the string-->
+            <lookup in="countries"/>
+        </data>
 
         <!--020: ISBN-->
         <data source="020??.a" name="bibo:isbn13">
@@ -474,20 +446,16 @@
         </data>
 
         <!--041: ORIGINAL LANGUAGE-->
-        <entity name="dbp:originalLanguage{}">
-            <data source="041*.h" name="@id">
-                <trim/>
-                <lookup in="languages"/>
-            </data>
-        </entity>
+        <data source="041*.h" name="dbp:originalLanguage">
+            <trim/>
+            <lookup in="languages"/>
+        </data>
 
         <!--044: PUBLICATION CANTON (RERO DATA)-->
-        <entity name="rdau:P60163{}" flushWith="record">
-            <data source="044  .c" name="@id">
-                <substring start="3" end="5"/>
-                <lookup in="cantons"/>
-            </data>
-        </entity>
+        <data source="044  .c" name="rdau:P60163">
+            <substring start="3" end="5"/>
+            <lookup in="cantons"/>
+        </data>
         <!--This solution implies that we describe the entities in another file:
         <entity name="rdau:placeOfPublication" >
             <data source="044  .c" name="~rdf:resource" >
@@ -676,23 +644,21 @@
         <data name="dct:hasPart" source="505??.a"/>
 
         <!--6XX: SUBJECTS (GND only)-->
-        <entity name="dct:subject{}">
-            <combine name="@id" value="${gnd_id}" reset="true" flushWith="65???">
-                <!--"combine" is essential when a field is repetitive
-                "flushWith" to restart  the process with every concerned fields (?)
-                "reset" default:true -->
-                <if>
-                    <data source="65???.0">
-                        <substring start="0" end="8"/>
-                        <equals string="(DE-588)"/>
-                    </data>
-                </if>
-                <data source="65???.0" name="gnd_id">
-                    <regexp match="\)(.*)" format="http://d-nb.info/gnd/${1}"/>
-                    <unique part="value"/>
+        <combine name="dct:subject" value="${gnd_id}" reset="true" flushWith="65???">
+            <!--"combine" is essential when a field is repetitive
+            "flushWith" to restart  the process with every concerned fields (?)
+            "reset" default:true -->
+            <if>
+                <data source="65???.0">
+                    <substring start="0" end="8"/>
+                    <equals string="(DE-588)"/>
                 </data>
-            </combine>
-        </entity>
+            </if>
+            <data source="65???.0" name="gnd_id">
+                <regexp match="\)(.*)" format="http://d-nb.info/gnd/${1}"/>
+                <unique part="value"/>
+            </data>
+        </combine>
 
         <!--700: OTHER AUTHORS-->
         <entity name="dct:contributor" reset="true" flushWith="7000 ">
@@ -846,29 +812,23 @@
         </concat>
 
         <!--773: LINK TO HOST ITEM (works only with record that includes a subfield 773$9 (swiss german data))-->
-        <entity name="dct:isPartOf{}">
-            <data name="@id" source="773*.9">
-                <compose prefix="http://data.swissbib.ch/resource/"/>
-                <unique part="value"/>
-            </data>
-        </entity>
+        <data name="dct:isPartOf" source="773*.9">
+            <compose prefix="http://data.swissbib.ch/resource/"/>
+            <unique part="value"/>
+        </data>
 
         <!--986: FRBR CLUSTER (WORK)-->
         <!--40% of the records-->
-        <entity name="bf:instanceOf{}">
-            <data name="@id" source="986  .b">
-                <compose prefix="http://data.swissbib.ch/work/"/>
-            </data>
-        </entity>
+        <data name="bf:instanceOf" source="986  .b">
+            <compose prefix="http://data.swissbib.ch/work/"/>
+        </data>
 
         <!--META-->
-        <entity name="rdfs:isDefinedBy{}">
-            <!--Do not add "flushWith="record"": if there is more than one field 035, the attributes "rdf:resource" will be repeated within the tag "rdfs:isDefinedBy"-->
-            <data source="001" name="@id">
-                <compose prefix="http://data.swissbib.ch/resource/"/>
-                <compose postfix="/about"/>
-            </data>
-        </entity>
+        <!--Do not add "flushWith="record"": if there is more than one field 035, the attributes "rdf:resource" will be repeated within the tag "rdfs:isDefinedBy"-->
+        <data source="001" name="rdfs:isDefinedBy">
+            <compose prefix="http://data.swissbib.ch/resource/"/>
+            <compose postfix="/about"/>
+        </data>
 
         <!--		</entity>-->
 

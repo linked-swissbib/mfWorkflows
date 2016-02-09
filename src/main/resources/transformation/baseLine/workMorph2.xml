@@ -19,23 +19,17 @@
             <constant value="http://data.swissbib.ch/work/context.jsonld"/>
         </data>
 
-        <entity name="bf:hasInstance{}">
-            <data source="instance" name="@id"/>
-        </entity>
-        <entity name="dct:contributor{}">
-            <data source="contributor0" name="@id">
-                <!--OPTION:
-                <unique part="value" />
-                -->
-            </data>
-        </entity>
-        <entity name="dct:contributor{}">
-            <data source="contributor1" name="@id">
-                <!--OPTION:
-                <unique part="value" />
-                -->
-            </data>
-        </entity>
+        <data source="instance" name="bf:hasInstance"/>
+        <data source="contributor0" name="dc:contributor">
+            <!--OPTION:
+            <unique part="value" />
+            -->
+        </data>
+        <data source="contributor1" name="dc:contributor">
+            <!--OPTION:
+            <unique part="value" />
+            -->
+        </data>
         <data name="dct:title" source="title">
             <!--OPTION (removes ~8,3% of title fields):
             <unique part="value" />

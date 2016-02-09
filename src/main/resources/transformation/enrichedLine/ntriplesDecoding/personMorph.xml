@@ -36,12 +36,6 @@
             </data>
         </macro>
 
-        <macro name="dbpedia-uri">
-            <entity name="$[abbrev]{}" flushWith="$[predicate]">
-                <data source="$[predicate]" name="@id"/>
-            </entity>
-        </macro>
-
         <macro name="language-tag">
             <entity name="$[abbrev]{}" flushWith="$[predicate]">
                 <combine name="${lang}" value="${value}" flushWith="$[predicate]">
@@ -76,11 +70,8 @@
         </data>
 
         <!-- VIAF resources -->
-        <call-macro name="viaf-literal" abbrev="owl:differentFrom"
-                    predicate="http://www.w3.org/2002/07/owl#differentFrom"/>
         <call-macro name="viaf-literal" abbrev="rdf:type" predicate="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
         <call-macro name="viaf-literal" abbrev="schema:sameAs" predicate="http://schema.org/sameAs"/>
-        <call-macro name="viaf-literal" abbrev="dc:identifier" predicate="http://purl.org/dc/terms/identifier"/>
         <call-macro name="viaf-literal" abbrev="schema:name" predicate="http://schema.org/name"/>
         <call-macro name="viaf-literal" abbrev="rdf:value"
                     predicate="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
@@ -98,21 +89,6 @@
         <call-macro name="person-literal" abbrev="rdfs:label" predicate="http://www.w3.org/2000/01/rdf-schema#label"/>
         <call-macro name="person-literal" abbrev="foaf:name" predicate="http://xmlns.com/foaf/0.1/name"/>
 
-        <!-- DBPedia resources -->
-        <call-macro name="dbpedia-uri" abbrev="dbp:birthPlace" predicate="http://dbpedia.org/ontology/birthPlace"/>
-        <call-macro name="dbpedia-uri" abbrev="dbp:deathPlace" predicate="http://dbpedia.org/ontology/deathPlace"/>
-        <call-macro name="dbpedia-uri" abbrev="dbp:genre" predicate="http://dbpedia.org/ontology/genre"/>
-        <call-macro name="dbpedia-uri" abbrev="dbp:movement" predicate="http://dbpedia.org/ontology/movement"/>
-        <call-macro name="dbpedia-uri" abbrev="dbp:nationality" predicate="http://dbpedia.org/ontology/nationality"/>
-        <call-macro name="dbpedia-uri" abbrev="dbp:notableWork" predicate="http://dbpedia.org/ontology/notableWork"/>
-        <call-macro name="dbpedia-uri" abbrev="dbp:occupation" predicate="http://dbpedia.org/ontology/occupation"/>
-        <call-macro name="dbpedia-uri" abbrev="dbp:thumbnail" predicate="http://dbpedia.org/ontology/thumbnail"/>
-        <call-macro name="dbpedia-uri" abbrev="dbp:influencedBy" predicate="http://dbpedia.org/ontology/influencedBy"/>
-        <call-macro name="dbpedia-uri" abbrev="dbp:partner" predicate="http://dbpedia.org/ontology/partner"/>
-        <call-macro name="dbpedia-uri" abbrev="dbp:spouse" predicate="http://dbpedia.org/ontology/spouse"/>
-        <call-macro name="dbpedia-uri" abbrev="dbp:author" predicate="http://dbpedia.org/ontology/author"/>
-        <call-macro name="dbpedia-uri" abbrev="dbp:influenced" predicate="http://dbpedia.org/ontology/influenced"/>
-
         <call-macro name="language-tag" abbrev="dbp:abstract" predicate="http://dbpedia.org/ontology/abstract"/>
         <call-macro name="language-tag" abbrev="dbp:pseudonym" predicate="http://dbpedia.org/ontology/pseudonym"/>
         <call-macro name="language-tag" abbrev="dbp:alternativeNames"
@@ -124,6 +100,19 @@
         <data source="http://schema.org/description" name="schema:description"/>
         <data source="http://schema.org/givenName" name="schema:givenName"/>
         <data source="http://schema.org/familyName" name="schema:familyName"/>
+        <data name="dbp:birthPlace" source="http://dbpedia.org/ontology/birthPlace"/>
+        <data name="dbp:movement" source="http://dbpedia.org/ontology/movement"/>
+        <data name="dbp:nationality" source="http://dbpedia.org/ontology/nationality"/>
+        <data name="dbp:notableWork" source="http://dbpedia.org/ontology/notableWork"/>
+        <data name="dbp:occupation" source="http://dbpedia.org/ontology/occupation"/>
+        <data name="dbp:thumbnail" source="http://dbpedia.org/ontology/thumbnail"/>
+        <data name="dbp:influencedBy" source="http://dbpedia.org/ontology/influencedBy"/>
+        <data name="dbp:partner" source="http://dbpedia.org/ontology/partner"/>
+        <data name="dbp:spouse" source="http://dbpedia.org/ontology/spouse"/>
+        <data name="dbp:author" source="http://dbpedia.org/ontology/author"/>
+        <data name="dbp:influenced" source="http://dbpedia.org/ontology/influenced"/>
+        <data name="owl:differentFrom" source="http://www.w3.org/2002/07/owl#differentFrom"/>
+        <data name="dc:identifier" source="http://purl.org/dc/terms/identifier"/>
     </rules>
 
 </metamorph>
