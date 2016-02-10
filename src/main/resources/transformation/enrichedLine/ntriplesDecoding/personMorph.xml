@@ -81,7 +81,6 @@
         <data source="http://schema.org/gender" name="schema:gender"/>
         <data source="http://schema.org/sameAs" name="schema:sameAs"/>
         <data source="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" name="rdf:type"/>
-        <data source="http://www.w3.org/1999/02/22-rdf-syntax-ns#value" name="rdf:value"/>
         <data source="http://schema.org/name" name="schema:name"/>
         <data name="dbp:birthPlace" source="http://dbpedia.org/ontology/birthPlace"/>
         <data name="dbp:movement" source="http://dbpedia.org/ontology/movement"/>
