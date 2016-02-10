@@ -108,14 +108,9 @@
         "flushWith" enables to group various subfields into one output, even if the field appears more than one time. -->
 
         <!--PUBLICATION DATE OF THE RDF RECORD-->
-        <entity name="dct:issued">
-            <data name="@type" source="_id">
-                <constant value="http://www.w3.org/2001/XMLSchema#dateTime"/>
-            </data>
-            <data name="@value" source="_id">
-                <timestamp format="yyyy-MM-dd'T'HH:mm:ss.SSSXXX"/>
-            </data>
-        </entity>
+        <data name="dct:issued" source="_id">
+            <timestamp format="yyyy-MM-dd'T'HH:mm:ss.SSSXXX"/>
+        </data>
 
         <!--LAST MODIFICATION DATE OF THE MARC RECORD-->
         <data name="dct:modified" source="005">

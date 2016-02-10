@@ -157,7 +157,7 @@
         </data>
 
         <!--RDA CONTENT TYPE -->
-        <data name="P60049" source="898  .a">
+        <data name="rdau:P60049" source="898  .a">
             <substring start="0" end="6"/>
             <!--To select only positions 0-5 of the field 898$a-->
             <lookup in="type_content"/>
@@ -260,7 +260,7 @@
             <unique part="value"/>
         </data>
 
-        <data name="P60050" source="898  .a">
+        <data name="rdau:P60050" source="898  .a">
             <whitelist>
                 <entry name="CF010100"/>
                 <entry name="CF010200"/>
