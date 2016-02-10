@@ -8,7 +8,7 @@
         <macro name="date-shortener">
             <choose>
                 <data source="$[predicate]" name="$[abbrev]">
-                    <regexp match='"\d\d\d\d"'/>
+                    <regexp match='"(\d\d\d\d)"' format="${1}"/>
                 </data>
                 <data source="$[predicate]" name="$[abbrev]">
                     <regexp match='"(\d\d\d\d)-\d\d-\d\d"' format="${1}"/>
@@ -16,7 +16,7 @@
             </choose>
         </macro>
 
-        <macro name="person-literal">
+        <macro name="literal">
             <data source="$[predicate]" name="$[abbrev]">
                 <regexp match='"(.*)"|(.*)' format="${1}"/>
             </data>
@@ -61,11 +61,17 @@
         <call-macro name="date-shortener" abbrev="dbp:deathYear" predicate="http://dbpedia.org/ontology/deathYear"/>
 
         <!-- Person resources -->
-        <call-macro name="person-literal" abbrev="skos:note" predicate="http://www.w3.org/2004/02/skos/core#note"/>
-        <call-macro name="person-literal" abbrev="foaf:lastName" predicate="http://xmlns.com/foaf/0.1/lastName"/>
-        <call-macro name="person-literal" abbrev="foaf:firstName" predicate="http://xmlns.com/foaf/0.1/firstName"/>
-        <call-macro name="person-literal" abbrev="rdfs:label" predicate="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <call-macro name="person-literal" abbrev="foaf:name" predicate="http://xmlns.com/foaf/0.1/name"/>
+        <call-macro name="literal" abbrev="skos:note" predicate="http://www.w3.org/2004/02/skos/core#note"/>
+        <call-macro name="literal" abbrev="foaf:lastName" predicate="http://xmlns.com/foaf/0.1/lastName"/>
+        <call-macro name="literal" abbrev="foaf:firstName" predicate="http://xmlns.com/foaf/0.1/firstName"/>
+        <call-macro name="literal" abbrev="rdfs:label" predicate="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <call-macro name="literal" abbrev="foaf:name" predicate="http://xmlns.com/foaf/0.1/name"/>
+        <call-macro name="literal" predicate="http://schema.org/alternateName" abbrev="schema:alternateName"/>
+        <call-macro name="literal" predicate="http://schema.org/description" abbrev="schema:description"/>
+        <call-macro name="literal" predicate="http://schema.org/givenName" abbrev="schema:givenName"/>
+        <call-macro name="literal" predicate="http://schema.org/familyName" abbrev="schema:familyName"/>
+        <call-macro name="literal" predicate="http://schema.org/name" abbrev="schema:name"/>
+        <call-macro name="literal" abbrev="dc:identifier" predicate="http://purl.org/dc/terms/identifier"/>
 
         <call-macro name="language-tag" abbrev="dbp:abstract" predicate="http://dbpedia.org/ontology/abstract"/>
         <call-macro name="language-tag" abbrev="dbp:pseudonym" predicate="http://dbpedia.org/ontology/pseudonym"/>
@@ -74,14 +80,9 @@
 
         <data source="owl:sameAs" name="owl:sameAs"/>
         <data source="http://www.w3.org/2002/07/owl#sameAs" name="owl:sameAs"/>
-        <data source="http://schema.org/alternateName" name="schema:alternateName"/>
-        <data source="http://schema.org/description" name="schema:description"/>
-        <data source="http://schema.org/givenName" name="schema:givenName"/>
-        <data source="http://schema.org/familyName" name="schema:familyName"/>
         <data source="http://schema.org/gender" name="schema:gender"/>
         <data source="http://schema.org/sameAs" name="schema:sameAs"/>
         <data source="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" name="rdf:type"/>
-        <data source="http://schema.org/name" name="schema:name"/>
         <data name="dbp:birthPlace" source="http://dbpedia.org/ontology/birthPlace"/>
         <data name="dbp:movement" source="http://dbpedia.org/ontology/movement"/>
         <data name="dbp:nationality" source="http://dbpedia.org/ontology/nationality"/>
@@ -94,7 +95,6 @@
         <data name="dbp:author" source="http://dbpedia.org/ontology/author"/>
         <data name="dbp:influenced" source="http://dbpedia.org/ontology/influenced"/>
         <data name="owl:differentFrom" source="http://www.w3.org/2002/07/owl#differentFrom"/>
-        <data name="dc:identifier" source="http://purl.org/dc/terms/identifier"/>
     </rules>
 
 </metamorph>
