@@ -25,7 +25,7 @@
             <unique part="value" />
             -->
         </data>
-        <data source="contributor1" name="dc:contributor">
+        <data source="contributor1" name="dct:contributor">
             <!--OPTION:
             <unique part="value" />
             -->
