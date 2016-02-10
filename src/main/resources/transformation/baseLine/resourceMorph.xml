@@ -260,7 +260,7 @@
             <unique part="value"/>
         </data>
 
-        <data name="P60050" source="898  .a">
+        <data name="rdau:P60050" source="898  .a">
             <whitelist>
                 <entry name="CF010100"/>
                 <entry name="CF010200"/>
@@ -468,17 +468,13 @@
         <!--100: MAIN AUTHOR-->
 
         <!--when first indicator is 0-->
-        <entity name="dct:contributor" flushWith="1000 ">
-            <data name="foaf:Person" source="@key1000">
+        <data name="dct:contributor" source="@key1000">
                     <compose prefix="http://data.swissbib.ch/person/"/>
                 </data>
-        </entity>
         <!--when first indicator is 1-->
-        <entity name="dct:contributor" flushWith="1001 ">
-            <data name="foaf:Person" source="@key1001">
+        <data name="dct:contributor" source="@key1001">
                     <compose prefix="http://data.swissbib.ch/person/"/>
                 </data>
-        </entity>
 
         <!--245: TITLE-->
         <concat name="dct:title" delimiter="">
@@ -596,31 +592,23 @@
         </combine>
 
         <!--700: OTHER AUTHORS-->
-        <entity name="dct:contributor" reset="true" flushWith="7000 ">
             <!--reset="true" avoid a rule to keep in a collector the data collected in the precedent same field (for repetitive fields)-->
-            <data name="foaf:Person" source="@key7000">
+        <data name="dct:contributor" source="@key7000">
                     <compose prefix="http://data.swissbib.ch/person/"/>
                 </data>
-        </entity>
-        <entity name="dct:contributor" reset="true" flushWith="7001 ">
-            <data name="foaf:Person" source="@key7001">
+        <data name="dct:contributor" source="@key7001">
                     <compose prefix="http://data.swissbib.ch/person/"/>
                 </data>
-        </entity>
 
         <!--710: ORGANISATIONS-->
-        <entity name="dct:contributor" reset="true" flushWith="710??">
-            <data name="foaf:Organization" source="@key710">
+        <data name="dct:contributor" source="@key710">
                     <compose prefix="http://data.swissbib.ch/organisation/"/>
                 </data>
-        </entity>
 
         <!--711: CONGRESSES-->
-        <entity name="dct:contributor" reset="true" flushWith="711??">
-            <data name="foaf:Organization" source="@key711">
+        <data name="dct:contributor" source="@key711">
                     <compose prefix="http://data.swissbib.ch/organisation/"/>
                 </data>
-        </entity>
 
         <!--773: NOTE ABOUT COMPLEX LINKS-->
         <concat name="dct:bibliographicCitation" delimiter="" flushWith="773??">
