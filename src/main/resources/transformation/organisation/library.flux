@@ -12,10 +12,11 @@ default out = FLUX_DIR +"out.foma";
 
 //default libadmin_as_formeta = "http://localhost/libadmin/api/formeta/green.formeta";
 default libadmin_as_formeta = "https://admin.swissbib.ch/libadmintest/api/formeta/green.formeta";
+
 //default libadmin_as_formeta = "http://localhost/libadmin/api/formeta/green.formeta";
 
-file| open-file|
-//libadmin_as_formeta| open-http|
+//file| open-file|
+libadmin_as_formeta| open-http|
 as-formeta-records|
 decode-formeta|
 morph(FLUX_DIR + "libraryMorph.xml")|
