@@ -115,8 +115,6 @@
 
         <call-macro name="language-tag" abbrev="dbp:abstract" predicate="http://dbpedia.org/ontology/abstract"/>
         <call-macro name="language-tag" abbrev="dbp:pseudonym" predicate="http://dbpedia.org/ontology/pseudonym"/>
-        <call-macro name="language-tag" abbrev="dbp:alternativeNames"
-                    predicate="http://dbpedia.org/ontology/alternativeNames"/>
 
         <data source="owl:sameAs" name="owl:sameAs"/>
         <data source="http://www.w3.org/2002/07/owl#sameAs" name="owl:sameAs"/>
