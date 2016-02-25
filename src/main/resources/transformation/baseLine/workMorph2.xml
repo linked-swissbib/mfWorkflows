@@ -20,12 +20,12 @@
         </data>
 
         <data source="instance" name="bf:hasInstance"/>
-        <data source="contributor0" name="dc:contributor">
+        <data source="contributor0" name="dct:contributor">
             <!--OPTION:
             <unique part="value" />
             -->
         </data>
-        <data source="contributor1" name="dc:contributor">
+        <data source="contributor1" name="dct:contributor">
             <!--OPTION:
             <unique part="value" />
             -->
