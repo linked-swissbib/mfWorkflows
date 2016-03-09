@@ -93,8 +93,8 @@
         <data name="dbp:author" source="http://dbpedia.org/ontology/author"/>
         <data name="dbp:influenced" source="http://dbpedia.org/ontology/influenced"/>
         <data name="owl:differentFrom" source="http://www.w3.org/2002/07/owl#differentFrom"/>
-        <data name="dbp:birthDate" source="<http://dbpedia.org/ontology/birthDate"/>
-        <data name="dbp:deathDate" source="<http://dbpedia.org/ontology/deathDate"/>
+        <data name="dbp:birthDate" source="http://dbpedia.org/ontology/birthDate"/>
+        <data name="dbp:deathDate" source="http://dbpedia.org/ontology/deathDate"/>
     </rules>
 
 </metamorph>
