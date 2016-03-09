@@ -16,6 +16,17 @@
             </choose>
         </macro>
 
+        <macro name="date">
+            <choose>
+                <data source="$[predicate]" name="$[abbrev]">
+                    <regexp match='"(\d\d\d\d)"' format="${1}"/>
+                </data>
+                <data source="$[predicate]" name="$[abbrev]">
+                    <regexp match='"(\d\d\d\d-\d\d-\d\d)"' format="${1}"/>
+                </data>
+            </choose>
+        </macro>
+
         <macro name="literal">
             <data source="$[predicate]" name="$[abbrev]">
                 <regexp match='"(.*)"|(.*)' format="${1}"/>
@@ -73,6 +84,9 @@
         <call-macro name="literal" predicate="http://schema.org/name" abbrev="schema:name"/>
         <call-macro name="literal" abbrev="dc:identifier" predicate="http://purl.org/dc/terms/identifier"/>
 
+        <call-macro name="date" abbrev="dbp:birthDate" predicate="http://dbpedia.org/ontology/birthDate"/>
+        <call-macro name="date" abbrev="dbp:deathDate" predicate="http://dbpedia.org/ontology/deathDate"/>
+
         <call-macro name="language-tag" abbrev="dbp:abstract" predicate="http://dbpedia.org/ontology/abstract"/>
         <call-macro name="language-tag" abbrev="dbp:pseudonym" predicate="http://dbpedia.org/ontology/pseudonym"/>
 
@@ -93,8 +107,6 @@
         <data name="dbp:author" source="http://dbpedia.org/ontology/author"/>
         <data name="dbp:influenced" source="http://dbpedia.org/ontology/influenced"/>
         <data name="owl:differentFrom" source="http://www.w3.org/2002/07/owl#differentFrom"/>
-        <data name="dbp:birthDate" source="http://dbpedia.org/ontology/birthDate"/>
-        <data name="dbp:deathDate" source="http://dbpedia.org/ontology/deathDate"/>
     </rules>
 
 </metamorph>
