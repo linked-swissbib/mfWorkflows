@@ -16,6 +16,17 @@
             </choose>
         </macro>
 
+        <macro name="date">
+            <choose>
+                <data source="$[predicate]" name="$[abbrev]">
+                    <regexp match='"(\d\d\d\d)"' format="${1}"/>
+                </data>
+                <data source="$[predicate]" name="$[abbrev]">
+                    <regexp match='"(\d\d\d\d-\d\d-\d\d)"' format="${1}"/>
+                </data>
+            </choose>
+        </macro>
+
         <macro name="literal">
             <data source="$[predicate]" name="$[abbrev]">
                 <regexp match='"(.*)"|(.*)' format="${1}"/>
@@ -29,7 +40,7 @@
                         <regexp match='"(.*)"' format="${1}"/>
                     </data>
                     <data name="lang" source="$[predicate]">
-                        <regexp match='.*"@(de|en|fr|it) *$' format="${1}"/>
+                        <regexp match='.*"@([^ ]+) *$' format="${1}"/>
                     </data>
                 </combine>
             </entity>
@@ -98,40 +109,23 @@
         <data name="dbp:spouse" source="http://dbpedia.org/ontology/spouse"/>
         <call-macro name="language-tag" abbrev="lsb:dbpSpouseAsLiteral"
                     predicate="http://linked.swissbib.ch/vocab/dbpSpouseAsLiteral"/>
-        <data name="dbp:gender" source="http://dbpedia.org/ontology/gender"/>
+        <data name="dbp:influenced" source="http://dbpedia.org/ontology/influenced"/>
 
         <!-- Viaf -->
-        <data name="owl:differentFrom" source="http://www.w3.org/2002/07/owl#differentFrom"/>
         <call-macro name="literal" predicate="http://schema.org/givenName" abbrev="schema:givenName"/>
-        <call-macro name="literal" abbrev="dc:identifier" predicate="http://purl.org/dc/terms/identifier"/>
         <call-macro name="literal" predicate="http://schema.org/alternateName" abbrev="schema:alternateName"/>
         <call-macro name="date-shortener" abbrev="schema:birthDate" predicate="http://schema.org/birthDate"/>
         <call-macro name="date-shortener" abbrev="schema:deathDate" predicate="http://schema.org/deathDate"/>
-        <call-macro name="literal" predicate="http://schema.org/description" abbrev="schema:description"/>
         <call-macro name="literal" predicate="http://schema.org/familyName" abbrev="schema:familyName"/>
         <data source="http://schema.org/gender" name="schema:gender"/>
         <call-macro name="language-tag" abbrev="lsb:schemaGenderAsLiteral"
                     predicate="http://linked.swissbib.ch/vocab/schemaGenderAsLiteral"/>
-        <call-macro name="literal" predicate="http://schema.org/name" abbrev="schema:name"/>
         <data source="http://schema.org/sameAs" name="schema:sameAs"/>
-        <data source="http://www.w3.org/2000/01/rdf-schema#comment" name="rdfs:comment"/>
-        <data source="http://schema.org/location" name="schema:location"/>
-        <data source="http://schema.org/creator" name="schema:creator"/>
         <call-macro name="literal" predicate="http://schema.org/inLanguage" abbrev="schema:inLanguage"/>
-        <data source="http://schema.org/workExample" name="schema:workExample"/>
-        <data source="http://bibliograph.net/translator" name="bg:translator"/>
-        <data name="schema:author" source="http://schema.org/author"/>
-        <data source="http://bibliograph.net/translationOfWork" name="bg:translationOfWork"/>
         <data name="dc:language" source="http://purl.org/dc/terms/language"/>
-        <data name="bg:workTranslation" source="http://bibliograph.net/workTranslation"/>
 
         <!-- Interconnection swissbib <-> dbpedia/viaf -->
         <data source="http://www.w3.org/2002/07/owl#sameAs" name="owl:sameAs"/>
-
-        <!-- Unknown status -->
-        <data name="dbp:notableWork" source="http://dbpedia.org/ontology/notableWork"/>
-        <data name="dbp:author" source="http://dbpedia.org/ontology/author"/>
-        <data name="dbp:influenced" source="http://dbpedia.org/ontology/influenced"/>
 
     </rules>
 
