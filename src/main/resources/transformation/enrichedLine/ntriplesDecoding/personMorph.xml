@@ -110,6 +110,12 @@
         <call-macro name="language-tag" abbrev="lsb:dbpSpouseAsLiteral"
                     predicate="http://linked.swissbib.ch/vocab/dbpSpouseAsLiteral"/>
         <data name="dbp:influenced" source="http://dbpedia.org/ontology/influenced"/>
+        <call-macro name="language-tag" abbrev="lsb:dbpInfluencedAsLiteral"
+                    predicate="http://linked.swissbib.ch/vocab/dbpInfluencedAsLiteral"/>
+        <data name="dbp:notableWork" source="http://dbpedia.org/ontology/notableWork"/>
+        <call-macro name="language-tag" abbrev="lsb:dbpNotableWorkAsLiteral"
+                    predicate="http://linked.swissbib.ch/vocab/dbpNotableWorkAsLiteral"/>
+
 
         <!-- Viaf -->
         <call-macro name="literal" predicate="http://schema.org/givenName" abbrev="schema:givenName"/>
