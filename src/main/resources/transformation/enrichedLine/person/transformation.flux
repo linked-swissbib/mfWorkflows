@@ -3,15 +3,15 @@ outdir      = "/data/sbdump/enrichedLineInput";
 //file        = FLUX_DIR + "../resource/correctMarcXML.xml";
 file        = "/data/sbdump/marcDataMFSample.xml.gz";
 filesize    = "10000";
-index       = "testsb_160120";
+index       = "test1";
 subdirsize  = "1000";
 bulkheader  = "false";
 jsoncompliant = "true";
 compress    = "true";
 extension   = "jsonld";
 esname      = "elasticsearch";
-esnodes     = "localhost:9200";
-esindex     = "testsb";
+esnodes     = "localhost:9300";
+esindex     = "testsb_160314";
 estype      = "person";
 
 //indir|
@@ -24,6 +24,6 @@ handle-marcxml|
 morph(FLUX_DIR + "personMorph.xml")|
 split-entities|
 change-id|
-lookup-es(esName=esname, esNodex=esnodes, esIndex=esindex, esType=estype)|
+lookup-es(esClustername=esname, esNodes=esnodes, esIndex=esindex, esType=estype)|
 encode-esbulk(escapeChars="true", header=bulkheader, index=index, type="person")|
 write-esbulk(baseOutDir=outdir, fileSize=filesize, jsonCompliant=jsoncompliant, type="person", subdirSize=subdirsize, compress=compress, extension=extension);
