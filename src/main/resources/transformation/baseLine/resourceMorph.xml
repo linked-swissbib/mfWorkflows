@@ -157,7 +157,7 @@
         </data>
 
         <!-- REFERENCE TO WORK -->
-        <data source="986  .b" name="bf:work"/>
+        <data source="986  .b" name="work"/>
 
         <!--RDA CONTENT TYPE -->
         <data name="rdau:P60049" source="898  .a">
