@@ -1,4 +1,4 @@
-indir       = "/home/seb/tmp/marcDataMF";
+indir       = "/data/sbdump/marcDataMF";
 outdir      = "/data/sbdump/baseLineOutput";
 //file        = FLUX_DIR + "../resource/correctMarcXML.xml";
 file        = "/data/sbdump/marcDataMFSample.xml.gz";
@@ -7,7 +7,7 @@ filesize    = "10000";
 esnodes     = "localhost:9300";
 escluster   = "elasticsearch";
 records     = "20000";
-index       = "testsb_160325";
+index       = "testsb_160406";
 subdirsize  = "1000";
 bulkheader  = "true";
 jsoncompliant = "false";

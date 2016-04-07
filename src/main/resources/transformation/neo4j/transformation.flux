@@ -1,6 +1,6 @@
-indir       = "/home/seb/tmp/marcDataMF";
+indir       = "/data/sbdump/marcDataMF";
 file        = "/data/sbdump/marcDataMFSample.xml.gz";
-dbdir       = "/home/seb/tmp/neo4j/neo4j-data";
+dbdir       = "/data/neo4j-test";
 batchsize   = "20000";
 
 //file|
