@@ -157,7 +157,14 @@
         </data>
 
         <!-- REFERENCE TO WORK -->
-        <data source="986  .b" name="work"/>
+        <combine name="work" value="${work}" sameEntity="true">
+            <if>
+                <data source="986  .a">
+                    <equals string="SWISSBIB"/>
+                </data>
+            </if>
+            <data name="work" source="986  .b"/>
+        </combine>
 
         <!--RDA CONTENT TYPE -->
         <data name="rdau:P60049" source="898  .a">

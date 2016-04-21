@@ -129,14 +129,14 @@
             <unique part="value"/>
         </data>
 
-        <combine name="item" value="http://data.swissbib.ch/item/${network}-${item_id}" flushWith="949??"
-                 sameEntity="true">
-            <data source="@key_item" name="item_id"/>
-            <data source="949??.B" name="network"/>
+        <combine name="work" value="${work}" sameEntity="true">
+            <if>
+                <data source="986  .a">
+                    <equals string="SWISSBIB"/>
+                </data>
+            </if>
+            <data name="work" source="986  .b"/>
         </combine>
-
-        <data source="986  .b" name="work"/>
-
 
     </rules>
 </metamorph>
