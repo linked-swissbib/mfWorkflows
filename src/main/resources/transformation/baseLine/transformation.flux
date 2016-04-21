@@ -1,5 +1,6 @@
-indir       = "/data/sbdump/marcDataMF";
-outdir      = "/data/sbdump/baseLineOutput";
+indir       = "/data/sbdump/marcDataMF_old";
+outdir      = "/data/mfdumps/baseLineOutput";
+//outdir      = "/data/mfdumps/test";
 //file        = FLUX_DIR + "../resource/correctMarcXML.xml";
 file        = "/data/sbdump/marcDataMFSample.xml.gz";
 filesize    = "10000";
@@ -7,7 +8,7 @@ filesize    = "10000";
 esnodes     = "localhost:9300";
 escluster   = "elasticsearch";
 records     = "20000";
-index       = "testsb_160406";
+index       = "testsb_160422";
 subdirsize  = "1000";
 bulkheader  = "true";
 jsoncompliant = "false";
@@ -21,11 +22,13 @@ open-gzip|
 //open-file|
 decode-xml|
 handle-marcxml|
+change-id("001")|
+itemerase-es(esNodes=esnodes, esClustername=escluster, esIndex=index, esType="item")|
 //stream-tee| {
     morph(FLUX_DIR + "resourceMorph.xml")|
     change-id|
     encode-esbulk(escapeChars="true", header=bulkheader, index=index, type="bibliographicResource")|
-    //write-esbulk(baseOutDir=outdir, fileSize=filesize, jsonCompliant=jsoncompliant, type="resource", subdirSize=subdirsize, compress=compress, extension=extension)
+    //write-esbulk(baseOutDir=outdir, fileSize=filesize, jsonCompliant=jsoncompliant, type="resource", subdirSize=subdirsize, compress=compress, extension=extension);
     index-esbulk(esNodes=esnodes, esClustername=escluster, recordsPerUpload=records);
 //}{
 //    morph(FLUX_DIR + "documentMorph.xml")|
@@ -39,6 +42,16 @@ handle-marcxml|
 //    change-id|
 //    encode-esbulk(escapeChars="true", header=bulkheader, index=index, type="organisation")|
 //    write-esbulk(baseOutDir=outdir, fileSize=filesize, jsonCompliant=jsoncompliant, type="organisation", subdirSize=subdirsize, compress=compress, extension=extension)
+    //index-esbulk(esNodes=esnodes, esClustername=escluster, recordsPerUpload=records)
+//}{
+//    filter(FLUX_DIR + "workFilter.xml")|
+//    morph(FLUX_DIR + "workMorph1.xml")|
+//    stream-to-triples(redirect="true")|
+//    sort-triples(by="all")|
+//    collect-triples|
+//    morph(FLUX_DIR + "workMorph2.xml")|
+//    encode-esbulk(escapeChars="true", header=bulkheader, index=index, type="work")|
+//    write-esbulk(baseOutDir=outdir, fileSize=filesize, jsonCompliant=jsoncompliant, type="work", subdirSize=subdirsize, compress=compress, extension=extension)
     //index-esbulk(esNodes=esnodes, esClustername=escluster, recordsPerUpload=records)
 //}{
 //    morph(FLUX_DIR + "itemMorph.xml")|
