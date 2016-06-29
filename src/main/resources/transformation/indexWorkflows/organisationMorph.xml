@@ -6,29 +6,12 @@
         <var name="swissbib_domain" value="http://data.swissbib.ch/resource/"/>
     </vars>
 
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="morphModules/authorHash710.xml" parse="xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="morphModules/authorHash711.xml" parse="xml"/>
+
+
     <rules>
-
-
-        <combine name="@key710" value="${name}##${subunit}##${number}##${date}##${location}" flushWith="710??">
-            <data source="710??.a" name="name"/>
-            <data source="710??.b" name="subunit"/>
-            <data source="710??.n" name="number"/>
-            <data source="710??.d" name="date"/>
-            <data source="710??.c" name="location"/>
-            <postprocess>
-                <java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
-            </postprocess>
-        </combine>
-        <combine name="@key711" value="${name}##${subunit}##${number}##${date}##${location}" flushWith="711??">
-            <data source="711??.a" name="name"/>
-            <data source="711??.e" name="subunit"/>
-            <data source="711??.n" name="number"/>
-            <data source="711??.d" name="date"/>
-            <data source="711??.c" name="location"/>
-            <postprocess>
-                <java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
-            </postprocess>
-        </combine>
 
         <!--BUILD THE BASIS RECORD -->
 
