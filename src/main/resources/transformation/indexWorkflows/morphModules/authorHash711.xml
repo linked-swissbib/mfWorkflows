@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<rules xmlns="http://www.culturegraph.org/metamorph">
+
+    <combine name="@key711" value="${name}##${subunit}##${number}##${date}##${location}" flushWith="711??">
+        <data source="710??.a" name="name"/>
+        <data source="710??.e" name="subunit"/>
+        <data source="710??.n" name="number"/>
+        <data source="710??.d" name="date"/>
+        <data source="710??.c" name="location"/>
+        <postprocess>
+            <java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
+        </postprocess>
+    </combine>
+
+
+
+
+</rules>
+
+

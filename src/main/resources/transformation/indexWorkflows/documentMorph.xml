@@ -6,6 +6,13 @@
         <var name="swissbib_domain" value="http://data.swissbib.ch/resource/"/>
     </vars>
 
+
+    <include xmlns="http://www.w3.org/2001/XInclude" href="morphModules/authorHash100.xml" parse="xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="morphModules/authorHash700.xml" parse="xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="morphModules/authorHash710.xml" parse="xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="morphModules/authorHash711.xml" parse="xml"/>
+
+
     <rules>
 
         <!-- Set id -->
@@ -33,70 +40,6 @@
             <substring start="35" end="38"/>
         </data>
 
-        <combine name="@key1000" value="${name}##${number}##${title}##${lifedata}##${fullname}" flushWith="1000 ">
-            <data source="1000 .a" name="name"/>
-            <data source="1000 .b" name="number"/>
-            <data source="1000 .c" name="title"/>
-            <data source="1000 .d" name="lifedata"/>
-            <data source="1000 .q" name="fullname"/>
-            <postprocess>
-                <java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
-            </postprocess>
-        </combine>
-        <combine name="@key1001" value="${lastname}##${firstname}##${number}##${title}##${lifedata}##${fullname}"
-                 flushWith="1001 ">
-            <data source="1001 .a" name="lastname"/>
-            <data source="1001 .D" name="firstname"/>
-            <data source="1001 .b" name="number"/>
-            <data source="1001 .c" name="title"/>
-            <data source="1001 .d" name="lifedata"/>
-            <data source="1001 .q" name="fullname"/>
-            <postprocess>
-                <java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
-            </postprocess>
-        </combine>
-        <combine name="@key7000" value="${name}##${number}##${title}##${lifedata}##${fullname}" flushWith="7000 ">
-            <data source="7000 .a" name="name"/>
-            <data source="7000 .b" name="number"/>
-            <data source="7000 .c" name="title"/>
-            <data source="7000 .d" name="lifedata"/>
-            <data source="7000 .q" name="fullname"/>
-            <postprocess>
-                <java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
-            </postprocess>
-        </combine>
-        <combine name="@key7001" value="${lastname}##${firstname}##${number}##${title}##${lifedata}##${fullname}"
-                 flushWith="7001 ">
-            <data source="7001 .a" name="lastname"/>
-            <data source="7001 .D" name="firstname"/>
-            <data source="7001 .b" name="number"/>
-            <data source="7001 .c" name="title"/>
-            <data source="7001 .d" name="lifedata"/>
-            <data source="7001 .q" name="fullname"/>
-            <postprocess>
-                <java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
-            </postprocess>
-        </combine>
-        <combine name="@key710" value="${name}##${subunit}##${number}##${date}##${location}" flushWith="710??">
-            <data source="710??.a" name="name"/>
-            <data source="710??.b" name="subunit"/>
-            <data source="710??.n" name="number"/>
-            <data source="710??.d" name="date"/>
-            <data source="710??.c" name="location"/>
-            <postprocess>
-                <java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
-            </postprocess>
-        </combine>
-        <combine name="@key711" value="${name}##${subunit}##${number}##${date}##${location}" flushWith="711??">
-            <data source="710??.a" name="name"/>
-            <data source="710??.e" name="subunit"/>
-            <data source="710??.n" name="number"/>
-            <data source="710??.d" name="date"/>
-            <data source="710??.c" name="location"/>
-            <postprocess>
-                <java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
-            </postprocess>
-        </combine>
 
         <!--BUILD BULK API HEADER FOR TYPE "DOCUMENT"-->
 
