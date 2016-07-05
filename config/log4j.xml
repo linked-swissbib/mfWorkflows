@@ -9,6 +9,21 @@
 		</layout>
 	</appender>
 
+	<appender name="hash_appender" class="org.apache.log4j.RollingFileAppender">
+		<param name="maxFileSize" value="10MB" />
+		<param name="maxBackupIndex" value="1" />
+		<param name="File" value="hash.log" />
+		<layout class="org.apache.log4j.TTCCLayout">
+			<param name="DateFormat" value="ISO8601" />
+		</layout>
+	</appender>
+
+	<logger name="org.swissbib.linked.mf.morph.functions.AuthorHash" additivity="false">
+		<level value="INFO" />
+		<appender-ref ref="hash_appender" />
+	</logger>
+
+
 	<root>
 		<priority value="info" />
 		<appender-ref ref="stdout" />

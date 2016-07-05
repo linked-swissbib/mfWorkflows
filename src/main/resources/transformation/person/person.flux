@@ -6,7 +6,8 @@ open-file|
 decode-xml|	
 handle-marcxml|
 //morph(FLUX_DIR + "personMorphViaf.xml")|
-morph(FLUX_DIR + "personMorph.xml")|
+//morph(FLUX_DIR + "/../indexWorkflows/personMorph.xml")|
+morph(FLUX_DIR + "../indexWorkflows/personMorph.xml")|
 //morph(FLUX_DIR + "personMorph2.xml")|
 stream-to-xml(roottag="rdf:RDF", recordtag="", namespacefile= FLUX_DIR + "./maps/namespaces.txt")|
 write(FLUX_DIR + "personOutput.rdf");

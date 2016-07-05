@@ -60,6 +60,14 @@
 
         <!--100 first indicator 1-->
         <entity name="--" flushWith="1001 ">
+            <if>
+                <data source="@key1001">
+                    <blacklist>
+                        <!--in case we couldn't generate a consistent Hash for this person because of insufficient data -->
+                        <entry name="NO_HASH"/>
+                    </blacklist>
+                </data>
+            </if>
             <data name="_id" source="@key1001"/>
             <data name="@id" source="@key1001">
                 <compose prefix="http://data.swissbib.ch/person/"/>
