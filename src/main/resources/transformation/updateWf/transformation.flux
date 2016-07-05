@@ -54,6 +54,8 @@ stream-tee| {
     morph(FLUX_DIR + "organisationMorph.xml")|
     split-entities|
     change-id|
+    update-es-id(esNodex=esnodex, esClustername=escluster, index=index, type="organisation", matchingFields="name", sThreshold="2", refPath="dct:contributor", uriPrefix="http://data.swissbib.ch/organisation/". graphDbDir="/data/neo4j")|
+    filter(FLUX_DIR + "organisationFilter.xml")|
     encode-esbulk(escapeChars="true", header=bulkheader, index=index, type="organisation")|
     //write-esbulk(baseOutDir=outdir, fileSize=filesize, jsonCompliant=jsoncompliant, type="organisation", subdirSize=subdirsize, compress=compress, extension=extension)
     index-esbulk(esNodes=esnodes, esClustername=escluster, recordsPerUpload=records)
