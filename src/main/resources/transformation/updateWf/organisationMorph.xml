@@ -69,6 +69,8 @@
                     <compose prefix=" "/>
                 </data>
             </concat>
+
+            <data source="001" name="resid"/>
         </entity>
 
         <!--711-->
@@ -107,6 +109,8 @@
                     <compose prefix=" "/>
                 </data>
             </concat>
+
+            <data source="001" name="resid"/>
         </entity>
 
     </rules>

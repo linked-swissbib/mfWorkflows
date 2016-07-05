@@ -4,8 +4,7 @@
 
     <rules>
 
-        <data source="710??.a"/>
-        <!-- <data source="711??.a" /> -->
+        <data source="resid"/>
 
     </rules>
 
