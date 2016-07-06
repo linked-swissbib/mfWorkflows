@@ -3,24 +3,40 @@
 
 <rules xmlns="http://www.culturegraph.org/metamorph">
 
-    <combine name="@key1000" value="${name}##${number}##${title}##${lifedata}##${fullname}" flushWith="1000 ">
+
+    <!-- <data source="245.a" name="title245a"/> -->
+
+    <combine name="@key1000" value="1000##${swissbib_id}##${number}##${name}##${title}##${lifedata}##${fullname}##${publishYear}##${title245a}" flushWith="1000 ">
+        <data source="001" name="swissbib_id"/>
         <data source="1000 .a" name="name"/>
         <data source="1000 .b" name="number"/>
         <data source="1000 .c" name="title"/>
         <data source="1000 .d" name="lifedata"/>
         <data source="1000 .q" name="fullname"/>
+        <data source="008" name="publishYear">
+            <substring  start="7"  end="11"/>
+        </data>
+
+        <data source="@title245a" name="title245a"/>
+
         <postprocess>
             <java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
         </postprocess>
     </combine>
-    <combine name="@key1001" value="${lastname}##${firstname}##${number}##${title}##${lifedata}##${fullname}"
+    <combine name="@key1001" value="1001##${swissbib_id}##${number}##${lastname}##${firstname}##${title}##${lifedata}##${fullname}##${publishYear}##${title245a}"
              flushWith="1001 ">
+        <data source="001" name="swissbib_id"/>
         <data source="1001 .a" name="lastname"/>
         <data source="1001 .D" name="firstname"/>
         <data source="1001 .b" name="number"/>
         <data source="1001 .c" name="title"/>
         <data source="1001 .d" name="lifedata"/>
         <data source="1001 .q" name="fullname"/>
+        <data source="008" name="publishYear">
+            <substring  start="7"  end="11"/>
+        </data>
+
+        <data source="@title245a" name="title245a"/>
         <postprocess>
             <java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
         </postprocess>
