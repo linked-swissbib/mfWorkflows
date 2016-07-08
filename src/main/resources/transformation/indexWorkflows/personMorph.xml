@@ -16,6 +16,14 @@
 
         <!--100 first indicator 0-->
         <entity name="--" flushWith="1000 ">
+            <if>
+                <data source="@key1000">
+                    <blacklist>
+                        <!--in case we couldn't generate a consistent Hash for this person because of insufficient data -->
+                        <entry name="NO_HASH"/>
+                    </blacklist>
+                </data>
+            </if>
             <data name="_id" source="@key1000"/>
             <data name="@id" source="@key1000">
                 <compose prefix="http://data.swissbib.ch/person/"/>
@@ -116,6 +124,14 @@
 
         <!--700 first indicator 0-->
         <entity name="--" flushWith="7000 ">
+            <if>
+                <data source="@key7000">
+                    <blacklist>
+                        <!--in case we couldn't generate a consistent Hash for this person because of insufficient data -->
+                        <entry name="NO_HASH"/>
+                    </blacklist>
+                </data>
+            </if>
             <data name="_id" source="@key7000"/>
             <data name="@id" source="@key7000">
                 <compose prefix="http://data.swissbib.ch/person/"/>
@@ -160,6 +176,14 @@
 
         <!--700 first indicator 1-->
         <entity name="--" flushWith="7001 ">
+            <if>
+                <data source="@key7001">
+                    <blacklist>
+                        <!--in case we couldn't generate a consistent Hash for this person because of insufficient data -->
+                        <entry name="NO_HASH"/>
+                    </blacklist>
+                </data>
+            </if>
             <data name="_id" source="@key7001"/>
             <data name="@id" source="@key7001">
                 <compose prefix="http://data.swissbib.ch/person/"/>

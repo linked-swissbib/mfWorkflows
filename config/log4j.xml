@@ -9,19 +9,97 @@
 		</layout>
 	</appender>
 
-	<appender name="hash_appender" class="org.apache.log4j.RollingFileAppender">
+	<appender name="hash1001x7001appender" class="org.apache.log4j.RollingFileAppender">
 		<param name="maxFileSize" value="10MB" />
 		<param name="maxBackupIndex" value="1" />
-		<param name="File" value="hash.log" />
+		<param name="File" value="hash1001x7001.log" />
 		<layout class="org.apache.log4j.TTCCLayout">
 			<param name="DateFormat" value="ISO8601" />
 		</layout>
 	</appender>
 
-	<logger name="org.swissbib.linked.mf.morph.functions.AuthorHash" additivity="false">
-		<level value="INFO" />
-		<appender-ref ref="hash_appender" />
+	<appender name="hash1000x7000appender" class="org.apache.log4j.RollingFileAppender">
+		<param name="maxFileSize" value="10MB" />
+		<param name="maxBackupIndex" value="1" />
+		<param name="File" value="hash1000x7000.log" />
+		<layout class="org.apache.log4j.TTCCLayout">
+			<param name="DateFormat" value="ISO8601" />
+		</layout>
+	</appender>
+
+
+
+
+	<appender name="hash710appender" class="org.apache.log4j.RollingFileAppender">
+		<param name="maxFileSize" value="10MB" />
+		<param name="maxBackupIndex" value="1" />
+		<param name="File" value="hash710.log" />
+		<layout class="org.apache.log4j.TTCCLayout">
+			<param name="DateFormat" value="ISO8601" />
+		</layout>
+	</appender>
+
+
+	<appender name="hash711appender" class="org.apache.log4j.RollingFileAppender">
+		<param name="maxFileSize" value="10MB" />
+		<param name="maxBackupIndex" value="1" />
+		<param name="File" value="hash711.log" />
+		<layout class="org.apache.log4j.TTCCLayout">
+			<param name="DateFormat" value="ISO8601" />
+		</layout>
+	</appender>
+
+	<appender name="hashByIdappender" class="org.apache.log4j.RollingFileAppender">
+		<param name="maxFileSize" value="10MB" />
+		<param name="maxBackupIndex" value="1" />
+		<param name="File" value="hashBy.log" />
+		<layout class="org.apache.log4j.TTCCLayout">
+			<param name="DateFormat" value="ISO8601" />
+		</layout>
+	</appender>
+
+
+	<appender name="hashErrorAppender" class="org.apache.log4j.RollingFileAppender">
+		<param name="maxFileSize" value="10MB" />
+		<param name="maxBackupIndex" value="1" />
+		<param name="File" value="hashErrorAppender.log" />
+		<layout class="org.apache.log4j.TTCCLayout">
+			<param name="DateFormat" value="ISO8601" />
+		</layout>
+	</appender>
+
+
+	<logger name="hash1001x7001" additivity="false">
+		<level value="DEBUG" />
+		<appender-ref ref="hash1001x7001appender" />
 	</logger>
+	<logger name="hash1000x7000" additivity="false">
+		<level value="DEBUG" />
+		<appender-ref ref="hash1000x7000appender" />
+	</logger>
+
+	<logger name="hash710" additivity="false">
+		<level value="DEBUG" />
+		<appender-ref ref="hash710appender" />
+	</logger>
+
+	<logger name="hash711" additivity="false">
+		<level value="DEBUG" />
+		<appender-ref ref="hash711appender" />
+	</logger>
+
+	<logger name="hashById" additivity="false">
+		<level value="DEBUG" />
+		<appender-ref ref="hashByIdappender" />
+	</logger>
+
+
+
+	<logger name="hashError" additivity="false">
+		<level value="DEBUG" />
+		<appender-ref ref="hashErrorAppender" />
+	</logger>
+
 
 
 	<root>

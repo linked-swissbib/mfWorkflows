@@ -17,6 +17,15 @@
 
         <!--710-->
         <entity name="--" flushWith="710??">
+            <if>
+                <data source="@key710">
+                    <blacklist>
+                        <!--in case we couldn't generate a consistent Hash for this person because of insufficient data -->
+                        <entry name="NO_HASH"/>
+                    </blacklist>
+                </data>
+            </if>
+
             <data name="_id" source="@key710"/>
             <data name="@id" source="@key710">
                 <compose prefix="http://data.swissbib.ch/organisation/"/>
@@ -58,6 +67,15 @@
 
         <!--711-->
         <entity name="--" flushWith="711??">
+            <if>
+                <data source="@key711">
+                    <blacklist>
+                        <!--in case we couldn't generate a consistent Hash for this person because of insufficient data -->
+                        <entry name="NO_HASH"/>
+                    </blacklist>
+                </data>
+            </if>
+
             <data name="_id" source="@key711"/>
             <data name="@id" source="@key711">
                 <compose prefix="http://data.swissbib.ch/organisation/"/>
