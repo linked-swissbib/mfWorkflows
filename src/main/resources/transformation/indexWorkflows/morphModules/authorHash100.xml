@@ -9,6 +9,9 @@
     <combine name="@key1000"
              value="1000##${swissbib_id}##${number}##${name}##${title}##${lifedata}##${fullname}##${publishYear}##${title245a}"
              flushWith="245??">
+        <if>
+            <data source="1000*"/>
+        </if>
         <data source="001" name="swissbib_id"/>
         <data source="1000 .a" name="name"/>
         <data source="1000 .b" name="number"/>
@@ -27,6 +30,9 @@
     </combine>
     <combine name="@key1001" value="1001##${swissbib_id}##${number}##${lastname}##${firstname}##${title}##${lifedata}##${fullname}##${publishYear}##${title245a}"
              flushWith="245??">
+        <if>
+            <data source="1001*"/>
+        </if>
         <data source="001" name="swissbib_id"/>
         <data source="1001 .a" name="lastname"/>
         <data source="1001 .D" name="firstname"/>
