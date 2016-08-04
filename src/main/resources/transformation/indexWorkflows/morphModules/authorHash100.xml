@@ -4,8 +4,6 @@
 <rules xmlns="http://www.culturegraph.org/metamorph">
 
 
-    <!-- <data source="245.a" name="title245a"/> -->
-
     <combine name="@key1000"
              value="1000##${swissbib_id}##${number}##${name}##${title}##${lifedata}##${fullname}##${publishYear}##${title245a}"
              flushWith="245??">
@@ -19,16 +17,17 @@
         <data source="1000 .d" name="lifedata"/>
         <data source="1000 .q" name="fullname"/>
         <data source="008" name="publishYear">
-            <substring  start="7"  end="11"/>
+            <substring start="7" end="11"/>
         </data>
 
-        <data source="@title245a" name="title245a"/>
+        <data source="245*.a" name="title245a"/>
 
         <postprocess>
             <java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
         </postprocess>
     </combine>
-    <combine name="@key1001" value="1001##${swissbib_id}##${number}##${lastname}##${firstname}##${title}##${lifedata}##${fullname}##${publishYear}##${title245a}"
+    <combine name="@key1001"
+             value="1001##${swissbib_id}##${number}##${lastname}##${firstname}##${title}##${lifedata}##${fullname}##${publishYear}##${title245a}"
              flushWith="245??">
         <if>
             <data source="1001*"/>
@@ -41,16 +40,14 @@
         <data source="1001 .d" name="lifedata"/>
         <data source="1001 .q" name="fullname"/>
         <data source="008" name="publishYear">
-            <substring  start="7"  end="11"/>
+            <substring start="7" end="11"/>
         </data>
 
-        <data source="@title245a" name="title245a"/>
+        <data source="245*.a" name="title245a"/>
         <postprocess>
             <java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
         </postprocess>
     </combine>
-
-
 
 
 </rules>
