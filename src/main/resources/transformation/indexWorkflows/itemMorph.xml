@@ -53,8 +53,7 @@
                 <data source="949??.B" name="network"/>
             </combine>
 
-            <combine name="_id" value="http://data.swissbib.ch/item/${network}-${item_id}" flushWith="949??"
-                     sameEntity="true">
+            <combine name="_id" value="${network}-${item_id}" flushWith="949??" sameEntity="true">
                 <data source="@key_item" name="item_id"/>
                 <data source="949??.B" name="network"/>
             </combine>
