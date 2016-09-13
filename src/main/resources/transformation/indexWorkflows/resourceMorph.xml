@@ -537,7 +537,7 @@
                 </data>
             </if>
             <data source="65???.0" name="gnd_id">
-                <regexp match="\)(.*)" format="http://d-nb.info/gnd/${1}"/>
+                <regexp match="\)(\d\d\d\d\d\d\d\d?\d?\d?-?\d?)" format="http://d-nb.info/gnd/${1}"/>
                 <unique part="value"/>
             </data>
         </combine>
