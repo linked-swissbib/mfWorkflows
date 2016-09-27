@@ -16,7 +16,7 @@
             <substring  start="7"  end="11"/>
         </data>
 
-        <data source="@title245a" name="title245a"/>
+        <data source="245*.a" name="title245a"/>
         <postprocess>
             <java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
         </postprocess>
@@ -34,7 +34,7 @@
             <substring  start="7"  end="11"/>
         </data>
         <!--<data source="@title245a" name="title245a"/> -->
-        <data source="245??.a" name="title245a"/>
+        <data source="245*.a" name="title245a"/>
         <postprocess>
             <java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
         </postprocess>
