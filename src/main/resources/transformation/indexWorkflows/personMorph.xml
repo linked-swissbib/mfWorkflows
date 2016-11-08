@@ -114,12 +114,12 @@
 
             <!--RDF TYPE (CLASS)-->
 
-            <data source="_id" name="@type">
+            <data source="7000 " name="@type">
                 <constant value="http://xmlns.com/foaf/0.1/Person"/>
             </data>
 
             <!--REFERENCED JSON-LD CONTEXT-->
-            <data source="_id" name="@context">
+            <data source="7000 " name="@context">
                 <constant value="http://data.swissbib.ch/person/context.jsonld"/>
             </data>
 
@@ -158,12 +158,12 @@
 
             <!--RDF TYPE (CLASS)-->
 
-            <data source="_id" name="@type">
+            <data source="7001 " name="@type">
                 <constant value="http://xmlns.com/foaf/0.1/Person"/>
             </data>
 
             <!--REFERENCED JSON-LD CONTEXT-->
-            <data source="_id" name="@context">
+            <data source="7001 " name="@context">
                 <constant value="http://data.swissbib.ch/person/context.jsonld"/>
             </data>
 
