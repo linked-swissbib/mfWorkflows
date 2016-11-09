@@ -18,7 +18,9 @@
         <data source="1000 .c" name="title"/>
         <data source="1000 .d" name="lifedata"/>
         <data source="1000 .q" name="fullname"/>
-        <data source="1000 .0" name="gnd"/>
+        <data source="1000 .0" name="gnd">
+            <replace pattern="^\(DE-588\)$" with=""/>
+        </data>
         <data source="@publishYear" name="publishYear"/>
         <data source="245*.a" name="title245a"/>
         <postprocess>
@@ -40,7 +42,9 @@
         <data source="1001 .c" name="title"/>
         <data source="1001 .d" name="lifedata"/>
         <data source="1001 .q" name="fullname"/>
-        <data source="1001 .0" name="gnd"/>
+        <data source="1001 .0" name="gnd">
+            <replace pattern="^\(DE-588\)$" with=""/>
+        </data>
         <data source="@publishYear" name="publishYear"/>
         <data source="245*.a" name="title245a"/>
         <postprocess>

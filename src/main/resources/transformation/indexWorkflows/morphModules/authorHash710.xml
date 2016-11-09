@@ -15,7 +15,9 @@
         <data source="710??.n" name="number"/>
         <data source="710??.d" name="date"/>
         <data source="710??.c" name="location"/>
-        <data source="710??.0" name="gnd"/>
+        <data source="710??.0" name="gnd">
+            <replace pattern="^\(DE-588\)$" with=""/>
+        </data>
     </combine>
 
     <combine name="@key710" value="710__###${swissbib_id}###${710}###${publishYear}###${title245a}"

@@ -16,7 +16,9 @@
         <data source="7000 .c" name="title"/>
         <data source="7000 .d" name="lifedata"/>
         <data source="7000 .q" name="fullname"/>
-        <data source="7000 .0" name="gnd"/>
+        <data source="7000 .0" name="gnd">
+            <replace pattern="^\(DE-588\)$" with=""/>
+        </data>
     </combine>
 
     <combine name="@key7000" value="7000###${swissbib_id}###${7000}###${publishYear}###${title245a}" flushWith="7000 ">
@@ -38,7 +40,9 @@
         <data source="7001 .c" name="title"/>
         <data source="7001 .d" name="lifedata"/>
         <data source="7001 .q" name="fullname"/>
-        <data source="7001 .0" name="gnd"/>
+        <data source="7001 .0" name="gnd">
+            <replace pattern="^\(DE-588\)$" with=""/>
+        </data>
     </combine>
 
     <combine name="@key7001" value="7001###${swissbib_id}###${7001}###${publishYear}###${title245a}" flushWith="7001 ">
