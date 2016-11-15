@@ -52,6 +52,9 @@
                     <compose prefix=" "/>
                 </data>
             </concat>
+            <data source="710??.0" name="owl:sameAs">
+                <replace pattern="^\(DE-588\)$" with=""/>
+            </data>
 
         </entity>
 
@@ -94,6 +97,9 @@
                     <compose prefix=" "/>
                 </data>
             </concat>
+            <data source="711??.0" name="owl:sameAs">
+                <replace pattern="^\(DE-588\)$" with=""/>
+            </data>
 
         </entity>
 
