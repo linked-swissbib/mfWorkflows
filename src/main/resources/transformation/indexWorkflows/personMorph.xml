@@ -14,7 +14,7 @@
         <!--BUILD THE BASIS RECORD -->
 
         <!--100 first indicator 0-->
-        <entity name="--" flushWith="245??">
+        <entity name="--" flushWith="1000 ">
             <data name="_id" source="@key1000"/>
             <data name="@id" source="@key1000">
                 <compose prefix="http://data.swissbib.ch/person/"/>
@@ -58,7 +58,7 @@
         </entity>
 
         <!--100 first indicator 1-->
-        <entity name="--" flushWith="245??">
+        <entity name="--" flushWith="1001 ">
             <data name="_id" source="@key1001"/>
             <data name="@id" source="@key1001">
                 <compose prefix="http://data.swissbib.ch/person/"/>
