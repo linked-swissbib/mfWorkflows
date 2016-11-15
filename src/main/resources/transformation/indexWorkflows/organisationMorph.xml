@@ -30,7 +30,7 @@
 
             <!--REFERENCED JSON-LD CONTEXT-->
             <data source="710??" name="@context">
-                <constant value="http://data.swissbib.ch/organisation/context.jsonld"/>
+                <constant value="https://resources.swissbib.ch/organisation/context.jsonld"/>
             </data>
 
             <concat name="rdfs:label" delimiter="" flushWith="710??" reset="true" sameEntity="true">
@@ -73,7 +73,7 @@
 
             <!--REFERENCED JSON-LD CONTEXT-->
             <data source="711??" name="@context">
-                <constant value="http://data.swissbib.ch/organisation/context.jsonld"/>
+                <constant value="https://resources.swissbib.ch/organisation/context.jsonld"/>
             </data>
 
             <concat name="rdfs:label" delimiter="" flushWith="711??" reset="true" sameEntity="true">

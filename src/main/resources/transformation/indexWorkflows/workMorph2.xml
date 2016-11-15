@@ -8,7 +8,7 @@
 
             <data name="@id" source="_id"/>
             <data name="@context" source="_id">
-                <constant value="http://data.swissbib.ch/work/context.jsonld"/>
+                <constant value="https://resources.swissbib.ch/work/context.jsonld"/>
             </data>
             <data name="@type" source="_id">
                 <constant value="http://bibframe.org/vocab/Work"/>

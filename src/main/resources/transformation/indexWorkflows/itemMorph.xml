@@ -66,7 +66,7 @@
 
             <!--REFERENCED JSON-LD CONTEXT-->
             <data source="_id" name="@context">
-                <constant value="http://data.swissbib.ch/item/context.jsonld"/>
+                <constant value="https://resources.swissbib.ch/item/context.jsonld"/>
             </data>
 
             <!--LINK WITH BILIOGRAPHICAL RESOURCE-->
