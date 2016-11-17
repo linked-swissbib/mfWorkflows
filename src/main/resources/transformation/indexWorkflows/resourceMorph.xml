@@ -3,7 +3,7 @@
 <metamorph xmlns="http://www.culturegraph.org/metamorph" version="1">
 
     <vars>
-        <var name="swissbib_domain" value="http://data.swissbib.ch/resource/"/>
+        <var name="swissbib_domain" value="http://data.swissbib.ch/bibliographicResource/"/>
     </vars>
 
 
@@ -83,7 +83,7 @@
         <data source="001" name="_id"/>
 
         <data source="001" name="\@id">
-            <compose prefix="http://data.swissbib.ch/resource/"/>
+            <compose prefix="http://data.swissbib.ch/bibliographicResource/"/>
         </data>
 
         <!--RDF TYPE (CLASS)-->
@@ -94,7 +94,7 @@
 
         <!--REFERENCED JSON-LD CONTEXT-->
         <data source="_id" name="\@context">
-            <constant value="https://resources.swissbib.ch/resource/context.jsonld"/>
+            <constant value="https://resources.swissbib.ch/bibliographicResource/context.jsonld"/>
         </data>
 
         <!-- REFERENCE TO WORK -->
@@ -574,7 +574,7 @@
 
         <!--773: LINK TO HOST ITEM (works only with record that includes a subfield 773$9 (swiss german data))-->
         <data name="dct:isPartOf" source="773*.9">
-            <compose prefix="http://data.swissbib.ch/resource/"/>
+            <compose prefix="http://data.swissbib.ch/bibliographicResource/"/>
             <unique part="value"/>
         </data>
 
@@ -587,7 +587,7 @@
         <!--META-->
         <!--Do not add "flushWith="record"": if there is more than one field 035, the attributes "rdf:resource" will be repeated within the tag "rdfs:isDefinedBy"-->
         <data source="001" name="rdfs:isDefinedBy">
-            <compose prefix="http://data.swissbib.ch/resource/"/>
+            <compose prefix="http://data.swissbib.ch/bibliographicResource/"/>
             <compose postfix="/about"/>
         </data>
 

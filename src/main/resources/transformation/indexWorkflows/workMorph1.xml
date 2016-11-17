@@ -13,7 +13,7 @@
 
         <!--001 RELATED RESOURCES/MANIFESTATIONS-->
         <data source="001" name="instance">
-            <compose prefix="http://data.swissbib.ch/resource/"/>
+            <compose prefix="http://data.swissbib.ch/bibliographicResource/"/>
         </data>
 
         <!--100 MAIN AUTHOR-->

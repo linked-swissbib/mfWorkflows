@@ -3,7 +3,7 @@
 <metamorph xmlns="http://www.culturegraph.org/metamorph" version="1">
 
     <vars>
-        <var name="swissbib_domain" value="http://data.swissbib.ch/resource/"/>
+        <var name="swissbib_domain" value="http://data.swissbib.ch/bibliographicResource/"/>
     </vars>
 
     <rules>
@@ -71,7 +71,8 @@
 
             <!--LINK WITH BILIOGRAPHICAL RESOURCE-->
 
-            <combine name="bf:holdingFor" value="http://data.swissbib.ch/resource/${id_record}" flushWith="949??">
+            <combine name="bf:holdingFor" value="http://data.swissbib.ch/bibliographicResource/${id_record}"
+                     flushWith="949??">
                 <data source="@idnr" name="id_record"/>
             </combine>
 

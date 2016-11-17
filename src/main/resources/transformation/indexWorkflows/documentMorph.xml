@@ -3,7 +3,7 @@
 <metamorph xmlns="http://www.culturegraph.org/metamorph" version="1">
 
     <vars>
-        <var name="swissbib_domain" value="http://data.swissbib.ch/resource/"/>
+        <var name="swissbib_domain" value="http://data.swissbib.ch/bibliographicResource/"/>
     </vars>
 
 
@@ -19,7 +19,7 @@
         <data source="001" name="_id"/>
 
         <data source="001" name="\@id">
-            <compose prefix="http://data.swissbib.ch/resource/"/>
+            <compose prefix="http://data.swissbib.ch/bibliographicResource/"/>
             <compose postfix="/about"/>
         </data>
 
@@ -108,7 +108,7 @@
 
         <!--LINK WITH THE BASIS RECORD-->
         <data source="001" name="foaf:primaryTopic">
-            <compose prefix="http://data.swissbib.ch/resource/"/>
+            <compose prefix="http://data.swissbib.ch/bibliographicResource/"/>
             <compose postfix="/about"/>
         </data>
 

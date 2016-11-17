@@ -3,7 +3,7 @@
 <metamorph xmlns="http://www.culturegraph.org/metamorph" version="1">
 
     <vars>
-        <var name="swissbib_domain" value="http://data.swissbib.ch/resource/"/>
+        <var name="swissbib_domain" value="http://data.swissbib.ch/bibliographicResource/"/>
     </vars>
 
 
