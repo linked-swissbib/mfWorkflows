@@ -6,6 +6,23 @@
         <var name="swissbib_domain" value="http://data.swissbib.ch/bibliographicResource/"/>
     </vars>
 
+    <macros>
+        <macro name="gnd">
+            <combine name="owl:sameAs" value="${prefix}${id}" sameEntity="true" reset="true" flushWith="$[gndfield]">
+                <if>
+                    <data source="$[gndfield]">
+                        <regexp match="\(DE-588\).{4,}"/>
+                    </data>
+                </if>
+                <data source="$[gndfield]" name="prefix">
+                    <constant value="http://d-nb.info/gnd/"/>
+                </data>
+                <data source="$[gndfield]" name="id">
+                    <regexp match="\(DE-588\)(.*)" format="${1}"/>
+                </data>
+            </combine>
+        </macro>
+    </macros>
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="morphModules/authorHash710.xml" parse="xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude" href="morphModules/authorHash711.xml" parse="xml"/>
@@ -52,9 +69,8 @@
                     <compose prefix=" "/>
                 </data>
             </concat>
-            <data source="710??.0" name="owl:sameAs">
-                <replace pattern="^\(DE-588\)$" with=""/>
-            </data>
+            <call-macro name="gnd" gndfield="710??.0"/>
+
 
         </entity>
 
@@ -97,9 +113,7 @@
                     <compose prefix=" "/>
                 </data>
             </concat>
-            <data source="711??.0" name="owl:sameAs">
-                <replace pattern="^\(DE-588\)$" with=""/>
-            </data>
+            <call-macro name="gnd" gndfield="711??.0"/>
 
         </entity>
 
