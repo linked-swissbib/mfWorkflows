@@ -109,7 +109,6 @@
         <!--LINK WITH THE BASIS RECORD-->
         <data source="001" name="foaf:primaryTopic">
             <compose prefix="http://data.swissbib.ch/bibliographicResource/"/>
-            <compose postfix="/about"/>
         </data>
 
 
