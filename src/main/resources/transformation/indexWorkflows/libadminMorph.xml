@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<metamorph xmlns="http://www.culturegraph.org/metamorph" version="1">
+
+    <rules>
+
+        <!--RECURSION-->
+        <combine name="@uri_library" value="http://data.swissbib.ch/organisation/${network}-${id}" reset="false"
+                 flushWith="data.institutions.sys_code">
+            <data source="data.institutions.sys_code" name="id">
+                <trim/>
+            </data>
+            <data source="data.group.code" name="network">
+                <trim/>
+            </data>
+        </combine>
+
+        <combine name="@uri_network" value="http://data.swissbib.ch/organisation/${network}">
+            <data source="data.group.code" name="network">
+                <trim/>
+                <blacklist>
+                    <entry name="REPOS"/>
+                </blacklist>
+            </data>
+        </combine>
+
+        <!--ENTITY NETWORK-->
+        <entity name="--" flushWith="data.group">
+
+            <!--URI OF THE NETWORK-->
+            <data source="@uri_network" name="@id"/>
+            <data source="@uri_network" name="_id"/>
+
+            <data source="data.group.code" name="@type">
+                <constant value="http://xmlns.com/foaf/0.1/Organization"/>
+            </data>
+
+            <!--REFERENCED JSON-LD CONTEXT-->
+            <data source="data.group.code" name="@context">
+                <constant value="https://resources.swissbib.ch/organisation/context.jsonld"/>
+            </data>
+
+            <data name="rdfs:label" source="data.group.label.*">
+                <regexp match="(.*[^\s$])" format="${1}"/>
+            </data>
+
+            <!--            <entity name="rdfs:label{}">
+                            <data name="de" source="data.group.label.de">
+                                <regexp match="(.*[^\s$])" format="${1}"/>
+                            </data>
+                            <data name="fr" source="data.group.label.fr">
+                                <regexp match="(.*[^\s$])" format="${1}"/>
+                            </data>
+                            <data name="it" source="data.group.label.it">
+                                <regexp match="(.*[^\s$])" format="${1}"/>
+                            </data>
+                            <data name="en" source="data.group.label.en">
+                                <regexp match="(.*[^\s$])" format="${1}"/>
+                            </data>
+                        </entity>-->
+        </entity>
+
+
+        <!--ENTITY LIBRARY-->
+
+        <entity name="--" flushWith="data.institutions">
+
+            <!--URI of the library-->
+            <data source="@uri_library" name="@id">
+                <!--Removes the prefix "REPOS-" if it exists.
+                Reason: libraries from the groups REPOS have URI without REPOS-->
+                <regexp match="(http:\/\/data\.swissbib\.ch\/organisation\/)(REPOS-)?(.*)" format="${1}${3}"/>
+            </data>
+            <data source="@uri_library" name="_id">
+                <regexp match="(http:\/\/data\.swissbib\.ch\/organisation\/)(REPOS-)?(.*)" format="${1}${3}"/>
+            </data>
+
+            <data source="data.institutions.id" name="@type">
+                <constant value="http://xmlns.com/foaf/0.1/Organization"/>
+            </data>
+
+            <!--REFERENCED JSON-LD CONTEXT-->
+            <data source="data.institutions.id" name="@context">
+                <constant value="https://resources.swissbib.ch/organisation/context.jsonld"/>
+            </data>
+
+            <!--OFFICIAL NAME-->
+            <data name="foaf:name" source="data.institutions.name.*">
+                <blacklist>
+                    <entry name=""/>
+                </blacklist>
+                <regexp match="(.*[^\s$])" format="${1}"/>
+            </data>
+            <!--<entity name="foaf:name" flushWith="data.institutions">
+                <data name="de" source="data.institutions.name.de">
+                    <blacklist>
+                        <entry name=""/>
+                    </blacklist>
+                    <regexp match="(.*[^\s$])" format="${1}"/>
+                </data>
+                <data name="fr" source="data.institutions.name.fr">
+                    <blacklist>
+                        <entry name=""/>
+                    </blacklist>
+                    <regexp match="(.*[^\s$])" format="${1}"/>
+                </data>
+                <data name="it" source="data.institutions.name.it">
+                    <blacklist>
+                        <entry name=""/>
+                    </blacklist>
+                    <regexp match="(.*[^\s$])" format="${1}"/>
+                </data>
+                <data name="en" source="data.institutions.name.en">
+                    <blacklist>
+                        <entry name=""/>
+                    </blacklist>
+                    <regexp match="(.*[^\s$])" format="${1}"/>
+                </data>
+            </entity>-->
+
+            <!--NAME FOR THE USER-->
+            <data name="rdfs:label" source="data.institutions.label.*">
+                <regexp match="(.*[^\s$])" format="${1}"/>
+            </data>
+            <!--            <entity name="rdfs:label" flushWith="data.institutions.label">
+                            <data name="de" source="data.institutions.label.de">
+                                <regexp match="(.*[^\s$])" format="${1}"/>
+                            </data>
+                            <data name="fr" source="data.institutions.label.fr">
+                                <regexp match="(.*[^\s$])" format="${1}"/>
+                            </data>
+                            <data name="it" source="data.institutions.label.it">
+                                <regexp match="(.*[^\s$])" format="${1}"/>
+                            </data>
+                            <data name="en" source="data.institutions.label.en">
+                                <regexp match="(.*[^\s$])" format="${1}"/>
+                            </data>
+                        </entity>-->
+
+            <!--WEBSITE-->
+            <data name="foaf:homepage" source="data.institutions.website">
+                <blacklist>
+                    <entry name=""/>
+                </blacklist>
+                <trim/>
+            </data>
+
+            <!--MAIL-->
+            <data name="foaf:mbox" source="data.institutions.email">
+                <blacklist>
+                    <entry name=""/>
+                </blacklist>
+                <trim/>
+                <compose prefix="mailto:"/>
+            </data>
+
+            <!--POST ADDRESS-->
+            <entity name="vcard:hasAddress{}" flushWith="data.institutions">
+                <data name="vcard:street-address" source="data.institutions.address">
+                    <blacklist>
+                        <entry name=""/>
+                    </blacklist>
+                    <regexp match="(.*[^\s$])" format="${1}"/>
+                </data>
+                <data name="vcard:postal-code" source="data.institutions.zip">
+                    <blacklist>
+                        <entry name=""/>
+                    </blacklist>
+                    <regexp match="(.*[^\s$])" format="${1}"/>
+                </data>
+                <data name="vcard:locality" source="data.institutions.city">
+                    <blacklist>
+                        <entry name=""/>
+                    </blacklist>
+                    <regexp match="(.*[^\s$])" format="${1}"/>
+                </data>
+                <!--"vcard:region" is a datatype property while "vcard:hasRegion" is an object property-->
+                <!-- TODO: Map as resource -->
+                <data name="vcard:hasRegion" source="data.institutions.canton">
+                    <trim/>
+                    <lookup in="cantons"/>
+                </data>
+            </entity>
+
+            <!--PHONE-->
+            <data name="foaf:phone" source="data.institutions.phone">
+                <regexp match="(\+\d\d)(\s)?(\(0\))?(\d\d)(\s)?(\d\d\d)(\s)?(\d\d)(\s)?(\d\d)"
+                        format="tel:${1}${4}${6}${8}${10}"/>
+            </data>
+
+            <!--ISIL-->
+            <data name="dbp:isil" source="data.institutions.isil">
+                <blacklist>
+                    <entry name=""/>
+                </blacklist>
+                <trim/>
+            </data>
+
+        </entity>
+
+    </rules>
+
+    <maps>
+        <filemap name="cantons" files="./src/main/resources/transformation/indexWorkflows/maps/cantons.txt"
+                 separator="\t"/>
+    </maps>
+
+
+</metamorph>
