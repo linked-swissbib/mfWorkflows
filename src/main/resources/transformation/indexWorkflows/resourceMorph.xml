@@ -591,11 +591,6 @@
             <compose postfix="/about"/>
         </data>
 
-        <combine name="dct:license" value="${rights}" flushWith="record">
-            <data source="900??.a" name="rights">
-                <regexp match="Metadata rights reserved"/>
-            </data>
-        </combine>
 
     </rules>
 
