@@ -44,20 +44,6 @@
                 <regexp match="(.*[^\s$])" format="${1}"/>
             </data>
 
-            <!--            <entity name="rdfs:label{}">
-                            <data name="de" source="data.group.label.de">
-                                <regexp match="(.*[^\s$])" format="${1}"/>
-                            </data>
-                            <data name="fr" source="data.group.label.fr">
-                                <regexp match="(.*[^\s$])" format="${1}"/>
-                            </data>
-                            <data name="it" source="data.group.label.it">
-                                <regexp match="(.*[^\s$])" format="${1}"/>
-                            </data>
-                            <data name="en" source="data.group.label.en">
-                                <regexp match="(.*[^\s$])" format="${1}"/>
-                            </data>
-                        </entity>-->
         </entity>
 
 
@@ -91,51 +77,11 @@
                 </blacklist>
                 <regexp match="(.*[^\s$])" format="${1}"/>
             </data>
-            <!--<entity name="foaf:name" flushWith="data.institutions">
-                <data name="de" source="data.institutions.name.de">
-                    <blacklist>
-                        <entry name=""/>
-                    </blacklist>
-                    <regexp match="(.*[^\s$])" format="${1}"/>
-                </data>
-                <data name="fr" source="data.institutions.name.fr">
-                    <blacklist>
-                        <entry name=""/>
-                    </blacklist>
-                    <regexp match="(.*[^\s$])" format="${1}"/>
-                </data>
-                <data name="it" source="data.institutions.name.it">
-                    <blacklist>
-                        <entry name=""/>
-                    </blacklist>
-                    <regexp match="(.*[^\s$])" format="${1}"/>
-                </data>
-                <data name="en" source="data.institutions.name.en">
-                    <blacklist>
-                        <entry name=""/>
-                    </blacklist>
-                    <regexp match="(.*[^\s$])" format="${1}"/>
-                </data>
-            </entity>-->
 
             <!--NAME FOR THE USER-->
             <data name="rdfs:label" source="data.institutions.label.*">
                 <regexp match="(.*[^\s$])" format="${1}"/>
             </data>
-            <!--            <entity name="rdfs:label" flushWith="data.institutions.label">
-                            <data name="de" source="data.institutions.label.de">
-                                <regexp match="(.*[^\s$])" format="${1}"/>
-                            </data>
-                            <data name="fr" source="data.institutions.label.fr">
-                                <regexp match="(.*[^\s$])" format="${1}"/>
-                            </data>
-                            <data name="it" source="data.institutions.label.it">
-                                <regexp match="(.*[^\s$])" format="${1}"/>
-                            </data>
-                            <data name="en" source="data.institutions.label.en">
-                                <regexp match="(.*[^\s$])" format="${1}"/>
-                            </data>
-                        </entity>-->
 
             <!--WEBSITE-->
             <data name="foaf:homepage" source="data.institutions.website">
