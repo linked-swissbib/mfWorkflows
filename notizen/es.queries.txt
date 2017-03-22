@@ -1,0 +1,13 @@
+curl -XGET 'sb-ues1.swissbib.unibas.ch:8080/lsb/organisation/_search?pretty' -H 'Content-Type: application/json' -d'
+{
+  "query": {
+    "term" : { "_id" : "http://data.swissbib.ch/organisation/NEBIS" }
+  }
+}
+'
+
+
+
+example indexing of libadmin
+{"index":{"_type":"organisation","_index":"lsb","_id":"http://data.swissbib.ch/organisation/ABN-KURA"}}
+{"@type":"http://xmlns.com/foaf/0.1/Organization","@context":"https://resources.swissbib.ch/organisation/context.jsonld","@id":"http://data.swissbib.ch/organisation/ABN-KURA","rdfs:label":["Aargauer Kuratorium, Aarau","Aargauer Kuratorium, Aarau","Aargauer Kuratorium, Aarau","Aargauer Kuratorium, Aarau"],"foaf:name":["Aargauer Kuratorium, Aarau","Aargauer Kuratorium, Aarau","Aargauer Kuratorium, Aarau","Aargauer Kuratorium, Aarau"],"foaf:phone":"tel:+41628352310","vcard:hasAddress":{"vcard:street-address":"Bachstrasse 15","vcard:postal-code":"5001","vcard:locality":"Aarau","vcard:hasRegion":"http://sws.geonames.org/2661876/"}}
