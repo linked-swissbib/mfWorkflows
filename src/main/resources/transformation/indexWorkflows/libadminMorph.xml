@@ -29,7 +29,9 @@
 
             <!--URI OF THE NETWORK-->
             <data source="@uri_network" name="@id"/>
-            <data source="@uri_network" name="_id"/>
+            <data source="@uri_network" name="_id">
+                <regexp match="(http:\/\/data\.swissbib\.ch\/organisation\/)(REPOS-)?(.*)" format="${3}"/>
+            </data>
 
             <data source="data.group.code" name="@type">
                 <constant value="http://xmlns.com/foaf/0.1/Organization"/>
@@ -58,7 +60,7 @@
                 <regexp match="(http:\/\/data\.swissbib\.ch\/organisation\/)(REPOS-)?(.*)" format="${1}${3}"/>
             </data>
             <data source="@uri_library" name="_id">
-                <regexp match="(http:\/\/data\.swissbib\.ch\/organisation\/)(REPOS-)?(.*)" format="${1}${3}"/>
+                <regexp match="(http:\/\/data\.swissbib\.ch\/organisation\/)(REPOS-)?(.*)" format="${3}"/>
             </data>
 
             <data source="data.institutions.id" name="@type">
