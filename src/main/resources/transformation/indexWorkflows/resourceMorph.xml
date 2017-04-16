@@ -586,9 +586,14 @@
 
         <!--META-->
         <!--Do not add "flushWith="record"": if there is more than one field 035, the attributes "rdf:resource" will be repeated within the tag "rdfs:isDefinedBy"-->
+        <!--
         <data source="001" name="rdfs:isDefinedBy">
             <compose prefix="http://data.swissbib.ch/bibliographicResource/"/>
             <compose postfix="/about"/>
+        </data>
+        -->
+        <data source="001" name="rdfs:isDefinedBy">
+            <compose prefix="http://data.swissbib.ch/document/"/>
         </data>
 
 
