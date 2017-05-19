@@ -86,6 +86,7 @@
                 <entry name="IDSSG"/>
                 <entry name="IDSSG2"/>
                 <entry name="LIBIB"/>
+                <entry name="NATIONALLICENCE"/>
                 <entry name="NEBIS"/>
                 <entry name="OCoLC"/>
                 <entry name="RERO"/>
@@ -96,6 +97,7 @@
                 <entry name="SLB"/>
                 <entry name="SNL"/>
                 <entry name="Sz"/>
+                <entry name="VAUD"/>
                 <entry name="ZORA"/>
             </blacklist>
         </data>

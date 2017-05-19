@@ -13,6 +13,7 @@ IDSLU	http://data.swissbib.ch/organisation/IDSLU
 IDSSG	http://data.swissbib.ch/organisation/IDSSG
 IDSSG2	http://data.swissbib.ch/organisation/IDSSG2
 LIBIB	http://data.swissbib.ch/organisation/LIBIB
+NATIONALLICENCE http://data.swissbib.ch/organisation/NATIONALLICENCE
 NEBIS	http://data.swissbib.ch/organisation/NEBIS
 OCoLC	http://d-nb.info/gnd/1046905-9
 RERO	http://data.swissbib.ch/organisation/RERO
@@ -23,4 +24,5 @@ SGBN	http://data.swissbib.ch/organisation/SGBN
 SLB	http://data.swissbib.ch/organisation/SNL
 SNL	http://data.swissbib.ch/organisation/SNL
 Sz	http://data.swissbib.ch/organisation/SNL
+VAUD http://data.swissbib.ch/organisation/VAUD
 ZORA	http://data.swissbib.ch/organisation/ZORA
