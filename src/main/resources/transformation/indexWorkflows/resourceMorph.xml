@@ -597,6 +597,16 @@
         </data>
 
 
+        <!-- we need this note for documents as well as for resources
+        otherwise it's quite difficult to implement a necessary filter on the data.swissbib.ch API-->
+        <combine name="dct:rights" value="${rights}" flushWith="record">
+            <data source="900??.a" name="rights">
+                <regexp match="Metadata rights reserved"/>
+            </data>
+        </combine>
+
+
+
     </rules>
 
     <maps>
