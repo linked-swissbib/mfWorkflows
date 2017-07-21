@@ -25,5 +25,5 @@ SGBN	http://data.swissbib.ch/organisation/SGBN
 SLB	http://data.swissbib.ch/organisation/SNL
 SNL	http://data.swissbib.ch/organisation/SNL
 Sz	http://data.swissbib.ch/organisation/SNL
-VAUD http://data.swissbib.ch/organisation/VAUD
+VAUD	http://data.swissbib.ch/organisation/VAUD
 ZORA	http://data.swissbib.ch/organisation/ZORA
