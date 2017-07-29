@@ -15,7 +15,7 @@ catch-object-exception|
 decode-xml|
 handle-marcxml|
 filter(filterMorph)|
-change-id("245*.a")|
+change-id(idLiteral="245*.a")|
 morph(resourceMorph)|
 change-id|
 encode-formeta(style="multiline")|

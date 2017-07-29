@@ -1,5 +1,5 @@
 !.gitignore
 .idea
 target
-
+plugins/*.jar
 *.iml

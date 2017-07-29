@@ -60,7 +60,7 @@ if [ -z "$FLUX_JAVA_BIN" ] ; then
 fi
 
 java_opts_file="$METAFACTURE_HOME/config/java-options.conf"
-jar_file="$METAFACTURE_HOME/${project.build.finalName}.jar"
+jar_file="$METAFACTURE_HOME/metafacture-runner-4.0.0.jar"
 
 # Load java options from configuration file. Lines starting 
 # with # are treated as comments. Empty lines are ignored.

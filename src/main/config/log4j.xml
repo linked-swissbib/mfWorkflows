@@ -9,8 +9,6 @@
 		</layout>
 	</appender>
 
-
-
 	<root>
 		<priority value="info" />
 		<appender-ref ref="stdout" />

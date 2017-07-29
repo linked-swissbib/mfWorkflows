@@ -8,7 +8,7 @@
     </data>
 
 
-    <combine name="@7000" value="${number}###${name}###${title}###${lifedata}###${fullname}###${gnd}" flushWith="7000 "
+    <combine name="@7000" value="nureintest${number}###${name}###${title}###${lifedata}###${fullname}###${gnd}" flushWith="7000 "
              reset="true"
              sameEntity="true">
         <data source="7000 .a" name="name"/>

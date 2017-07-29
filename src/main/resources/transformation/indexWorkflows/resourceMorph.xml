@@ -471,7 +471,7 @@
             </data>
             <!--The "data"-tag above matches just the first publication place and doesn't give him any prefix. The "data"-tag below matches all the publication places except the first one, and attributes them a prefix. Can leads to small errors when the field 260 appears more than once in the record.-->
             <data source="260? .a">
-                <occurrence only="moreThen 1"/>
+                <occurrence only="moreThan 1"/>
                 <compose prefix=" ; "/>
             </data>
             <data source="260? .b">
@@ -489,7 +489,7 @@
                 <occurrence only="1"/>
             </data>
             <data source="300  .a">
-                <occurrence only="moreThen 1"/>
+                <occurrence only="moreThan 1"/>
                 <compose prefix=" ; "/>
             </data>
             <data source="300  .b">

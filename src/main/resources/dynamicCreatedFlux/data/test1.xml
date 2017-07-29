@@ -81,9 +81,13 @@
         <subfield code="a">Peterson</subfield>
         <subfield code="D">Roger</subfield>
     </datafield>
-    <datafield tag="700" ind1="1" ind2=" ">
-        <subfield code="a">Mountfort</subfield>
-        <subfield code="D">Guy</subfield>
+    <datafield tag="700" ind1="0" ind2=" ">
+        <subfield code="a">Ballerini</subfield>
+        <subfield code="D">Girolamo</subfield>
+        <subfield code="c">das ist der Titel</subfield>
+        <subfield code="d">1702-1781</subfield>
+        <subfield code="0">(DE-588)1034922270</subfield>
+        <subfield code="4">ins</subfield>
     </datafield>
     <datafield tag="700" ind1="1" ind2=" ">
         <subfield code="a">Hollom</subfield>
