@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+<record type="Bibliographic">
+    <leader> cam a22 u 4500</leader>
+    <controlfield tag="001">001363522</controlfield>
+    <controlfield tag="003">CHVBK</controlfield>
+    <controlfield tag="005">20170729061609.0</controlfield>
+    <controlfield tag="008">981219s1979 xx 00 ger </controlfield>
+    <datafield tag="020" ind1=" " ind2=" ">
+        <subfield code="a">3-490-05818-6</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+        <subfield code="a">(OCoLC)256311812</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+        <subfield code="a">(ABN)000169079</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+        <subfield code="a">CH-AaABN BZZ</subfield>
+    </datafield>
+    <datafield tag="245" ind1="0" ind2="4">
+        <subfield code="a">Die Vögel Europas</subfield>
+        <subfield code="b">Ein Taschenbuch für Ornithologen und Naturfreunde über alle in Europa
+            lebenden Vögel</subfield>
+        <subfield code="c">von Roger Peterson (u.a.)</subfield>
+    </datafield>
+    <datafield tag="250" ind1=" " ind2=" ">
+        <subfield code="a">12. Aufl</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+        <subfield code="a">Hamburg [etc.]</subfield>
+        <subfield code="b">Parey 2</subfield>
+        <subfield code="c">1979</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+        <subfield code="a">446 S</subfield>
+        <subfield code="b">Ill</subfield>
+    </datafield>
+    <datafield tag="490" ind1="0" ind2=" ">
+        <subfield code="a">Kosmos Naturführer</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+        <subfield code="a">Originaltitel: A field guide to the birds of Britain an Europe</subfield>
+    </datafield>
+    <datafield tag="690" ind1=" " ind2="7">
+        <subfield code="B">u</subfield>
+        <subfield code="a">Vögel</subfield>
+        <subfield code="2">abn YS</subfield>
+    </datafield>
+    <datafield tag="690" ind1=" " ind2="7">
+        <subfield code="B">u</subfield>
+        <subfield code="a">Singvögel</subfield>
+        <subfield code="2">abn YS</subfield>
+    </datafield>
+    <datafield tag="690" ind1=" " ind2="7">
+        <subfield code="B">u</subfield>
+        <subfield code="a">Wasservögel</subfield>
+        <subfield code="2">abn YS</subfield>
+    </datafield>
+    <datafield tag="690" ind1=" " ind2="7">
+        <subfield code="B">u</subfield>
+        <subfield code="a">Ornithologie</subfield>
+        <subfield code="2">abn YS</subfield>
+    </datafield>
+    <datafield tag="690" ind1=" " ind2="7">
+        <subfield code="B">u</subfield>
+        <subfield code="a">Europa</subfield>
+        <subfield code="2">abn YS</subfield>
+    </datafield>
+    <datafield tag="690" ind1=" " ind2="7">
+        <subfield code="B">u</subfield>
+        <subfield code="a">Lexikon</subfield>
+        <subfield code="2">abn YS</subfield>
+    </datafield>
+    <datafield tag="691" ind1=" " ind2="7">
+        <subfield code="B">u</subfield>
+        <subfield code="u">598</subfield>
+        <subfield code="2">abn YS</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+        <subfield code="a">Peterson</subfield>
+        <subfield code="D">Roger</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+        <subfield code="a">Mountfort</subfield>
+        <subfield code="D">Guy</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+        <subfield code="a">Hollom</subfield>
+        <subfield code="D">Philip A. D.</subfield>
+        <subfield code="i">Werksautoren dürfen nicht hinein</subfield>
+    </datafield>
+    <datafield tag="898" ind1=" " ind2=" ">
+        <subfield code="a">BK020000</subfield>
+        <subfield code="b">XK020000</subfield>
+        <subfield code="c">XK020000</subfield>
+    </datafield>
+    <datafield tag="949" ind1=" " ind2=" ">
+        <subfield code="B">ABN</subfield>
+        <subfield code="C">ABN51</subfield>
+        <subfield code="D">ABN01</subfield>
+        <subfield code="E">000169079</subfield>
+        <subfield code="F">NKS</subfield>
+        <subfield code="b">NKS</subfield>
+        <subfield code="c">NKARC</subfield>
+        <subfield code="j">NKS 598</subfield>
+        <subfield code="p">NKS040045704</subfield>
+        <subfield code="q">000169079</subfield>
+        <subfield code="r">000070</subfield>
+        <subfield code="0">Neue Kantonsschule Aarau</subfield>
+        <subfield code="1">Archiv</subfield>
+        <subfield code="3">BOOK</subfield>
+        <subfield code="4">01</subfield>
+        <subfield code="5">1 Monat</subfield>
+    </datafield>
+    <datafield tag="949" ind1=" " ind2=" ">
+        <subfield code="B">ABN</subfield>
+        <subfield code="C">ABN51</subfield>
+        <subfield code="D">ABN01</subfield>
+        <subfield code="E">000169079</subfield>
+        <subfield code="F">NKS</subfield>
+        <subfield code="b">NKS</subfield>
+        <subfield code="c">NKARC</subfield>
+        <subfield code="j">NKS 598</subfield>
+        <subfield code="p">NKS040131132</subfield>
+        <subfield code="q">000169079</subfield>
+        <subfield code="r">000080</subfield>
+        <subfield code="0">Neue Kantonsschule Aarau</subfield>
+        <subfield code="1">Archiv</subfield>
+        <subfield code="3">BOOK</subfield>
+        <subfield code="4">01</subfield>
+        <subfield code="5">1 Monat</subfield>
+    </datafield>
+    <datafield tag="949" ind1=" " ind2=" ">
+        <subfield code="B">ABN</subfield>
+        <subfield code="C">ABN51</subfield>
+        <subfield code="D">ABN01</subfield>
+        <subfield code="E">000169079</subfield>
+        <subfield code="F">KSWE</subfield>
+        <subfield code="b">KSWE</subfield>
+        <subfield code="c">WEBS4</subfield>
+        <subfield code="j">KSWE ZG81</subfield>
+        <subfield code="p">169079-90</subfield>
+        <subfield code="q">000169079</subfield>
+        <subfield code="r">000090</subfield>
+        <subfield code="0">Kantonsschule Wettingen</subfield>
+        <subfield code="1">Fachbib Bio Spinnerei 4. St</subfield>
+        <subfield code="3">BOOK</subfield>
+        <subfield code="4">41</subfield>
+        <subfield code="5">keine Ausleihe</subfield>
+    </datafield>
+    <datafield tag="950" ind1=" " ind2=" ">
+        <subfield code="B">ABN</subfield>
+        <subfield code="P">490</subfield>
+        <subfield code="E">--</subfield>
+        <subfield code="a">Kosmos Naturführer</subfield>
+    </datafield>
+    <datafield tag="950" ind1=" " ind2=" ">
+        <subfield code="B">ABN</subfield>
+        <subfield code="P">700</subfield>
+        <subfield code="E">1-</subfield>
+        <subfield code="a">Peterson</subfield>
+        <subfield code="D">Roger</subfield>
+    </datafield>
+    <datafield tag="950" ind1=" " ind2=" ">
+        <subfield code="B">ABN</subfield>
+        <subfield code="P">700</subfield>
+        <subfield code="E">1-</subfield>
+        <subfield code="a">Mountfort</subfield>
+        <subfield code="D">Guy</subfield>
+    </datafield>
+    <datafield tag="950" ind1=" " ind2=" ">
+        <subfield code="B">ABN</subfield>
+        <subfield code="P">700</subfield>
+        <subfield code="E">1-</subfield>
+        <subfield code="a">Hollom</subfield>
+        <subfield code="D">Philip A. D.</subfield>
+    </datafield>
+    <datafield tag="986" ind1=" " ind2=" ">
+        <subfield code="a">SWISSBIB</subfield>
+        <subfield code="b">001353519</subfield>
+    </datafield>
+</record>
+</collection>    

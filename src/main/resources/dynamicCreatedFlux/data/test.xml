@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+    <record type="Bibliographic">
+        <leader> cas a22 4 4500</leader>
+        <controlfield tag="001">000424307</controlfield>
+        <controlfield tag="003">CHVBK</controlfield>
+        <controlfield tag="005">20170729061608.0</controlfield>
+        <controlfield tag="008">070828c20079999sz p 0 |ger </controlfield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">(OCoLC)612482989</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">(ABN)000331378</subfield>
+        </datafield>
+        <datafield tag="040" ind1=" " ind2=" ">
+            <subfield code="a">SzZuIDS BS/BE A100</subfield>
+            <subfield code="d">CH-AaAKB</subfield>
+        </datafield>
+        <datafield tag="245" ind1="0" ind2="0">
+            <subfield code="a">Jahresbericht</subfield>
+            <subfield code="b">Dokumentationen und Funde</subfield>
+            <subfield code="c">Archäologie Baselland</subfield>
+        </datafield>
+        <datafield tag="260" ind1=" " ind2=" ">
+            <subfield code="a">Liestal</subfield>
+            <subfield code="b">Archäologie Baselland</subfield>
+        </datafield>
+        <datafield tag="362" ind1="0" ind2=" ">
+            <subfield code="a">2006-</subfield>
+        </datafield>
+        <datafield tag="710" ind1="1" ind2=" ">
+            <subfield code="a">Archäologie Baselland (Liestal)</subfield>
+        </datafield>
+        <datafield tag="730" ind1="0" ind2=" ">
+            <subfield code="a">Jahresbericht / Archäologie Baselland</subfield>
+        </datafield>
+        <datafield tag="780" ind1=" " ind2="2">
+            <subfield code="t">Jahresbericht / Kantonsmuseum Baselland</subfield>
+            <subfield code="w">(ABN)000288629</subfield>
+            <subfield code="9">260840076</subfield>
+        </datafield>
+        <datafield tag="852" ind1="4" ind2=" ">
+            <subfield code="B">ABN</subfield>
+            <subfield code="C">ABN51</subfield>
+            <subfield code="D">ABN01</subfield>
+            <subfield code="E">000331378</subfield>
+            <subfield code="F">KAB</subfield>
+            <subfield code="b">KAB</subfield>
+            <subfield code="c">KABPR</subfield>
+            <subfield code="j">KAB 5 / Zs.123</subfield>
+            <subfield code="a">2006(2007)-</subfield>
+        </datafield>
+        <datafield tag="856" ind1=" " ind2=" ">
+            <subfield code="u">http://www.archaeologie.bl.ch/Pages/jahresbericht.html</subfield>
+            <subfield code="z">Onlne-Zugriff</subfield>
+        </datafield>
+        <datafield tag="898" ind1=" " ind2=" ">
+            <subfield code="a">CR030600</subfield>
+            <subfield code="b">XR030000</subfield>
+            <subfield code="c">XR030000</subfield>
+        </datafield>
+        <datafield tag="908" ind1=" " ind2=" ">
+            <subfield code="D">1</subfield>
+            <subfield code="b">Zeitschrift = Revue</subfield>
+        </datafield>
+        <datafield tag="950" ind1=" " ind2=" ">
+            <subfield code="B">ABN</subfield>
+            <subfield code="P">710</subfield>
+            <subfield code="E">1-</subfield>
+            <subfield code="a">Archäologie Baselland (Liestal)</subfield>
+        </datafield>
+        <datafield tag="950" ind1=" " ind2=" ">
+            <subfield code="B">ABN</subfield>
+            <subfield code="P">730</subfield>
+            <subfield code="E">--</subfield>
+            <subfield code="a">Jahresbericht / Archäologie Baselland</subfield>
+        </datafield>
+        <datafield tag="950" ind1=" " ind2=" ">
+            <subfield code="B">ABN</subfield>
+            <subfield code="P">780</subfield>
+            <subfield code="E">-2</subfield>
+            <subfield code="t">Jahresbericht / Kantonsmuseum Baselland</subfield>
+            <subfield code="w">(ABN)000288629</subfield>
+            <subfield code="9">260840076</subfield>
+        </datafield>
+        <datafield tag="950" ind1=" " ind2=" ">
+            <subfield code="B">ABN</subfield>
+            <subfield code="P">856</subfield>
+            <subfield code="E">--</subfield>
+            <subfield code="u">http://www.archaeologie.bl.ch/Pages/jahresbericht.html</subfield>
+            <subfield code="z">Onlne-Zugriff</subfield>
+        </datafield>
+        <datafield tag="986" ind1=" " ind2=" ">
+            <subfield code="a">SWISSBIB</subfield>
+            <subfield code="b">000424307</subfield>
+        </datafield>
+    </record>
+
+    <record type="Bibliographic">
+        <leader> cas a22 u 4500</leader>
+        <controlfield tag="001">072472642</controlfield>
+        <controlfield tag="003">CHVBK</controlfield>
+        <controlfield tag="005">20170729061614.0</controlfield>
+        <controlfield tag="008">880503c19879999sz m 0 |ger d</controlfield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">(OCoLC)611348507</subfield>
+        </datafield>
+        <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">(IDSBB)000378885</subfield>
+        </datafield>
+        <datafield tag="040" ind1=" " ind2=" ">
+            <subfield code="a">SzZuIDS BS/BE A100</subfield>
+            <subfield code="b">ger</subfield>
+            <subfield code="e">kids</subfield>
+        </datafield>
+        <datafield tag="245" ind1="0" ind2="0">
+            <subfield code="a">Schriftenreihe des Schweizerischen Verbandes für erziehungsschwierige
+                Kinder und Jugendliche (SVE)</subfield>
+        </datafield>
+        <datafield tag="264" ind1=" " ind2="1">
+            <subfield code="a">Olten</subfield>
+            <subfield code="b">Verl. d. Schweiz. Zentralstelle f. Heilpädagogik</subfield>
+        </datafield>
+        <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a"> v.</subfield>
+            <subfield code="c">22 cm</subfield>
+        </datafield>
+        <datafield tag="336" ind1=" " ind2=" ">
+            <subfield code="a">Text</subfield>
+            <subfield code="b">txt</subfield>
+            <subfield code="2">rdacontent/ger</subfield>
+        </datafield>
+        <datafield tag="337" ind1=" " ind2=" ">
+            <subfield code="a">ohne Hilfsmittel zu benutzen</subfield>
+            <subfield code="b">n</subfield>
+            <subfield code="2">rdamedia/ger</subfield>
+        </datafield>
+        <datafield tag="338" ind1=" " ind2=" ">
+            <subfield code="a">Band</subfield>
+            <subfield code="b">nc</subfield>
+            <subfield code="2">rdacarrier/ger</subfield>
+        </datafield>
+        <datafield tag="650" ind1=" " ind2="7">
+            <subfield code="a">Schwererziehbare</subfield>
+            <subfield code="v">Schriftenreihe</subfield>
+            <subfield code="2">idsbb</subfield>
+        </datafield>
+        <datafield tag="655" ind1=" " ind2="7">
+            <subfield code="a">Monografische Reihe</subfield>
+            <subfield code="2">gnd-content</subfield>
+        </datafield>
+        <datafield tag="710" ind1="2" ind2=" ">
+            <subfield code="a">Schweizerischer Verband für erziehungsschwierige Kinder und
+                Jugendliche</subfield>
+            <subfield code="0">(DE-588)1096105-7</subfield>
+        </datafield>
+        <datafield tag="852" ind1="4" ind2=" ">
+            <subfield code="B">IDSBB</subfield>
+            <subfield code="C">DSV51</subfield>
+            <subfield code="D">DSV01</subfield>
+            <subfield code="E">000378885</subfield>
+            <subfield code="F">C001</subfield>
+            <subfield code="b">C001</subfield>
+            <subfield code="j">- -</subfield>
+            <subfield code="a">-</subfield>
+        </datafield>
+        <datafield tag="897" ind1=" " ind2=" ">
+            <subfield code="a">b</subfield>
+            <subfield code="b">4</subfield>
+        </datafield>
+        <datafield tag="898" ind1=" " ind2=" ">
+            <subfield code="a">CR030300</subfield>
+            <subfield code="b">XR030000</subfield>
+            <subfield code="c">XR030000</subfield>
+        </datafield>
+        <datafield tag="908" ind1=" " ind2=" ">
+            <subfield code="D">1</subfield>
+            <subfield code="b">Schriftenreihe = Collection</subfield>
+        </datafield>
+        <datafield tag="912" ind1=" " ind2="7">
+            <subfield code="a">pa</subfield>
+            <subfield code="2">SzZuIDS BS/BE</subfield>
+        </datafield>
+        <datafield tag="950" ind1=" " ind2=" ">
+            <subfield code="B">IDSBB</subfield>
+            <subfield code="P">710</subfield>
+            <subfield code="E">2-</subfield>
+            <subfield code="a">Schweizerischer Verband für erziehungsschwierige Kinder und
+                Jugendliche</subfield>
+            <subfield code="0">(DE-588)1096105-7</subfield>
+        </datafield>
+        <datafield tag="986" ind1=" " ind2=" ">
+            <subfield code="a">SWISSBIB</subfield>
+            <subfield code="b">056857268</subfield>
+        </datafield>
+    </record>
+
+</collection>
