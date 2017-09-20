@@ -114,6 +114,7 @@
                         <!--Doesn't consider the REPO libraries for this part, because their URI consist of one part only:-->
                         <entry name="BORIS"/>
                         <entry name="ECOD"/>
+                        <entry name="EDOC"/>
                         <entry name="NATIONALLICENCE"/>
                         <entry name="RETROS"/>
                         <entry name="SERVAL"/>

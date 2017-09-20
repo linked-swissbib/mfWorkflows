@@ -8,6 +8,7 @@ CH-CCSA	http://data.swissbib.ch/organisation/CCSA
 DDB	http://d-nb.info/gnd/1070828033
 DE-599	http://d-nb.info/gnd/10140798-1
 ECOD	http://data.swissbib.ch/organisation/ECOD
+EDOC    http://data.swissbib.ch/organisation/EDOC
 HEMU	http://data.swissbib.ch/organisation/HEMU
 IDSBB	http://data.swissbib.ch/organisation/IDSBB
 IDSLU	http://data.swissbib.ch/organisation/IDSLU
