@@ -16,7 +16,7 @@
         <data source="711??.d" name="date"/>
         <data source="711??.c" name="location"/>
         <data source="711??.0" name="gnd">
-            <replace pattern="^\(DE-588\)$" with=""/>
+            <replace pattern="^\(.*?\)" with=""/>
         </data>
     </combine>
 

@@ -19,7 +19,7 @@
         <data source="1000 .d" name="lifedata"/>
         <data source="1000 .q" name="fullname"/>
         <data source="1000 .0" name="gnd">
-            <replace pattern="^\(DE-588\)$" with=""/>
+            <replace pattern="^\(.*?\)" with=""/>
         </data>
         <data source="@publishYear" name="publishYear"/>
         <data source="_id" name="title245a"/>
@@ -43,7 +43,7 @@
         <data source="1001 .d" name="lifedata"/>
         <data source="1001 .q" name="fullname"/>
         <data source="1001 .0" name="gnd">
-            <replace pattern="^\(DE-588\)$" with=""/>
+            <replace pattern="^\(.*?\)" with=""/>
         </data>
         <data source="@publishYear" name="publishYear"/>
         <data source="_id" name="title245a"/>

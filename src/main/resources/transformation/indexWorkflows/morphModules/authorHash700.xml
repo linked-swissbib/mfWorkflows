@@ -17,7 +17,7 @@
         <data source="7000 .d" name="lifedata"/>
         <data source="7000 .q" name="fullname"/>
         <data source="7000 .0" name="gnd">
-            <replace pattern="^\(DE-588\)$" with=""/>
+            <replace pattern="^\(.*?\)" with=""/>
         </data>
     </combine>
 
@@ -32,7 +32,7 @@
     </combine>
 
 
-    <combine name="@7001" value="${number}###${lastname}###${firstname}###${title}###${lifedata}###${fullname}###${gnd}"
+    <combine name="@7001" value="zweitertest${number}###${lastname}###${firstname}###${title}###${lifedata}###${fullname}###${gnd}"
              flushWith="7001 " reset="true" sameEntity="true">
         <data source="7001 .a" name="lastname"/>
         <data source="7001 .D" name="firstname"/>
@@ -41,7 +41,7 @@
         <data source="7001 .d" name="lifedata"/>
         <data source="7001 .q" name="fullname"/>
         <data source="7001 .0" name="gnd">
-            <replace pattern="^\(DE-588\)$" with=""/>
+            <replace pattern="^\(.*?\)" with=""/>
         </data>
     </combine>
 
