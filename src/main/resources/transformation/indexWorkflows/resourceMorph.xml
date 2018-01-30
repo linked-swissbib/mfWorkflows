@@ -580,9 +580,23 @@
 
         <!--986: FRBR CLUSTER (WORK)-->
         <!--40% of the records-->
+        <!--
         <data name="bf:instanceOf" source="986  .b">
             <compose prefix="http://data.swissbib.ch/work/"/>
-        </data>
+        </data> -->
+        <!-- REFERENCE TO bf:instanceOf should be the key to fix the Spark bug
+        <combine name="bf:instanceOf" value="${work}" sameEntity="true">
+            <if>
+                <data source="986  .a">
+                    <equals string="SWISSBIB"/>
+                </data>
+            </if>
+            <data name="work" source="986  .b"/>
+        </combine>
+
+         -->
+
+
 
         <!--META-->
         <!--Do not add "flushWith="record"": if there is more than one field 035, the attributes "rdf:resource" will be repeated within the tag "rdfs:isDefinedBy"-->
