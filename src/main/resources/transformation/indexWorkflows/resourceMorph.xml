@@ -58,6 +58,8 @@
 
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="morphModules/authorHash100.xml" parse="xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="morphModules/authorHash110.xml" parse="xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="morphModules/authorHash111.xml" parse="xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude" href="morphModules/authorHash700.xml" parse="xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude" href="morphModules/authorHash710.xml" parse="xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude" href="morphModules/authorHash711.xml" parse="xml"/>
@@ -427,6 +429,16 @@
             <compose prefix="http://data.swissbib.ch/person/"/>
         </data>
 
+        <!--110: ORGANISATIONS-->
+        <data name="dct:contributor" source="@key110">
+            <compose prefix="http://data.swissbib.ch/organisation/"/>
+        </data>
+
+        <!--111: CONGRESSES-->
+        <data name="dct:contributor" source="@key111">
+            <compose prefix="http://data.swissbib.ch/organisation/"/>
+        </data>
+
         <!--245: TITLE-->
         <concat name="dct:title" delimiter="">
             <data source="245*.a"/>
@@ -483,6 +495,26 @@
             </data>
         </concat>
 
+        <!--264: IMPRINT-->
+        <concat name="rdau:P60333" delimiter="" flushWith="264?1" reset="true" sameEntity="true">
+            <!--Attribute "delimiter" obligatory-->
+            <data source="264?1.a">
+                <occurrence only="1"/>
+            </data>
+            <!--The "data"-tag above matches just the first publication place and doesn't give him any prefix. The "data"-tag below matches all the publication places except the first one, and attributes them a prefix. Can leads to small errors when the field 264 appears more than once in the record.-->
+            <data source="264?1.a">
+                <occurrence only="moreThen 1"/>
+                <compose prefix=" ; "/>
+            </data>
+            <data source="264?1.b">
+                <compose prefix=" : "/>
+                <!--To add a prefix or a suffix (="postfix")-->
+            </data>
+            <data source="264?1.c">
+                <compose prefix=", "/>
+            </data>
+        </concat>
+
         <!--300: PHYSICAL DESCRIPTION-->
         <concat name="dc:format" delimiter="" flushWith="300  " reset="true">
             <data source="300  .a">
@@ -511,10 +543,21 @@
             </data>
         </concat>
 
+        <!--490: LINK TO HOST ITEM (works only with record that includes a subfield 773$9 (swiss german data))-->
+        <data name="dct:isPartOf" source="490*.9">
+            <compose prefix="http://data.swissbib.ch/bibliographicResource/"/>
+            <unique part="value"/>
+        </data>
+
         <!--500: GENERAL NOTES-->
         <data name="rdau:P60470" source="500*.a"/>
 
         <!--502: NOTES ABOUT THESIS-->
+        <concat name="rdau:P60489" delimiter=", " flushWith="502??" reset="true">
+            <data source="502??.b"/>
+            <data source="502??.c"/>
+            <data source="502??.d"/>
+        </concat>
         <data name="rdau:P60489" source="502*.a"/>
 
         <!--505: NOTES ABOUT CONTENT-->

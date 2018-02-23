@@ -24,6 +24,8 @@
         </macro>
     </macros>
 
+    <include xmlns="http://www.w3.org/2001/XInclude" href="morphModules/authorHash110.xml" parse="xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="morphModules/authorHash111.xml" parse="xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude" href="morphModules/authorHash710.xml" parse="xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude" href="morphModules/authorHash711.xml" parse="xml"/>
 
@@ -31,6 +33,48 @@
     <rules>
 
         <!--BUILD THE BASIS RECORD -->
+
+        <!--110-->
+        <entity name="--" flushWith="110??">
+            <data name="_id" source="@key110"/>
+            <data name="@id" source="@key110">
+                <compose prefix="http://data.swissbib.ch/organisation/"/>
+            </data>
+
+            <!--RDF TYPE (CLASS)-->
+
+            <data source="110??" name="@type">
+                <constant value="http://xmlns.com/foaf/0.1/Organization"/>
+            </data>
+
+            <!--REFERENCED JSON-LD CONTEXT-->
+            <data source="110??" name="@context">
+                <constant value="https://resources.swissbib.ch/organisation/context.jsonld"/>
+            </data>
+
+            <concat name="rdfs:label" delimiter="" flushWith="110??" reset="true" sameEntity="true">
+                <data source="110??.a">
+                    <regexp match="(.*[^\.$])" format="${1}"/>
+                    <!--This regex matches everything except the eventual final dot.-->
+                </data>
+                <data source="110??.b">
+                    <regexp match="(.*[^\.$])" format="${1}"/>
+                    <compose prefix=". "/>
+                </data>
+                <data source="110??.c">
+                    <compose prefix=" "/>
+                </data>
+                <data source="110??.d">
+                    <compose prefix=" "/>
+                </data>
+                <data source="110??.n">
+                    <compose prefix=" "/>
+                </data>
+            </concat>
+            <call-macro name="gnd" gndfield="110??.0"/>
+
+
+        </entity>
 
         <!--710-->
         <entity name="--" flushWith="710??">
@@ -71,6 +115,49 @@
             </concat>
             <call-macro name="gnd" gndfield="710??.0"/>
 
+
+        </entity>
+
+        <!--111-->
+        <entity name="--" flushWith="111??">
+            <data name="_id" source="@key111"/>
+            <data name="@id" source="@key111">
+                <compose prefix="http://data.swissbib.ch/organisation/"/>
+            </data>
+
+            <!--RDF TYPE (CLASS)-->
+
+            <!--            <data source="_id" name="@type">
+                            <constant value="http://xmlns.com/foaf/0.1/Organization"/>
+                        </data>-->
+            <data source="111??" name="@type">
+                <constant value="http://xmlns.com/foaf/0.1/Organization"/>
+            </data>
+
+            <!--REFERENCED JSON-LD CONTEXT-->
+            <data source="111??" name="@context">
+                <constant value="https://resources.swissbib.ch/organisation/context.jsonld"/>
+            </data>
+
+            <concat name="rdfs:label" delimiter="" flushWith="111??" reset="true" sameEntity="true">
+                <data source="111??.a">
+                    <regexp match="(.*[^\.$])" format="${1}"/>
+                </data>
+                <data source="111??.c">
+                    <compose prefix=" "/>
+                </data>
+                <data source="111??.d">
+                    <compose prefix=" "/>
+                </data>
+                <data source="111??.e">
+                    <regexp match="(.*[^\.$])" format="${1}"/>
+                    <compose prefix=". "/>
+                </data>
+                <data source="111??.n">
+                    <compose prefix=" "/>
+                </data>
+            </concat>
+            <call-macro name="gnd" gndfield="111??.0"/>
 
         </entity>
 

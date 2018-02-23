@@ -10,6 +10,7 @@ DE-599	http://d-nb.info/gnd/10140798-1
 ECOD	http://data.swissbib.ch/organisation/ECOD
 EDOC    http://data.swissbib.ch/organisation/EDOC
 HEMU	http://data.swissbib.ch/organisation/HEMU
+KBTG    http://data.swissbib.ch/organisation/KBTGV
 IDSBB	http://data.swissbib.ch/organisation/IDSBB
 IDSLU	http://data.swissbib.ch/organisation/IDSLU
 IDSSG	http://data.swissbib.ch/organisation/IDSSG

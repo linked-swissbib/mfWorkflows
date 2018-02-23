@@ -8,6 +8,8 @@
 
 
     <include xmlns="http://www.w3.org/2001/XInclude" href="morphModules/authorHash100.xml" parse="xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="morphModules/authorHash110.xml" parse="xml"/>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="morphModules/authorHash111.xml" parse="xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude" href="morphModules/authorHash700.xml" parse="xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude" href="morphModules/authorHash710.xml" parse="xml"/>
     <include xmlns="http://www.w3.org/2001/XInclude" href="morphModules/authorHash711.xml" parse="xml"/>
@@ -83,6 +85,7 @@
                 <entry name="ECOD"/>
                 <entry name="EDOC"/>
                 <entry name="HEMU"/>
+                <entry name="KBTG"/>
                 <entry name="IDSBB"/>
                 <entry name="IDSLU"/>
                 <entry name="IDSSG"/>
