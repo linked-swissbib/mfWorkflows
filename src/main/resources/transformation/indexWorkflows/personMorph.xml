@@ -172,6 +172,13 @@
 
         <!--700 first indicator 1-->
         <entity name="--" flushWith="7001 ">
+
+            <if>
+                <none flushWith="7001 ">
+                    <data source="7001 .t"/>
+                </none>
+            </if>
+
             <data name="_id" source="@key7001"/>
             <data name="@id" source="@key7001">
                 <compose prefix="http://data.swissbib.ch/person/"/>
