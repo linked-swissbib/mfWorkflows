@@ -1,6 +1,8 @@
 "https://www.swissbib.ch/mapportal.json"|
 open-http(encoding="UTF-8")|
-read-json|
+//vorher war - was ist korrekt?
+//read-json
+read-json-object|
 morph("/usr/local/swissbib/mfWorkflows/src/main/resources/transformation/indexWorkflows/libadminMorph.xml")|
 split-entities|
 change-id|
