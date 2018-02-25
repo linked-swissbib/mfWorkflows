@@ -171,10 +171,10 @@
         </entity>
 
         <!--700 first indicator 1-->
-        <entity name="--" flushWith="7001 ">
+        <entity name="--" flushWith="7001 " sameEntity="true">
 
             <if>
-                <none flushWith="7001 ">
+                <none flushWith="7001 " reset="true">
                     <data source="7001 .t"/>
                 </none>
             </if>
