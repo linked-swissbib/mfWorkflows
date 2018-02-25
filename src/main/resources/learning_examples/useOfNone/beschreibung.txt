@@ -1,0 +1,34 @@
+
+Problembeschreibung:
+
+- datafields sollen nicht berücksichtigt werden, wenn ein subfield einen bestimmten Wert enthält
+
+(s. https://github.com/linked-swissbib/mfWorkflows/blob/700t-no-person/src/main/resources/transformation/indexWorkflows/personMorph.xml#L174)
+
+- das Metmorph None Konstrukt ist eine Lösung. Einfach so eingesetzt führt es nicht zum gewünschten Erfolg
+
+Ansätze:
+
+a) ohne sameEntity=true Attribut werden die Werte miteinander vermischt
+
+b) mit sameEntity=true wird bei Einsatz des none Attributs nichts ausgegeben
+Es brauchte das flush Attribut auf dem none level, damit eine Ausgabe erfolgt
+
+c) in dieser Konstellation ist das Ergebnis jedoch immer noch nicht korrekt
+Zum Beispiel folgendes:
+
+Das war leider zu früh gefreut... der Ausschluss von Feldern 700 mit $t funktioniert nur wenn es das einzige Feld 700 ist.
+Wenn ein weiteres 700 vorhanden ist, wird aus beiden Feldern 700 eine Person generiert.
+Ich habe auf einem neuen branch commited: https://github.com/linked-swissbib/mfWorkflows/commits/700t-no-person
+Und den Beispiel-Satz schicke ich dir im Anhang.
+
+
+d) was benötigt wurde:
+reset="true" Attribut auf dem none Konstrukt. Ansonsten werden nicht alle datafields abgearbeitet, bzw. der Ausschluss über none
+scheint auf allen datafields zu wirken
+
+
+Was mich sonst noch interessierte:
+Ich bin überrascht, dass die id, welche über die Source @key7001 generiert wird, unterschiedlich ist.
+Irgendwie muss der temporäre key @key7001 mehrfach generiert werden (und vor allem in der richtigen Reihenfolge abgearbeitet).
+Ein Test scheint aber ein richtiges Ergebnis zu liefern. Muss ich mir aber mal genauer ansehen
