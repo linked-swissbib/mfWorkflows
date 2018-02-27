@@ -126,7 +126,13 @@
         </entity>
 
         <!--700 first indicator 0-->
-        <entity name="--" flushWith="7000 ">
+        <entity name="--" flushWith="7000 " sameEntity="true">
+            <if>
+                <none flushWith="7000 " reset="true">
+                    <data source="7000 .t"/>
+                </none>
+            </if>
+
             <data name="_id" source="@key7000"/>
             <data name="@id" source="@key7000">
                 <compose prefix="http://data.swissbib.ch/person/"/>
