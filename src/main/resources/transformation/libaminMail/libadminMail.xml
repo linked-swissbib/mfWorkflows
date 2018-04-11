@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<metamorph xmlns="http://www.culturegraph.org/metamorph" version="1">
+
+    <rules>
+
+        <!--RECURSION-->
+        <combine name="@uri_library" value="http://data.swissbib.ch/organisation/${network}-${id}" reset="false"
+                 flushWith="data.institutions.sys_code">
+            <data source="data.institutions.sys_code" name="id">
+                <trim/>
+            </data>
+            <data source="data.group.code" name="network">
+                <trim/>
+            </data>
+        </combine>
+
+        <combine name="@uri_network" value="http://data.swissbib.ch/organisation/${network}">
+            <data source="data.group.code" name="network">
+                <trim/>
+                <blacklist>
+                    <entry name="REPOS"/>
+                </blacklist>
+            </data>
+        </combine>
+
+
+
+        <!--ENTITY LIBRARY-->
+
+        <entity name="institution" flushWith="data.institutions">
+
+
+            <!--OFFICIAL NAME-->
+            <data name="name" source="data.institutions.name.de">
+                <blacklist>
+                    <entry name=""/>
+                </blacklist>
+                <regexp match="(.*[^\s$])" format="${1}"/>
+            </data>
+
+
+            <data source="data.institutions.bib_code" name="bibcode"/>
+
+
+            <!--MAIL-->
+            <data name="mail" source="data.institutions.email">
+                <blacklist>
+                    <entry name=""/>
+                </blacklist>
+                <trim/>
+
+            </data>
+
+            <data source="data.institutions.label.de" name="labelDE"/>
+
+            <data name="address" source="data.institutions.address">
+                <blacklist>
+                    <entry name=""/>
+                </blacklist>
+                <trim/>
+                
+            </data>
+            
+            <data name="zip" source="data.institutions.zip">
+                <blacklist>
+                    <entry name=""/>
+                </blacklist>
+                <trim/>
+            </data>
+            
+            <data name="city" source="data.institutions.city">
+                <blacklist>
+                    <entry name=""/>
+                </blacklist>
+                <trim/>
+            </data>
+            
+            <data name="country" source="data.institutions.country">
+                <blacklist>
+                    <entry name=""/>
+                </blacklist>
+                <trim/>
+            </data>
+            
+            
+        </entity>
+
+    </rules>
+
+    <maps>
+        <filemap name="cantons" files="./src/main/resources/transformation/indexWorkflows/maps/cantons.txt"
+                 separator="\t"/>
+    </maps>
+
+
+</metamorph>
