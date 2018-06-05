@@ -76,7 +76,9 @@
             <blacklist>
                 <entry name="ABN"/>
                 <entry name="ALEX"/>
+                <entry name="ALEXREPO"/>
                 <entry name="BGR"/>
+                <entry name="BISCH"/>
                 <entry name="BORIS"/>
                 <entry name="CCSA"/>
                 <entry name="CH-CCSA"/>
@@ -84,6 +86,7 @@
                 <entry name="DE-599"/>
                 <entry name="ECOD"/>
                 <entry name="EDOC"/>
+                <entry name="ETHRESEARCH"/>
                 <entry name="HEMU"/>
                 <entry name="KBTG"/>
                 <entry name="IDSBB"/>

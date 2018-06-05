@@ -1,6 +1,8 @@
 Codes in den Swissbib-Records (035 $a)	URI Swissbib
 ABN	http://data.swissbib.ch/organisation/ABN
 ALEX	http://data.swissbib.ch/organisation/ALEX
+ALEXREPO http://data.swissbib.ch/organisation/ALEXREPO
+BISCH   http://data.swissbib.ch/organisation/BISCH
 BORIS	http://data.swissbib.ch/organisation/BORIS
 BGR	http://data.swissbib.ch/organisation/BGR
 CCSA	http://data.swissbib.ch/organisation/CCSA
@@ -9,6 +11,7 @@ DDB	http://d-nb.info/gnd/1070828033
 DE-599	http://d-nb.info/gnd/10140798-1
 ECOD	http://data.swissbib.ch/organisation/ECOD
 EDOC    http://data.swissbib.ch/organisation/EDOC
+ETHRESEARCH http://data.swissbib.ch/organisation/ETHRESEARCH
 HEMU	http://data.swissbib.ch/organisation/HEMU
 KBTG    http://data.swissbib.ch/organisation/KBTGV
 IDSBB	http://data.swissbib.ch/organisation/IDSBB
