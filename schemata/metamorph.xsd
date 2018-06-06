@@ -230,6 +230,7 @@
 			<attribute name="flushWith" type="string" use="optional" />
 			<attribute name="reset" type="boolean" use="optional"
 				default="false" />
+			<attribute name="sameEntity" type="boolean" use="optional" default="false" />
 		</complexType>
 	</element>
 
@@ -268,6 +269,7 @@
 				default="record" />
 			<attribute name="reset" type="boolean" use="optional"
 				default="false" />
+			<attribute name="sameEntity" type="boolean" use="optional" default="false" />
 		</complexType>
 	</element>
 
@@ -416,10 +418,10 @@
 				<element ref="tns:entity" />
 				<element ref="tns:call-macro" />
 			</choice>
-			<attribute name="name" type="string" use="optional">
+			<attribute name="name" type="string" use="optional" default="">
 				<annotation>
 					<documentation>Name of the entity. If not given the entity must
-						have an entity-name element.</documentation>
+						have an entity-name element otherwise an empty name is emitted</documentation>
 				</annotation>
 			</attribute>
 			<attribute name="reset" type="boolean" use="optional"
@@ -706,7 +708,7 @@
 				<simpleType>
 					<restriction base="string">
 						<whiteSpace value="collapse" />
-						<pattern value="(lessThen |moreThen |lessThan |moreThan )?\d+" />
+						<pattern value="(lessThan |moreThan )?\d+" />
 					</restriction>
 				</simpleType>
 			</attribute>
