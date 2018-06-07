@@ -60,7 +60,7 @@ if [ -z "$FLUX_JAVA_BIN" ] ; then
 fi
 
 java_opts_file="$METAFACTURE_HOME/config/java-options.conf"
-jar_file="$METAFACTURE_HOME/metafacture-runner-3.3.0-SNAPSHOT.jar"
+jar_file="$METAFACTURE_HOME/lib/metafacture-runner-5.0.0.jar"
 
 # Load java options from configuration file. Lines starting 
 # with # are treated as comments. Empty lines are ignored.
@@ -81,12 +81,14 @@ fi
 # a variable definition:
 vars_to_script=$( cat <<'EOF'
 	s/^[^=]*$//g ;                        # is this not a variable definition?
-	t quit ;                              # then jump to quit
+	                                      # then jump to quit
+	t quit
 	s/\\/\\\\/g ;                         # otherwise escape backslashes,
 	s/!/\\!/g ;                           # escape exclamation marks,
 	s/='(.*)'$/=\1/ ;                     # remove quotes,
 	s/^([^=]+)=(.*)$/s!\\$\1!\2!g ; /g ;  # convert to sed regexp command
-	b ;                                   # and continue with next line
+	                                      # and continue with next line
+	b
 	: quit
 	q
 EOF
@@ -109,4 +111,5 @@ while read line ; do
 done < <( echo "$java_opts" | grep -Eo "$option_pattern" )
 
 # Start flux:
-"$FLUX_JAVA_BIN" "${java_opts_array[@]}" -jar "$jar_file" "$@"
+command=$(echo "$FLUX_JAVA_BIN" "${java_opts_array[@]}" -jar "$jar_file" "$@")
+$command

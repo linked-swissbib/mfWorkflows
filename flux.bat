@@ -12,7 +12,7 @@ IF "x%FLUX_JAVA_BIN%" == "x" (
 )
 
 SET JAVA_OPTS_FILE="%METAFACTURE_HOME%\config\java-options.conf"
-SET JAR_FILE="%METAFACTURE_HOME%metafacture-runner-3.3.0-SNAPSHOT.jar"
+SET JAR_FILE="%METAFACTURE_HOME%lib/metafacture-runner-5.0.0.jar"
 
 REM Read JVM options from configuration file. Lines starting
 REM with # are treated as comments. Empty lines are ignored.
