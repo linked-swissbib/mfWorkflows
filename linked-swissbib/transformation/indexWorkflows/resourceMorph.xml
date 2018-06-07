@@ -667,17 +667,17 @@
     </rules>
 
     <maps>
-        <filemap name="cantons" files="./src/main/resources/transformation/indexWorkflows/maps/cantons.txt"
+        <filemap name="cantons" files="./maps/cantons.txt"
                  separator="\t"/>
-        <filemap name="languages" files="./src/main/resources/transformation/indexWorkflows/maps/languages.txt"
+        <filemap name="languages" files="./maps/languages.txt"
                  separator="\t"/>
-        <filemap name="countries" files="./src/main/resources/transformation/indexWorkflows/maps/countries.txt"
+        <filemap name="countries" files="./maps/countries.txt"
                  separator="\t"/>
-        <filemap name="networks" files="./src/main/resources/transformation/indexWorkflows/maps/networks.txt"
+        <filemap name="networks" files="./maps/networks.txt"
                  separator="\t"/>
-        <filemap name="type_content" files="./src/main/resources/transformation/indexWorkflows/maps/type_content.txt"
+        <filemap name="type_content" files="./maps/type_content.txt"
                  separator="\t"/>
-        <filemap name="type_media" files="./src/main/resources/transformation/indexWorkflows/maps/type_media.txt"
+        <filemap name="type_media" files="./maps/type_media.txt"
                  separator="\t"/>
     </maps>
 
