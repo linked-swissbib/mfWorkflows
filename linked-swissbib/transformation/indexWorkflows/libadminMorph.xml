@@ -148,7 +148,7 @@
     </rules>
 
     <maps>
-        <filemap name="cantons" files="./src/main/resources/transformation/indexWorkflows/maps/cantons.txt"
+        <filemap name="cantons" files="./linked-swissbib/transformation/indexWorkflows/maps/cantons.txt"
                  separator="\t"/>
     </maps>
 
