@@ -43,7 +43,7 @@
 
         <!--ITEM-->
 
-        <entity name="--" flushWith="949??">
+        <entity name="--" flushWith="949??" reset="true">
 
             <!--ID OF THE ITEM-->
 
