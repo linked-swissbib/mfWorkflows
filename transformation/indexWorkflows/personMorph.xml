@@ -32,7 +32,7 @@
         <!--BUILD THE BASIS RECORD -->
 
         <!--100 first indicator 0-->
-        <entity name="--" flushWith="1000 ">
+        <entity name="--" flushWith="1000 " reset="true">
             <data name="_id" source="@key1000"/>
             <data name="@id" source="@key1000">
                 <compose prefix="http://data.swissbib.ch/person/"/>
@@ -77,7 +77,7 @@
         </entity>
 
         <!--100 first indicator 1-->
-        <entity name="--" flushWith="1001 ">
+        <entity name="--" flushWith="1001 " reset="true">
             <data name="_id" source="@key1001"/>
             <data name="@id" source="@key1001">
                 <compose prefix="http://data.swissbib.ch/person/"/>
@@ -126,7 +126,7 @@
         </entity>
 
         <!--700 first indicator 0-->
-        <entity name="--" flushWith="7000 " sameEntity="true">
+        <entity name="--" flushWith="7000 " sameEntity="true" reset="true">
             <if>
                 <none flushWith="7000 " reset="true">
                     <data source="7000 .t"/>
@@ -177,7 +177,7 @@
         </entity>
 
         <!--700 first indicator 1-->
-        <entity name="--" flushWith="7001 " sameEntity="true">
+        <entity name="--" flushWith="7001 " sameEntity="true" reset="true">
 
             <if>
                 <none flushWith="7001 " reset="true">

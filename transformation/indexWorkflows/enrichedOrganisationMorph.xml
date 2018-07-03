@@ -33,7 +33,7 @@
         </macro>
 
         <macro name="language-tag">
-            <entity name="$[abbrev]{}" flushWith="$[predicate]">
+            <entity name="$[abbrev]{}" flushWith="$[predicate]" reset="true">
                 <combine name="${lang}" value="${value}" flushWith="$[predicate]">
                     <data name="value" source="$[predicate]">
                         <regexp match='"(.*)"' format="${1}"/>
