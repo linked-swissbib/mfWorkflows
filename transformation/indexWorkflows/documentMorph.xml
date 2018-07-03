@@ -47,7 +47,7 @@
 
         <!--BUILD THE RECORD "ABOUT"-->
 
-        <!--		<entity name="&#45;&#45;" flushWith="record" >-->
+        <!--		<entity name="&#45;&#45;" flushWith="record" reset="true">-->
         <!--To define the subject (root element) of each record.
         "entity" makes it possible to create a hierarchical tag structure.
         "flushWith" enables to group various subfields into one output, even if the field appears more than one time. -->

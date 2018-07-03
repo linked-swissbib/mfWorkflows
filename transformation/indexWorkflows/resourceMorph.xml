@@ -10,7 +10,7 @@
     <macros>
         <macro name="context">
             <!-- Writes JSON-LD context -->
-            <entity name="@context" flushWith="record">
+            <entity name="@context" flushWith="record" reset="true">
 
                 <data name="bf" source="_id">
                     <constant value="http://bibframe.org/vocab/"/>
@@ -77,7 +77,7 @@
 
         <!--BUILD THE BASIS RECORD -->
 
-        <!--		<entity name="&#45;&#45;" flushWith="record" >-->
+        <!--		<entity name="&#45;&#45;" flushWith="record" reset="true">-->
         <!--To define the subject (root element) of each record.
         "entity" makes it possible to create a hierarchical tag structure.-->
 
@@ -410,7 +410,7 @@
             <lookup in="cantons"/>
         </data>
         <!--This solution implies that we describe the entities in another file:
-        <entity name="rdau:placeOfPublication" >
+        <entity name="rdau:placeOfPublication" reset="true">
             <data source="044  .c" name="~rdf:resource" >
                 <substring start="3" end="5" />
                 <compose prefix="http://data.swissbib.ch/place/swiss-canton-" />

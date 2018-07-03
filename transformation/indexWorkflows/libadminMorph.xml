@@ -25,7 +25,7 @@
         </combine>
 
         <!--ENTITY NETWORK-->
-        <entity name="--" flushWith="data.group">
+        <entity name="--" flushWith="data.group" reset="true">
 
             <!--URI OF THE NETWORK-->
             <data source="@uri_network" name="@id"/>
@@ -51,7 +51,7 @@
 
         <!--ENTITY LIBRARY-->
 
-        <entity name="--" flushWith="data.institutions">
+        <entity name="--" flushWith="data.institutions" reset="true">
 
             <!--URI of the library-->
             <data source="@uri_library" name="@id">
@@ -103,7 +103,7 @@
             </data>
 
             <!--POST ADDRESS-->
-            <entity name="vcard:hasAddress{}" flushWith="data.institutions">
+            <entity name="vcard:hasAddress{}" flushWith="data.institutions" reset="true">
                 <data name="vcard:street-address" source="data.institutions.address">
                     <blacklist>
                         <entry name=""/>
