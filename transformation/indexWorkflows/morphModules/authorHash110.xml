@@ -21,7 +21,7 @@
     </combine>
 
     <combine name="@key110" value="110__###${swissbib_id}###${110}###${publishYear}###${title245a}"
-             flushWith="110??">
+             flushWith="245*.a">
         <data source="001" name="swissbib_id"/>
         <data source="@110" name="110"/>
         <data source="@publishYear" name="publishYear"/>
