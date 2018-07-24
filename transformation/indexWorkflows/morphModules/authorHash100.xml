@@ -9,7 +9,7 @@
 
     <combine name="@key1000"
              value="1000###${swissbib_id}###${number}###${name}###${title}###${lifedata}###${fullname}###${gnd}###${publishYear}###${title245a}"
-             flushWith="1000 ">
+             flushWith="245*.a">
         <if>
             <data source="1000 "/>
         </if>
@@ -22,7 +22,7 @@
             <replace pattern="^\(DE-588\)$" with=""/>
         </data>
         <data source="@publishYear" name="publishYear"/>
-        <data source="_id" name="title245a"/>
+        <data source="245*.a" name="title245a"/>
         <postprocess>
             <java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
         </postprocess>
@@ -31,7 +31,7 @@
 
     <combine name="@key1001"
              value="1001###${swissbib_id}###${number}###${lastname}###${firstname}###${title}###${lifedata}###${fullname}###${gnd}###${publishYear}###${title245a}"
-             flushWith="1001 ">
+             flushWith="245*.a">
         <if>
             <data source="1001 "/>
         </if>
@@ -46,7 +46,7 @@
             <replace pattern="^\(DE-588\)$" with=""/>
         </data>
         <data source="@publishYear" name="publishYear"/>
-        <data source="_id" name="title245a"/>
+        <data source="245*.a" name="title245a"/>
         <postprocess>
             <java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
         </postprocess>

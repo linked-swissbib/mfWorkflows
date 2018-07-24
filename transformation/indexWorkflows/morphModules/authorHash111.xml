@@ -20,7 +20,7 @@
         </data>
     </combine>
 
-    <combine name="@key111" value="111__###${swissbib_id}###${111}###${publishYear}###${title245a}" flushWith="111??">
+    <combine name="@key111" value="111__###${swissbib_id}###${111}###${publishYear}###${title245a}" flushWith="245*.a">
         <data source="001" name="swissbib_id"/>
         <data source="@111" name="111"/>
         <data source="@pubY" name="publishYear"/>
