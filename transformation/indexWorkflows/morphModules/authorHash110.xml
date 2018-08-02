@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <rules xmlns="http://www.culturegraph.org/metamorph">
 
-    <data source="008" name="@publishYear">
-        <substring start="7" end="11"/>
-    </data>
-
-    <combine name="@110"
-             value="${number}###${name}###${subunit}###${date}###${location}###${gnd}"
-             flushWith="110??" reset="true" sameEntity="true">
+    <combine name="@key110" value="110__###${swissbib_id}###${name}###${subunit}###${number}###${date}###${location}###${gnd}###${publishYear}###${title245a}"
+             flushWith="245*.a">
+        <data source="001" name="swissbib_id"/>
+        <data source="008" name="publishYear">
+            <substring start="7" end="11"/>
+        </data>
         <data source="110??.a" name="name"/>
         <data source="110??.b" name="subunit"/>
         <data source="110??.n" name="number"/>
@@ -18,13 +16,6 @@
         <data source="110??.0" name="gnd">
             <replace pattern="^\(DE-588\)$" with=""/>
         </data>
-    </combine>
-
-    <combine name="@key110" value="110__###${swissbib_id}###${110}###${publishYear}###${title245a}"
-             flushWith="245*.a">
-        <data source="001" name="swissbib_id"/>
-        <data source="@110" name="110"/>
-        <data source="@publishYear" name="publishYear"/>
         <data source="245*.a" name="title245a"/>
         <postprocess>
             <java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
