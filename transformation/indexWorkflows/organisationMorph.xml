@@ -35,7 +35,7 @@
         <!--BUILD THE BASIS RECORD -->
 
         <!--110-->
-        <entity name="--" flushWith="110??" reset="true">
+        <entity name="--" flushWith="245*.a" reset="true">
             <data name="_id" source="@key110"/>
             <data name="@id" source="@key110">
                 <compose prefix="http://data.swissbib.ch/organisation/"/>
@@ -119,7 +119,7 @@
         </entity>
 
         <!--111-->
-        <entity name="--" flushWith="111??" reset="true">
+        <entity name="--" flushWith="245*.a" reset="true">
             <data name="_id" source="@key111"/>
             <data name="@id" source="@key111">
                 <compose prefix="http://data.swissbib.ch/organisation/"/>
