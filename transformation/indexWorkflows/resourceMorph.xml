@@ -587,12 +587,26 @@
 
         <!--700: OTHER AUTHORS-->
         <!--reset="true" avoid a rule to keep in a collector the data collected in the precedent same field (for repetitive fields)-->
-        <data name="dct:contributor" source="@key7000">
-            <compose prefix="http://data.swissbib.ch/person/"/>
-        </data>
-        <data name="dct:contributor" source="@key7001">
-            <compose prefix="http://data.swissbib.ch/person/"/>
-        </data>
+        <combine name="dct:contributor" value="${contrib}" reset="true" flushWith="7000 ">
+            <if>
+                <none flushWith="7000 " reset="true">
+                    <data source="7000 .t"/>
+                </none>
+            </if>
+            <data name="contrib" source="@key7000">
+                <compose prefix="http://data.swissbib.ch/person/"/>
+            </data>
+        </combine>
+        <combine name="dct:contributor" value="${contrib}" reset="true" flushWith="7001 ">
+            <if>
+                <none flushWith="7001 " reset="true">
+                    <data source="7001 .t"/>
+                </none>
+            </if>
+            <data name="contrib" source="@key7001">
+                <compose prefix="http://data.swissbib.ch/person/"/>
+            </data>
+        </combine>
 
         <!--710: ORGANISATIONS-->
         <data name="dct:contributor" source="@key710">
