@@ -3,7 +3,7 @@
 <metamorph xmlns="http://www.culturegraph.org/metamorph" version="1">
 
     <vars>
-        <var name="swissbib_domain" value="http://data.swissbib.ch/bibliographicResource/"/>
+        <var name="swissbib_domain" value="https://data.swissbib.ch/bibliographicResource/"/>
     </vars>
 
     <rules>
@@ -47,7 +47,7 @@
 
             <!--ID OF THE ITEM-->
 
-            <combine name="@id" value="http://data.swissbib.ch/item/${network}-${item_id}" flushWith="949??"
+            <combine name="@id" value="https://data.swissbib.ch/item/${network}-${item_id}" flushWith="949??"
                      sameEntity="true">
                 <data source="@key_item" name="item_id"/>
                 <data source="949??.B" name="network"/>
@@ -71,7 +71,7 @@
 
             <!--LINK WITH BILIOGRAPHICAL RESOURCE-->
 
-            <combine name="bf:holdingFor" value="http://data.swissbib.ch/bibliographicResource/${id_record}"
+            <combine name="bf:holdingFor" value="https://data.swissbib.ch/bibliographicResource/${id_record}"
                      flushWith="949??">
                 <data source="@idnr" name="id_record"/>
             </combine>
@@ -107,7 +107,7 @@
             </concat>
 
             <!--LIBRARY-->
-            <combine name="bibo:owner" value="http://data.swissbib.ch/organisation/${network}${library_id}"
+            <combine name="bibo:owner" value="https://data.swissbib.ch/organisation/${network}${library_id}"
                      flushWith="949??">
                 <data source="949??.b" name="library_id">
                     <blacklist>

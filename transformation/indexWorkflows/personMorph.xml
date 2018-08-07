@@ -3,7 +3,7 @@
 <metamorph xmlns="http://www.culturegraph.org/metamorph" version="1">
 
     <vars>
-        <var name="swissbib_domain" value="http://data.swissbib.ch/resource/"/>
+        <var name="swissbib_domain" value="https://data.swissbib.ch/resource/"/>
     </vars>
 
     <macros>
@@ -35,7 +35,7 @@
         <entity name="--" flushWith="245*.a" reset="true">
             <data name="_id" source="@key1000"/>
             <data name="@id" source="@key1000">
-                <compose prefix="http://data.swissbib.ch/person/"/>
+                <compose prefix="https://data.swissbib.ch/person/"/>
             </data>
 
             <!--RDF TYPE (CLASS)-->
@@ -80,7 +80,7 @@
         <entity name="--" flushWith="245*.a" reset="true">
             <data name="_id" source="@key1001"/>
             <data name="@id" source="@key1001">
-                <compose prefix="http://data.swissbib.ch/person/"/>
+                <compose prefix="https://data.swissbib.ch/person/"/>
             </data>
 
             <!--RDF TYPE (CLASS)-->
@@ -135,7 +135,7 @@
 
             <data name="_id" source="@key7000"/>
             <data name="@id" source="@key7000">
-                <compose prefix="http://data.swissbib.ch/person/"/>
+                <compose prefix="https://data.swissbib.ch/person/"/>
             </data>
 
             <!--RDF TYPE (CLASS)-->
@@ -187,7 +187,7 @@
 
             <data name="_id" source="@key7001"/>
             <data name="@id" source="@key7001">
-                <compose prefix="http://data.swissbib.ch/person/"/>
+                <compose prefix="https://data.swissbib.ch/person/"/>
             </data>
 
             <!--RDF TYPE (CLASS)-->

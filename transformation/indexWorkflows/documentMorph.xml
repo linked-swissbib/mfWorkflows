@@ -3,7 +3,7 @@
 <metamorph xmlns="http://www.culturegraph.org/metamorph" version="1">
 
     <vars>
-        <var name="swissbib_domain" value="http://data.swissbib.ch/bibliographicResource/"/>
+        <var name="swissbib_domain" value="https://data.swissbib.ch/bibliographicResource/"/>
     </vars>
 
 
@@ -21,14 +21,14 @@
         <data source="001" name="_id"/>
 
         <data source="001" name="\@id">
-            <compose prefix="http://data.swissbib.ch/bibliographicResource/"/>
+            <compose prefix="https://data.swissbib.ch/bibliographicResource/"/>
             <compose postfix="/about"/>
         </data>
 
         <!--RDF TYPE (CLASS)-->
 
         <data source="_id" name="\@type">
-            <constant value="http://purl.org/ontology/bibo/document"/>
+            <constant value="https://purl.org/ontology/bibo/document"/>
         </data>
 
         <!--REFERENCED JSON-LD CONTEXT-->
@@ -115,7 +115,7 @@
 
         <!--LINK WITH THE BASIS RECORD-->
         <data source="001" name="foaf:primaryTopic">
-            <compose prefix="http://data.swissbib.ch/bibliographicResource/"/>
+            <compose prefix="https://data.swissbib.ch/bibliographicResource/"/>
         </data>
 
         <combine name="dct:rights" value="${rights}" flushWith="record">

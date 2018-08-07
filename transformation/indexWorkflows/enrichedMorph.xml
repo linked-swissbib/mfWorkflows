@@ -25,42 +25,66 @@
     <call-macro name="literal" abbrev="foaf:name" predicate="http://xmlns.com/foaf/0.1/name"/>
 
     <!-- DBPedia -->
-    <data name="dbp:thumbnail" source="http://dbpedia.org/ontology/thumbnail"/>
+    <data name="dbp:thumbnail" source="http://dbpedia.org/ontology/thumbnail">
+        <replace pattern="http://" with="https://"/>
+    </data>
     <call-macro name="language-tag" abbrev="dbp:abstract" predicate="http://dbpedia.org/ontology/abstract"/>
-    <data name="dbp:birthPlace" source="http://dbpedia.org/ontology/birthPlace"/>
+    <data name="dbp:birthPlace" source="http://dbpedia.org/ontology/birthPlace">
+        <replace pattern="http://" with="https://"/>
+    </data>
     <call-macro name="language-tag" abbrev="lsb:dbpBirthPlaceAsLiteral"
-                predicate="http://linked.swissbib.ch/vocab/dbpBirthPlaceAsLiteral"/>
-    <data name="dbp:deathPlace" source="http://dbpedia.org/ontology/deathPlace"/>
+                predicate="http://resources.swissbib.ch/vocab/dbpBirthPlaceAsLiteral"/>
+    <data name="dbp:deathPlace" source="http://dbpedia.org/ontology/deathPlace">
+        <replace pattern="http://" with="https://"/>
+    </data>
     <call-macro name="language-tag" abbrev="lsb:dbpDeathPlaceAsLiteral"
-                predicate="http://linked.swissbib.ch/vocab/dbpDeathPlaceAsLiteral"/>
+                predicate="http://resources.swissbib.ch/vocab/dbpDeathPlaceAsLiteral"/>
     <call-macro name="date" abbrev="dbp:birthDate" predicate="http://dbpedia.org/ontology/birthDate"/>
     <call-macro name="date" abbrev="dbp:deathDate" predicate="http://dbpedia.org/ontology/deathDate"/>
-    <data name="dbp:occupation" source="http://dbpedia.org/ontology/occupation"/>
+    <data name="dbp:occupation" source="http://dbpedia.org/ontology/occupation">
+        <replace pattern="http://" with="https://"/>
+    </data>
     <call-macro name="language-tag" abbrev="lsb:dbpOccupationAsLiteral"
-                predicate="http://linked.swissbib.ch/vocab/dbpOccupationAsLiteral"/>
-    <data name="dbp:movement" source="http://dbpedia.org/ontology/movement"/>
+                predicate="http://resources.swissbib.ch/vocab/dbpOccupationAsLiteral"/>
+    <data name="dbp:movement" source="http://dbpedia.org/ontology/movement">
+        <replace pattern="http://" with="https://"/>
+    </data>
     <call-macro name="language-tag" abbrev="lsb:dbpMovementAsLiteral"
-                predicate="http://linked.swissbib.ch/vocab/dbpMovementAsLiteral"/>
-    <data name="dbp:genre" source="http://dbpedia.org/ontology/genre"/>
+                predicate="http://resources.swissbib.ch/vocab/dbpMovementAsLiteral"/>
+    <data name="dbp:genre" source="http://dbpedia.org/ontology/genre">
+        <replace pattern="http://" with="https://"/>
+    </data>
     <call-macro name="language-tag" abbrev="lsb:dbpGenreAsLiteral"
-                predicate="http://linked.swissbib.ch/vocab/dbpGenreAsLiteral"/>
-    <data name="dbp:influencedBy" source="http://dbpedia.org/ontology/influencedBy"/>
+                predicate="http://resources.swissbib.ch/vocab/dbpGenreAsLiteral"/>
+    <data name="dbp:influencedBy" source="http://dbpedia.org/ontology/influencedBy">
+        <replace pattern="http://" with="https://"/>
+    </data>
     <call-macro name="language-tag" abbrev="lsb:dbpInfluencedByAsLiteral"
-                predicate="http://linked.swissbib.ch/vocab/dbpInfluencedByAsLiteral"/>
-    <data name="dbp:nationality" source="http://dbpedia.org/ontology/nationality"/>
+                predicate="http://resources.swissbib.ch/vocab/dbpInfluencedByAsLiteral"/>
+    <data name="dbp:nationality" source="http://dbpedia.org/ontology/nationality">
+        <replace pattern="http://" with="https://"/>
+    </data>
     <call-macro name="language-tag" abbrev="lsb:dbpNationalityAsLiteral"
-                predicate="http://linked.swissbib.ch/vocab/dbpNationalityAsLiteral"/>
-    <data name="dbp:partner" source="http://dbpedia.org/ontology/partner"/>
+                predicate="http://resources.swissbib.ch/vocab/dbpNationalityAsLiteral"/>
+    <data name="dbp:partner" source="http://dbpedia.org/ontology/partner">
+        <replace pattern="http://" with="https://"/>
+    </data>
     <call-macro name="language-tag" abbrev="lsb:dbpPartnerAsLiteral"
-                predicate="http://linked.swissbib.ch/vocab/dbpPartnerAsLiteral"/>
+                predicate="http://resources.swissbib.ch/vocab/dbpPartnerAsLiteral"/>
     <call-macro name="language-tag" abbrev="dbp:pseudonym" predicate="http://dbpedia.org/ontology/pseudonym"/>
-    <data name="dbp:spouse" source="http://dbpedia.org/ontology/spouse"/>
+    <data name="dbp:spouse" source="http://dbpedia.org/ontology/spouse">
+        <replace pattern="http://" with="https://"/>
+    </data>
     <call-macro name="language-tag" abbrev="lsb:dbpSpouseAsLiteral"
-                predicate="http://linked.swissbib.ch/vocab/dbpSpouseAsLiteral"/>
-    <data name="dbp:influenced" source="http://dbpedia.org/ontology/influenced"/>
+                predicate="http://resources.swissbib.ch/vocab/dbpSpouseAsLiteral"/>
+    <data name="dbp:influenced" source="http://dbpedia.org/ontology/influenced">
+        <replace pattern="http://" with="https://"/>
+    </data>
     <call-macro name="language-tag" abbrev="lsb:dbpInfluencedAsLiteral"
-                predicate="http://linked.swissbib.ch/vocab/dbpInfluencedAsLiteral"/>
-    <data name="dbp:notableWork" source="http://dbpedia.org/ontology/notableWork"/>
+                predicate="http://resources.swissbib.ch/vocab/dbpInfluencedAsLiteral"/>
+    <data name="dbp:notableWork" source="http://dbpedia.org/ontology/notableWork">
+        <replace pattern="http://" with="https://"/>
+    </data>
     <call-macro name="language-tag" abbrev="lsb:dbpNotableWorkAsLiteral"
                 predicate="http://linked.swissbib.ch/vocab/dbpNotableWorkAsLiteral"/>
 
@@ -73,7 +97,9 @@
     <data source="http://schema.org/gender" name="schema:gender"/>
     <call-macro name="language-tag" abbrev="lsb:schemaGenderAsLiteral"
                 predicate="http://linked.swissbib.ch/vocab/schemaGenderAsLiteral"/>
-    <data source="http://schema.org/sameAs" name="schema:sameAs"/>
+    <data source="http://schema.org/sameAs" name="schema:sameAs">
+        <replace pattern="http://" with="https://"/>
+    </data>
     <call-macro name="literal" predicate="http://schema.org/inLanguage" abbrev="schema:inLanguage"/>
     <data name="dc:language" source="http://purl.org/dc/terms/language"/>
 

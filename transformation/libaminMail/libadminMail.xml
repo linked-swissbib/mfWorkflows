@@ -5,7 +5,7 @@
     <rules>
 
         <!--RECURSION-->
-        <combine name="@uri_library" value="http://data.swissbib.ch/organisation/${network}-${id}" reset="false"
+        <combine name="@uri_library" value="https://data.swissbib.ch/organisation/${network}-${id}" reset="false"
                  flushWith="data.institutions.sys_code">
             <data source="data.institutions.sys_code" name="id">
                 <trim/>
@@ -15,7 +15,7 @@
             </data>
         </combine>
 
-        <combine name="@uri_network" value="http://data.swissbib.ch/organisation/${network}">
+        <combine name="@uri_network" value="https://data.swissbib.ch/organisation/${network}">
             <data source="data.group.code" name="network">
                 <trim/>
                 <blacklist>
