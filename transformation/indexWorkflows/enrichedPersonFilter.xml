@@ -4,7 +4,7 @@
 
     <rules>
 
-        <data source="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+        <data source="rdf:type">
             <equals string="http://xmlns.com/foaf/0.1/Person"/>
         </data>
 

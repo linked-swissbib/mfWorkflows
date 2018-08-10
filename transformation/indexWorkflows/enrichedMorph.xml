@@ -1,111 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<rules xmlns="http://www.culturegraph.org/metamorph">
+<metamorph xmlns="http://www.culturegraph.org/metamorph" version="1">
 
-    <!-- Set id -->
-    <data source="_id" name="id">
-        <replace pattern="http://viaf.org/viaf/" with=""/>
-        <replace pattern="http://data.swissbib.ch/person/" with=""/>
-        <replace pattern="http://data.swissbib.ch/organisation/" with=""/>
-    </data>
+    <macros>
 
-    <!-- JSON-LD keywords -->
-    <data source="_id" name="\@id"/>
+        <macro name="year">
+            <data source="$[predicate]" name="$[abbrev]">
+                <regexp match='(\d\d\d\d)' format="${1}"/>
+            </data>
+        </macro>
 
-    <data source="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" name="\@type"/>
+        <macro name="uri">
+            <data source="$[predicate]" name="$[abbrev]">
+                <setreplace>
+                    <entry name="http://dbpedia" value="https://dbpedia"/>
+                </setreplace>
+            </data>
+        </macro>
 
-    <!-- Swissbib -->
-    <data source="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" name="rdf:type"/>
-    <call-macro name="literal" abbrev="rdfs:label" predicate="http://www.w3.org/2000/01/rdf-schema#label"/>
-    <call-macro name="date-shortener" abbrev="dbp:birthYear" predicate="http://dbpedia.org/ontology/birthYear"/>
-    <call-macro name="literal" abbrev="skos:note" predicate="http://www.w3.org/2004/02/skos/core#note"/>
-    <call-macro name="date-shortener" abbrev="dbp:deathYear" predicate="http://dbpedia.org/ontology/deathYear"/>
-    <call-macro name="literal" abbrev="foaf:firstName" predicate="http://xmlns.com/foaf/0.1/firstName"/>
-    <call-macro name="literal" abbrev="foaf:lastName" predicate="http://xmlns.com/foaf/0.1/lastName"/>
-    <call-macro name="literal" abbrev="foaf:name" predicate="http://xmlns.com/foaf/0.1/name"/>
+        <macro name="language-tag">
+            <entity name="$[abbrev]{}" flushWith="$[predicate]" reset="true">
+                <combine name="${lang}" value="${value}" flushWith="$[predicate]">
+                    <data name="value" source="$[predicate]">
+                        <replace pattern='##@.+' with=''/>
+                    </data>
+                    <data name="lang" source="$[predicate]">
+                        <regexp match='##@([^ ]+)' format="${1}"/>
+                    </data>
+                </combine>
+            </entity>
+        </macro>
 
-    <!-- DBPedia -->
-    <data name="dbp:thumbnail" source="http://dbpedia.org/ontology/thumbnail">
-        <replace pattern="http://" with="https://"/>
-    </data>
-    <call-macro name="language-tag" abbrev="dbp:abstract" predicate="http://dbpedia.org/ontology/abstract"/>
-    <data name="dbp:birthPlace" source="http://dbpedia.org/ontology/birthPlace">
-        <replace pattern="http://" with="https://"/>
-    </data>
-    <call-macro name="language-tag" abbrev="lsb:dbpBirthPlaceAsLiteral"
-                predicate="http://resources.swissbib.ch/vocab/dbpBirthPlaceAsLiteral"/>
-    <data name="dbp:deathPlace" source="http://dbpedia.org/ontology/deathPlace">
-        <replace pattern="http://" with="https://"/>
-    </data>
-    <call-macro name="language-tag" abbrev="lsb:dbpDeathPlaceAsLiteral"
-                predicate="http://resources.swissbib.ch/vocab/dbpDeathPlaceAsLiteral"/>
-    <call-macro name="date" abbrev="dbp:birthDate" predicate="http://dbpedia.org/ontology/birthDate"/>
-    <call-macro name="date" abbrev="dbp:deathDate" predicate="http://dbpedia.org/ontology/deathDate"/>
-    <data name="dbp:occupation" source="http://dbpedia.org/ontology/occupation">
-        <replace pattern="http://" with="https://"/>
-    </data>
-    <call-macro name="language-tag" abbrev="lsb:dbpOccupationAsLiteral"
-                predicate="http://resources.swissbib.ch/vocab/dbpOccupationAsLiteral"/>
-    <data name="dbp:movement" source="http://dbpedia.org/ontology/movement">
-        <replace pattern="http://" with="https://"/>
-    </data>
-    <call-macro name="language-tag" abbrev="lsb:dbpMovementAsLiteral"
-                predicate="http://resources.swissbib.ch/vocab/dbpMovementAsLiteral"/>
-    <data name="dbp:genre" source="http://dbpedia.org/ontology/genre">
-        <replace pattern="http://" with="https://"/>
-    </data>
-    <call-macro name="language-tag" abbrev="lsb:dbpGenreAsLiteral"
-                predicate="http://resources.swissbib.ch/vocab/dbpGenreAsLiteral"/>
-    <data name="dbp:influencedBy" source="http://dbpedia.org/ontology/influencedBy">
-        <replace pattern="http://" with="https://"/>
-    </data>
-    <call-macro name="language-tag" abbrev="lsb:dbpInfluencedByAsLiteral"
-                predicate="http://resources.swissbib.ch/vocab/dbpInfluencedByAsLiteral"/>
-    <data name="dbp:nationality" source="http://dbpedia.org/ontology/nationality">
-        <replace pattern="http://" with="https://"/>
-    </data>
-    <call-macro name="language-tag" abbrev="lsb:dbpNationalityAsLiteral"
-                predicate="http://resources.swissbib.ch/vocab/dbpNationalityAsLiteral"/>
-    <data name="dbp:partner" source="http://dbpedia.org/ontology/partner">
-        <replace pattern="http://" with="https://"/>
-    </data>
-    <call-macro name="language-tag" abbrev="lsb:dbpPartnerAsLiteral"
-                predicate="http://resources.swissbib.ch/vocab/dbpPartnerAsLiteral"/>
-    <call-macro name="language-tag" abbrev="dbp:pseudonym" predicate="http://dbpedia.org/ontology/pseudonym"/>
-    <data name="dbp:spouse" source="http://dbpedia.org/ontology/spouse">
-        <replace pattern="http://" with="https://"/>
-    </data>
-    <call-macro name="language-tag" abbrev="lsb:dbpSpouseAsLiteral"
-                predicate="http://resources.swissbib.ch/vocab/dbpSpouseAsLiteral"/>
-    <data name="dbp:influenced" source="http://dbpedia.org/ontology/influenced">
-        <replace pattern="http://" with="https://"/>
-    </data>
-    <call-macro name="language-tag" abbrev="lsb:dbpInfluencedAsLiteral"
-                predicate="http://resources.swissbib.ch/vocab/dbpInfluencedAsLiteral"/>
-    <data name="dbp:notableWork" source="http://dbpedia.org/ontology/notableWork">
-        <replace pattern="http://" with="https://"/>
-    </data>
-    <call-macro name="language-tag" abbrev="lsb:dbpNotableWorkAsLiteral"
-                predicate="http://linked.swissbib.ch/vocab/dbpNotableWorkAsLiteral"/>
+    </macros>
 
-    <!-- Viaf -->
-    <call-macro name="literal" predicate="http://schema.org/givenName" abbrev="schema:givenName"/>
-    <call-macro name="literal" predicate="http://schema.org/alternateName" abbrev="schema:alternateName"/>
-    <call-macro name="date-shortener" abbrev="schema:birthDate" predicate="http://schema.org/birthDate"/>
-    <call-macro name="date-shortener" abbrev="schema:deathDate" predicate="http://schema.org/deathDate"/>
-    <call-macro name="literal" predicate="http://schema.org/familyName" abbrev="schema:familyName"/>
-    <data source="http://schema.org/gender" name="schema:gender"/>
-    <call-macro name="language-tag" abbrev="lsb:schemaGenderAsLiteral"
-                predicate="http://linked.swissbib.ch/vocab/schemaGenderAsLiteral"/>
-    <data source="http://schema.org/sameAs" name="schema:sameAs">
-        <replace pattern="http://" with="https://"/>
-    </data>
-    <call-macro name="literal" predicate="http://schema.org/inLanguage" abbrev="schema:inLanguage"/>
-    <data name="dc:language" source="http://purl.org/dc/terms/language"/>
+    <rules>
 
-    <!-- Interconnection swissbib <-> dbpedia/viaf -->
-    <data source="http://www.w3.org/2002/07/owl#sameAs" name="owl:sameAs"/>
+        <!-- Set id -->
+        <data source="_id" name="id">
+            <replace pattern="http://viaf.org/viaf/" with=""/>
+            <replace pattern="http://data.swissbib.ch/person/" with=""/>
+            <replace pattern="http://data.swissbib.ch/organisation/" with=""/>
+        </data>
 
-    <data source="_else"/>
+        <!-- JSON-LD keywords -->
+        <data source="_id" name="\@id"/>
 
-</rules>
+        <data source="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" name="\@type"/>
+
+        <!-- Swissbib -->
+        <data source="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" name="rdf:type"/>
+        <data source="http://www.w3.org/2000/01/rdf-schema#label" name="rdfs:label"/>
+        <call-macro name="year" abbrev="dbp:birthYear" predicate="http://dbpedia.org/ontology/birthYear"/>
+        <data source="http://www.w3.org/2004/02/skos/core#note" name="skos:note"/>
+        <call-macro name="year" abbrev="dbp:deathYear" predicate="http://dbpedia.org/ontology/deathYear"/>
+        <data source="http://xmlns.com/foaf/0.1/firstName" name="foaf:firstName"/>
+        <data source="http://xmlns.com/foaf/0.1/lastName" name="foaf:lastName"/>
+        <data source="http://xmlns.com/foaf/0.1/name" name="foaf:name"/>
+
+        <!-- DBPedia -->
+        <call-macro name="uri" abbrev="dbp:thumbnail" predicate="http://dbpedia.org/ontology/thumbnail"/>
+        <call-macro name="language-tag" abbrev="dbp:abstract" predicate="http://dbpedia.org/ontology/abstract"/>
+        <call-macro name="uri" abbrev="dbp:birthPlace" predicate="http://dbpedia.org/ontology/birthPlace"/>
+        <call-macro name="language-tag" abbrev="lsb:dbpBirthPlaceAsLiteral"
+                    predicate="http://resources.swissbib.ch/vocab/dbpBirthPlaceAsLiteral"/>
+        <call-macro name="uri" abbrev="dbp:deathPlace" predicate="http://dbpedia.org/ontology/deathPlace"/>
+        <call-macro name="language-tag" abbrev="lsb:dbpDeathPlaceAsLiteral"
+                    predicate="http://resources.swissbib.ch/vocab/dbpDeathPlaceAsLiteral"/>
+        <data source="http://dbpedia.org/ontology/birthDate" name="dbp:birthDate"/>
+        <data source="http://dbpedia.org/ontology/deathDate" name="dbp:deathDate"/>
+        <call-macro name="uri" abbrev="dbp:occupation" predicate="http://dbpedia.org/ontology/occupation"/>
+        <call-macro name="language-tag" abbrev="lsb:dbpOccupationAsLiteral"
+                    predicate="http://resources.swissbib.ch/vocab/dbpOccupationAsLiteral"/>
+        <call-macro name="uri" abbrev="dbp:movement" predicate="http://dbpedia.org/ontology/movement"/>
+        <call-macro name="language-tag" abbrev="lsb:dbpMovementAsLiteral"
+                    predicate="http://resources.swissbib.ch/vocab/dbpMovementAsLiteral"/>
+        <call-macro name="uri" abbrev="dbp:genre" predicate="http://dbpedia.org/ontology/genre"/>
+        <call-macro name="language-tag" abbrev="lsb:dbpGenreAsLiteral"
+                    predicate="http://resources.swissbib.ch/vocab/dbpGenreAsLiteral"/>
+        <call-macro name="uri" abbrev="dbp:influencedBy" predicate="http://dbpedia.org/ontology/influencedBy"/>
+        <call-macro name="language-tag" abbrev="lsb:dbpInfluencedByAsLiteral"
+                    predicate="http://resources.swissbib.ch/vocab/dbpInfluencedByAsLiteral"/>
+        <call-macro name="uri" abbrev="dbp:nationality" predicate="http://dbpedia.org/ontology/nationality"/>
+        <call-macro name="language-tag" abbrev="lsb:dbpNationalityAsLiteral"
+                    predicate="http://resources.swissbib.ch/vocab/dbpNationalityAsLiteral"/>
+        <call-macro name="uri" abbrev="dbp:partner" predicate="http://dbpedia.org/ontology/partner"/>
+        <call-macro name="language-tag" abbrev="lsb:dbpPartnerAsLiteral"
+                    predicate="http://resources.swissbib.ch/vocab/dbpPartnerAsLiteral"/>
+        <call-macro name="language-tag" abbrev="dbp:pseudonym" predicate="http://dbpedia.org/ontology/pseudonym"/>
+        <call-macro name="uri" abbrev="dbp:spouse" predicate="http://dbpedia.org/ontology/spouse"/>
+        <call-macro name="language-tag" abbrev="lsb:dbpSpouseAsLiteral"
+                    predicate="http://resources.swissbib.ch/vocab/dbpSpouseAsLiteral"/>
+        <call-macro name="uri" abbrev="dbp:influenced" predicate="http://dbpedia.org/ontology/influenced"/>
+        <call-macro name="language-tag" abbrev="lsb:dbpInfluencedAsLiteral"
+                    predicate="http://resources.swissbib.ch/vocab/dbpInfluencedAsLiteral"/>
+        <call-macro name="uri" abbrev="dbp:notableWork" predicate="http://dbpedia.org/ontology/notableWork"/>
+        <call-macro name="language-tag" abbrev="lsb:dbpNotableWorkAsLiteral"
+                    predicate="http://linked.swissbib.ch/vocab/dbpNotableWorkAsLiteral"/>
+
+        <!-- Viaf -->
+        <data source="http://schema.org/givenName" name="schema:givenName"/>
+        <data source="http://schema.org/alternateName" name="schema:alternateName"/>
+        <call-macro name="year" abbrev="schema:birthDate" predicate="http://schema.org/birthDate"/>
+        <call-macro name="year" abbrev="schema:deathDate" predicate="http://schema.org/deathDate"/>
+        <data source="http://schema.org/familyName" name="schema:familyName"/>
+        <call-macro name="uri" abbrev="schema:gender" predicate="http://schema.org/gender"/>
+        <call-macro name="language-tag" abbrev="lsb:schemaGenderAsLiteral"
+                    predicate="http://linked.swissbib.ch/vocab/schemaGenderAsLiteral"/>
+        <call-macro name="uri" abbrev="schema:sameAs" predicate="http://schema.org/sameAs"/>
+        <data source="http://schema.org/inLanguage" name="schema:inLanguage"/>
+        <data name="dc:language" source="http://purl.org/dc/terms/language"/>
+
+        <!-- Interconnection swissbib <-> dbpedia/viaf -->
+        <call-macro name="uri" abbrev="owl:sameAs" predicate="http://www.w3.org/2002/07/owl#sameAs"/>
+
+        <combine name="\@context" value="context">
+            <if>
+                <data source="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+                    <equals string="http://xmlns.com/foaf/0.1/Person"/>
+                </data>
+            </if>
+            <data source="_id" name="\@context">
+                <constant value="https://resources.swissbib.ch/person/context.jsonld"/>
+            </data>
+        </combine>
+        <combine name="\@context" value="context">
+            <if>
+                <data source="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+                    <equals string="http://xmlns.com/foaf/0.1/Organization"/>
+                </data>
+            </if>
+            <data source="_id" name="\@context">
+                <constant value="https://resources.swissbib.ch/organisation/context.jsonld"/>
+            </data>
+        </combine>
+
+        <data source="_else"/>
+
+    </rules>
+
+</metamorph>
