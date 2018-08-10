@@ -17,11 +17,11 @@
                 </data>
 
                 <data name="rdfs" source="_id">
-                    <constant value="https://www.w3.org/2000/01/rdf-schema#"/>
+                    <constant value="http://www.w3.org/2000/01/rdf-schema#"/>
                 </data>
 
                 <data name="dbp" source="_id">
-                    <constant value="https://dbpedia.org/ontology/"/>
+                    <constant value="http://dbpedia.org/ontology/"/>
                 </data>
 
                 <data name="rdau" source="_id">
@@ -29,11 +29,11 @@
                 </data>
 
                 <data name="dct" source="_id">
-                    <constant value="https://purl.org/dc/terms/"/>
+                    <constant value="http://purl.org/dc/terms/"/>
                 </data>
 
                 <data name="rdf" source="_id">
-                    <constant value="https://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+                    <constant value="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
                 </data>
 
                 <data name="foaf" source="_id">
@@ -41,15 +41,15 @@
                 </data>
 
                 <data name="bibo" source="_id">
-                    <constant value="https://purl.org/ontology/bibo/"/>
+                    <constant value="http://purl.org/ontology/bibo/"/>
                 </data>
 
                 <data name="dc" source="_id">
-                    <constant value="https://purl.org/dc/elements/1.1/"/>
+                    <constant value="http://purl.org/dc/elements/1.1/"/>
                 </data>
 
                 <data name="skos" source="_id">
-                    <constant value="https://www.w3.org/2004/02/skos/core#"/>
+                    <constant value="http://www.w3.org/2004/02/skos/core#"/>
                 </data>
 
             </entity>
@@ -91,7 +91,7 @@
         <!--RDF TYPE (CLASS)-->
 
         <data source="_id" name="\@type">
-            <constant value="https://purl.org/dc/terms/BibliographicResource"/>
+            <constant value="http://purl.org/dc/terms/BibliographicResource"/>
         </data>
 
         <!--REFERENCED JSON-LD CONTEXT-->
@@ -261,7 +261,7 @@
             <whitelist>
                 <entry name="BK01"/>
             </whitelist>
-            <constant value="https://purl.org/ontology/bibo/Article"/>
+            <constant value="http://purl.org/ontology/bibo/Article"/>
             <unique part="value"/>
         </data>
         <data source="898  .a" name="rdf:type">
@@ -269,7 +269,7 @@
             <whitelist>
                 <entry name="BK02"/>
             </whitelist>
-            <constant value="https://purl.org/ontology/bibo/Book"/>
+            <constant value="http://purl.org/ontology/bibo/Book"/>
             <unique part="value"/>
         </data>
         <data source="898  .a" name="rdf:type">
@@ -279,7 +279,7 @@
                 <entry name="MU02"/>
                 <entry name="MP02"/>
             </whitelist>
-            <constant value="https://purl.org/ontology/bibo/Manuscript"/>
+            <constant value="http://purl.org/ontology/bibo/Manuscript"/>
             <unique part="value"/>
         </data>
         <data source="898  .a" name="rdf:type">
@@ -288,7 +288,7 @@
                 <entry name="CR01"/>
                 <entry name="CR03"/>
             </whitelist>
-            <constant value="https://purl.org/ontology/bibo/Periodical"/>
+            <constant value="http://purl.org/ontology/bibo/Periodical"/>
             <unique part="value"/>
         </data>
         <data source="898  .a" name="rdf:type">
@@ -300,7 +300,7 @@
                 <entry name="CR0208"/>
                 <entry name="CR0308"/>
             </whitelist>
-            <constant value="https://purl.org/ontology/bibo/Proceedings"/>
+            <constant value="http://purl.org/ontology/bibo/Proceedings"/>
             <unique part="value"/>
         </data>
         <data source="898  .a" name="rdf:type">
@@ -309,7 +309,7 @@
                 <entry name="CL01"/>
                 <entry name="CL02"/>
             </whitelist>
-            <constant value="https://purl.org/ontology/bibo/Series"/>
+            <constant value="http://purl.org/ontology/bibo/Series"/>
             <unique part="value"/>
         </data>
         <data source="898  .a" name="rdf:type">
@@ -318,7 +318,7 @@
                 <entry name="BK0103"/>
                 <entry name="BK0203"/>
             </whitelist>
-            <constant value="https://purl.org/ontology/bibo/Thesis"/>
+            <constant value="http://purl.org/ontology/bibo/Thesis"/>
             <unique part="value"/>
         </data>
         <data source="898  .a" name="rdf:type">
@@ -328,7 +328,7 @@
                 <entry name="CR0204"/>
                 <entry name="CR0304"/>
             </whitelist>
-            <constant value="https://purl.org/ontology/bibo/Website"/>
+            <constant value="http://purl.org/ontology/bibo/Website"/>
             <unique part="value"/>
         </data>
 
