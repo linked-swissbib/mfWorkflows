@@ -60,12 +60,10 @@
 
             <!--RDF TYPE (CLASS)-->
 
-            <data source="_id" name="@type">
+            <data source="949??.B" name="@type">
                 <constant value="http://bibframe.org/vocab/HeldItem"/>
             </data>
-
-            <!--REFERENCED JSON-LD CONTEXT-->
-            <data source="_id" name="@context">
+            <data source="949??.B" name="@context">
                 <constant value="https://resources.swissbib.ch/item/context.jsonld"/>
             </data>
 

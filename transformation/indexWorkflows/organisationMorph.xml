@@ -41,14 +41,10 @@
                 <compose prefix="https://data.swissbib.ch/organisation/"/>
             </data>
 
-            <!--RDF TYPE (CLASS)-->
-
-            <data source="110??" name="@type">
+            <data source="001" name="@type">
                 <constant value="http://xmlns.com/foaf/0.1/Organization"/>
             </data>
-
-            <!--REFERENCED JSON-LD CONTEXT-->
-            <data source="110??" name="@context">
+            <data source="001" name="@context">
                 <constant value="https://resources.swissbib.ch/organisation/context.jsonld"/>
             </data>
 
@@ -83,14 +79,10 @@
                 <compose prefix="https://data.swissbib.ch/organisation/"/>
             </data>
 
-            <!--RDF TYPE (CLASS)-->
-
-            <data source="710??" name="@type">
+            <data source="710??.a" name="@type">
                 <constant value="http://xmlns.com/foaf/0.1/Organization"/>
             </data>
-
-            <!--REFERENCED JSON-LD CONTEXT-->
-            <data source="710??" name="@context">
+            <data source="710??.a" name="@context">
                 <constant value="https://resources.swissbib.ch/organisation/context.jsonld"/>
             </data>
 
@@ -125,17 +117,10 @@
                 <compose prefix="https://data.swissbib.ch/organisation/"/>
             </data>
 
-            <!--RDF TYPE (CLASS)-->
-
-            <!--            <data source="_id" name="@type">
-                            <constant value="http://xmlns.com/foaf/0.1/Organization"/>
-                        </data>-->
-            <data source="111??" name="@type">
+            <data source="001" name="@type">
                 <constant value="http://xmlns.com/foaf/0.1/Organization"/>
             </data>
-
-            <!--REFERENCED JSON-LD CONTEXT-->
-            <data source="111??" name="@context">
+            <data source="001" name="@context">
                 <constant value="https://resources.swissbib.ch/organisation/context.jsonld"/>
             </data>
 
@@ -168,17 +153,10 @@
                 <compose prefix="https://data.swissbib.ch/organisation/"/>
             </data>
 
-            <!--RDF TYPE (CLASS)-->
-
-            <!--            <data source="_id" name="@type">
-                            <constant value="http://xmlns.com/foaf/0.1/Organization"/>
-                        </data>-->
-            <data source="711??" name="@type">
+            <data source="711??.a" name="@type">
                 <constant value="http://xmlns.com/foaf/0.1/Organization"/>
             </data>
-
-            <!--REFERENCED JSON-LD CONTEXT-->
-            <data source="711??" name="@context">
+            <data source="711??.a" name="@context">
                 <constant value="https://resources.swissbib.ch/organisation/context.jsonld"/>
             </data>
 
