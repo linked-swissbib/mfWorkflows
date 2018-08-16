@@ -8,8 +8,6 @@
 
     <rules>
 
-        <!--RECURSION-->
-
         <data source="001" name="@idnr"/>
 
         <combine name="@key_item"
@@ -41,12 +39,9 @@
             -->
         </combine>
 
-        <!--ITEM-->
-
         <entity name="--" flushWith="949??" reset="true">
 
             <!--ID OF THE ITEM-->
-
             <combine name="@id" value="https://data.swissbib.ch/item/${network}-${item_id}" flushWith="949??"
                      sameEntity="true">
                 <data source="@key_item" name="item_id"/>
@@ -59,7 +54,6 @@
             </combine>
 
             <!--RDF TYPE (CLASS)-->
-
             <data source="949??.B" name="@type">
                 <constant value="http://bibframe.org/vocab/HeldItem"/>
             </data>
@@ -68,14 +62,12 @@
             </data>
 
             <!--LINK WITH BILIOGRAPHICAL RESOURCE-->
-
             <combine name="bf:holdingFor" value="https://data.swissbib.ch/bibliographicResource/${id_record}"
                      flushWith="949??">
                 <data source="@idnr" name="id_record"/>
             </combine>
 
             <!--LINK TO ITEM IN THE LOCAL LIBRARY INTERFACE-->
-
             <combine name="foaf:page" value="${949B}##${949b}##${949F}##${949E}##${idnr}##${035Ids}" flushWith="949??">
 
                 <concat name="035Ids" delimiter="!!" flushWith="035??" reset="false">
@@ -96,7 +88,6 @@
             </combine>
 
             <!--SHELFMARK-->
-
             <concat name="bibo:locator" delimiter="" flushWith="949??" reset="true">
                 <data source="949??.j"/>
                 <data source="949??.s">
