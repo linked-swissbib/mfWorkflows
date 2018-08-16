@@ -33,7 +33,7 @@
     <rules>
 
         <!--110-->
-        <concat name="@label110" delimiter="" flushWith="110??" reset="true">
+        <concat name="@label110" flushWith="110??">
             <data source="110??.a">
                 <regexp match="(.*[^\.$])" format="${1}"/>
             </data>
@@ -90,7 +90,7 @@
                 <constant value="https://resources.swissbib.ch/organisation/context.jsonld"/>
             </data>
 
-            <concat name="rdfs:label" delimiter="" flushWith="710??" reset="true" sameEntity="true">
+            <concat name="rdfs:label"  flushWith="710??" reset="true" sameEntity="true">
                 <data source="710??.a">
                     <regexp match="(.*[^\.$])" format="${1}"/>
                     <!--This regex matches everything except the eventual final dot.-->
@@ -115,7 +115,7 @@
         </entity>
 
         <!--111-->
-        <concat name="@label111" delimiter="" flushWith="111??" reset="true" sameEntity="true">
+        <concat name="@label111" flushWith="111??">
             <data source="111??.a">
                 <regexp match="(.*[^\.$])" format="${1}"/>
             </data>
@@ -172,7 +172,7 @@
                 <constant value="https://resources.swissbib.ch/organisation/context.jsonld"/>
             </data>
 
-            <concat name="rdfs:label" delimiter="" flushWith="711??" reset="true" sameEntity="true">
+            <concat name="rdfs:label" flushWith="711??" reset="true" sameEntity="true">
                 <data source="711??.a">
                     <regexp match="(.*[^\.$])" format="${1}"/>
                 </data>
