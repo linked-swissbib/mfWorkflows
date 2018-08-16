@@ -3,7 +3,7 @@
 <metamorph xmlns="http://www.culturegraph.org/metamorph" version="1">
 
     <vars>
-        <var name="swissbib_domain" value="https://data.swissbib.ch/bibliographicResource/"/>
+        <var name="organisation" value="https://data.swissbib.ch/organisation/"/>
     </vars>
 
     <macros>
@@ -35,7 +35,7 @@
         <entity name="--" flushWith="245*.a">
             <data name="_id" source="@key110"/>
             <data name="@id" source="@key110">
-                <compose prefix="https://data.swissbib.ch/organisation/"/>
+                <compose prefix="$[organisation]"/>
             </data>
 
             <data source="110??" name="@type">
@@ -72,7 +72,7 @@
         <entity name="--" flushWith="710??" reset="true">
             <data name="_id" source="@key710"/>
             <data name="@id" source="@key710">
-                <compose prefix="https://data.swissbib.ch/organisation/"/>
+                <compose prefix="$[organisation]"/>
             </data>
 
             <data source="710??.a" name="@type">
@@ -109,7 +109,7 @@
         <entity name="--" flushWith="245*.a">
             <data name="_id" source="@key111"/>
             <data name="@id" source="@key111">
-                <compose prefix="https://data.swissbib.ch/organisation/"/>
+                <compose prefix="$[organisation]"/>
             </data>
 
             <data source="111??" name="@type">
@@ -146,7 +146,7 @@
         <entity name="--" flushWith="711??" reset="true">
             <data name="_id" source="@key711"/>
             <data name="@id" source="@key711">
-                <compose prefix="https://data.swissbib.ch/organisation/"/>
+                <compose prefix="$[organisation]"/>
             </data>
 
             <data source="711??.a" name="@type">

@@ -3,9 +3,12 @@
 <metamorph xmlns="http://www.culturegraph.org/metamorph" version="1">
 
     <vars>
-        <var name="swissbib_domain" value="https://data.swissbib.ch/bibliographicResource/"/>
+        <var name="document" value="https://data.swissbib.ch/document/"/>
+        <var name="organisation" value="https://data.swissbib.ch/organisation/"/>
+        <var name="person" value="https://data.swissbib.ch/person/"/>
+        <var name="resource" value="https://data.swissbib.ch/bibliographicResource/"/>
+        <var name="work" value="https://data.swissbib.ch/work/"/>
     </vars>
-
 
     <macros>
         <macro name="context">
@@ -85,7 +88,7 @@
         <data source="001" name="_id"/>
 
         <data source="001" name="\@id">
-            <compose prefix="https://data.swissbib.ch/bibliographicResource/"/>
+            <compose prefix="$[resource]"/>
         </data>
 
         <!--RDF TYPE (CLASS)-->
@@ -422,21 +425,21 @@
 
         <!--when first indicator is 0-->
         <data name="dct:contributor" source="@key1000">
-            <compose prefix="https://data.swissbib.ch/person/"/>
+            <compose prefix="$[person]"/>
         </data>
         <!--when first indicator is 1-->
         <data name="dct:contributor" source="@key1001">
-            <compose prefix="https://data.swissbib.ch/person/"/>
+            <compose prefix="$[person]"/>
         </data>
 
         <!--110: ORGANISATIONS-->
         <data name="dct:contributor" source="@key110">
-            <compose prefix="https://data.swissbib.ch/organisation/"/>
+            <compose prefix="$[organisation]"/>
         </data>
 
         <!--111: CONGRESSES-->
         <data name="dct:contributor" source="@key111">
-            <compose prefix="https://data.swissbib.ch/organisation/"/>
+            <compose prefix="$[organisation]"/>
         </data>
 
         <!--245: TITLE-->
@@ -545,7 +548,7 @@
 
         <!--490: LINK TO HOST ITEM (works only with record that includes a subfield 773$9 (swiss german data))-->
         <data name="dct:isPartOf" source="490*.9">
-            <compose prefix="https://data.swissbib.ch/bibliographicResource/"/>
+            <compose prefix="$[resource]"/>
             <unique part="value"/>
         </data>
 
@@ -594,7 +597,7 @@
                 </none>
             </if>
             <data name="contrib" source="@key7000">
-                <compose prefix="https://data.swissbib.ch/person/"/>
+                <compose prefix="$[person]"/>
             </data>
         </combine>
         <combine name="dct:contributor" value="${contrib}" reset="true" flushWith="7001 ">
@@ -604,18 +607,18 @@
                 </none>
             </if>
             <data name="contrib" source="@key7001">
-                <compose prefix="https://data.swissbib.ch/person/"/>
+                <compose prefix="$[person]"/>
             </data>
         </combine>
 
         <!--710: ORGANISATIONS-->
         <data name="dct:contributor" source="@key710">
-            <compose prefix="https://data.swissbib.ch/organisation/"/>
+            <compose prefix="$[organisation]"/>
         </data>
 
         <!--711: CONGRESSES-->
         <data name="dct:contributor" source="@key711">
-            <compose prefix="https://data.swissbib.ch/organisation/"/>
+            <compose prefix="$[organisation]"/>
         </data>
 
         <!--773: NOTE ABOUT COMPLEX LINKS-->
@@ -631,7 +634,7 @@
 
         <!--773: LINK TO HOST ITEM (works only with record that includes a subfield 773$9 (swiss german data))-->
         <data name="dct:isPartOf" source="773*.9">
-            <compose prefix="https://data.swissbib.ch/bibliographicResource/"/>
+            <compose prefix="$[resource]"/>
             <unique part="value"/>
         </data>
 
@@ -639,7 +642,7 @@
         <!--40% of the records-->
         <!--
         <data name="bf:instanceOf" source="986  .b">
-            <compose prefix="https://data.swissbib.ch/work/"/>
+            <compose prefix="$[work]"/>
         </data> -->
         <!-- REFERENCE TO bf:instanceOf should be the key to fix the Spark bug
         <combine name="bf:instanceOf" value="${work}" sameEntity="true">
@@ -654,17 +657,11 @@
          -->
 
 
-
         <!--META-->
         <!--Do not add "flushWith="record"": if there is more than one field 035, the attributes "rdf:resource" will be repeated within the tag "rdfs:isDefinedBy"-->
-        <!--
         <data source="001" name="rdfs:isDefinedBy">
-            <compose prefix="https://data.swissbib.ch/bibliographicResource/"/>
+            <compose prefix="$[resource]"/>
             <compose postfix="/about"/>
-        </data>
-        -->
-        <data source="001" name="rdfs:isDefinedBy">
-            <compose prefix="https://data.swissbib.ch/document/"/>
         </data>
 
 
@@ -675,7 +672,6 @@
                 <regexp match="Metadata rights reserved"/>
             </data>
         </combine>
-
 
 
     </rules>
