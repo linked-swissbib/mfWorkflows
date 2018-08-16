@@ -14,8 +14,8 @@
 
         <combine name="@key_item"
                  value="${id_record}##${system_number}##${id_network}##${shelfmark1}##${shelfmark2}##${sublocation}##${description}##${barcode}##${posNumber}"
-                 flushWith="949??">
-            <data source="001" name="id_record"/>
+                 flushWith="949??" reset="true">
+            <data source="@idnr" name="id_record"/>
             <data source="949??.E" name="system_number"/>
             <data source="949??.B" name="id_network"/>
             <data source="949??.j" name="shelfmark1"/>

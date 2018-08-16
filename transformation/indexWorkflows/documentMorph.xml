@@ -18,7 +18,6 @@
         </data>
 
         <!--RDF TYPE (CLASS)-->
-
         <data source="_id" name="\@type">
             <constant value="http://purl.org/ontology/bibo/document"/>
         </data>
@@ -27,13 +26,6 @@
         <data source="_id" name="\@context">
             <constant value="https://resources.swissbib.ch/document/context.jsonld"/>
         </data>
-
-        <!-- Definitions for recursions to be used later in substructures (must be set here!) -->
-
-        <data source="008" name="@language">
-            <substring start="35" end="38"/>
-        </data>
-
 
         <!--BUILD BULK API HEADER FOR TYPE "DOCUMENT"-->
 
