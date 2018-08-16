@@ -4,6 +4,9 @@
 
     <combine name="@key110" value="110__###${swissbib_id}###${name}###${subunit}###${number}###${date}###${location}###${gnd}###${publishYear}###${title245a}"
              flushWith="245*.a">
+        <if>
+            <data source="110??"/>
+        </if>
         <data source="001" name="swissbib_id"/>
         <data source="008" name="publishYear">
             <substring start="7" end="11"/>

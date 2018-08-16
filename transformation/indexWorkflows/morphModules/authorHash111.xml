@@ -4,6 +4,9 @@
 <rules xmlns="http://www.culturegraph.org/metamorph">
 
     <combine name="@key111" value="111__###${swissbib_id}###${number}###${name}###${subunit}###${date}###${location}###${gnd}###${publishYear}###${title245a}" flushWith="245*.a">
+        <if>
+            <data source="111??"/>
+        </if>
         <data source="001" name="swissbib_id"/>
         <data source="008" name="@pubY">
             <substring start="7" end="11"/>

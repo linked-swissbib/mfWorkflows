@@ -32,45 +32,37 @@
 
     <rules>
 
-        <!--110-->
-        <concat name="@label110" flushWith="110??">
-            <data source="110??.a">
-                <regexp match="(.*[^\.$])" format="${1}"/>
-            </data>
-            <data source="110??.b">
-                <regexp match="(.*[^\.$])" format="${1}"/>
-                <compose prefix=". "/>
-            </data>
-            <data source="110??.c">
-                <compose prefix=" "/>
-            </data>
-            <data source="110??.d">
-                <compose prefix=" "/>
-            </data>
-            <data source="110??.n">
-                <compose prefix=" "/>
-            </data>
-        </concat>
-
         <entity name="--" flushWith="245*.a">
-            <if>
-                <any>
-                    <data source="@label110"/>
-                </any>
-            </if>
             <data name="_id" source="@key110"/>
             <data name="@id" source="@key110">
                 <compose prefix="https://data.swissbib.ch/organisation/"/>
             </data>
 
-            <data source="001" name="@type">
+            <data source="110??" name="@type">
                 <constant value="http://xmlns.com/foaf/0.1/Organization"/>
             </data>
-            <data source="001" name="@context">
+            <data source="110??" name="@context">
                 <constant value="https://resources.swissbib.ch/organisation/context.jsonld"/>
             </data>
 
-            <data name="rdfs:label" source="@label110"/>
+            <concat name="rdfs:label" flushWith="110??">
+                <data source="110??.a">
+                    <regexp match="(.*[^\.$])" format="${1}"/>
+                </data>
+                <data source="110??.b">
+                    <regexp match="(.*[^\.$])" format="${1}"/>
+                    <compose prefix=". "/>
+                </data>
+                <data source="110??.c">
+                    <compose prefix=" "/>
+                </data>
+                <data source="110??.d">
+                    <compose prefix=" "/>
+                </data>
+                <data source="110??.n">
+                    <compose prefix=" "/>
+                </data>
+            </concat>
 
             <call-macro name="gnd" gndfield="110??.0"/>
 
@@ -114,45 +106,37 @@
 
         </entity>
 
-        <!--111-->
-        <concat name="@label111" flushWith="111??">
-            <data source="111??.a">
-                <regexp match="(.*[^\.$])" format="${1}"/>
-            </data>
-            <data source="111??.c">
-                <compose prefix=" "/>
-            </data>
-            <data source="111??.d">
-                <compose prefix=" "/>
-            </data>
-            <data source="111??.e">
-                <regexp match="(.*[^\.$])" format="${1}"/>
-                <compose prefix=". "/>
-            </data>
-            <data source="111??.n">
-                <compose prefix=" "/>
-            </data>
-        </concat>
-
         <entity name="--" flushWith="245*.a">
-            <if>
-                <any>
-                    <data source="@label111"/>
-                </any>
-            </if>
             <data name="_id" source="@key111"/>
             <data name="@id" source="@key111">
                 <compose prefix="https://data.swissbib.ch/organisation/"/>
             </data>
 
-            <data source="001" name="@type">
+            <data source="111??" name="@type">
                 <constant value="http://xmlns.com/foaf/0.1/Organization"/>
             </data>
-            <data source="001" name="@context">
+            <data source="111??" name="@context">
                 <constant value="https://resources.swissbib.ch/organisation/context.jsonld"/>
             </data>
 
-            <data name="rdfs:label" source="@label111"/>
+            <concat name="rdfs:label" flushWith="111??">
+                <data source="111??.a">
+                    <regexp match="(.*[^\.$])" format="${1}"/>
+                </data>
+                <data source="111??.c">
+                    <compose prefix=" "/>
+                </data>
+                <data source="111??.d">
+                    <compose prefix=" "/>
+                </data>
+                <data source="111??.e">
+                    <regexp match="(.*[^\.$])" format="${1}"/>
+                    <compose prefix=". "/>
+                </data>
+                <data source="111??.n">
+                    <compose prefix=" "/>
+                </data>
+            </concat>
 
             <call-macro name="gnd" gndfield="111??.0"/>
 
