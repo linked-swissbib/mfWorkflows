@@ -30,6 +30,12 @@
                 </combine>
             </entity>
         </macro>
+        <macro name="remove-datatype">
+            <data source="$[predicate]" name="$[abbrev]">
+                <split delimiter="##"/>
+                <occurrence only="lessThan 2"/>
+            </data>
+        </macro>
 
     </macros>
 
@@ -66,8 +72,8 @@
         <call-macro name="uri" abbrev="dbp:deathPlace" predicate="http://dbpedia.org/ontology/deathPlace"/>
         <call-macro name="language-tag" abbrev="lsb:dbpDeathPlaceAsLiteral"
                     predicate="http://resources.swissbib.ch/vocab/dbpDeathPlaceAsLiteral"/>
-        <data source="http://dbpedia.org/ontology/birthDate" name="dbp:birthDate"/>
-        <data source="http://dbpedia.org/ontology/deathDate" name="dbp:deathDate"/>
+        <call-macro name="remove-datatype" abbrev="dbp:birthDate" predicate="http://dbpedia.org/ontology/birthDate"/>
+        <call-macro name="remove-datatype" abbrev="dbp:deathDate" predicate="http://dbpedia.org/ontology/deathDate"/>
         <call-macro name="uri" abbrev="dbp:occupation" predicate="http://dbpedia.org/ontology/occupation"/>
         <call-macro name="language-tag" abbrev="lsb:dbpOccupationAsLiteral"
                     predicate="http://resources.swissbib.ch/vocab/dbpOccupationAsLiteral"/>
