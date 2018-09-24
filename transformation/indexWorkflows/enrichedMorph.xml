@@ -119,23 +119,23 @@
         <!-- Interconnection swissbib <-> dbpedia/viaf -->
         <call-macro name="uri" abbrev="owl:sameAs" predicate="http://www.w3.org/2002/07/owl#sameAs"/>
 
-        <combine name="\@context" value="context">
+        <combine name="\@context" value="${context}">
             <if>
                 <data source="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
                     <equals string="http://xmlns.com/foaf/0.1/Person"/>
                 </data>
             </if>
-            <data source="_id" name="\@context">
+            <data source="_id" name="context">
                 <constant value="https://resources.swissbib.ch/person/context.jsonld"/>
             </data>
         </combine>
-        <combine name="\@context" value="context">
+        <combine name="\@context" value="${context}">
             <if>
                 <data source="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
                     <equals string="http://xmlns.com/foaf/0.1/Organization"/>
                 </data>
             </if>
-            <data source="_id" name="\@context">
+            <data source="_id" name="context">
                 <constant value="https://resources.swissbib.ch/organisation/context.jsonld"/>
             </data>
         </combine>
