@@ -42,10 +42,10 @@
     <rules>
 
         <!-- Set id -->
-        <data source="_id" name="id">
-            <replace pattern="http://viaf.org/viaf/" with=""/>
-            <replace pattern="http://data.swissbib.ch/person/" with=""/>
-            <replace pattern="http://data.swissbib.ch/organisation/" with=""/>
+        <data source="_id" name="_id">
+            <replace pattern="https?://viaf.org/viaf/" with=""/>
+            <replace pattern="https?://data.swissbib.ch/person/" with=""/>
+            <replace pattern="https?://data.swissbib.ch/organisation/" with=""/>
         </data>
 
         <!-- JSON-LD keywords -->
