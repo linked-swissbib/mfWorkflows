@@ -6,7 +6,7 @@
 
         <macro name="year">
             <data source="$[predicate]" name="$[abbrev]">
-                <regexp match='(\d\d\d\d)' format="${1}"/>
+                <regexp match='^(\d\d\d\d)' format="${1}"/>
             </data>
         </macro>
 
