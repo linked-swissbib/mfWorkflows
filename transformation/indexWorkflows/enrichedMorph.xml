@@ -68,37 +68,37 @@
         <call-macro name="language-tag" abbrev="dbp:abstract" predicate="http://dbpedia.org/ontology/abstract"/>
         <call-macro name="uri" abbrev="dbp:birthPlace" predicate="http://dbpedia.org/ontology/birthPlace"/>
         <call-macro name="language-tag" abbrev="lsb:dbpBirthPlaceAsLiteral"
-                    predicate="http://resources.swissbib.ch/vocab/dbpBirthPlaceAsLiteral"/>
+                    predicate="http://linked.swissbib.ch/vocab/dbpBirthPlaceAsLiteral"/>
         <call-macro name="uri" abbrev="dbp:deathPlace" predicate="http://dbpedia.org/ontology/deathPlace"/>
         <call-macro name="language-tag" abbrev="lsb:dbpDeathPlaceAsLiteral"
-                    predicate="http://resources.swissbib.ch/vocab/dbpDeathPlaceAsLiteral"/>
+                    predicate="http://linked.swissbib.ch/vocab/dbpDeathPlaceAsLiteral"/>
         <call-macro name="remove-datatype" abbrev="dbp:birthDate" predicate="http://dbpedia.org/ontology/birthDate"/>
         <call-macro name="remove-datatype" abbrev="dbp:deathDate" predicate="http://dbpedia.org/ontology/deathDate"/>
         <call-macro name="uri" abbrev="dbp:occupation" predicate="http://dbpedia.org/ontology/occupation"/>
         <call-macro name="language-tag" abbrev="lsb:dbpOccupationAsLiteral"
-                    predicate="http://resources.swissbib.ch/vocab/dbpOccupationAsLiteral"/>
+                    predicate="http://linked.swissbib.ch/vocab/dbpOccupationAsLiteral"/>
         <call-macro name="uri" abbrev="dbp:movement" predicate="http://dbpedia.org/ontology/movement"/>
         <call-macro name="language-tag" abbrev="lsb:dbpMovementAsLiteral"
-                    predicate="http://resources.swissbib.ch/vocab/dbpMovementAsLiteral"/>
+                    predicate="http://linked.swissbib.ch/vocab/dbpMovementAsLiteral"/>
         <call-macro name="uri" abbrev="dbp:genre" predicate="http://dbpedia.org/ontology/genre"/>
         <call-macro name="language-tag" abbrev="lsb:dbpGenreAsLiteral"
-                    predicate="http://resources.swissbib.ch/vocab/dbpGenreAsLiteral"/>
+                    predicate="http://linked.swissbib.ch/vocab/dbpGenreAsLiteral"/>
         <call-macro name="uri" abbrev="dbp:influencedBy" predicate="http://dbpedia.org/ontology/influencedBy"/>
         <call-macro name="language-tag" abbrev="lsb:dbpInfluencedByAsLiteral"
-                    predicate="http://resources.swissbib.ch/vocab/dbpInfluencedByAsLiteral"/>
+                    predicate="http://linked.swissbib.ch/vocab/dbpInfluencedByAsLiteral"/>
         <call-macro name="uri" abbrev="dbp:nationality" predicate="http://dbpedia.org/ontology/nationality"/>
         <call-macro name="language-tag" abbrev="lsb:dbpNationalityAsLiteral"
-                    predicate="http://resources.swissbib.ch/vocab/dbpNationalityAsLiteral"/>
+                    predicate="http://linked.swissbib.ch/vocab/dbpNationalityAsLiteral"/>
         <call-macro name="uri" abbrev="dbp:partner" predicate="http://dbpedia.org/ontology/partner"/>
         <call-macro name="language-tag" abbrev="lsb:dbpPartnerAsLiteral"
-                    predicate="http://resources.swissbib.ch/vocab/dbpPartnerAsLiteral"/>
+                    predicate="http://linked.swissbib.ch/vocab/dbpPartnerAsLiteral"/>
         <call-macro name="language-tag" abbrev="dbp:pseudonym" predicate="http://dbpedia.org/ontology/pseudonym"/>
         <call-macro name="uri" abbrev="dbp:spouse" predicate="http://dbpedia.org/ontology/spouse"/>
         <call-macro name="language-tag" abbrev="lsb:dbpSpouseAsLiteral"
-                    predicate="http://resources.swissbib.ch/vocab/dbpSpouseAsLiteral"/>
+                    predicate="http://linked.swissbib.ch/vocab/dbpSpouseAsLiteral"/>
         <call-macro name="uri" abbrev="dbp:influenced" predicate="http://dbpedia.org/ontology/influenced"/>
         <call-macro name="language-tag" abbrev="lsb:dbpInfluencedAsLiteral"
-                    predicate="http://resources.swissbib.ch/vocab/dbpInfluencedAsLiteral"/>
+                    predicate="http://linked.swissbib.ch/vocab/dbpInfluencedAsLiteral"/>
         <call-macro name="uri" abbrev="dbp:notableWork" predicate="http://dbpedia.org/ontology/notableWork"/>
         <call-macro name="language-tag" abbrev="lsb:dbpNotableWorkAsLiteral"
                     predicate="http://linked.swissbib.ch/vocab/dbpNotableWorkAsLiteral"/>
