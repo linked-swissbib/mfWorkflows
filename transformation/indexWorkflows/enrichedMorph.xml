@@ -14,6 +14,7 @@
             <data source="$[predicate]" name="$[abbrev]">
                 <setreplace>
                     <entry name="http://dbpedia" value="https://dbpedia"/>
+                    <entry name="http://viaf" value="https://viaf"/>
                 </setreplace>
             </data>
         </macro>
