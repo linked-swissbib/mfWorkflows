@@ -2,7 +2,7 @@
 
 <rules xmlns="http://www.culturegraph.org/metamorph">
 
-    <combine name="@key110" value="110__###${swissbib_id}###${name}###${subunit}###${number}###${date}###${location}###${gnd}###${publishYear}###${title245a}"
+	<combine name="@key110" value="110__###${swissbib_id}###${number}###${name}###${subunit}###${date}###${location}###${gnd}###${publishYear}###${title245a}"
              flushWith="245*.a">
         <if>
             <data source="110??"/>
