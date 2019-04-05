@@ -26,7 +26,7 @@
         <data source="@pubY" name="publishYear"/>
         <data source="245*.a" name="title245a"/>
         <postprocess>
-            <java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
+            <java class="org.swissbib.linked.metamorph.functions.AuthorHash"/>
         </postprocess>
     </combine>
 

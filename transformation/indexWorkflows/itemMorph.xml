@@ -27,7 +27,7 @@
                 <count/>
             </data>
             <postprocess>
-                <java class="org.swissbib.linked.mf.morph.functions.ItemHash"/>
+                <java class="org.swissbib.linked.metamorph.functions.ItemHash"/>
             </postprocess>
             <!--The elements composing the IRI of the item are:
                 - record id (001)
@@ -85,7 +85,7 @@
                 <data source="@035Ids" name="035Ids"/> <!-- bib system numbers -->
 
                 <postprocess>
-                    <java class="org.swissbib.linked.mf.morph.functions.ItemLink"/>
+                    <java class="org.swissbib.linked.metamorph.functions.ItemLink"/>
                 </postprocess>
             </combine>
 

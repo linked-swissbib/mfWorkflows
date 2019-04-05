@@ -27,7 +27,7 @@
         <data source="245*.a" name="title245a"/>
         <data source="@7000" name="7000"/>
         <postprocess>
-            <java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
+            <java class="org.swissbib.linked.metamorph.functions.AuthorHash"/>
         </postprocess>
     </combine>
 
@@ -51,7 +51,7 @@
         <data source="245*.a" name="title245a"/>
         <data source="@7001" name="7001"/>
         <postprocess>
-            <java class="org.swissbib.linked.mf.morph.functions.AuthorHash"/>
+            <java class="org.swissbib.linked.metamorph.functions.AuthorHash"/>
         </postprocess>
     </combine>
 
